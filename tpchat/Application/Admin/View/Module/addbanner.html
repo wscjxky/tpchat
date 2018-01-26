@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<style>
+    input{
+        width:30%;
+        height:4%;
+    }
+</style>
+<div class="page-header" style="">
+    <h1>轮播图设置</h1>
+
+</div>
+
+<form method="post" action="__SELF__" enctype="multipart/form-data"  style="margin-left: 10%" >
+
+
+    <!--通用信息-->
+    <div class="ncap-form-default tab_div_1" >
+
+        <dl class="row">
+            <dt class="tit">
+                <label >链接地址</label>
+            </dt>
+            <dd class="opt">
+                <input type="text" value="" name="url" placeholder="http://或者https://开头" class="input-txt"/>
+                <span class="err"  style="color:#F00; display:none;"></span>
+            </dd>
+        </dl>
+
+
+            <dt class="tit">
+                <label >轮播图片上传（jpg.png.jpeg.gif，不超过:230K，尺寸：480*240 ）</label>
+            </dt>
+            <dd class="opt">
+                <input type="file" value="{$data.image}" name="image">
+                <span  class="err" style="color:#F00; display:none;"></span>
+                <img src="{$Think.const.SHOW_URL}{$data.image}"/>
+            </dd>
+        </dl>
+
+    </div>
+
+    <button type="button" class="btn btn-info"  >提   交</button>
+
+</form>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('button').click(function () {
+            $.confirm({
+                title: '确认提交?',
+                content: "确认",
+                type: 'green',
+                buttons: {
+                    ok: {
+                        text: "确认",
+                        btnClass: 'btn-primary',
+                        keys: ['enter'],
+                        action: function () {
+                            $('form').submit();
+                        }
+                    },
+                    cancel: {
+                        text: "取消",
+                        btnClass: 'btn-danger',
+                        keys: ['enter'],
+                        action: function () {
+                        }
+                    }
+                }
+            });
+        })
+    })
+</script>
+</html>

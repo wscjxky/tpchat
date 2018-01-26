@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>订单管理</title>
+    <!--<script type="text/javascript">-->
+        <!--var SITEURL = window.location.host +'/index.php/admin';-->
+    <!--</script>-->
+
+</head>
+<style>
+    #container{
+        min-width:600px;
+        min-height:767px;
+    }
+</style>
+<body style='overflow:auto ;'>
+<div id="container"></div>
+
+</body>
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=P4LBZ-TM6WP-74UD3-VBGHD-2OUXK-DBFB4"></script>
+
+<script>
+
+
+
+    function getLocation(){
+        //判断是否支持 获取本地位置
+        if (navigator.geolocation)
+        {
+            navigator.geolocation.getCurrentPosition(showPosition);
+//            alert('asda');
+
+        }
+        else{x.innerHTML="浏览器不支持定位.";
+            alert('asd');
+        }
+    }
+    function showPosition(position)
+    {
+        alert("Asd");
+
+        var lat=position.coords.latitude;
+        var lng=position.coords.longitude;
+
+//调用地图命名空间中的转换接口   type的可选值为 1:GPS经纬度，2:搜狗经纬度，3:百度经纬度，4:mapbar经纬度，5:google经纬度，6:搜狗墨卡托
+        qq.maps.convertor.translate(new qq.maps.LatLng(lat,lng), 3, function(res){
+            //取出经纬度并且赋值
+            latlng = res[0];
+            var map = new qq.maps.Map(document.getElementById("container"),{
+                center:  latlng,
+                zoom: 13
+            });
+            //设置marker标记
+            var marker = new qq.maps.Marker({
+                map : map,
+                position : latlng
+            });
+
+        });
+    }
+
+    getLocation();
+
+</script>
+</html>

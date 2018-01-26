@@ -1,0 +1,146 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<include file="Public/head" />
+
+	<!-- jQuery 2.1.4 -->
+
+</head>
+
+<body>
+
+
+
+       <div class="row">
+		   <div class="col-md-1" style="margin-left: 30px">
+			   <h3>活动列表</h3>
+			   <h5>(共{$count}条记录)</h5>
+		   </div>
+	   </div>
+			<div class="box" style="margin-top: 2%">
+				<a href="activity_info"><button type="button" class="btn btn-primary">添加活动</button></a>
+
+				<div class="box-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<table id="list-table" class="table table-bordered table-striped dataTable">
+								<thead>
+								<tr role="row">
+									<th>编号</th>
+									<th>活动标题</th>
+									<th>活动内容</th>
+
+									<th>活动封面</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th>创建时间</th>
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tbody>
+								<foreach name="data" item="vo" key="k" >
+									<tr role="row" >
+										<td>{$vo.activity_id}</td>
+										<td>{$vo.title}</td>
+										<td>{$vo.content}</td>
+
+										<td ><img src="{$Think.const.SHOW_URL}{$vo.activity_image}" height="60" width="60"/></td>
+										<td>{$vo.createtime}</td>
+										<td>{$vo.starttime}</td>
+
+										<td>{$vo.endtime}</td>
+
+										<td>
+											<a class="btn btn-primary"  href="activity_info?id={$vo.activity_id}"><i class="fa fa-pencil"></i></a>
+
+											<a type="button" data-id="{$vo.activity_id}" data-act="del"  data-url="{:U('Activity/activityHandle')}" class="btn btn-danger" onclick="javascript:delfunc(this);"><i class="fa fa-trash-o"></i></a>
+											<if condition="$vo.publish_state eq 0 ">
+												<a> <button data-id="{$vo.activity_id}" onclick="publish(this)" type="button" class="btn btn-success">发布</button></a>
+												<else />
+												<a> <button data-id="{$vo.activity_id}" onclick="publish(this)" type="button" class="btn btn-info">取消发布</button></a>
+											</if>
+										</td>
+
+									</tr>
+								</foreach>
+								</tbody>
+								<tfoot>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 text-left"></div>
+						<div class="col-sm-6 text-right">{$page}</div>
+					</div>
+				</div>
+			</div>
+
+
+</body>
+<script>
+    function publish(obj) {
+        layer.confirm('确认发布？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.ajax({
+                    type : 'post',
+                    url :"__CONTROLLER__/activityHandle",
+                    data : {
+                        act:'publish',
+                        id:$(obj).attr('data-id')
+					},
+                    dataType : 'text',
+                    success : function(data){
+                        console.log(data);
+                        if(data){
+                            layer.msg('操作成功', {icon: 1});
+                            history.go(0);
+                        }
+                    }
+                })
+            }, function(index){
+                layer.close(index);
+                return false;// 取消
+            }
+        );
+    }//	layer.open({
+//		type: 1,
+//		skin: 'layui-layer-lan',
+//		title:"确认",
+//		btn:['确认','取消'],
+//		content:
+//		'<label>平台打分</label>' +
+//		'<input  style="margin:20px" type="text" id="score" placeholder="5-10" value=""/>'+
+//		'<label>平台评价</label>' +
+//		'<input  style="margin:20px" type="text" id="admin_comment" placeholder="5-10" value=""/>'+
+//		'<label>显示链接</label>' +
+//		'<input  style="margin:20px" type="text" id="confirm_url" placeholder="5-10" value=""/>'+
+//		'<label>平台描述</label>' +
+//		'<input  style="margin:20px" type="text" id="admin_desc" placeholder="5-10" value=""/>'
+//		,
+//		yes: function(index,layero){
+//			$.ajax({
+//				type : 'post',
+//				url : $(obj).attr('data-url'),
+//				data : {act:$(obj).attr('data-act'),
+//					id:$(obj).attr('data-id')},
+//				dataType : 'text',
+//				success : function(data){
+//					if(data==1){
+//						layer.closeAll();
+//						layer.msg('操作成功', {icon: 1});
+//						history.go(0);
+//					}
+//					else{
+//						layer.msg(data, {icon: 2,time: 2000});
+//					}
+//				}
+//			})
+//		},
+//		btn2: function(index,layero){
+//		}
+//	});
+
+</script>
+</html>

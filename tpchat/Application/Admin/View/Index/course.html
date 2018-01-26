@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{__NOLAYOUT__}
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<script src="{$Think.const.JS_URL}jquery.js"></script>
+
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css">
+<script rel="stylesheet" src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+<style>
+    p{
+        margin: 0 0 0;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>实践课堂</title>
+    <include file="head"/>
+    <script src="{$Think.const.JS_URL}jquery.qrcode.min.js"  type="text/javascript"></script>
+    <link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#qrcode").qrcode("http://www.cunpianzi.com/tpchat/index.php/chat/index/course?courseid={$data.course_id}&aid={$aid}").css("left","16%").css("top","20%");
+    });
+    function qrcode() {
+        //二维码消失
+        if($(".weui-panel__bd").css('opacity')==0){
+            $(".weui-panel__bd").css('opacity','1');
+            $("#qrcode").css('display','none');
+        }
+        else{
+        $(".weui-panel__bd").css('opacity','0');
+            $("#qrcode").css('display','block');
+
+//        console.log("http://www.cunpianzi.com/tpchat/index.php/chat/index/course?title={$data.title}&openid={$openid}");
+    }
+    }
+    function showAlert() {
+        $.alert("您已经参加过本次活动了。");
+    }
+</script>
+<body >
+<div id="qrcode" style="position: fixed ;display: none"></div>
+<div class="weui-panel__bd" style="padding: 10px">{$data.content}</div>
+        <ul class="weui-media-box__info" style="margin-bottom: 100px">
+            <li class="weui-media-box__info__meta">适合年龄段：{$data.age_limit}</li>
+            <li class="weui-media-box__info__meta ">招收人数：{$data.people_limit}</li>
+        </ul>
+<style>
+    a{
+
+        margin: 0 auto;
+    }
+</style>
+<div class="weui-tabbar" style="text-align: center;position:fixed ;background:url('http://www.cunpianzi.com/tpchat/Public/img/nav_bar.png')" >
+    <a href="tel:010-85388138#mp.weixin.qq.com">
+
+        <img  src="{$Think.const.IMG_URL}nav_phone.png" alt="">
+
+    </a>
+    <if condition="$agent eq 0">
+        <else />
+        <a href="javascript:qrcode()" >
+            <img  src="{$Think.const.IMG_URL}nav_qrcode.png" alt="">
+        </a>
+    </if>
+
+
+    <if condition="$activity_state neq 0">
+        <a href="javascript:showAlert()" >
+            <img  src="{$Think.const.IMG_URL}nav_register.png" alt="">
+        </a>
+        <else />
+        <a href="{$trade_url}" >
+            <img  src="{$Think.const.IMG_URL}nav_register.png" alt="">
+
+        </a>
+    </if>
+
+</div>
+
+</body>
+
+<!-- body 最后 -->
+<link rel="stylesheet" href="{$Think.const.CSS_URL}weui.min.css">
+<link rel="stylesheet" href="{$Think.const.CSS_URL}jquery-weui.min.css">
+<script src="{$Think.const.JS_URL}jquery-weui.js"></script>
+<script src="{$Think.const.JS_URL}fastclick.js"></script>
+</html>

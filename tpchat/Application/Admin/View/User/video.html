@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body ontouchstart>
+<style>
+    /*span{*/
+        /*float: right ;*/
+
+    /*}*/
+    /*p{*/
+        /*font-size: 15px;*/
+        /*padding: 3px*/
+    /*}*/
+    h1{
+        font-size: 30px;
+        padding: 12px;
+    }
+    /*li{*/
+        /*list-style-type:none;*/
+        /*border-bottom:1px solid #0c0c0c ;*/
+        /*padding: 2px*/
+    /*}*/
+</style>
+<div class="page-title"  >
+    <h2>我的作品<a href="{:U('user/index')}" style="top: 30%;" class="arrow-left backpage"></a></h2>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd">我的课程</div>
+</div>
+
+<div class="weui-panel__bd" style="margin-bottom: 15%">
+    <volist name="data" id="v">
+        <!--href="{$v.confirm_url}"-->
+        <a  class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__bd">
+                <h4 class="weui-media-box__desc">作业标题：{$v.video_title}</h4>
+                <p class="weui-media-box__desc">下载链接：{$v.video_url}</p>
+                <p class="weui-media-box__desc">视频分类：{$v.video_category}</p>
+
+                <p class="weui-media-box__desc" >内容简介：{$v.user_desc}</p>
+                <p class="weui-media-box__desc" >审核状态：{$v.check_status}</p>
+
+                <p class="weui-media-box__desc" >平台评论：{$v.admin_comment}</p>
+                <p class="weui-media-box__desc" >平台打分：{$v.score}</p>
+
+            </div>
+        </a>
+    </volist>
+    <a href="__CONTROLLER__/addvideo" class="weui-btn weui-btn_primary" >提交</a>
+
+</div>
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+    });
+
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head >
+
+
+<style>
+
+    h1{
+        font-size: 30px;
+        padding: 12px;
+    }
+
+
+</style>
+
+<body ontouchstart>
+<div class="page-title"  >
+    <h2><span>我的建议</span><a href="{:U('user/index')}" style="top: 30%;" class="arrow-left backpage"></a></h2>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd">我的课程</div>
+</div>
+<div class="weui-panel__bd" style="margin-bottom: 15%">
+    <volist name="data" id="v">
+        <a href="" class="weui-media-box weui-media-box_appmsg">
+
+            <div class="weui-media-box__bd">
+                <h2 style="padding: 5px" class="weui-media-box__title">建议：{$v.content}</h2>
+                <p style="padding: 5px"class="weui-media-box__desc" >时间：{$v.createtime}</p>
+                <p style="padding: 5px" class="weui-media-box__desc">平台回复：{$v.reply}</p>
+            </div>
+        </a>
+    </volist>
+    <a href="__CONTROLLER__/addadvice" class="weui-btn weui-btn_primary" >提交建议</a>
+</div>
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+    });
+
+</script>
+</html>
+
+</body>
+</html>

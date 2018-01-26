@@ -1,0 +1,105 @@
+<html>
+<head>
+    <!-- Include CSS for icons. -->
+    <link href="__PUBLIC__/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<style>
+    input{
+        width: 300px;
+    }
+</style>
+<body style="background-color: #FFF; overflow: scroll;position:relative">
+
+<div class="page" style="  margin-left:10%">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <div class="subject">
+                <h1>热点编辑</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- 操作说明 -->
+
+    <!--表单数据-->
+
+    <form method="post" action="{:U('Admin/Module/articleHandle')}" enctype="multipart/form-data"  >
+        <div class="ncap-form-default tab_div_1">
+
+            <dl class="row">
+                <dt class="tit">
+                    <label >标题</label>
+                </dt>
+                <dd class="opt">
+                    <input type="text" value="{$data.title}"   placeholder="不超过8字" name="title" />
+                    <span class="err" id="err_goods_name" style="color:#F00; display:none;"></span>
+                </dd>
+            </dl>
+
+            <dl class="row">
+                <dt class="tit">
+                    <label >简介</label>
+                </dt>
+                <dd class="opt">
+                    <input   value="{$data.content}" placeholder="不超过128字" name="content" rows="5" cols="5"  style="width: 300px">
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label >图文链接</label>
+                </dt>
+                <dd class="opt">
+                    <input  value="{$data.url}"  placeholder="https://mp.weixin.qq.com/s/DoT9geCUjAZiYnoF6Sg1FA"  name="url" />
+                    <span  class="err" style="color:#F00; display:none;"></span>
+                </dd>
+            </dl>
+
+            <dl class="row">
+                <dt class="tit">
+
+                    <label >封面图片上传（jpg.png.jpeg.gif，不超过10K，尺寸：80px*60px）</label>
+                </dt>
+                <dd class="opt">
+                    <input type="file" value="{$data.image}" name="image">
+                    <span  class="err" style="color:#F00; display:none;"></span>
+                    <img src="{$Think.const.SHOW_URL}{$data.image}"/>
+                </dd>
+            </dl>
+            <input style="display: none" value="{$data.article_id}"   name="id" />
+            <input style="display: none" value="{$act}" name="act">
+
+        </div>
+        <br><br>  <br><br>
+        <input class="btn btn-default" type="reset" value="重置">&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input class="btn btn-info" type="button" onclick="Submit()" value="提交">
+
+
+
+    </form>
+    <!--表单数据-->
+</div>
+
+
+
+
+
+</body>
+
+<script>
+    function Submit() {
+
+        if ($('#role_name').val() == '' ) {
+            layer.msg('输入不能为空', {icon: 2, time: 1000});//alert('少年，密码不能为空！');
+            return false;
+        }
+
+        $('form').submit();
+
+    }
+</script>
+
+
+</html>

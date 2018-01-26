@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>tpshop管理后台</title>
+	<include file="Public/head" />
+
+	<!-- jQuery 2.1.4 -->
+
+</head>
+
+<body>
+
+
+
+       <div class="row">
+		   <div class="col-md-1" style="margin-left: 30px">
+			   <h3>管理列表</h3>
+			   <h5>(共{$count}条记录)</h5>
+		   </div>
+	   </div>
+	   <a href="admin_info" style="position:absolute;float: left;margin-top: 60px" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>添加人员</a>
+
+
+			<div class="box" style="margin-top: 100px">
+				<div class="box-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<table id="list-table" class="table table-bordered table-striped dataTable">
+								<thead>
+								<tr role="row">
+									<th>ID</th>
+									<th>用户名</th>
+									<th>所属角色</th>
+									<th>加入时间</th>
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tbody>
+								<foreach name="data" item="vo" key="k" >
+									<tr role="row" >
+										<td>{$vo.admin_id}</td>
+										<td>{$vo.account}</td>
+										<td>{$vo.role_name}</td>
+										<td>{$vo.createtime}</td>
+										<td>
+
+											<a class="btn btn-primary"  href="admin_info?id={$vo.admin_id}"><i class="fa fa-pencil"></i></a>
+
+											<a class="btn btn-danger" data-id="{$vo.admin_id}" data-act="del"  data-url="{:U('Admin/adminHandle')}" onclick="delfunc(this)"><i class="fa fa-trash-o"></i></a>
+
+										</td>
+									</tr>
+								</foreach>
+								</tbody>
+								<tfoot>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 text-left"></div>
+						<div class="col-sm-6 text-right">{$page}</div>
+					</div>
+				</div>
+			</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html data-page-alias="mobile.qingke.client.user.common.index" data-adaptor-design="750" data-adaptor-base="100" data-adaptor-min="25" data-adaptor-max="100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="open-wechat-jssdk" content="http://res.wx.qq.com/open/js/jweixin-1.2.0.js">
+    <script>
+        //design: 设计稿尺寸
+        //fontSize: 基础字体大小
+        //minFontSize: 最小字体大小
+        //maxFontSize: 最大字体大小
+        (function(design, fontSize, minFontSize, maxFontSize){
+            //----------------------------------------------------------------|||
+            var _ua = navigator.userAgent;
+            var CheckMap = {
+                "os": {
+                    "windows": [
+                        {
+                            "pattern": "Windows NT (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WindowsNT"
+                        },
+                        {
+                            "pattern": "Windows (\\d+)",
+                            "alias": "Windows"
+                        }
+                    ],
+                    "osx": [
+                        {
+                            "pattern": "Mac OS X (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "OSX"
+                        },
+                        {
+                            "pattern": "Mac OS X (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "OSX"
+                        },
+                        {
+                            "pattern": "Mac OS X (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "OSX"
+                        },
+                        {
+                            "pattern": "Mac OS X (\\d+)",
+                            "alias": "OSX"
+                        }
+                    ],
+                    "android": [
+                        {
+                            "pattern": "Android (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Android"
+                        },
+                        {
+                            "pattern": "Android (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Android"
+                        },
+                        {
+                            "pattern": "Android (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Android"
+                        },
+                        {
+                            "pattern": "Android (\\d+)",
+                            "alias": "Android"
+                        }
+                    ],
+                    "ios": [
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iOS"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)",
+                            "alias": "iOS"
+                        }
+                    ],
+                    "iphone": [
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPhone"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPhone"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPhone"
+                        },
+                        {
+                            "pattern": "iPhone[^;]*;.+OS (\\d+)",
+                            "alias": "iPhone"
+                        }
+                    ],
+                    "ipad": [
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPad"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPad"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPad"
+                        },
+                        {
+                            "pattern": "iPad[^;]*;.+OS (\\d+)",
+                            "alias": "iPad"
+                        }
+                    ],
+                    "ipod": [
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPod"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPod"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "iPod"
+                        },
+                        {
+                            "pattern": "iPod[^;]*;.+OS (\\d+)",
+                            "alias": "iPod"
+                        }
+                    ],
+                    "windowsphone": [
+                        {
+                            "pattern": "Windows Phone OS (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WindowsPhone"
+                        },
+                        {
+                            "pattern": "Windows Phone (\\d+)",
+                            "alias": "WindowsPhone"
+                        }
+                    ],
+                    "blackberry": [
+                        {
+                            "pattern": "BlackBerry (\\d+)",
+                            "alias": "BlackBerry"
+                        }
+                    ],
+                    "symbian": [
+                        {
+                            "pattern": "SymbianOS/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "SymbianOS"
+                        }
+                    ]
+                },
+                "browser": {
+                    "ie": [
+                        {
+                            "pattern": "MSIE (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "MSIE (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "MSIE (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "MSIE (\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MSIE"
+                        },
+                        {
+                            "pattern": "Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)",
+                            "alias": "MSIE"
+                        }
+                    ],
+                    "edge": [
+                        {
+                            "pattern": "Edge/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Edge"
+                        },
+                        {
+                            "pattern": "Edge/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Edge"
+                        },
+                        {
+                            "pattern": "Edge/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Edge"
+                        },
+                        {
+                            "pattern": "Edge/(\\d+)",
+                            "alias": "Edge"
+                        }
+                    ],
+                    "iemobile": [
+                        {
+                            "pattern": "IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "IEMobile"
+                        },
+                        {
+                            "pattern": "IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "IEMobile"
+                        },
+                        {
+                            "pattern": "IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "IEMobile"
+                        },
+                        {
+                            "pattern": "IEMobile[/ ](\\d+)",
+                            "alias": "IEMobile"
+                        }
+                    ],
+                    "chrome": [
+                        {
+                            "pattern": "Chrome/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Chrome"
+                        },
+                        {
+                            "pattern": "Chrome/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Chrome"
+                        },
+                        {
+                            "pattern": "Chrome/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Chrome"
+                        },
+                        {
+                            "pattern": "Chrome/(\\d+)",
+                            "alias": "Chrome"
+                        }
+                    ],
+                    "safari": [
+                        {
+                            "pattern": "Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[\s ](Mobile/[0-9a-zA-Z]+[\s ])?Safari",
+                            "alias": "Safari"
+                        },
+                        {
+                            "pattern": "Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[\s ](Mobile/[0-9a-zA-Z]+[\s ])?Safari",
+                            "alias": "Safari"
+                        },
+                        {
+                            "pattern": "Version/(\\d+)[^0-9\\s ](\\d+)[\s ](Mobile/[0-9a-zA-Z]+[\s ])?Safari",
+                            "alias": "Safari"
+                        },
+                        {
+                            "pattern": "Version/(\\d+)[\s ](Mobile/[0-9a-zA-Z]+[\s ])?Safari",
+                            "alias": "Safari"
+                        }
+                    ],
+                    "firefox": [
+                        {
+                            "pattern": "Firefox/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Firefox"
+                        },
+                        {
+                            "pattern": "Firefox/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Firefox"
+                        },
+                        {
+                            "pattern": "Firefox/(\\d+)",
+                            "alias": "Firefox"
+                        }
+                    ],
+                    "opera": [
+                        {
+                            "pattern": "Opera (\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Opera"
+                        },
+                        {
+                            "pattern": "Opera/.+ Version/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Opera"
+                        }
+                    ],
+                    "operamini": [
+                        {
+                            "pattern": "Opera Mini/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "OperaMini"
+                        }
+                    ],
+                    "operamobile": [
+                        {
+                            "pattern": "Opera Mobi/.+ Version/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "OperaMobile"
+                        }
+                    ],
+                    "ucbrowser": [
+                        {
+                            "pattern": "UC Browser[ /]?(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "UCBrowser"
+                        },
+                        {
+                            "pattern": "UCBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "UCBrowser"
+                        }
+                    ],
+                    "qqbrowser": [
+                        {
+                            "pattern": " QQBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "QQBrowser"
+                        },
+                        {
+                            "pattern": " QQBrowser/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "QQBrowser"
+                        },
+                        {
+                            "pattern": " QQBrowser/(\\d+)",
+                            "alias": "QQBrowser"
+                        }
+                    ],
+                    "mqqbrowser": [
+                        {
+                            "pattern": " MQQBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MQQBrowser"
+                        },
+                        {
+                            "pattern": " MQQBrowser/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MQQBrowser"
+                        },
+                        {
+                            "pattern": " MQQBrowser/(\\d+)",
+                            "alias": "MQQBrowser"
+                        }
+                    ],
+                    "blackberry": [
+                        {
+                            "pattern": "BlackBerry.+ Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "BlackBerry"
+                        }
+                    ],
+                    "mqq": [
+                        {
+                            "pattern": "SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MQQ"
+                        },
+                        {
+                            "pattern": "SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MQQ"
+                        },
+                        {
+                            "pattern": "SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "MQQ"
+                        },
+                        {
+                            "pattern": "SQ_[^/]+ QQ/(\\d+)",
+                            "alias": "MQQ"
+                        }
+                    ],
+                    "qq": [
+                        {
+                            "pattern": "QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "QQ"
+                        },
+                        {
+                            "pattern": "QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "QQ"
+                        },
+                        {
+                            "pattern": "QQ/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "QQ"
+                        },
+                        {
+                            "pattern": "QQ/(\\d+)",
+                            "alias": "QQ"
+                        }
+                    ],
+                    "wechat": [
+                        {
+                            "pattern": "MicroMessenger/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WeChat"
+                        },
+                        {
+                            "pattern": "MicroMessenger/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WeChat"
+                        },
+                        {
+                            "pattern": "MicroMessenger/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WeChat"
+                        },
+                        {
+                            "pattern": "MicroMessenger/(\\d+)",
+                            "alias": "WeChat"
+                        }
+                    ],
+                    "tbs": [
+                        {
+                            "pattern": "TBS/(\\d+)",
+                            "alias": "TBS"
+                        }
+                    ],
+                    "aliapp": [
+                        {
+                            "pattern": "AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "AliApp"
+                        },
+                        {
+                            "pattern": "AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "AliApp"
+                        },
+                        {
+                            "pattern": "AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "AliApp"
+                        },
+                        {
+                            "pattern": "AliApp\\(AP/(\\d+)",
+                            "alias": "AliApp"
+                        }
+                    ]
+                },
+                "engine": {
+                    "trident": [
+                        {
+                            "pattern": "Trident/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Trident"
+                        },
+                        {
+                            "pattern": "Trident/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Trident"
+                        },
+                        {
+                            "pattern": "Trident/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Trident"
+                        },
+                        {
+                            "pattern": "Trident/(\\d+)",
+                            "alias": "Trident"
+                        }
+                    ],
+                    "webkit": [
+                        {
+                            "pattern": "WebKit/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WebKit"
+                        },
+                        {
+                            "pattern": "WebKit/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WebKit"
+                        },
+                        {
+                            "pattern": "WebKit/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "WebKit"
+                        },
+                        {
+                            "pattern": "WebKit/(\\d+)",
+                            "alias": "WebKit"
+                        }
+                    ],
+                    "gecko": [
+                        {
+                            "pattern": "Gecko/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Gecko"
+                        },
+                        {
+                            "pattern": "Gecko/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Gecko"
+                        },
+                        {
+                            "pattern": "Gecko/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Gecko"
+                        },
+                        {
+                            "pattern": "Gecko/(\\d+)",
+                            "alias": "Gecko"
+                        }
+                    ],
+                    "presto": [
+                        {
+                            "pattern": "Presto/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Presto"
+                        },
+                        {
+                            "pattern": "Presto/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Presto"
+                        },
+                        {
+                            "pattern": "Presto/(\\d+)[^0-9\\s ](\\d+)",
+                            "alias": "Presto"
+                        },
+                        {
+                            "pattern": "Presto/(\\d+)",
+                            "alias": "Presto"
+                        }
+                    ]
+                }
+            };
+            var __check = function(ua, reg){
+                var result = {
+                    "major": -1,
+                    "minor": -1,
+                    "patch": -1,
+                    "build": -1,
+                    "short": -1,
+                    "version": "",
+                    "name": ""
+                };
+
+                var pattern = new RegExp(reg.pattern, "i");
+                var matcher = null;
+
+                pattern.lastIndex = 0;
+
+                if(null != (matcher = pattern.exec(ua))){
+                    var tmp = [];
+                    var r = 0;
+                    var l = 0;
+
+                    for(var i = 1; i < matcher.length; i++){
+                        r = matcher[i];
+
+                        if(/^[\d]+$/.test(r)){
+                            tmp.push(Number(r));
+                        }
+                    }
+
+                    l = tmp.length;
+
+                    result.major = l > 0 ? tmp[0] : -1;
+                    result.minor = l > 1 ? tmp[1] : -1;
+                    result.patch = l > 2 ? tmp[2] : -1;
+                    result.build = l > 3 ? tmp[3] : -1;
+                    result.short = Number(result.major > -1 ? result.major + (result.minor > -1 ? "." + result.minor : ".0") : -1);
+                    result.version = tmp.join(".");
+                    result.name = reg.alias;
+                }
+
+                return result;
+            };
+
+            var __exec = function(ua, conf){
+                var item = null;
+                var result = {};
+
+                for(var key in conf){
+                    if(conf.hasOwnProperty(key)){
+                        item = conf[key];
+
+                        if(Object.prototype.toString.call(item) == "[object Array]"){
+                            for(var i = 0; i < item.length; i++){
+                                result[key] = __check(ua, item[i]);
+
+                                if(result[key].version && result[key].major > -1){
+                                    break;
+                                }
+                            }
+                        }else{
+                            result[key] = __check(ua, item);
+                        }
+                    }
+                }
+
+                return result;
+            };
+
+            var __parse = function(ua){
+                var regexps = CheckMap;
+                var result = {
+                    "os": __exec(ua, regexps["os"]),
+                    "browser": __exec(ua, regexps["browser"]),
+                    "engine": __exec(ua, regexps["engine"])
+                };
+
+                return result;
+            };
+            //----------------------------------------------------------------|||
+            var remTimer = null;
+            var isNumber = function(v){
+                var s = String(v);
+                var p = /^[\d]+$/;
+
+                return p.test(s);
+            };
+            var parseDesignWidth = function(v){
+                var env = __parse(_ua);
+                var os = env.os;
+                var items = v.split(/[\s]*,[\s]*/);
+                var size = items.length;
+                var item = null;
+                var map = {};
+
+                for(var i = 0; i < size; i++){
+                    item = items[i].split(/[\s]*=[\s]*/);
+                    map[item[0]] = Number(item[1]);
+                }
+
+                if(os.android.major > 0 ||
+                    os.ios.major > 0 ||
+                    os.windowsphone.major > 0 ||
+                    os.blackberry.major > 0 ||
+                    os.symbian.major > 0
+                ){ //移动端
+                    return map["mobile"];
+                }else{ //pc端
+                    return map["desktop"];
+                }
+            };
+            var _reset = function(){
+                var root = document.documentElement;
+                var body = document.body;
+
+                if(!root || !body){
+                    return false;
+                }
+
+                try{
+
+                    var _designWidth = root.getAttribute("data-adaptor-design") || design;
+                    var _fontSize = root.getAttribute("data-adaptor-base") || fontSize;
+                    var _minFontSize = Number(root.getAttribute("data-adaptor-min") || minFontSize);
+                    var _maxFontSize = Number(root.getAttribute("data-adaptor-max") || maxFontSize);
+                    var clientWidth = Math.max(root.clientWidth, body.clientWidth);
+                    var width = window.innerWidth || clientWidth;
+
+                    if(isNumber(_designWidth)){
+                        _designWidth = Number(_designWidth);
+                    }else{
+                        _designWidth = parseDesignWidth(_designWidth);
+                    }
+
+                    root.setAttribute("data-adaptor-design", _designWidth);
+
+                    var percentage = width / _designWidth;
+                    var fsize = _fontSize * percentage;
+
+                    if(fsize < _minFontSize){
+                        fsize = _minFontSize;
+                    }
+
+                    if(fsize > _maxFontSize){
+                        fsize = _maxFontSize;
+                    }
+
+                    percentage = fsize / _fontSize;
+
+                    root.style.fontSize = fsize + 'px';
+                    root.setAttribute("data-adaptor-percentage", percentage);
+                }catch(e){
+                    return false;
+                }
+
+                return true;
+            };
+            var _listener = function(e){
+                setTimeout(_reset, 300);
+            };
+
+            remTimer = setTimeout(function(){
+                if(remTimer){
+                    clearTimeout(remTimer);
+                    remTimer = null;
+                }
+
+                if(_reset()){
+                    if(("onorientationchange" in window)){
+                        window.addEventListener("orientationchange", _listener, false);
+                    }else{
+                        if("addEventListener" in window){
+                            window.addEventListener("resize", _listener, false);
+                        }else if("attachEvent" in window){
+                            window.attachEvent("onresize", _listener);
+                        }else{
+                            window.onresize = _listener;
+                        }
+                    }
+                }else{
+                    setTimeout(arguments.callee, 0);
+                }
+            }, 0);
+            //----------------------------------------------------------------|||
+            (function main(){
+                var env = __parse(_ua);
+                var arr = [];
+
+                var __analyze = function(o){
+                    var tmp = null;
+
+                    for(var key in o){
+                        if(o.hasOwnProperty(key)){
+                            tmp  = o[key];
+
+                            if(tmp.major > -1){
+                                arr.push(key);
+                                arr.push(key + tmp.major);
+                            }
+                        }
+                    }
+                };
+
+                var __render = function(){
+                    var r = document.documentElement;
+                    var cls = r.className;
+                    var items = cls.split(/[\s ]+/);
+                    var formatItems = [];
+
+                    for(var i = 0; i < items.length; i++){
+                        if(!items[i]){
+                            continue;
+                        }
+
+                        formatItems.push(items[i]);
+                    }
+
+                    var ncls = formatItems.concat(arr);
+
+                    r.className = ncls.join(" ");
+                };
+
+                for(var e in env){
+                    if(env.hasOwnProperty(e)){
+                        __analyze(env[e]);
+                    }
+                }
+
+                __render();
+            })();
+            //----------------------------------------------------------------|||
+            window["RemAdaptor"] = {
+                getRemAdaptorAttribute: function(attrName){
+                    var el = document.documentElement;
+
+                    return el.getAttribute("data-adaptor-" + attrName);
+                },
+                getRemAdaptorDesignValue: function(){
+                    var val = Number(this.getRemAdaptorAttribute("design") || 0);
+
+                    if(isNaN(val)){
+                        return 0;
+                    }
+
+                    return val;
+                },
+                getRemAdaptorBaseValue: function(){
+                    var val = Number(this.getRemAdaptorAttribute("base") || 0);
+
+                    if(isNaN(val)){
+                        return 0;
+                    }
+
+                    return val;
+                },
+                getRemAdaptorMinValue: function(){
+                    var val = Number(this.getRemAdaptorAttribute("min") || 0);
+
+                    if(isNaN(val)){
+                        return 0;
+                    }
+
+                    return val;
+                },
+                getRemAdaptorMaxValue: function(){
+                    var val = Number(this.getRemAdaptorAttribute("max") || 0);
+
+                    if(isNaN(val)){
+                        return 0;
+                    }
+
+                    return val;
+                },
+                getRemAdaptorPercentageValue: function(){
+                    var val = Number(this.getRemAdaptorAttribute("percentage") || 0);
+
+                    if(isNaN(val)){
+                        return 0;
+                    }
+
+                    return val;
+                },
+                "parse": __parse,
+                "env": __parse(_ua)
+            };
+        })("mobile=750,desktop=1400", 100, 25, 100);
+    </script>
+    <!-- 分享配置 开始 -->
+    <meta itemprop="title" content="中国传媒大学凤凰学院的直播课堂" itemfor="share" desc="分享标题">
+    <meta itemprop="image" content="http://file1.91qingke.com/624969_0ddb80321698b85eb867ce627a361fd4.jpg?x-oss-process=image/resize,w_220" itemfor="share" desc="分享图标">
+    <meta itemprop="link" content="http://m.qingkeyun.cn/k/ataqcwb4.html" itemfor="share" desc="分享链接，为空时取当前URL">
+    <meta itemprop="description" content="" itemfor="share" desc="分享描述">
+    <meta itemprop="allow" content="1" itemfor="share" desc="在微信下控制是否允许分享, 默认为 1， 0:禁止 1:允许">
+    <meta itemprop="shareStatURL" content="" itemfor="share" desc="分享统计地址">
+    <meta itemprop="shareRedirectURL" content="" itemfor="share" desc="分享后自动跳转地址">
+    <!-- 分享配置 结束 -->
+    <title>中国传媒大学凤凰学院</title>
+    <link id="seed_style" rel="stylesheet" type="text/css" href="/static/v1.1/res/css/lib/gm.ed5e589265c5166bec1cbd392f4e90ab2ace4071.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/v1.1/res/css/lib/m_main.a0334aaf6223102bb762834128ae3b4747fb949c.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/static/v1.1/res/css/logic/m/index.6fac9fca37e30642210d085be8d56933b31d8f92.css">
+
+
+</head>
+<body class="flexbox vertical">
+
+<article class="app-body" data-action-tap="category://hide">
+
+    <div class="org-info flexbox middle center">
+        <dl class="flexbox middle justify">
+            <dt data-action-tap="app://invoke#2,go://url#/k/ataqcwb4.html" style="background-image: url(http://file1.91qingke.com/624969_0ddb80321698b85eb867ce627a361fd4.jpg?x-oss-process=image/resize,w_220);" 	><!-- head url --></dt>
+            <dd>
+                <h3 class="flexbox middle left">中国传媒大学凤凰学院<sub  class="verified"  ></sub></h3>
+                <div>
+
+                </div>
+            </dd>
+        </dl>
+        <cite class="icofont sharemenu" data-action-tap="actionsheet://show#share"><!-- share --></cite>
+    </div>
+
+
+    <ul class="category-items category-nav flexbox middle left wrap">
+        <li class="dragdrop icofont flexbox top left  on "  data-action-tap="category://callout">
+            <span class="ellipsis">全部</span>
+            <div>
+
+
+                <label class="ellipsis"  data-action-tap="app://invoke#2,go://url#/k/ataqcwb4.html?cat=sub&catId1=2505">花样少年名师课堂</label>
+
+
+                <label class="ellipsis"  data-action-tap="app://invoke#2,go://url#/k/ataqcwb4.html?cat=sub&catId1=2590">花样少年名师课堂</label>
+
+            </div>
+        </li>
+
+
+        <li class="flexbox top left" data-action-tap="go://url#/k/ataqcwb4.html?cat=sub&catId1=2505">
+            <span class="ellipsis">花样少年名师课堂</span>
+        </li>
+
+        <li class="flexbox top left" data-action-tap="go://url#/k/ataqcwb4.html?cat=sub&catId1=2590">
+            <span class="ellipsis">花样少年名师课堂</span>
+        </li>
+
+
+    </ul>
+
+
+
+    <div class="org-stat flexbox middle justify">
+        <div>
+            <span>共3个课程</span>
+        </div>
+        <div>
+            <a href="/k/ataqcwb4.html?_t1516588431415" 	class="on"  >最新</a>
+            <span>|</span>
+            <a href="/k/ataqcwb4.html?_t1516588431415&t=hot"  >最热</a>
+        </div>
+    </div>
+
+    <div class="dataset">
+        <script type="text/template" id="tpl_course">
+            <~for(var i = 0; i < ds.length; i++){~>
+            <~
+            var d = ds[i];
+            var courseTopFlag = Number(d.courseTopFlag);
+            var salseFlag = Number(d.salseFlag);
+            var courseLimitNum = Number(d.courseLimitNum);
+            var courseSalesNum = Number(d.courseSalesNum || 0);
+            var css="";
+            var url="/web/course/" + d.courseCode + ".html";
+            var t = "time".toLowerCase();
+            var mc = "ataqcwb4";
+            var status = d.lessonOnlineStatus + "";
+            var statusStyle = "green";
+
+            if(i == 0 && courseTopFlag > 0 && t != "top"){
+            url = "/k/" + mc + ".html?t=top";
+            css = "tips-rec";
+            }
+            if(t == "top"){
+            css = "tips-rec";
+            }
+
+            var coursePictureS = d.coursePictureS+"";
+
+            switch(status){
+            case "1":
+            statusStyle = "green";
+            break;
+            case "2":
+            statusStyle = "black";
+            break;
+            case "3":
+            statusStyle = "orange";
+            break;
+            case "4":
+            statusStyle = "gray";
+            break;
+            }
+            ~>
+            <dl class="dataset-item flexbox top left normal" data-action-tap="go://url#<~=url~>">
+                <dt></dt>
+                <dd>
+                    <h3 class="title flexbox top <~=css~>">
+                        <~if(coursePictureS.length > 7){ ~>
+                        <div class="course-cover" style="background-image: url(<~=coursePictureS~>);"></div>
+                        <~}~>
+
+                        <span class="course-title"><~=d.courseTitle~></span>
+                    </h3>
+                    <div class="datetime clearfix">
+                        <time class="icofont"><~=d.lessonStartTime~> 至 <~=d.lessonEndTime~></time>
+                        <cite><~=d.lessonNum~>次课</cite>
+                        <strong><~=d.coursePrice~></strong>
+                    </div>
+                    <div class="sales flexbox bottom justify">
+                        <div>
+                            <span class="course-status <~=statusStyle~>"><~=d.lessonOnlineStatusStr~></span>
+                        </div>
+                        <div>
+                            <ins>
+                                <p>
+                                    <~if(courseLimitNum>0){ ~>限售<~=courseLimitNum ~>人，<~}~>
+                                    <~
+                                    if(salseFlag==1){
+                                    ~>
+                                    <~=d.courseStartTimeStr~>开售
+                                    <~
+                                    }else{
+                                    ~>
+                                    <~if(courseSalesNum >= courseLimitNum && courseLimitNum >0){~>
+                                    已售罄
+                                    <~}else{~>
+                                    <~=courseSalesNum~>人已购
+                                    <~}~>
+                                    <~
+                                    }
+                                    ~>
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <~}~>
+        </script>
+        <div class="dataset-items" id="render_course">
+
+            <dl class="dataset-item flexbox top left normal" data-action-tap="go://url#/k/ataqcwb4.html?_t1516588431415&t=top">
+                <dt></dt>
+                <dd>
+                    <h3 class="title flexbox top tips-rec">
+
+                        <div class="course-cover" style="background-image: url(http://file1.91qingke.com/624969_922f866025992622b8af078b3c161d32.png?x-oss-process=image/resize,m_pad,w_220,h_120);"></div>
+
+                        <span class="course-title">海拉提讲发音（上：声母）-自信的沟通从标准的发音开始</span>
+                    </h3>
+                    <div class="datetime clearfix">
+                        <time class="icofont">01-15 20:00 至 20:30</time>
+                        <cite>1次课</cite>
+                        <strong>9.90</strong>
+                    </div>
+                    <div class="sales flexbox bottom justify">
+                        <div>
+                            <span class="course-status gray">直播结束 看回放</span>
+                        </div>
+                        <div>
+                            <ins>
+                                <p>
+                                    限售500人，
+                                    77已购
+
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl class="dataset-item flexbox top left normal" data-action-tap="go://url#/web/course/opbdvydb.html">
+                <dt></dt>
+                <dd>
+                    <h3 class="title flexbox top ">
+
+                        <div class="course-cover" style="background-image: url(http://file1.91qingke.com/624969_1dac83978f14ac387a51b60cbabdc566.jpg?x-oss-process=image/resize,m_pad,w_220,h_120);"></div>
+
+                        <span class="course-title">徐文燕奶奶语言课堂（上）——童谣如何准确演绎</span>
+                    </h3>
+                    <div class="datetime clearfix">
+                        <time class="icofont">02-03 18:00 至 19:00</time>
+                        <cite>1次课</cite>
+                        <strong>19.90</strong>
+                    </div>
+                    <div class="sales flexbox bottom justify">
+                        <div>
+                            <span class="course-status green">02-03 18:00 上课</span>
+                        </div>
+                        <div>
+                            <ins>
+                                <p>
+                                    限售500人，
+                                    107已购
+
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl class="dataset-item flexbox top left normal" data-action-tap="go://url#/web/course/ddct9rhk.html">
+                <dt></dt>
+                <dd>
+                    <h3 class="title flexbox top ">
+
+                        <span class="course-title">ceshi</span>
+                    </h3>
+                    <div class="datetime clearfix">
+                        <time class="icofont">01-15 12:00 至 13:00</time>
+                        <cite>1次课</cite>
+                        <strong>0.00</strong>
+                    </div>
+                    <div class="sales flexbox bottom justify">
+                        <div>
+                            <span class="course-status gray">直播结束 看回放</span>
+                        </div>
+                        <div>
+                            <ins>
+                                <p>
+                                    限售50000人，
+                                    20已购
+
+                                </p>
+                            </ins>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+
+
+        </div>
+        <div class="dataset-nodata  hide ">
+            <span class="icofont info">暂无其它课程了</span>
+        </div>
+        <div class="dataset-moredata  hide " data-action-tap="dataset://more#course" data-request-nowPage="2" data-request-qcode="ataqcwb4" data-request-t="time">
+            <span class="icofont">点击加载更多</span>
+        </div>
+    </div>
+    <div class="support flexbox middle center">
+        <div></div>
+    </div>
+</article>
+<footer class="app-footer">
+
+
+    <div class="app-footer-body flexbox middle justify">
+
+        <a class="icofont home  on " href="/k/ataqcwb4.html">
+            <span>首页</span>
+        </a>
+
+        <a class="icofont course " href="/my/course/index?qcode=ataqcwb4">
+            <span>我的课程</span>
+        </a>
+        <a class="icofont ucenter " href="/web/member/index?qcode=ataqcwb4">
+            <span>个人中心</span>
+        </a>
+    </div>
+
+</footer>
+<div class="mod-actionsheet mod-actionsheet-mask exit" data-actionsheet="share"></div>
+<div class="mod-actionsheet mod-actionsheet-panel exit shareto" data-actionsheet="share">
+    <figure>
+        <figcaption class="flexbox middle justify">
+            <span>好友分享</span>
+            <del class="icofont" data-action-tap="actionsheet://hide#share"><!-- close --></del>
+        </figcaption>
+        <ul class="flexbox top left wrap">
+            <li>
+                <div class="flexbox middle center vertical shareto-wechat" data-action-tap="toast://message#点击右上角的<i class='icofont share-menu'></i>分享">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-weixin1"></use>
+                    </svg>
+                    <span>微信好友</span>
+                </div>
+            </li>
+            <li>
+                <div class="flexbox middle center vertical shareto-timeline" data-action-tap="toast://message#点击右上角的<i class='icofont share-menu'></i>分享">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-pengyouquan"></use>
+                    </svg>
+                    <span>微信朋友圈</span>
+                </div>
+            </li>
+            <li>
+                <div class="flexbox middle center vertical shareto-weibo" data-action-tap="go://url#http://service.weibo.com/share/share.php?url=http%3A%2F%2Fm.qingkeyun.cn%2Fk%2Fataqcwb4.html&title=&pic=http%3A%2F%2Ffile1.91qingke.com%2F624969_0ddb80321698b85eb867ce627a361fd4.jpg%3Fx-oss-process%3Dimage%2Fresize%2Cw_220&appkey=">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-weibo"></use>
+                    </svg>
+                    <span>新浪微博</span>
+                </div>
+            </li>
+            <li>
+                <div class="flexbox middle center vertical shareto-qzone" data-action-tap="toast://message#点击右上角的<i class='icofont share-menu'></i>分享">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-QQkongjian"></use>
+                    </svg>
+                    <span>QQ空间</span>
+                </div>
+            </li>
+            <li>
+                <div class="flexbox middle center vertical shareto-qq" data-action-tap="toast://message#点击右上角的<i class='icofont share-menu'></i>分享">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-qq"></use>
+                    </svg>
+                    <span>QQ好友</span>
+                </div>
+            </li>
+            <li>
+                <div class="flexbox middle center vertical shareto-link" data-action-tap="toast://message#点击右上角的<i class='icofont share-menu'></i>分享">
+                    <svg class="icosymbol-qingke" aria-hidden="true">
+                        <use xlink:href="#qingke-web-fuzhi_"></use>
+                    </svg>
+                    <span>复制链接</span>
+                </div>
+            </li>
+        </ul>
+    </figure>
+</div>
+<script src="/static/v1.1/fonts/iconfont/qingke-web/r1.0.0/iconfont.js"></script>
+<script id="seed_script" data-debug="0" data-combo="1" src="/static/v1.1/res/js/lib/z.120.mix.49adc0b3ed571a9fa457b79b371c7fa3cb12da13.js"></script>
+
+<script>
+    (function(){
+        var AliasSet = $.__ROOT__.ALIAS_SET;
+
+        var platform = AliasSet.PLATFORM;
+        var app = AliasSet.APP;
+        var project = AliasSet.PROJECT;
+        var module = AliasSet.MODULE;
+        var feature = AliasSet.FEATURE;
+        var page = AliasSet.PAGE;
+
+        var debug = $.__ROOT__.DEBUG;
+        var __conf__ = window.__CONFIG || {};
+
+        var requires = [
+            "logic/m/main.f58c5f458fb26a263239691f5d9a06055fa646b3"
+        ];
+
+        var sea_callback = function(){
+            var args = arguments;
+            var size = args.length;
+
+            if(size === 0){
+                return ;
+            }
+
+            var main = args[0];
+
+            main.init($.extend({
+                "alias": {
+                    "platform": platform,
+                    "app": app,
+                    "project": project,
+                    "module": module,
+                    "feature": feature,
+                    "page": page
+                },
+                "debug": debug
+            }, __conf__));
+
+            if(size > 1){
+                var logic = null;
+
+                for(var i = 1; i < size; i++){
+                    logic = args[i];
+
+                    if(logic && ("connect" in logic)){
+                        logic.connect(main);
+                    }
+                }
+            }
+        };
+
+        var bridge = {
+            // "feature": {
+            //     "page": "..."
+            // }
+            my: {
+                info: "logic/m/my/info.f6be76cd9e81186a77d7fb29b1635f2ca8d32e35",
+                order: "logic/m/my/order.c0692d945b75b09511dac71105be2379d98cc63e",
+                favorite: "logic/m/my/favorite.2eb8b75a49f32ae57f6ae66c8c84e9ec23db9bdc",
+                attend: "logic/m/my/attend.28e640393d02a71d8675b2d60c905f5428322275",
+                passwd: "logic/m/my/passwd.742d1123965a96e8db5a3cebb611f157b2b908c5",
+                mapping: "logic/m/my/mapping.efbd90b5b978d265f902a6d8b92d3b37135f2e37",
+                coupon: "logic/m/my/coupon.04579d9e5982e55bacb0c8ad030f046d06c6bf82"
+            },
+            common: {
+                pay: "logic/m/pay.e0e7e4016286781177cb9a627e6e6c5333de9f29",
+                course: "logic/m/course.757c2691c70482337161c39642fc73f4ad5ab40a",
+                index: "logic/m/default/index.44f19bf0fb2e0afc894004333ba9ea40010f23f5",
+                main: "logic/m/default/main.a1431c4badde91d8de75c0d1359e8d8ac56239a7"
+            },
+            teacher: {
+                index: "logic/m/teacher/index.3c18dce8263b6f5d59f854a90043d0c44986b5d1",
+                course: "logic/m/teacher/course.d6c67658b5c5254f95b8065cfd5150ed41a6ef97",
+                comment: "logic/m/teacher/comment.934f35d7d2658722fa4b1eac703c7ce974b37288"
+            },
+            course: {
+                index: "logic/m/course/index.17bef0414c0e206e4ee21cdf9a97d9048a57a5fd",
+                detail: "logic/m/course/detail.baec719ea797175d1b72247b1c131aacdf7729dd",
+                view: "logic/m/course/view.3ddc0f886c665db3e22a7b43d20d1e93c6e9279d",
+                playback2: "logic/m/course/playback2.8aa686ad386317aa349c16261d37dd8800b31bc5"
+            },
+            sign: {
+                login: "logic/m/sign/login.2b3ebf956dc91c20eeed973b2fda1bbf38600da4",
+                reg: "logic/m/sign/reg.c9c6a3d74e65c16b0fc4d85b176752f62052f317",
+                lost: "logic/m/sign/lost.bee706b0e73d120fddf3fe9cf798c647710a0e9c",
+                qrcodelogin: "logic/m/sign/qrcodelogin.fbe570a5b6253a4054e9aa35c98d882fc72d2263"
+            },
+            help: {
+                index: "logic/m/help/index.967b31e2360543cbbf81b7d520199f568c35c259"
+            },
+            invoice: {
+                index: "logic/m/invoice/index.1aef44e8633cada1e03f486f56204e65d3a587a7",
+                list: "logic/m/invoice/list.6ac0f689c36c7ee40669c2af430b6511843b027c"
+            },
+            coupon: {
+                get: "logic/m/coupon/get.a97003078b9fb59c3b35007166584519bf3d4712"
+            },
+            vod: {
+                player: "logic/m/vod/player.06e63e4767b1a9f56a65f9b92798b2f1a7bbf21e"
+            }
+        };
+        window.location.href=''
+        var nslookup = function(findObj, keys){
+            var obj = null;
+            var key = keys.shift();
+
+            if(key){
+                if(key in findObj){
+                    obj = findObj[key] || null;
+
+                    if(obj){
+                        if(Object.prototype.toString.call(obj) === "[object String]"){
+                            return obj;
+                        }
+                        return nslookup(obj, keys);
+                    }
+                }else{
+                    return nslookup(findObj, keys);
+                }
+            }
+
+            return null;
+        };
+
+        var requireLogicFile = nslookup(bridge, [feature, page]);
+
+        if(requireLogicFile){
+            requires.push(requireLogicFile);
+        }
+
+        seajs.use(requires, sea_callback);
+    })();
+</script>
+
+</body>
+</html>

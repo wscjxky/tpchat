@@ -1,8 +1,0 @@
-{{ if c1Id != 0 }}
-<span class="category-item col-xs-2 {{ if c1Id==curC1 && curC2 == 0 }}active{{ /if }}" value={{ c1Id }}>全部</span>
-{{ /if }}
-{{ each c2 }}
-{{ if $value.ParentId == c1Id }}
-<span class="category-item col-xs-2 {{ if curC2==$value.Id }}active{{ /if }}" value="{{ $value.Id }}">{{ $value.Name }}</span>
-{{ /if }}
-{{ /each }}

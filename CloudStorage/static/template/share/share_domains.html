@@ -1,9 +1,0 @@
-<p>-该文件已共享给：
-    {{ each }}
-    <span class="label label-info">{{ $value.Domain.CompanyName }}
-        {{ if $value.DownloadPermission }}<span class="glyphicon glyphicon-download-alt" title="拥有可下载权限"></span>{{ /if }}
-        {{ if $value.WritePermission }}<span class="glyphicon glyphicon-pencil" title="拥有可写权限"></span>{{ /if }}
-        <span class="glyphicon glyphicon-remove-sign removeShareDomain"
-              value="{{ $value.Domain.Id }}" title="取消共享" style="margin-left: 10px; cursor: pointer"></span></span>
-    {{ /each }}
-</p>

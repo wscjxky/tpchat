@@ -1,0 +1,182 @@
+<html>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.css">
+
+
+
+<script >
+</script>
+<!-- Content Header (Page header) -->
+<body>
+<!-- Main content -->
+<div class="row">
+
+    <div class="col-md-1" style="margin-left: 30px">
+        <h3>用户列表</h3>
+        <h5>(共{$count}条记录)</h5>
+    </div>
+
+
+
+
+        <!--<div class="row" style="margin-top: 50px;padding:2px ;"  >-->
+
+            <!--<div class="col-md-8">-->
+                <!--<input type="text" size="30" name="keywords" class="qsbox" placeholder="搜索用户名...">-->
+                <!--<button type="button" href="" class="btn btn-info" >搜索</button>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash;<div class="col-md-2">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="sendTemple?i=all"><button type="button" href="user" class="btn btn-success">群发微信模版</button></a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="sendLog?i=all"><button type="button" href="user" class="btn btn-info">群发网站消息</button></a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--</div>-->
+
+
+<table class="table table-hover table-condensed table-striped table-bordered" style="margin-top: 70px ;margin-left: 30px">
+    <thead>
+
+    <tr>
+        <th>序号</th>
+
+        <th>微信名</th>
+        <th>用户手机号</th>
+        <th>用户地址</th>
+        <!--<th>用户性别</th>-->
+        <th>用户头像</th>
+        <th>关注时间</th>
+        <th>用户积分</th>
+        <th>总提现</th>
+
+        <th>用户级别</th>
+        <th>顾问级别</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name='data' id='v'>
+        <tr id="{$v.openid}">
+            <td >{$v.user_id}</td>
+            <td >{$v.chatname}</td>
+            <td >{$v.phone}</td>
+            <td >{$v.province} {$v.city}</td>
+
+            <!--<if condition="$v.gender eq 0">-->
+                <!--<td>{$v.gender}</td>-->
+            <!--<else/>-->
+            <!--</if>-->
+            <td ><img src="{$v.profile}" height="60" width="60"/></td>
+            <td >{$v.createtime}</td>
+            <td >{$v.bonus_total}</td>
+            <td >{$v.cash_total}</td>
+            <td >{$v.user_level}</td>
+            <td >{$v.agent}</td>
+            <td ><div class="btn-group" role="group">
+                <!--<a href="sendTemple?i={$v.openid}"><button type="button" href="user" class="btn btn-success">平台模版</button></a>-->
+                <!--<a href="sendLog?i={$v.openid}"><button type="button" href="user" class="btn btn-info">网站消息</button></a>-->
+                <a ><button onclick="javascript:cash(this)"data-id="{$v.openid} "type="button"  class="btn btn-danger">提现{$v.cash_submit}</button></a>
+                <if condition="$v.agent eq '非顾问'">
+                    <a ><button onclick="javascript:agent(this)"data-id="{$v.openid}" data-act="confirm" type="button"  class="btn btn-success">设为顾问</button></a>
+                    <else />
+                    <a ><button onclick="javascript:agent(this)"data-id="{$v.openid}" data-act="cancel" type="button"  class="btn btn-danger">取消顾问</button></a>
+
+                </if>
+
+            </div>
+            </td>
+
+        </tr>
+    </volist>
+    </tbody>
+</table>
+
+
+<!--?添加菜单-->
+
+
+<!--订单-->
+</div>
+</body>
+<script>
+    function cash(obj) {
+        console.log($(obj).attr('data-id'));
+        $.confirm({
+            title: '确认已经提现?',
+            content: "确认",
+            type: 'green',
+            buttons: {
+                ok: {
+                    text: "确认",
+                    btnClass: 'btn-primary',
+                    keys: ['enter'],
+                    action: function () {
+                        $.ajax({
+                            type: 'post',
+                            url: "__CONTROLLER__/handlecash",
+                            data: {
+                                id:$(obj).attr('data-id')
+                            },
+                            dataType: 'text',
+                            success: function (data) {
+                                console.log(data);
+                                if (data) {
+                                    history.go(0)
+                                }
+                            }
+                        });
+                    }
+                },
+                cancel: {
+                    text: "取消",
+                    btnClass: 'btn-danger',
+                    keys: ['enter'],
+                    action: function () {
+                    }
+                }
+            }
+            });
+    }
+
+    function agent(obj) {
+        console.log($(obj).attr('data-id'));
+        $.confirm({
+            title: '确认设为代理?',
+            content: "确认",
+            type: 'green',
+            buttons: {
+                ok: {
+                    text: "确认",
+                    btnClass: 'btn-primary',
+                    keys: ['enter'],
+                    action: function () {
+                        $.ajax({
+                            type: 'post',
+                            url: "__CONTROLLER__/handleagent",
+                            data: {
+                                id:$(obj).attr('data-id'),
+                                act:$(obj).attr('data-act')
+                            },
+                            dataType: 'text',
+                            success: function (data) {
+                                console.log(data);
+                                if (data) {
+                                    history.go(0)
+                                }
+                            }
+                        });
+                    }
+                },
+                cancel: {
+                    text: "取消",
+                    btnClass: 'btn-danger',
+                    keys: ['enter'],
+                    action: function () {
+                    }
+                }
+            }
+        });
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,203 @@
+[ 2017-09-29T08:00:29+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0043s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`video`  
+WHERE  submit_status='审核通过'' at line 2
+ [ SQL语句 ] : SELECT*
+              `video`  
+WHERE  submit_status='审核通过'
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`video`  
+WHERE  submit_status='审核通过'' at line 2
+ [ SQL语句 ] : SELECT*
+              `video`  
+WHERE  submit_status='审核通过'
+
+[ 2017-09-29T08:00:52+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0019s ]
+ERR: 1054:Unknown column 'submit_status' in 'where clause'
+ [ SQL语句 ] : SELECT*
+              from `video`  
+WHERE  submit_status='审核通过'
+ERR: 1054:Unknown column 'submit_status' in 'where clause'
+ [ SQL语句 ] : SELECT*
+              from `video`  
+WHERE  submit_status='审核通过'
+
+[ 2017-09-29T08:01:04+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0025s ]
+ERR: 1054:Unknown column 'submit_state' in 'where clause'
+ [ SQL语句 ] : SELECT*
+              from `video`  
+WHERE  submit_state='审核通过'
+ERR: 1054:Unknown column 'submit_state' in 'where clause'
+ [ SQL语句 ] : SELECT*
+              from `video`  
+WHERE  submit_state='审核通过'
+
+[ 2017-09-29T08:01:51+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0119s ]
+SQL: SELECT*
+              from `video`  
+WHERE  check_status='审核通过' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000958s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001045s ]
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2017-09-29T08:03:19+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0023s ]
+SQL: SELECT*
+              from `video`  
+WHERE  check_status='审核通过' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-09-29T08:03:24+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0067s ]
+SQL: SELECT*
+              from `video`  
+WHERE  check_status='审核通过' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-09-29T08:03:41+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0021s ]
+SQL: SELECT*
+              from `video`  
+WHERE  check_status='审核通过' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-09-29T08:04:01+08:00 ] 127.0.0.1 /tpchat/index.php/chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0058s ]
+SQL: SELECT*
+              from `video`  
+WHERE  check_status='审核通过' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+NOTIC: [8] Undefined index: image D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 33 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 36 行.
+NOTIC: [8] Undefined index: content D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Chat\d8284913d94a3ddb4d5d2388b1d03584.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
