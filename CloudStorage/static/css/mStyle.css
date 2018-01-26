@@ -1,0 +1,203 @@
+body{
+    background-color: #eee;
+    font-size: 26px;
+}
+
+p{
+    font-size: 26px;
+}
+
+h1{
+    font-size: 34px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+.toolbar{
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+.toolbar .item{
+    border: solid 1px #ccc;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+}
+.toolbar h1{
+    font-size: 40px
+}
+.toolbar .itemContainer{
+    padding: 0;
+}
+.toolbar a{
+    color: #000
+}
+
+#lmsg_panel{
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #003bb3;
+    color: #fff
+}
+#leave_msg{
+    margin: 5px;
+    top: -15px;
+    cursor: pointer
+}
+
+#lmsg_arrow{
+    float:right;
+    top: 3px;
+    margin-right: 10px
+}
+
+.breadcrumb{
+    background-color: #69360e;
+    margin: 0px;
+}
+.breadcrumb .levelItem{
+    font-size: 40px;
+}
+.breadcrumb a{
+    color: #fff;
+}
+
+.object_image {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(/static/image/folder.png);
+    margin-top: 10px;
+}
+.object_text {
+    width: 100%;
+    margin-top: 20px;
+}
+.object_text > p{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 50px
+}
+.linkCursor{
+	text-align:center;
+    cursor: pointer
+}
+
+.del-operator{
+    background-color: #550000;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px
+}
+.share-operator{
+    background-color: #6f5499;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px
+}
+.share-to-operator{
+    text-align: center;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+}
+.share-to-operator .bdsharebuttonbox{
+    padding-top: 20px;
+}
+.share-to-operator .share-to-btns{
+    padding-top: 10px;
+}
+
+
+
+.requirement-block{
+    transition: all 0.5s;
+    box-shadow: 0 0 10px #aaa;
+    border: solid 1px #ddd;
+}
+.requirement-block:hover {
+    box-shadow: 0 0 10px #aaa;
+    transition: all 0.5s;
+}
+
+
+.banner{
+    background-image: url(/static/image/banner2.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color:#eee;
+}
+
+.video-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.group-banner{
+    padding: 5px;
+}
+
+.player-comment{
+    padding-top: 18px;
+}
+.player-comment img{
+    width:53px;
+    height:53px;
+    border:solid 2px #fff;
+}
+.player-comment .col-comment{
+    margin:10px 0;
+    padding:5px 0 0;
+    text-align: left;
+}
+.player-comment .col-comment pre{
+    border: none;
+    background: none;
+    padding: 10px 0;
+    font-size:15px;
+}
+
+.wxpromotebox {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover{
+  color: #999;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #f68e14;
+}

@@ -1,0 +1,149 @@
+<div class="row" style="margin-bottom:10px">
+    <h3><black>审核阶段</black></h3>
+</div>
+<div class="row attachmentArea">
+    <div class="check_attachmentSelector_"></div>
+    <div class="check_attachmentOther_ " style="margin-left:-30px; ">
+        {{ if ContractAttachment!=''}}
+        <div class="col-xs-2 check_attachmentContainer_" style="padding:0;max-height:420px;overflow-y:auto" dir="rtl">
+            {{ each ContractAttachment }}
+            {{ if ServiceUserId == $value.ProviderUserId }}
+            <div value="{{ segment }}" style="display:inline-block;width:100px;">
+                {{if $value.Object.Type == 0}}
+                <div class="cloud_object_image check_attachment_object" value="{{$value.Id}}" style="background-image:url('{{$value.Object.File.Path}}')">
+                {{else if $value.Object.Type == 1}}
+                <div class="cloud_object_image check_attachment_object" value="{{$value.Id}}" style="background-image:url('{{$value.Object.File.Path}}')">
+                {{else}}
+                <div class="cloud_object_image check_attachment_object" value="{{$value.Id}}" style="background-image:url('image/text.png')">
+                {{/if}}
+                </div>
+                <div class="cloud_object_text text-center" value="{{ segment }}">
+                    <p class="label label-primary " title="{{$value.Object.Name}}">
+                        {{$value.Object.Name}}
+                    </p>
+                    {{ if !IsService}}
+                        {{ if $value.Status == 0}}
+                            <small>待审核</small>
+                        {{ /if }}
+                        {{ if $value.Status == 1}}
+                            <small><green>已通过</green></small>
+                        {{ /if }}
+                        {{ if $value.Status == 2}}
+                            <small><red>已驳回</red></small>
+                        {{ /if }}
+                    {{ else }}
+                        {{ if $value.Status == 0 }}
+                            <small>待审核</small>
+                        {{ /if }}
+                        {{ if $value.Status == 1}}
+                                <small><green>已通过</green></small>
+                        {{ /if }}
+                        {{ if $value.Status == 2}}
+                            <small><red>被驳回</red></small>
+                        {{ /if }}
+                    {{ /if }}
+                    {{ if bDownload }}
+                    <small class="check_downloadAttachment attObj{{$value.Id}}" value="{{$value.Id}}" title="下载">
+                        下载
+                    </small>
+                    {{ /if }}&nbsp;
+                    {{if IsService && activeSeg <6 && !bApplying}}
+                    <small class="check_deleteAttachment attObj{{$value.Id}}" value="{{$value.Id}}" title="删除">
+                         删除
+                    </small>
+                    {{/if}}
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+        {{ /if }}
+        <div {{ if ContractAttachment!=''}}class="col-xs-10"style="padding:10px 0 0 15px"{{else}}class="col-xs-12"style="padding:10px 30px"{{ /if }}>
+            <div class="check_attachmentViewer_" style="padding:0"></div>
+            <div class="defaultViewer">
+                <div class="container-fluid" style="height:300px;padding:10px 50px 10px 50px;border:solid 1px #098ddf">
+                    <div style="text-align: center">
+                        <h3 style="color: #098ddf"><strong>审片窗口</strong></h3>
+                    </div>
+                    {{ if IsService }}
+                    <h3><strong>如何让用户审片？</strong></h3>
+                    {{ else }}
+                    <h3><strong>我该如何开始审片？</strong></h3>
+                    {{ /if }}
+                    {{ if IsService }}
+                    <p>点击『添加』提交素材，等待用户进行审核。</p>
+                    {{if activeSeg <6 && !bApplying}}
+                    <button class="check_addAttachment btn btn-primary" value="{{ segment }}" style="margin:10px 0">添加</button>
+                    {{ /if }}
+                    {{ else if ContractAttachment==''}}
+                    <p>在<a href="/zone/{{ ServiceUserDomainId }}" target="_blank">{{ ServiceUserName }}</a>提交素材后，您可以审核。</p>
+                    {{ else }}
+                    <p>请选择待审核的素材，可以通过添加标记点标出问题；如果没问题，请在最下方点击审核通过</p>
+                    {{ /if }}
+                </div>
+            </div>
+            <div class="check_markPointList" style="border:solid 1px #ccc;padding:0" hidden>
+                {{ if !IsService }}
+                <h4 style="line-height:50px;margin: 0;background-color: #000; text-align: right">
+                    <button class="btn btn-success yes">通过</button>
+                    <button class="btn btn-warning no" style="margin-right: 20px">驳回</button>
+                </h4>
+                {{ /if }}
+                <h4 style="line-height:50px;margin: 0">
+                    <span class="glyphicon glyphicon-pushpin"></span> 标记点列表
+                </h4>
+                {{ if !IsService }}
+                <div class="input-group addMarkPoint_group">
+                    <label for="markPoint_input" class="input-group-addon {{ 'markPoint_time_' }}" style="color: #ee0000">当前时间</label>
+                    <input name="contract_type" class="{{ 'markPoint_input_'}} form-control" placeholder="请添加标记点描述">
+                    <span class="input-group-btn">
+                        <button class="addMarkPoint btn btn-default" title="添加标记点" value="{{ segment }}">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                {{ /if }}
+                <table class="table  table-hover  {{ 'check_markPointTable_' }}">
+                    <thead>
+                        <tr>
+                            <th class="col-xs-3" style="cursor: pointer">时间点</th>
+                            <th class="col-xs-7">标记内容</th>
+                            <th class="col-xs-2">删除</th>
+                        </tr>
+                    </thead>
+                    <tbody class="{{ 'markPoints_' }} text-left">
+                    {{include 'template/contract/cSeg_attachment_markPoints.html'}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-md-12">
+        <h3 style="color:#92410c;text-align:center;">审核确认</h3>
+        <hr>
+        {{ if IsService}}
+        {{ if activeSeg.Status == 0 }}
+        <div class="col-sm-11">
+            <textarea type="text" class="confirmTextArea form-control col-sm-9" placeholder="申请客户审核确认，以继续开展后续流程" style="height: 100px"></textarea>
+        </div>
+        <div class="col-sm-1">
+            <button class="btn btn-success apply_cSeg_btn" value="{{ segment }}">申请</button>
+        </div>
+        {{ else }}
+        等待用户确认
+        {{ /if }}
+        {{ else }}
+        {{if activeSeg.Status == 1}}
+        <div class="col-sm-11">
+            <textarea type="text" class="confirmTextArea form-control col-sm-9" placeholder="拍摄素材是否满足需求，改进建议" style="height: 100px"></textarea>
+        </div>
+        <div class="col-sm-1">
+            <button class="btn btn-success confirm_cSeg_btn" value="{{ segment }}" style="margin-bottom: 10px">确认</button>
+            <button class="btn btn-warning reject_cSeg_btn" value="{{ segment }}">驳回</button>
+        </div>
+        {{ else }}
+        等待制作商申请
+        {{ /if }}
+        {{ /if }}
+    </div>-->
+</div>

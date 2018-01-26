@@ -1,0 +1,64 @@
+{% extends "mobile/frame.html" %}
+{% block head %}
+    <header style="color:#fff;background: #69360e;">
+        <div style="width: 100%;display:table;">
+            <div style="display: inline-block;margin: 14px 0px 8px 30px;">
+                <span style="font-size: 40px;">制作管理</span>
+            </div>
+            <div style="float: right;margin: 18px 28px 0px 0px;">
+                <a href="/mobile/project/mine" style="font-size: 34px;color: #fff;text-decoration: underline;">查看已有项目状态</a>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+{% block body %}
+    <div id="requirement_content"  class="container-fluid" style="margin: 20px;background-color: #eee">
+        <div class="container-fluid">
+              <input id="request_id" value="{{ req.Id }}" hidden>
+            <div style="background-color: #FFFFFF;margin: 30px 15px 30px 15px;padding: 10px 10px 20px 10px;">
+                <span style="font-size: 34px">视频名称</span>
+                <input id="requirement_title" style="font-size: 28px;width: 100%;border-width: 1px;border-color: #ddd;border-radius: 0;border-style: dashed;padding: 9px 9px 9px 9px;" placeholder="宣传片、动画或微电影的名称" value="{{ req.Title }}" >
+            </div>
+            <div style="background-color: #FFFFFF;margin: 30px 15px 30px 15px;padding: 10px 10px 15px 10px;">
+                <p style="font-size: 34px">简要描述&nbsp;<a id="refer_video" target="_blank" style="font-size:24px;color:#f68e14"></a></p>
+                <textarea  value='{{ req.Detail }}' id="requirement_detail" style="font-size: 28px;line-height: 32px;width: 100%;border-width: 1px;border-color: #ddd;border-radius: 0;border-style: dashed;padding: 9px 9px 9px 9px;min-height: 320px" placeholder="想宣传什么，有什么要求">{{ req.Detail }}</textarea>
+            </div>
+            <div style="background-color: #FFFFFF;margin: 30px 15px 30px 15px;padding: 10px 10px 20px 10px;">
+                <p style="font-size: 34px">制作预算</p>
+                <input value='{{ req.Amount }}' id="requirement_amount" name="amount" style="font-size: 28px;width: 100%;border-width: 1px;border-color: #ddd;border-radius: 0;border-style: dashed;padding: 9px 9px 9px 9px;" placeholder="想花多少钱，可不填">
+            </div>
+            <div style="background-color: #FFFFFF;margin: 30px 15px 30px 15px;padding: 10px 10px 20px 10px;">
+                <p style="font-size: 34px">完成日期</p>
+                <input value='{{ req.Deadline }}' class="deadline"  style="font-size: 28px;width: 100%;height: auto;border-width: 1px;border-color: #ddd;border-radius: 0;border-style: dashed;" placeholder="大概什么时候要"/>
+            </div>
+            <div class="text-center" style="margin-top: 50px">
+                <button id="requirement_add_commit_del" style="font-size: 32px;padding: 10px 50px 10px 50px;margin-right: -12px">保存</button>
+                <button id="requirement_add_publish_del" style="font-size: 32px;padding: 10px 50px 10px 50px;background-color: #f68e14;color: #FFFFFF">提交</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="//cdn.bootcss.com/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="/static/mobile/submit.js"></script>
+    <script>
+    <!--采用submit的套路，应为submit都是要提交的，所以就删掉原来的-->
+
+
+        $(".deadline").datepicker();
+        var sh = [];
+        var refer_obj = '';
+        var refer_name = '';
+
+        if($.cookie('refer_obj')){
+            refer_obj = $.cookie('refer_obj');
+            refer_name = $.cookie('refer_name');
+
+            $('#refer_video').text('参考视频: '+refer_name);
+            $('#refer_video').attr('href','/mobile/share/'+refer_obj);
+
+            $.cookie('refer_name', '', {expires: -1, path: '/'});
+            $.cookie('refer_obj', '', {expires: -1, path: '/'});
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{{if data.IsEditButtonShow}}
+{{if data.follower.length > 0}}
+<div class="row">
+    <div class="container col-xs-8" id="producer_replayBoard"style="border-right:solid 1px #eee;"></div>
+    <div class="container col-xs-4">
+        <div>
+            <a class="list-group-item disabled"><span style="font-weight: bold">关注该需求的制作商</span></a>
+            {{ each data.follower }}
+            <a class="list-group-item producer_info {{ if $value.Follower.Id == activeUser }}active{{ /if }}" value="{{$value.Follower.Id}}">
+                <img src="image/contacts.png" class="img-circle" style="height:30px;">
+                <span style="font-weight: bold">姓名：{{$value.Follower.NickName}}</span>
+                <p style="margin-left: 35px">公司: {{ $value.Follower.Domain.CompanyName }}</p>
+            </a>
+            {{ /each }}
+        </div>
+    </div>
+</div>
+{{else}}
+    <div class="container-fluid" id="producer_replayBoard">
+        暂无留言
+    </div>
+{{/if}}
+{{else}}
+    <div class="container-fluid" id="producer_replayBoard"></div>
+{{/if}}

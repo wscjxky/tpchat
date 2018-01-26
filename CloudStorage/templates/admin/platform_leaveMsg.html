@@ -1,0 +1,47 @@
+{% extends "admin/platform_manage.html" %}
+{% block platformBody %}
+<table class="table">
+    <thead>
+        <tr>
+            <th class="col-xs-2">用户名</th>
+            <th class="col-xs-2">电话</th>
+            <th class="col-xs-2">邮箱</th>
+            <th class="col-xs-4">留言</th>
+            <th class="col-xs-2">状态</th>
+        </tr>
+    </thead>
+    {% for i in param %}
+        <tr>
+            <td>{{ i.Name }}</td>
+            <td>{{ i.Phone }}</td>
+            <td>{{ i.Email }}</td>
+            <td>{{ i.Msg }}</td>
+            {% if i.Deal %}
+            <td><green>已处理</green></td>
+            {% else %}
+            <td><button class="btn btn-green deal" value="{{ i.Id }}">处理完成</button></td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+</table>
+<script type="text/javascript">
+    $('.deal').click(function(e){
+        var id = $(e.currentTarget).attr('value');
+        $.ajax({
+            type: "POST",
+            url: "/admin/platform/leaveMsg",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({
+                Id: id
+            }),
+            error: function(){
+                alert("error");
+            },
+            success: function(){
+                window.location.reload();
+            }
+        });
+    })
+</script>
+{% endblock %}

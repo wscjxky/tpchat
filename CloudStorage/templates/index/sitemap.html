@@ -1,0 +1,108 @@
+{% extends "index/index.html" %}
+{% block body%}
+    <div class="col-index sitemap">
+        <h2><green>网站地图</green></h2>
+        <hr>
+        <div class="row">
+            <div class="col-xs-4" style="border-right:solid 1px #eee">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-user"></span></h1>
+                    <h3> &nbsp;&nbsp; 账户信息 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class=" text-center" style="font-size:15px;">
+                        <li><a href="/register">注册商影联盟账号</a></li>
+                        <li><a href="/login#/loginPage">登录商影联盟账号</a></li>
+                        <li><a href="/findpwd">找回商影联盟密码</a></li>
+                        <li><a href="/session#/ModifyPasswordPage">修改商影联盟密码</a></li>
+                        <li><a href="/session#DomainUserLogin_panel">登录家庭组账号</a></li>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-globe"></span></h1>
+                    <h3>交易平台 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div style="margin:0 auto;width:155px;font-size:15px;">
+                        <li><a href="/session#/requirementPage">提出需求</a></li>
+                        <li><a href="/channel">向频道页提需求</a></li>
+                        <li><a href="/company">向制作商主页提需求</a></li>
+                        <li><a href="/session#/contractPage">查看合同</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4" style="border-left:solid 1px #eee">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-paperclip"></span></h1>
+                    <h3> 媒体库 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div style="margin:0 auto;width:160px;font-size:15px;">
+                        <ul style="margin-left:0px">
+                            <li>
+                                <a href="/session#/storagePage">我的媒体库</a>
+                                <ul>
+                                    <li>我的媒体库</li>
+                                    <li>他人共享</li>
+                                    <li>我的共享</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="/session#/UpdataPage">扩充云空间</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-4" style="border-right:solid 1px #eee">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-th"></span></h1>
+                    <h3> 管理中心 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div style="margin:0 auto;width:155px;font-size:15px;">
+                        <li><a href="/session#/UpdataPage">家庭组管理</a></li>
+                        <li><a href="/session#/UpdataPage">空间管理</a></li>
+                        <li><a href="/session#/UpdataPage">平台余额 & 会员年费</a></li>
+                        <li><a href="/session#/UpdataPage">个人主页 / 公司主页</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-film"></span></h1>
+                    <h3> 频道 & 精选 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div style="margin:0 auto;width:155px;font-size:15px;">
+                        <li><a href="/classical"> 精品推荐</a></li>
+                        <li><a href="/channel"> 频道精选</a></li>
+                        <li><a href="/company"> 中国视频制作联盟</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4" style="border-left:solid 1px #eee">
+                <div class="container-fluid text-center">
+                    <h1><span class="glyphicon glyphicon-qrcode"></span></h1>
+                    <h3> 关于我们 &rsaquo;</h3>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div style="margin:0 auto;width:80px;font-size:15px;">
+                        <li><a href="/aboutus"> 关于我们</a></li>
+                        <li><a href="/"> 联系我们</a></li>
+                        <li><a href="/search?search="> 搜索</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,108 @@
+<div class="container" style="background:#fcfcfc;padding:20px 30px;">
+    <div class="container-fluid" id={{"requireDetail_" + Id}}>
+        <div class="{{ if IsFollower }}col-xs-6{{ else }}col-xs-8{{ /if }}" style="border-right:solid 1px #eee; min-height: 400px">
+             <div class="row">
+                <h3 id="requirement-title" class="req-title"
+                    title="{{ Title }}"
+                    style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+                   <black>{{Title}}</black>
+                </h3>
+                <hr>
+                <p style="margin-bottom:10px">
+                {{ if CurSegment.Identity == 'draft' }}
+                    [草稿]
+                {{ else if CurSegment.Identity == 'publish' }}
+                    [{{CreateTime | ParseDate}} 提交]
+                {{ /if }}
+                </p>
+                <p>
+                    提交方：<a href="/zone/{{ Publisher.Domain.Id }}" target="_blank">{{ Publisher.Domain.CompanyName }}</a>
+                    &nbsp&nbsp 联系电话：{{ Publisher.CellPhone }}
+                </p>
+            </div>
+            <div class="row">
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>具体描述</black></div>
+                    <div class="col-md-10 requirements-detail_r" style="min-height: 60px;">{{#Detail | htmlEncode}}</div>
+                </div>
+                <!--<div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>视频类型</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{#Type}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>预计时长</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Long}}分钟</div>
+                </div>-->
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>价格预算</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Amount}}元</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>交付时间</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Deadline | ParseDate}}</div>
+                </div>
+                {{ if Refer!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>参考作品</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <a href={{Refer}} target="_blank">{{referName}}</a>
+                    </div>
+                </div>
+                {{ /if }}
+                {{ if RequirementAttachment.length != 0 }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail">附件</div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <div class="container-fluid req_attachment_viewer" style="display:none"></div>
+                        <div class="req_attachment_content row">
+                            {{each RequirementAttachment}}
+                            <div class="text-center col-xs-3">
+                                {{if $value.Object.Type == 0 || $value.Object.Type == 1}}
+                                <div class="cloud_object_image attachment_object" value="{{ $value.Id }}" style="background-image:url('{{$value.Object.File.Path}}')">
+                                {{else}}
+                                <div class="cloud_object_image attachment_object" value="{{ $value.Id }}" style="background-image:url('image/text.png')">
+                                {{/if}}
+                                </div>
+                                <div class="cloud_object_text ">
+                                    <p class="label label-primary" title="{{$value.Object.Name}}">
+                                        {{$value.Object.Name}}
+                                    </p>
+                                    <small class="download_attachment_object attachment_operate" title="下载" value="{{$value.Id}}"> 下载 </small>&nbsp;
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                {{ /if }}
+                <hr>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail">讨论区</div>
+                    <div class="col-md-10 requirements-detail_r" id="suggestion"></div>
+                </div>
+            </div>
+        </div>
+        <!-- if CurSegment.Identity != 'draft'-->
+        <div class="{{ if IsFollower }}col-xs-6{{ else }}col-xs-4{{ /if }}">
+            <div style="text-align: center">
+                {{ if ServiceUserId == null }}
+                <h3 class="req-title" style="color:#999">尚未申请该需求</h3>
+                {{ else if ServiceUserId != CurUserId }}
+                <h3 class="req-title" style="color:#999">已被他人申请</h3>
+                {{ else }}
+                <h3 class="req-title" style="color:#999">已申请</h3>
+                {{ /if }}
+                <hr>
+                {{ if ServiceUserId == null }}
+                <button class="btn btn-success" id="followerReqBtn">即刻申请</button>
+                {{ else if ServiceUserId == CurUserId }}
+                <button class="btn btn-success" id="addSchemeBtn">添加方案</button>
+                <button class="btn btn-warning" id="cancelFollowerReqBtn">取消申请</button>
+                {{ /if }}
+            </div>
+        </div>
+        <!--endif-->
+    </div>
+</div>
+
+</div>

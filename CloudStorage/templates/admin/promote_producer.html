@@ -1,0 +1,106 @@
+{% extends "admin/promote_manage.html" %}
+{% block promoteBody %}
+    <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>制作商榜单可见性设置
+            {% if params.producer_visable != 'show' %}
+                <button class="btn btn-success" id="domain-visible">设为可见</button>
+            {% else %}
+                <button class="btn btn-warning" id="domain-disvisible">取消可见</button>
+            {% endif %}
+            </h3>
+        </div>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <div class="col-md-6">
+                <h4>添加制作商到榜单 <button class="btn btn-default" id="add">添加</button></h4>
+                <hr>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="input_searchUser" placeholder="查找制作商">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="searchDomain">查找</button>
+                    </span>
+                </div>
+                <ul class="list-group" style="margin-top: 20px">
+                    {% for value in params.searchUsers %}
+                    <a class="list-group-item addItems" value="{{ value.Id }}">
+                        <strong>制作商：</strong>{{ value.CompanyName }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>制作商榜单 <button class="btn btn-default" id="del">删除</button></h4>
+                <hr>
+                <ul class="list-group">
+                    {% for value in params.producers %}
+                    <a class="list-group-item delItems" value="{{ value.Id }}">
+                        <strong>制作商：</strong>{{ value.CompanyName }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $('.list-group-item').click(function(e){
+            $('.list-group-item').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        });
+        $('#searchDomain').click(function(){
+            window.location.href = '/admin/promote/producer?search=' + $('#input_searchUser').val();
+        });
+        $('#add').click(function(){
+            var targetId = $('.addItems.active').attr('value');
+            update('add', targetId);
+        });
+        $('#del').click(function(){
+            var targetId = $('.delItems.active').attr('value');
+            update('del', targetId);
+        });
+        function update(operator, targetId){
+            if (!targetId)
+                return;
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/producer",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    operator: operator,
+                    targetId: targetId
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/producer';
+                }
+            });
+        }
+        $('#domain-visible').click(function(){
+            $.ajax({
+                type: "POST",
+                url: '/admin/setProducerVisible',
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({Value: 'show'}),
+                success: function () {
+                    window.location.reload();
+                }
+            });
+        });
+        $('#domain-disvisible').click(function(){
+            $.ajax({
+                type: "POST",
+                url: '/admin/setProducerVisible',
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({Value: 'hide'}),
+                success: function () {
+                    window.location.reload();
+                }
+            });
+        });
+    </script>
+{% endblock %}

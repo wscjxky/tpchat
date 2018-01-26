@@ -1,0 +1,52 @@
+<div class="screen">
+    <div align="center">
+        {{ if flag == 1}}
+        <video id="video_plugin" controls="controls" autoplay="autoplay" style="height:500px;">
+            您的浏览器不支持 video 标签。
+        </video>
+        {{ else }}
+        <img id="image_plugin" style="width: auto; height: 500px;">
+        {{ /if }}
+    </div>
+</div>
+<div class="container-fluid" style="border:solid 10px #f1f1f1;">
+    <div class="col-md-8" style="padding: 0">
+        <div class="container-fluid" style="border-bottom:solid 10px #f1f1f1;">
+            <div class="col-md-6" >
+                <h3 style="margin-top:10px;"><strong>{{ data.obj.Name}}</strong> <small> .{{ data.obj.File.Ext}}</small></h3>
+                <h4 style="color:#00CC33 ;"> -- {{ data.user.NickName}}
+                &nbsp;&nbsp;<button type="button" class="btn btn-default btn-sm" title="加关注"><span class="glyphicon glyphicon-plus"></span> 加关注 </button>
+                </h4>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+
+                <h5 style="margin-top:15px;">提交于 {{data.obj.File.CreateTime | ParseTime}} &nbsp;&nbsp;分享到：
+
+                &nbsp;&nbsp;| &nbsp;&nbsp;第 次查看</h5>
+                <div style="margin-top: 15px;">
+                    <button type="button" class="btn btn-default btn-sm" title="赞"><span class="glyphicon glyphicon-thumbs-up"></span> 0</button>
+                    <button type="button" class="btn btn-default btn-sm" title="收藏"><span class="glyphicon glyphicon-heart"></span> 0</button>
+                    <button type="button" class="btn btn-default btn-sm" title="下载"><span class="glyphicon glyphicon-cloud-download"></span> 0</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding-top:15px;">
+            <div class="col-md-1">
+                <img style="width:60px;height:60px;" src="../../image/head.jpg"/>
+            </div>
+            <div class="col-md-10">
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="col-md-1" style="padding-left: 0px;">
+                <button class="btn btn-success" style="margin-left:0;width:60px;height:69px;">评论</button>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <hr>
+            <h4 >所有评论</h4></div>
+    </div>
+    <div class="col-md-4" style="border-left:solid 10px #f1f1f1;height:100%;padding-top: 10px;">
+        <h4 >该作者也提交过</h4><hr>
+
+    </div>
+</div>

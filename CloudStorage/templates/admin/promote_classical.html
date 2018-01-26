@@ -1,0 +1,168 @@
+{% extends "admin/promote_manage.html" %}
+{% block promoteBody %}
+    <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>案例榜申请列表</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>家庭组名称</th>
+                    <th>公司名称</th>
+                    <th>申请案例</th>
+                    <th class="col-md-1">查看视频</th>
+                    <th class="col-md-2">审核</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for value in params.applying %}
+                <tr>
+                  <td>{{ value.Domain.DomainName }}</td>
+                  <td>{{ value.Domain.CompanyName }}</td>
+                  <td>{{ value.Object.Name }}</td>
+                  <td><button class="btn btn-default checkVideo" value="{{ value.Object.Id }}">查看</button></td>
+                  <td>
+                      <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default pass" value="{{ value.Id }}">通过</button>
+                          <button type="button" class="btn btn-default deny" value="{{ value.Id }}">拒绝</button>
+                      </div>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>手动设置榜单</h3>
+            <hr>
+            <div class="col-md-6" style="margin-top: 20px">
+                <h4>首页视频
+                    <button class="btn btn-default" id="add" disabled>添加到精品栏（暂时无效）</button>
+                    <button class="btn btn-default" id="del">撤下</button>
+                </h4>
+                <ul class="list-group">
+                    {% for value in params.applySuccess %}
+                    <a class="list-group-item addItems" value="{{ value.Id }}">
+                        <strong>视频名称：</strong>{{ value.Object.Name }}
+                        <span style="float: right"><strong>来自：</strong>{{ value.Domain.CompanyName }}</span>
+                        <br>
+                        <strong>视频类型：</strong>{{ value.category }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-top: 20px">
+                <h4>精品栏视频（暂时无效） <button class="btn btn-default" id="del" disabled>删除</button></h4>
+                <ul class="list-group">
+                    {% for value in params.classicalList %}
+                    <a class="list-group-item delItems" value="{{ value.ZoneItemId }}">
+                        <strong>视频名称：</strong>{{ value.ZoneItem.Object.Name }}
+                        <span style="float: right"><strong>来自：</strong>{{ value.ZoneItem.Domain.CompanyName }}</span>
+                        <br>
+                        <strong>视频类型：</strong>{{ value.ZoneItem.category }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <h3>各频道视频权重设置</h3>
+    </div>
+    {% for value in params.sortByCategory %}
+    <div class="panel panel-default col-md-6" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>{{ value }}</h3>
+            <hr>
+            <div class="col-md-12" style="margin-top: 20px">
+                <ul class="list-group">
+                    {% for item in params.sortByCategory[value] %}
+                    <a class="list-group-item addItems" value="{{ item.Id }}">
+                        <strong>视频名称：</strong>{{ item.Object.Name }}
+                        <br>
+                        <span><strong>来自：</strong>{{ item.Domain.CompanyName }}</span>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon1">权重</span>
+                            <input type="text" class="form-control classicalWeight" placeholder="" aria-describedby="sizing-addon1"
+                                    value="{{ item.ClassicalWeight }}"
+                                    onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"
+                                    onblur="this.value=this.value.replace(/(\.\d{1})\d*$/,'\$1')">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default modifyWeight" type="button" value="{{ item.Id }}">修改</button>
+                            </span>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    <script type="text/javascript">
+        $('.list-group-item').click(function(e){
+            $('.list-group-item').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        });
+        $('.checkVideo').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            window.open('/player/' + targetId);
+        });
+        $('#add').click(function(){
+            var targetId = $('.addItems.active').attr('value');
+            update('add', targetId);
+        });
+        $('#del').click(function(){
+            var targetId = $('.addItems.active').attr('value');
+            update('del', targetId);
+        });
+        $('.pass').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            update('pass', targetId);
+        });
+        $('.deny').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            update('deny', targetId);
+        });
+        function update(operator, targetId){
+            if (!targetId)
+                return;
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/classical",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    operator: operator,
+                    targetId: targetId
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/classical';
+                }
+            });
+        }
+        $('.modifyWeight').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            var weight = $(e.currentTarget).parent().parent().find(".classicalWeight").val();
+            weight = parseFloat(weight);
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/classical",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    operator: "modifyWeight",
+                    targetId: targetId,
+                    Weight: weight
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/classical';
+                }
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{{each roles}}
+<tr>
+    <td class="role_id" style="display: none">{{$index}}</td>
+    <td>{{$value.Name}}</td>
+    <td>
+        {{if $value.DomainAdmin}}
+        是
+        {{else}}
+        否
+        {{/if}}
+    </td>
+    {{if $value.DomainAdmin}}
+    <td><a class="linkCursor"><img src="image/delete_dis.png"/></a></td>
+    <td><a class="linkCursor"><img src="image/modify_dis.png"/></a></td>
+    {{else}}
+    <td class="domain_role_delete_Btn"><a title="删除" class="linkCursor"><img src="image/delete.png"/></a></td>
+    <td class="domain_role_modify_Btn"><a title="修改成员信息" class="linkCursor"><img src="image/modify.png"/></a></td>
+    {{/if}}
+</tr>
+{{/each}}

@@ -1,0 +1,64 @@
+{% extends "index/index.html" %}
+{% block body %}
+<div class="container-fluid" style="margin-bottom:30px">
+    <div class="container" >
+        <div class="container-fluid">
+            <h2 style="margin: 30px 0"><red>重置密码</red></h2>
+        </div>
+        <div class="container-fluid" style="border:solid 1px #aaa;background:#eee;border-radius: 5px">
+            <div class="col-md-7" style="border-right:solid 1px #aaa;padding:20px;">
+                <h4><strong>重置您的密码</strong></h4>
+                <hr>
+                <form action="ReSetPwd" method="post">
+                    <input name="email" value="{{ email }}" hidden>
+                    <div class="row">
+                        <div class="col-xs-3 col-md-4" >
+                            <h5>密码</h5>
+                        </div>
+                        <div class="col-xs-9 col-md-6">
+                            <input type="password" class="form-control" name="pwd" placeholder="密码" >
+                            <div class="col-xs-12">
+                                <red><h5><strong name="pwd-error"></strong></h5></red>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3 col-md-4">
+                            <h5>密码确认</h5>
+                        </div>
+                        <div class="col-xs-9 col-md-6">
+                            <input type="password" name="confirm-pwd" class="form-control" placeholder="确认密码">
+                            <div class="col-xs-12">
+                                <red><h5><strong name="confirm-pwd-error"></strong></h5></red>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                           {% for message in messages %}
+                              <h4 class="text-right"><strong><red>{{ message }}</red></strong></h4>
+                           {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <div class="row text-left" style="margin:30px 0">
+                        <button class="col-xs-12 col-sm-3 btn btn-green" type="submit" style="float: right">完成</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 text-center signup" style="margin:20px 0">
+                <h3>尊享服务</h3>
+                <h5>1. 专业团队制作；</h5>
+                <h5>2. 在线项目跟踪；</h5>
+                <h5>3. 随时审查质量；</h5>
+                <h5>4. 云端存储传播；</h5>
+
+                <h3>服务须知</h3>
+                <h5>如您有任何疑问</h5>
+                <h5>请致电：010-85388138/18611828618</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('.static', filename='login/findpwd.js') }}"></script>
+{% endblock %}

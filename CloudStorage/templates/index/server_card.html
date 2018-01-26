@@ -1,0 +1,19 @@
+{% for i in domain %}
+    <div class="col-company text-center">
+        <div class="row" style="padding:10px 15px 5px;background:#3a5795;color:#fff;">
+            <img src="{{ i.Portrait }}">
+            <p><a style="font-size:15px;color:#fff"><strong>{{ $value.CompanyName }}</strong></a></p>
+        </div>
+        <p>
+        <strong>
+            成交量 {{ i.Trade }}
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            收藏数 {{ i.Focus }}
+        </strong>
+        </p>
+        <div class="container-fluid company-btn">
+            <a class="btn btn-default" href="/zone/{{ i.Id }}" target="_blank">查看主页</a>
+            <a class="btn btn-danger deleteProducer" value="{{ i.Id }}">取消选择</a>
+        </div>
+    </div>
+{% endfor %}

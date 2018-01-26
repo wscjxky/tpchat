@@ -1,0 +1,65 @@
+{% extends "admin/platform_manage.html" %}
+{% block platformBody %}
+    <ul class="list-group container-fluid" style="margin-top: 20px">
+        <li class="list-group-item list-group-item-warning">订单信息</li>
+        <li class="list-group-item">
+            <dl class="dl-horizontal orderDetail">
+                <dt>订单序号</dt>
+                <dd>{{ params.Id }}</dd>
+                <dt>订单号</dt>
+                <dd>{{ params.SerialNumber }}</dd>
+                <dt>类型</dt>
+                <dd>{{ params.Subject }}</dd>
+                <dt>描述</dt>
+                <dd>{{ params.Description }}</dd>
+                <dt>价格</dt>
+                <dd>{{ params.Amount }}元</dd>
+                <dt>创建时间</dt>
+                <dd>{{ params.CreateTime }}</dd>
+                <dt>支付方</dt>
+                <dd>{{ params.PayUser.Domain.CompanyName }}</dd>
+                <dt>接收方</dt>
+                {% if params.ReceiverId > 0 %}
+                <dd>{{ params.Receiver.Domain.CompanyName }}</dd>
+                {% else %}
+                <dd>汇腾网络科技有限公司</dd>
+                {% endif %}
+                <dt>状态</dt>
+                {% if params.State == 0 %}
+                <dd><red>未支付</red></dd>
+                {% else %}
+                <dd><red>已支付</red></dd>
+                {% endif %}
+            </dl>
+        </li>
+    </ul>
+    <ul class="list-group container-fluid" style="margin-top: 20px">
+        <li class="list-group-item list-group-item-warning">订单日志</li>
+        <li class="list-group-item">
+            <table class="table table-striped objectTable">
+              <thead>
+                <tr>
+                    <th class="col-md-1">#</th>
+                    <th class="col-md-2">订单类型</th>
+                    <th class="col-md-2">订单行为</th>
+                    <th class="col-md-5">订单信息</th>
+                    <th class="col-md-2">记录时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in orderLog %}
+                <tr>
+                    <th scope="row">{{ v.Id }}</th>
+                    <td>{{ v.OrderType }}</td>
+                    <td>{{ v.Action }}</td>
+                    <td>{{ v.Log }}</td>
+                    <td>{{ v.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </li>
+    </ul>
+    <script type="text/javascript">
+    </script>
+{% endblock %}

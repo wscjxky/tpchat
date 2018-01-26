@@ -1,0 +1,73 @@
+{% extends "index/index.html" %}
+{% block body %}
+    <div class="col-index" style="box-shadow:0 0 35px #aaa">
+        <div id="chosen_server" style="padding:0 20px;" hidden>
+            {% include "index/search_producer.html" %}
+        </div>
+        <div class="row" id="requirement_content">
+            <div class="col-xs-5">
+                <div class="col-xs-11">
+                    <h2 id="requirement_add_dialog_title">创建新需求</h2>
+                    <a id="refer_name" target="_blank" style="color:#098ddf"></a>
+                    <hr style="margin:10px 0">
+                    <div class="container-fluid">
+                        <div class="requirement_add_dialog_form">
+                            <li>
+                                <h4>需求名称</h4>
+                                <div class="container-fluid">
+                                    <input id="requirement_title" class="form-control" placeholder="新建需求的名称" {% if requirename %}value="{{ requirename }}" {% endif %}>
+                                </div>
+                            </li>
+                            <!--<li>
+                                <h4>需求类型</h4>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="video_category_1">
+                                            <option></option>
+                                            {% for i in category_1%}
+                                                <option value="{{ i.Id }}">{{ i.Name }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="video_category_2" >
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>-->
+                            <li>
+                                <h4>具体描述</h4>
+                                <textarea id="requirement_detail" rows="6" class="form-control" placeholder="具体需求描述">{{tags|safe}}</textarea>
+                            </li>
+                            <!--<li>
+                                <h4>视频时长</h4>
+                                <input id="requirement_long" class="form-control" placeholder="请注明时长单位（如：分钟）">
+                            </li>-->
+                            <li>
+                                <h4>制作预算(元)</h4>
+                                <input id="requirement_amount" name="amount" class="form-control" placeholder="价格/RMB"
+                                    onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+                            </li>
+                            <li>
+                                <h4>完成日期</h4>
+                                <input class="form-control deadline" placeholder="制作完成日期"/>
+                            </li>
+                            <li>
+                                <div class="text-center">
+                                    <button id="requirement_add_commit" class="btn btn-lg btn-success">保存</button>
+                                    <button id="requirement_add_publish" class="btn btn-lg btn-green">提交</button>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/jqueryui/1.11.2/jquery-ui.min.css" />
+    <script src="//cdn.bootcss.com/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="{{ url_for('.static', filename='index/submit.js') }}"></script>
+    <script src="static/script/template/template.js"></script>
+    <script src="static/script/md5/jQuery.md5.js"></script>
+{% endblock %}

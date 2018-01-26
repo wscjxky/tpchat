@@ -1,0 +1,88 @@
+{{include 'template/requirement/header.html'}}
+<div class="container" style="background:#fcfcfc;box-shadow:0 0 35px #ccc;padding:0 0 0 30px;">
+    <div class="col-xs-9" id="contract-content" style="min-height:485px;padding-right:30px;border-right:solid 1px #eee"></div>
+    <div class="col-xs-3" style="padding:0;">
+        <ul class="nav-cState" style="padding:0 0 0 30px;">
+            <div class="list-group row">
+            {{each Segments}}
+                <div class="cSeg row col-xs-12" id="curseg{{ $value.SegmentId }}" style="padding-left: 0">
+                    <input value="{{$value.SegmentId}}" hidden>
+                {{if $index == Segments.length - 1}}
+                    <div class="col-xs-3">
+                        {{ if $value.SegmentId <  Status}}
+                            <img src="image/cs_f_l.png">
+                        {{ else if $value.SegmentId == Status}}
+                            <img src="image/cs_c_l.png">
+                        {{ else }}
+                            <img src="image/cs_dis_l.png">
+                        {{ /if }}
+                    </div>
+                {{else}}
+                    <div class="col-xs-3">
+                        {{if $index == 0}}
+                            <img src="image/cs_f_f.png">
+                        {{else}}
+                            {{if $value.SegmentId < Status}}
+                            <img src="image/cs_f.png">
+                            {{else if $value.SegmentId == Status}}
+                            <img class="enterclick" src="image/cs_c.png" onload="$('.enterclick').click();">
+                            {{else}}
+                            <img src="image/cs_dis.png" style="cursor:not-allowed">
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                {{ /if }}
+                    <div class="col-xs-9 text-left" style="margin-top:25px; padding: 0">
+                        <h4 style="margin:0">{{$value.Segment.Name}}</h4>
+                    </div>
+                        {{if $value.SegmentId < Status }}
+                        <!--
+                        <p class="" style="top:25px; right: 20px; position:absolute;">已完成</p>-->
+                        {{ else if $value.SegmentId > Status}}
+                        <!--
+                        <button class="btn btn-default btn-sm" style="top:20px; right: 20px; position: absolute" disabled>未启动</button>-->
+                        {{ else if $value.SegmentId == Status }}
+                            {{ if ApplyStatus == 0 }}
+                            {{ if $value.Segment.Identity == 'review'}}
+                                {{ if IsService }}
+                                    <button class="btn btn-info btn-sm apply_cSeg_btn" style="top:20px;right: 20px; position: absolute">申请尾款</button>
+                                {{ else }}
+                                    <p style="top:25px; right: 20px; position: absolute" >等待申请</p>
+                                {{ /if }}
+                            {{ else if $value.Segment.Identity == 'ratainage'}}
+                                {{ if  !IsService}}
+                                <button class="ContractOver btn btn-warning btn-sm" style="top:20px; right: 20px; position: absolute">确认交付</button>
+                                {{ else }}
+                                <p style="top:25px; right: 20px; position: absolute" >等待确认</p>
+                                {{ /if }}
+                            {{ else }}
+                               <!-- <button class="btn btn-warning btn-sm" style="top:20px; right: 20px; position: absolute">进行中</button>-->
+                            {{ /if }}
+                            {{ else }}
+                            {{ if $value.Segment.Identity == 'review' }}
+                                {{ if IsService }}
+                                    <p style="top:25px; right: 20px; position: absolute" >等待支付尾款</p>
+                                {{ else }}
+                                    <div class="btn-group" role="group" style="top:20px; right: 20px; position: absolute">
+                                        <button type="button" class="btn btn-success confirm_cSeg_btn btn-sm">支付尾款</button>
+                                        <button type="button" class="btn btn-warning reject_cSeg_btn btn-sm">继续审核</button>
+                                    </div>
+                                {{ /if }}
+                            {{ else if $value.Segment.Identity == 'ratainage' }}
+                                {{ if IsService }}
+                                    <p style="top:25px; right: 20px; position: absolute" >等待确认</p>
+                                {{ else }}
+                                    <div class="btn-group" role="group" style="top:20px; right: 20px; position: absolute">
+                                        <button type="button" class="btn btn-success confirm_cSeg_btn btn-sm">确认</button>
+                                        <button type="button" class="btn btn-warning reject_cSeg_btn btn-sm">驳回</button>
+                                    </div>
+                                {{ /if }}
+                            {{ /if }}
+                            {{ /if }}
+                        {{ /if }}
+                    </div>
+                {{/each}}
+                </div>
+            </ul>
+    </div>
+</div>

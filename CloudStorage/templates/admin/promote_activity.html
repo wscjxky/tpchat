@@ -1,0 +1,111 @@
+{% extends "admin/promote_manage.html" %}
+{% block promoteBody %}
+    <div class="container-fluid" style="margin-top: 20px">
+        <div class="col-md-12 text-center panel panel-default">
+            <img id="imageV" style="height: auto; width: auto; min-height: 200px; max-height: 200px; max-width: 100%">
+        </div>
+        <div class="col-md-12" style="margin-top: 20px">
+            <ul class="list-group">
+                {% for value in params %}
+                <a class="list-group-item" value="{{ value.Path }}">{{ value.Banner }}
+                    <input class="ActivityPage" style="width:500px;float: right;"placeholder="活动页url" value="{{ value.ActivityPage }}">
+                </a>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <input type="file" id="upload">
+        </div>
+        <div class="col-md-9" style="text-align: left">
+            <button class="btn btn-default" id="del">删除</button>
+            <button class="btn btn-default" id="del_all">删除所有</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.ActivityPage').blur(function(){
+            var els = $('.list-group-item');
+            var group = [];
+            $(els).each(function(i, v){
+                group.push({
+                    path: $(v).attr('value'),
+                    name: $(v).text(),
+                    page: $(v).find('input').val()
+                });
+            });
+            update(group);
+        });
+        $('.list-group-item').click(function(e){
+            $('.list-group-item').removeClass('active');
+            $(e.currentTarget).addClass('active');
+            var path = $(e.currentTarget).attr('value');
+            $('#imageV').attr('src', path);
+        });
+        $('#del').click(function(e){
+            var els = $('.list-group-item');
+            var group = [];
+            var curIndex = 0;
+            var curName = $('.active').text();
+            $(els).each(function(i, v){
+                if (curName == $(v).text())
+                    curIndex = i;
+                group.push({
+                    path: $(v).attr('value'),
+                    name: $(v).text(),
+                    page: $(v).find('input').val()
+                });
+            });
+            group.splice(curIndex, 1);
+            update(group);
+        });
+        $('#del_all').click(function(e) {
+            var group = [];
+            update(group);
+        });
+        function update(group){
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/activity",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    group: group
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/activity';
+                }
+            });
+        }
+        $("#upload").uploadify({
+            'buttonText': '上传',
+            'hideButton': true,
+            'wmode': 'transparent',
+            'swf': "/script/uploadify/uploadify.swf",
+            'height': 34,
+            'uploader': '/cloud/uploadFile/easy?useAge=activity',
+            'onUploadSuccess': function (file, data, response) {
+                var obj = JSON.parse(data);
+                if (obj.errorMsg == undefined) {
+                    var path = obj.filePath;
+                    var name = file.name;
+                    var els = $('.list-group-item');
+                    var group = [];
+                    $(els).each(function(i, v){
+                        group.push({
+                            path: $(v).attr('value'),
+                            name: $(v).text(),
+                            page: $(v).find('input').val()
+                        });
+                    });
+                    group.push({path: path, name: name, page: '/activity/'});
+                    update(group);
+                } else {
+                    alertState("上传文件失败，错误信息：" + obj.errorMsg, "failed");
+                    alert("上传文件失败，错误信息：" + obj.errorMsg);
+                }
+            },
+            onUploadError: function (file, errorCode, errorMsg) {
+                alertState("上传文件失败，错误信息：" + errorMsg, "failed");
+            }
+        });
+    </script>
+{% endblock %}

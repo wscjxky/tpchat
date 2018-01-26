@@ -1,0 +1,122 @@
+﻿<div class="container" style="width: 95%">
+    {{ if SearchUsage == 1 }}
+    <div class="page-header" style="margin: 0">
+        <h1>
+            <span id="quitSearch" class="glyphicon glyphicon-circle-arrow-left"></span>
+            搜索制作商
+            <button id="cancel_select" type="button" class="btn btn-warning" style="float: right">取消</button>
+            <button id="confirm_select" type="button" class="btn btn-success" style="float: right; margin-right: 20px">确定</button>
+        </h1>
+    </div>
+    {{ /if }}
+    {{ if SearchUsage == 0 }}
+    <div class="row search-row">
+        <img src="image/search_title.png" style="width:200px; margin-top: 30px"/>
+    </div>
+    {{ /if }}
+    <div class="row search-row">
+        <div class="col-md-9">
+            <input class="searchaw-input form-control" placeholder="搜您所想"/>
+        </div>
+        <button class="searchaw-button col-md-1" style="">搜一下</button>
+    </div>
+    <div class="row col-md-9" style="text-align: center; margin-top: 10px">
+        <div class="btn-group" data-toggle="buttons" style="margin: 0 auto">
+            {{ if SearchUsage == 0 }}
+            <label class="btn btn-default active">
+                <input type="radio" name="options" id="0" autocomplete="off" checked> 综合
+            </label>
+            <label class="btn btn-default">
+                <input type="radio" name="options" id="1" autocomplete="off"> 需求方
+            </label>
+            {{ /if }}
+            <label class="btn btn-default">
+                <input type="radio" name="options" id="2" autocomplete="off"> 服务商
+            </label>
+        </div>
+    </div>
+    <div class="row search-row">
+        <div class="container col-md-9">
+            <hr style="margin-left:-15px;">
+            {{each}}
+            <div class="row clip-board">
+                <div class="col-md-3" style="text-align: center">
+                    {{ if SearchUsage == 1 }}
+                    <div class="checkbox has-success">
+                        <label>
+                            <input class="producer_checkbox" type="checkbox" value="{{ $value.Id }}">选择该制作商
+                        </label>
+                    </div>
+                    {{ /if }}
+                    <img class="row" style="width: 100%; margin: 0; padding: 10px;" src="image/contacts.png"/>
+                    <h3 style="margin-top: 0; margin-bottom: 3px">{{$value.NickName}}</h3>
+                </div>
+                <div class="col-md-9" style="padding: 0">
+                    <div class="list-group" style="margin: 0">
+                        {{if $value.Domain.IsService}}
+                        <a class="list-group-item disabled"><span style="font-weight: bold">服务商：{{$value.NickName}}</span></a>
+                        {{else}}
+                        <a class="list-group-item disabled"><span style="font-weight: bold">需求方：{{$value.NickName}}</span></a>
+                        {{/if}}
+                        <a class="list-group-item" href="#magic.index"><span style="font-weight: bold">个人主页：</span>魔幻空间</a>
+                        <a class="list-group-item"><span style="font-weight: bold">官方Email： </span>{{$value.Email}}</a>
+                        <a class="list-group-item"><span style="font-weight: bold">联系电话： </span>{{$value.CellPhone}}</a>
+                        <a class="list-group-item"><span style="font-weight: bold">星级系统： </span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </a>
+                        <a class="list-group-item">
+                            <span class="comments" style="font-weight: bold">
+                                &nbsp关注&nbsp
+                                <span class="badge">0</span>
+                                &nbsp点赞&nbsp
+                                <span class="badge">11</span>
+                                    &nbsp评论&nbsp
+                                <span class="badge">11</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="col-md-3">
+            <h4 class="page-header" style="margin-top:-10px;">相关推荐</h4>
+            <a class="col-md-12 wall-index-a video-board" href="" style="text-align: center">
+                <img src="image/banner.jpg" class="wall-index-img">
+                <div class="wall-index-intro">
+                    <h4 class="wall-index-file">bg3.jpg</h4>
+                    <span class="glyphicon glyphicon-play-circle">51235</span>
+                    <span style="margin-left: 10px" class="glyphicon glyphicon-thumbs-up">100</span>
+                </div>
+            </a>
+            <a class="col-md-12 wall-index-a video-board" href="" style="text-align: center">
+                <img src="image/bg1.jpg" class="wall-index-img">
+                <div class="wall-index-intro">
+                    <h4 class="wall-index-file">bg3.jpg</h4>
+                    <span class="glyphicon glyphicon-play-circle">51235</span>
+                    <span style="margin-left: 10px" class="glyphicon glyphicon-thumbs-up">100</span>
+                </div>
+            </a>
+            <a class="col-md-12 wall-index-a video-board" href="" style="text-align: center">
+                <img src="image/bg3.jpg" class="wall-index-img">
+                <div class="wall-index-intro">
+                    <h4 class="wall-index-file">bg3.jpg</h4>
+                    <span class="glyphicon glyphicon-play-circle">51235</span>
+                    <span style="margin-left: 10px" class="glyphicon glyphicon-thumbs-up">100</span>
+                </div>
+            </a>
+            <a class="col-md-12 wall-index-a video-board" href="" style="text-align: center">
+                <img src="image/banner-2.jpg" class="wall-index-img">
+                <div class="wall-index-intro">
+                    <h4 class="wall-index-file">bg3.jpg</h4>
+                    <span class="glyphicon glyphicon-play-circle">51235</span>
+                    <span style="margin-left: 10px" class="glyphicon glyphicon-thumbs-up">100</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

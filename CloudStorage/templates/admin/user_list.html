@@ -1,0 +1,55 @@
+{% extends "admin/admin_index.html" %}
+{% block body %}
+<h2>用户列表</h2>
+<table class="table table-hover table-condensed table-bordered" style="border:solid 1px #aaa;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>昵称</th>
+            <th>Email</th>
+            <th>真实姓名</th>
+            <th>电话</th>
+            <th>账户</th>
+            <th style="padding:5px 0;min-width:30px;">余额</th>
+            <th>创建时间</th>
+            <th>上一次登录时间</th>
+            <th style="padding:5px 0;min-width:30px;">简介</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for value in user %}
+    {% if value.Domain.IsService==0 %}
+        <tr>
+            <td>{{value.Id}}</td>
+            <td>{{value.NickName}}</td>
+            <td>{{value.Email}}</td>
+            <td>{{value.RealName}}</td>
+            <td>{{value.CellPhone}}</td>
+            <td>{{value.Domain.Alipay}}</td>
+            <td>{{value.Domain.Count}}</td>
+            <td>{{value.CreateTime}}</td>
+            <td>{{value.LeastTime}}</td>
+            <td><abbr title="{{value.Domain.Intro}}">查看</abbr></td>
+        </tr>
+        <tr style="border-bottom:solid 2px #000">
+            <td>空间使用情况</td>
+            <td>
+                {{value.Domain.UsedSize}}/{{value.Domain.DefaultStorageSize + value.Domain.ExtendStorageSize }}
+                <h6>已使用<red><strong>{{value.Domain.UsedSize/(value.Domain.DefaultStorageSize + value.Domain.ExtendStorageSize)*100}}%</strong></red></h6>
+            </td>
+            <td>
+                <div class="progress" style="width:300px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{value.Domain.UsedSize/(value.Domain.DefaultStorageSize + value.Domain.ExtendStorageSize)*100}}" aria-valuemin="0" aria-valuemax="100" style="width:{{value.Domain.UsedSize/(value.Domain.DefaultStorageSize + value.Domain.ExtendStorageSize)*100}}%;">
+                    </div>
+                </div>
+            </td>
+            <td>
+                家庭组名称：<h6>{{ value.Domain.DomainName }}</h6>
+            </td>
+
+        </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

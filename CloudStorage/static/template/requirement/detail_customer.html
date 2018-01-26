@@ -1,0 +1,77 @@
+<div class="container" style="background:#fcfcfc;padding:20px 30px;">
+    <div class="container-fluid" id={{"requireDetail_" + Id}}>
+        <div class="col-xs-12" style="min-height: 400px">
+            <div class="row">
+                <h3 id="requirement-title" class="req-title"
+                    title="{{ Title }}"
+                    style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+                    <black>{{Title}}</black>
+                    {{ if IsEditable }}
+                    <a href="javascript:void(0)" id="edit-btn" style="font-size: 13px">[编辑需求]</a>
+                    {{ /if }}
+                </h3>
+                <hr>
+                <p style="margin-bottom:10px">
+                    {{ if CurSegment.Identity == 'draft' }}
+                    [草稿]
+                    {{ else if CurSegment.Identity == 'publish' }}
+                    [{{CreateTime | ParseDate}} 提交]
+                    {{ /if }}
+                </p>
+            </div>
+            <div class="row">
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>具体描述</black></div>
+                    <div class="col-md-10 requirements-detail_r" style="min-height: 60px;">{{#Detail | htmlEncode}}</div>
+                </div>
+                <!--<div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>视频类型</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{#Type}}</div>
+                </div
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>预计时长</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Long}}分钟</div>
+                </div>>-->
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>价格预算</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Amount}}元</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>交付时间</black></div>
+                    <div class="col-md-10 requirements-detail_r">{{Deadline | ParseDate}}</div>
+                </div>
+                {{ if Refer!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>参考作品</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <a href={{Refer}} target="_blank">{{referName}}</a>
+                    </div>
+                </div>
+                {{ /if }}
+                {{ if RequirementAttachment.length != 0 }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail">附件</div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <div class="container-fluid req_attachment_viewer" style="display:none"></div>
+                        <div class="req_attachment_content row">
+                            {{each RequirementAttachment}}
+                            <div class="text-center col-xs-2">
+                                <div class="cloud_object_image attachment_object" value="{{ $value.Id }}"
+                                     style="background-image: {{if $value.Object.Type == 0 || $value.Object.Type == 1}}url('{{$value.Object.File.Path}}'){{ else }}url('image/text.png'){{ /if }}">
+                                </div>
+                                <div class="cloud_object_text ">
+                                    <p class="label label-primary" title="{{$value.Object.Name}}">{{$value.Object.Name}}</p>
+                                    <small class="download_attachment_object attachment_operate" title="下载" value="{{$value.Id}}"> 下载 </small>&nbsp;
+                                    <small class="deleteAttachment attachment_operate" value="{{$value.Id}}" title="删除"> 删除</small>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+</div>
+

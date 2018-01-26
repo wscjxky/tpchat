@@ -1,0 +1,52 @@
+<div class="container-fluid text-center">
+    <h3>中止合同</h3>
+    <p>如果合作双方出现纠纷而导致合同无法继续，可以在此向平台申请中止合同</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-7">
+            {{ if Procedure == 'active' }}
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">中止原因</span>
+                <textarea type="text" class="form-control applyRemark" placeholder="请具体说明" aria-describedby="basic-addon1" style="min-height: 150px"></textarea>
+            </div>
+            <div style="text-align: right; margin-top: 10px">
+                <button class="btn btn-danger applyAbortBtn">申请中止</button>
+            </div>
+            {{ else if Procedure == 'applyAbort' }}
+            <div class="panel panel-default" style="text-align: left">
+                <div class="panel-body">
+                    <h4><red>中止合同申请中</red></h4>
+                    <p>请耐心等待工作人员的处理，如有疑问可拨打客服热线：010-</p>
+                    <hr>
+                    <dl>
+                        <dt>申请原因</dt>
+                        <dd>{{ Record.ApplyRemark | htmlEncode }}</dd>
+                        <dt>申请者</dt>
+                        <dd><a href="/zone/{{ Record.ApplyUser.Domain.Id }}" target="_blank">{{ Record.ApplyUser.NickName }}</a></dd>
+                        <dt>来自</dt>
+                        <dd>{{ Record.ApplyUser.Domain.CompanyName }}</dd>
+                        <dt>申请时间</dt>
+                        <dd>{{ Record.ApplyTime | ParseTime }}</dd>
+                    </dl>
+                </div>
+            </div>
+            {{ else }}
+            <h4><red>合同已经中止</red></h4>
+            {{ /if }}
+        </div>
+        <div class="col-md-5" style="text-align: left">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4><red>中止合同须知</red></h4>
+                    <hr>
+                    <ul style="color:#666">
+                        <li>中止合同将导致您的信誉下降，请慎重选择</li>
+                        <li>合同中止后，需求方支付的押金或尾款将自动打回给用户</li>
+                        <li>中止合同申请过程中将无法对本合同进行正常操作</li>
+                        <li>商影联盟工作人员将在7个工作日内与您核实情况，请保持电话畅通</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

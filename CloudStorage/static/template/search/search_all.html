@@ -1,0 +1,62 @@
+﻿<div class="container" style="width: 95%">
+    <div class="page-header">
+        <h3>商影联盟综合搜索</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-search"></span></span>
+                <input id="searchaw-input" type="text" class="form-control" placeholder="搜索视频或制作商" aria-describedby="sizing-addon2">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" id="searchaw_btn" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <ul class="list-group searchpage_ul">
+        {{ if domain.length > 0 }}
+        <li class="list-group-item col-md-12">共有<strong><green>{{ domain.length }}</green></strong>条和搜索相关的制作商信息{{ if domain.length > 3 }}<a href="/company" style="float:right">更多</a>{{ /if }}</li>
+        <li class="list-group-item col-md-12" style="padding: 0">
+            {{ each domain }}
+            {{ if $index < 3 }}
+            <div class="col-md-4" style="border-right: solid 1px #ddd; text-align: center">
+                <img id="producerLogo" src='{{ $value.Portrait }}' style="margin-top: 20px; height: auto; width: auto; min-height:150px; max-height: 150px; max-width: 100%">
+                <hr style="margin-top: 20px">
+                <dl style="text-align: left">
+                  <dt>制作商</dt>
+                  <dd><a href="{{'/zone/' +  $value.Id }}">{{ $value.CompanyName }}</a></dd>
+                  <dt>简介</dt>
+                  <dd style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width: 100%" title="{{ $value.Intro }}">{{ $value.Intro }}</dd>
+                </dl>
+            </div>
+            {{ /if }}
+            {{ /each }}
+        </li>
+        {{ /if }}
+        {{ if video.length > 0 }}
+        <li class="list-group-item col-md-12">共有<strong><green>{{ video.length }}</green></strong>条和搜索相关的视频信息</li>
+        <li class="list-group-item col-md-12" style="padding: 0">
+            {{ each video }}
+            <div class="col-md-4" style="border-right: solid 1px #ddd; text-align: center">
+                <a href="{{ '/player/' + $value.Object.Id }}">
+                    <img id="producerLogo" src={{ $value.Object.File.Path }} style="margin-top: 20px; height: auto; width: auto; min-height:150px; max-height: 150px; max-width: 100%">
+                </a>
+
+                <hr style="margin-top: 20px">
+                <dl style="text-align: left">
+                  <dt>视频名称</dt>
+                  <dd>{{ $value.Object.Name }}</dd>
+                  <dt>视频标签</dt>
+                  <dd>{{ $value.Object.Tag }}</dd>
+                  <dt>制作商</dt>
+                  <dd><a href="{{'/zone/' +  $value.Domain.Id }}">{{ $value.Domain.CompanyName }}</a></dd>
+                </dl>
+            </div>
+            {{ /each }}
+        </li>
+        {{ /if }}
+    </ul>
+    <div class="col-md-1"></div>
+</div>

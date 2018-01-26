@@ -1,0 +1,66 @@
+{% extends "admin/platform_manage.html" %}
+{% block platformBody %}
+    <h3>合同：{{ contract.Title }}</h3>
+    {% if record %}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>中止合同申请</h3>
+            <hr>
+            <dl class="dl-horizontal">
+                <dt>申请者</dt>
+                <dd><a href="/admin/user/{{ record.ApplyUser.Domain.Id }}">{{ record.ApplyUser.NickName }}</a></dd>
+                <dt>申请原因</dt>
+                <dd>{{ record.ApplyRemark }}</dd>
+                <dt>申请时间</dt>
+                <dd>{{ record.ApplyTime }}</dd>
+                <dt>审核备注</dt>
+                <dd>{{ record.ConfirmRemark }}</dd>
+                <dt>审核时间</dt>
+                <dd>{{ record.ConfirmTime }}</dd>
+                <dt>审核结果</dt>
+                <dd>{% if record.Status == 'apply' %}
+                    未审核
+                    {% elif record.Status == 'deny' %}
+                    审核未通过
+                    {% elif record.Status == 'abort' %}
+                    审核通过
+                    {% endif %}</dd>
+            </dl>
+            <div>
+                {% if record.Status == 'apply' %}
+                <textarea class="form-control" type="text" placeholder="审核备注" id="remark"></textarea>
+                <div style="text-align: right; margin-top: 20px">
+                    <button class="btn btn-info" id="pass">通过</button>
+                    <button class="btn btn-danger" id="deny">拒绝</button>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <script type="text/javascript">
+        $('#pass').click(function(){
+            confirmAbort(false);
+        });
+        $('#deny').click(function(){
+            confirmAbort(true);
+        });
+        function confirmAbort(bDeny){
+            var cid = {{ contract.Id }};
+            $.ajax({
+                type: "POST",
+                url: "/admin/confirmAbortContract",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    ContractId: cid,
+                    ConfirmRemark: $('#remark').val(),
+                    Deny: bDeny
+                }),
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+    </script>
+{% endblock %}

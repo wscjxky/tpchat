@@ -1,0 +1,150 @@
+<div class="container-fluid panel panel-default" style="margin-top: 20px">
+    <div class="panel-body">
+        <h3>频道修改</h3>
+        <hr>
+        <div class="col-md-6">
+            <h4>一类频道</h4>
+            <div class="input-group">
+                <input type="text" class="form-control" id="input_channel_1" placeholder="添加新频道">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="add_channel_1">添加</button>
+                </span>
+            </div>
+            <ul class="list-group" style="margin-top: 20px">
+                {% for value in params.c1 %}
+                <a class="list-group-item c1ItemEx {% if value.Name == params.curC1Ex %}active{% endif %}">{{ value.Name }}</a>
+                {% endfor %}
+            </ul>
+            <div class="col-md-12" style="text-align: center">
+                <button class="btn btn-default" id="del_channel_1">删除</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>子类频道</h4>
+            <div class="input-group">
+                <input type="text" class="form-control" id="input_channel_2" placeholder="添加新频道">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="add_channel_2">添加</button>
+                </span>
+            </div>
+            <ul class="list-group" style="margin-top: 20px">
+                {% for value in params.c2Ex %}
+                <a class="list-group-item c2ItemEx" value="{{ value.Id }}">{{ value.Name }}</a>
+                {% endfor %}
+            </ul>
+            <div class="col-md-12" style="text-align: center">
+                <button class="btn btn-default" id="del_channel_2">删除</button>
+                <button class="btn btn-default" id="edit_channel_2">编辑模版</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid panel panel-default" style="margin-top: 20px">
+    <div class="panel-body">
+        <h3>首页频道设置</h3>
+        <hr>
+        <div class="col-md-6" style="margin-top: 20px">
+            <div class="input-group col-md-12" style="margin:10px 0 10px 0">
+                <label for="video_category_1" class="input-group-addon">一类频道</label>
+                <select class="form-control" id="video_category_1" name="category_1">
+                    {% for v in params.c1 %}
+                    <option>{{ v.Name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <ul class="list-group">
+                {% for value in params.c1Group %}
+                <a class="list-group-item c1Item">{{ value.Name }}</a>
+                {% endfor %}
+            </ul>
+            <div class="col-md-12" style="text-align: center">
+                <button class="btn btn-default" id="add_1">添加</button>
+                <button class="btn btn-default" id="del_1">删除</button>
+            </div>
+        </div>
+        <div class="col-md-6" style="margin-top: 20px">
+            <div class="input-group col-md-12" style="margin:10px 0 10px 0">
+                <label for="video_category_2" class="input-group-addon">子类频道</label>
+                <select class="form-control" id="video_category_2" name="category_2">
+                    {% for v in params.c2 %}
+                    <option>{{ v.Name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <ul class="list-group">
+                {% for value in params.c2Group %}
+                <a class="list-group-item c2Item">{{ value.Name }}</a>
+                {% endfor %}
+            </ul>
+            <div class="col-md-12" style="text-align: center">
+                <button class="btn btn-default" id="add_2">添加</button>
+                <button class="btn btn-default" id="del_2">删除</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#video_category_1').val('{{ params.curC1 }}');
+    $('#video_category_2').val('{{ params.curC2 }}');
+
+    $('#video_category_1').change(function(){
+        update('changeC2', 1, $('#video_category_1').val());
+    });
+    $('.list-group-item').click(function(e){
+        $('.list-group-item').removeClass('active');
+        $(e.currentTarget).addClass('active');
+        if ($(e.currentTarget).hasClass('c1ItemEx'))
+            update('changeC2Ex', 1, $(e.currentTarget).text());
+    });
+    $('#add_channel_1').click(function(){
+        update('new', 1, $('#input_channel_1').val());
+    });
+    $('#add_channel_2').click(function(){
+        update('new', 2, $('#input_channel_2').val());
+    });
+    $('#del_channel_1').click(function(){
+        update('remove', 1, $('.c1ItemEx.active').text());
+    });
+    $('#del_channel_2').click(function(){
+        update('remove', 2, $('.c2ItemEx.active').text());
+    });
+    $('#add_1').click(function(){
+        update('add', 1, $('#video_category_1').val());
+    });
+    $('#add_2').click(function(){
+        update('add', 2, $('#video_category_2').val());
+    });
+    $('#del_1').click(function(e){
+        var targetName = $('.c1Item.active').text();
+        update('del', 1, targetName);
+    });
+    $('#del_2').click(function(e){
+        var targetName = $('.c2Item.active').text();
+        update('del', 2, targetName);
+    });
+    $('#edit_channel_2').click(function(e){
+        var targetId = $('.c2ItemEx.active').attr('value');
+        window.location.href = '/admin/promote/channel/template/' + targetId;
+    });
+    function update(oper, level, targetName){
+        if (!targetName)
+            return;
+        $.ajax({
+            type: "POST",
+            url: "/admin/promote/channel",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({
+                curC1: $('#video_category_1').val(),
+                curC2: $('#video_category_2').val(),
+                curC1Ex: $('.c1ItemEx.active').text(),
+                operator: oper,
+                level: level,
+                targetName: targetName
+            }),
+            success: function (response) {
+                $('#promote_channel_container').html(response);
+            }
+        });
+    }
+</script>

@@ -1,0 +1,49 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+            <h4 class="modal-title">修改成员信息</h4>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    <input id="domain_user_modify_domainName" type="text" class="form-control" placeholder="User domain name">
+                </li>
+                <li>
+                    <input id="domain_user_modify_domainPwd" type="text" class="form-control" placeholder="用户新密码">
+                </li>
+                <li>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>选择</th>
+                            <th>角色</th>
+                            <th>管理员权限</th>
+                        </tr>
+                        </thead>
+                        <tbody id="domain_user_modify_role_selector">
+                        {{each roles}}
+                        <tr>
+                            <td class="role_id" style="display: none">{{$index}}</td>
+                            <td class="role_check"><input type="checkbox" name="user"></td>
+                            <td class="role_name">{{$value.Name}}</td>
+                            <td class="role_right">
+                                {{if $value.DomainAdmin}}
+                                是
+                                {{else}}
+                                否
+                                {{/if}}
+                            </td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button id="domain_user_modify_commit" type="button" class="btn btn-primary">修改</button>
+        </div>
+    </div>
+</div>

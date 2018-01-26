@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-xs-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>对方负责人</span>
+                <button type="button" class="btn btn-default replyResponser" style="float: right"
+                        value="{{ if IsService }}{{ activeSeg.CustomerResponser }}{{ else }}{{ activeSeg.ServiceResponser }}{{ /if }}">
+                    留言
+                </button>
+            </div>
+            <div class="list-group">
+                <a class="list-group-item" href="/zone/{{ if IsService }}{{ activeSeg.CustomerResponserDomain }}{{ else }}{{ activeSeg.ServiceResponserDomain }}{{ /if }}" target="_blank">
+                    <span>姓名：
+                        {{ if IsService }}
+                        {{ activeSeg.CustomerResponserName }}
+                        {{ else }}
+                        {{ activeSeg.ServiceResponserName }}
+                        {{ /if }}
+                    </span>
+                </a>
+                <li class="list-group-item">
+                    <span>备注：
+                        {{ if IsService }}
+                        {{ activeSeg.CustomerResponserDes }}
+                        {{ else }}
+                        {{ activeSeg.ServiceResponserDes }}
+                        {{ /if }}
+                    </span>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6"   >
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>己方负责人</span>
+                <button type="button" class="btn btn-default changeResponser" style="float:right">更改</button>
+            </div>
+            <div class="list-group">
+                <a class="list-group-item" href="/zone/{{ if IsService }}{{ activeSeg.ServiceResponserDomain }}{{ else }}{{ activeSeg.CustomerResponserDomain }}{{ /if }}" target="_blank">
+                    <span >姓名：
+                        {{ if IsService }}
+                        {{ activeSeg.ServiceResponserName }}
+                        {{ else }}
+                        {{ activeSeg.CustomerResponserName }}
+                        {{ /if }}
+                    </span>
+                </a>
+                <li class="list-group-item">
+                    <span>备注：
+                        {{ if IsService }}
+                        {{ activeSeg.ServiceResponserDes }}
+                        {{ else }}
+                        {{ activeSeg.CustomerResponserDes }}
+                        {{ /if }}
+                    </span>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+{% for req in reqs %}
+<div class="view-btn" style="margin-top: 20px; cursor: pointer" value="{{ req.Id }}">
+    <div class="container-fluid requirement-block">
+        <div class="col-xs-9" style="border-right: solid 1px #ddd">
+            <p style="font-size: 34px;color: #333;margin-top: 15px;margin-bottom: 25px;text-overflow:ellipsis;"><span>{{req.Title}}</span></p>
+            <p style="font-size: 26px;color: #666;">提交时间：<span style="color: #ff7e00">{{ req.CreateTime }}</span></p>
+            <p style="font-size: 26px;color: #666;">计划完成时间：<span style="color: #c70b19">{{ req.Deadline }}</span></p>
+            <p style="font-size: 26px;color: #666;">进展：
+                <span class="glyphicon glyphicon-file" style="
+                        margin-left: 20px;
+                        {% if req.Status <= 2 %}
+                        color: #FFAF09
+                        {% elif req.Status > 2 %}
+                        color: #009933
+                        {% endif %}
+                        " title="提交需求"></span>
+                <span class="glyphicon glyphicon-arrow-right" style="
+                        {% if req.Status <= 2 %}
+                        color: #aaa
+                        {% elif req.Status > 2 %}
+                        color: #009933
+                        {% endif %}
+                        "></span>
+                <span class="glyphicon glyphicon-comment" style="
+                        {% if req.Status <= 2 %}
+                        color: #aaa
+                        {% elif req.Status <= 3 %}
+                        color: #FFAF09
+                        {% elif req.Status > 3 %}
+                        color: #009933
+                        {% endif %}
+                        " title="商定合同"></span>
+                <span class="glyphicon glyphicon-arrow-right" style="
+                        {% if req.Status <= 3 %}
+                        color: #aaa
+                        {% elif req.Status > 3 %}
+                        color: #009933
+                        {% endif %}
+                        "></span>
+                <span class="glyphicon glyphicon-shopping-cart" style="
+                        {% if req.Status <= 3 %}
+                        color: #aaa
+                        {% elif req.Status <= 4 %}
+                        color: #FFAF09
+                        {% elif req.Status > 4 %}
+                        color: #009933
+                        {% endif %}
+                        " title="支付押金"></span>
+                <span class="glyphicon glyphicon-arrow-right" style="
+                        {% if req.Status <= 4 %}
+                        color: #aaa
+                        {% elif req.Status > 4 %}
+                        color: #009933
+                        {% endif %}
+                        "></span>
+                <span class="glyphicon glyphicon-eye-open" style="
+                        {% if req.Status <= 4 %}
+                        color: #aaa
+                        {% elif req.Status == 5 %}
+                        color: #FFAF09
+                        {% elif req.Status > 5 %}
+                        color: #009933
+                        {% endif %}
+                        " title="审核"></span>
+                <span class="glyphicon glyphicon-arrow-right" style="
+                        {% if req.Status <= 5 %}
+                        color: #aaa
+                        {% elif req.Status > 5 %}
+                        color: #009933
+                        {% endif %}
+                        "></span>
+                <span class="glyphicon glyphicon-credit-card" style="
+                        {% if req.Status <= 5 %}
+                        color: #aaa
+                        {% elif req.Status == 6 %}
+                        color: #FFAF09
+                        {% elif req.Status > 6 %}
+                        color: #009933
+                        {% endif %}
+                        " title="支付尾款"></span>
+                <span class="glyphicon glyphicon-arrow-right" style="
+                        {% if req.Status <= 6 %}
+                        color: #aaa
+                        {% elif req.Status > 6 %}
+                        color: #009933
+                        {% endif %}
+                        "></span>
+                <span class="glyphicon glyphicon-film" style="
+                        {% if req.Status <= 6 %}
+                        color: #aaa
+                        {% else %}
+                        color: #009933
+                        {% endif %}
+                        " title="交付"></span>
+            </p>
+        </div>
+        <div class="col-xs-3" style="text-align: center;">
+            <div style="color: #666; margin-top: 95px;font-size: 28px;">
+                {% if req.Status <= 1 %}
+                    需求草稿
+                {% elif req.Status == 2 %}
+                    提交需求
+                {% elif req.Status == 3 %}
+                    商定合同
+                {% elif req.Status == 4 %}
+                    待付押金
+                {% elif req.Status == 5 %}
+                    审片
+                {% elif req.Status == 6 %}
+                    待付尾款
+                {% else %}
+                    项目交付
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,32 @@
+{% extends "park/parkservebase.html" %}
+{% block block_servecontent %}
+    <!--- 资本运作 --->
+    <div id="ser-zib" class="ser-zib">
+    <div class="head-section">
+        <div class="container">
+            <h3><span>资本</span><label>运作.</label></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="{{ url_for('.static', filename='image/park/s7.jpg') }}" alt="...">
+                    <p>新三板挂牌</p>
+                    <p>单价：<span>面议</span></p>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="{{ url_for('.static', filename='image/park/s70.jpg') }}" alt="...">
+                    <p>新四板挂牌</p>
+                    <p>单价：<span>面议</span></p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!--- 资本运作 --->
+{% endblock %}
+
+

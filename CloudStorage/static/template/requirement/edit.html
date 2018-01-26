@@ -1,0 +1,96 @@
+<div class="row requirement_search_producer">
+</div>
+<div class="requirement_content">
+    <div class="col-xs12" style="min-height: 400px">
+        <div class="row" >
+            <h3 id="requirement-title" class="req-title" title="{{ Title }}" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+                <black>{{Title}}</black>
+                <a href="javascript:void(0)" id="requirement_add_commit" style="font-size: 13px">[保存]</a>
+                <a href="javascript:void(0)" id="requirement_add_cancel" style="font-size: 13px">[取消]</a>
+            </h3>
+            <hr>
+            <p>
+            {{ if CurSegment.Identity == 'draft' }}
+                [草稿]
+            {{ else if CurSegment.Identity == 'publish' }}
+                [{{CreateTime | ParseDate}} 提交]
+            {{ /if }}
+            </p>
+        </div>
+        <div class="row">
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>需求名称</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <input style="width:68.3%" id="requirement_title" name="long" class="form-control" placeholder="" value="{{ Title }}">
+                    </div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>具体描述</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                    <textarea style="width:68.3%;height: 140px" id="requirement_detail" class="form-control" placeholder="具体需求描述" value="{{ #Detail }}"></textarea>
+                    </div>
+                </div>
+                <!--div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>视频类型</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <select style="width:68.3%" class="form-control" id="video_category_1" name="category_1">
+                        </select>
+                    </div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>类型细分</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <select style="width:68.3%" class="form-control" id="video_category_2" name="category_2">
+                        </select>
+                    </div>
+                </div
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>预计时长</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <input style="width:68.3%" id="requirement_long" name="long" class="form-control" placeholder="（分钟）">
+                    </div>
+                </div-->
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>价格预算</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <input style="width:68.3%" id="requirement_amount" name="amount" class="form-control" placeholder="价格/RMB"
+                        onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+                    </div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>交付时间</black></div>
+                    <div class="col-md-10 requirements-detail_r" id="deadline">
+                        <input style="width:68.3%" class="form-control deadline" type="text" placeholder="制作完成日期"/>
+                    </div>
+                </div>
+                {{ if Refer!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail"><black>参考作品</black></div>
+                    <div class="col-md-10 requirements-detail_r">
+                        <a href={{Refer}} target="_blank">{{referName}}</a>
+                    </div>
+                </div>
+                {{ /if }}
+        </div>
+        <div class="attachmentTable text-center">
+            <hr><center><strong>附件列表</strong></center>
+            <table class="table table-striped table-bordered " style="margin: 10px 0 0" >
+                <thead>
+                    <tr>
+                        <th class="col-xs-2 text-center">已添加附件</th>
+                        <th class="col-xs-1 text-center">类型</th>
+                        <th class="col-xs-4 text-center">备注</th>
+                        <th class="col-xs-2 text-center">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="re_attachments" class="text-center" style="position: relative">
+                    {{include 'template/requirement/requirement_attachment.html'}}
+                </tbody>
+            </table>
+            <div class="col-xs-12" id="re_objectTree"></div>
+            <button id="requirement_file_getfile" class="btn btn-sm btn-success" style="margin-top:-2px">
+                加入附件 <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+    </div>
+</div>

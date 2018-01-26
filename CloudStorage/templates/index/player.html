@@ -1,0 +1,182 @@
+{% extends "index/index.html" %}
+{% block headSearch %}
+    <a href="/"><img src="/image/logo.png" style="height:40px; vertical-align: top"/></a>
+   <!-- <div class="index-search" style="margin-top: 5px; color: #000">
+        <span class="glyphicon glyphicon-search"></span>
+        <input id="index-search-input"placeholder="找类似的视频" onkeyup="if(event.which==13)window.location='/search?search='+$('#index-search-input').val()">
+        <button onclick="window.location='/search?search='+$('#index-search-input').val()">搜索</button>
+    </div>-->
+{% endblock %}
+{% block body%}
+<div class="container-fluid screen">
+    <div class="container-fluid text-center" style="margin:5px auto">
+        <div id="video_player" style="margin:0 auto;"></div>
+        <input id="video_path" value="{{ object.File.VideoFile}}" hidden>
+        <input id="VideoInfo" value="{{ zone_item.Id }}" hidden>
+        <input id="VideoInfo_obj" value="{{ object.Id }}" hidden>
+        <input id="VideoInfo_domain" value="{{ domain.Id }}" hidden>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container-fluid" style="background-color: #eee; padding: 5px">
+        <span class="player-video-title"><strong>{{ object.Name }}</strong></span>
+        <button id="video-require" class="btn btn-default player-tool">
+            照此提需求
+            <input id="refer_name" value="{{ object.Name }}" hidden>
+            <input id="zi-category_1" value="{{ object.Category_1 }}" hidden>
+            <input id="zi-category_2" value="{{ object.Category_2 }}" hidden>
+        </button>
+        <div class="dropdown player-tool">
+            <button id="share_video" class="btn btn-default dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="glyphicon glyphicon-heart"></span>
+                <span id="cb_collect_share">分享</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="share_video" style="width: 170px">
+                <li>
+                    <div class="bdsharebuttonbox" style="margin-left: 10px">
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <!--<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>-->
+                        <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                        <!--<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>-->
+                        <!--<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>-->
+                    </div>
+                    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"精彩案例，商影联盟，用心智造！","bdMini":"2","bdMiniList":false,"bdPic":"http://jianpianzi.com/image/logo256.png","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["weixin","tsina","qzone","sqq","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","qzone","sqq","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                </li>
+            </ul>
+        </div>
+        <button id="collect_video" class="btn btn-default player-tool">
+            <span class="glyphicon glyphicon-star"></span>
+            <span id="cb_collect_video">{% if bCollectVideo %}已收藏{% else %}收藏{% endif %}</span>
+        </button>
+        <button id="favorite" class="btn btn-default player-tool">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            <span id="cb_info">{% if favorite=='' %} 赞 {% else %} 已赞 {% endif %}{{ zone_item.Favorite }}</span>
+        </button>
+        <button id="viewcount" class="btn btn-default player-tool">
+            <span class="glyphicon glyphicon-eye-open"></span>
+            <span>浏览次数 {{ zone_item.ViewCount }}</span>
+        </button>
+        <hr style="border-color: #ddd; margin-top: 10px">
+    </div>
+    <div class="container-fluid" style="padding:10px; background-color: #eee">
+        <div class="col-xs-2" style="text-align: center">
+            <img src="{{ domain.Portrait }}" style="width:60%">
+        </div>
+        <div class="col-xs-5">
+            <p class="player-intro">制作团队：
+                <a href="/zone/{{ domain.Id }}"  target="_blank">
+                    <strong>{{ domain.CompanyName }}</strong>
+                </a>
+            </p>
+            <p class="player-intro">提交时间：{{ object.CreateTime }}</p>
+            <p class="player-intro">视频标签：{{ object.Tag }}</p>
+            <p class="player-intro">作品简介：{{ object.Description }}</p>
+        </div>
+        <div class="col-xs-5 text-center">
+            <!--<h4 style="margin:0">
+                参考价：
+                {% if  zone_item.ReferPrice!=0 and zone_item.ReferPrice!=None%}
+                <red>
+                    <span class="glyphicon glyphicon-yen"></span>
+                        <h3 style="display:inline-block;margin: 0">{{ zone_item.ReferPrice|int() }}</h3>
+                </red>
+                {% else %}
+                <span class="glyphicon glyphicon-yen"></span>--
+                {% endif %}
+                <input id="ReferPrice" value="{{ zone_item.ReferPrice }}" hidden>
+            </h4>-->
+            <div class="row text-center" style="">
+                <!--<div class="col-xs-12">
+                    <h4>分项价格
+                        <span class="glyphicon glyphicon-triangle-bottom" onclick="$('.price').slideToggle();" style="cursor:pointer">
+
+                        </span>
+                    </h4>
+                </div>-->
+                <div class="price">
+                    <table class="table table-condensed table-bordered ">
+                        <tr>
+                            <td style="vertical-align: middle; background-color: #ddd"><small>参考价</small></td>
+                            <td><small>基础价格</small><br> {% if zone_item.BasePrice  %}
+                                <strong>{{ zone_item.BasePrice|int() }}元</strong>{% else %}--{% endif %}</td>
+                            <td><small>内容策划</small><br> {% if zone_item.SchemePrice  %}
+                                <strong>{{ zone_item.SchemePrice|int() }}元</strong>{% else %}--{% endif %}</td>
+                            <td><small>拍摄服务</small><br> {% if zone_item.ShotPrice  %}
+                                <strong>{{ zone_item.ShotPrice|int() }}元</strong>{% else %}--{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle; background-color: #ddd"> {% if zone_item.ReferPrice  %}
+                                <strong>{{ zone_item.ReferPrice|int() }}元</strong>{% else %}--{% endif %}</td>
+                            <td><small>演员模特</small><br> {% if zone_item.ActorPrice  %}{{ zone_item.ActorPrice|int() }}元{% else %}--{% endif %}</td>
+                            <td><small>配音配乐</small><br> {% if zone_item.MusicPrice  %}{{ zone_item.MusicPrice|int() }}元{% else %}--{% endif %}</td>
+                            <td><small>后期制作</small><br> {% if zone_item.AEPrice  %}{{ zone_item.AEPrice|int() }}元{% else %}--{% endif %}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background:#f8f8f8;padding-bottom:20px">
+        <div class="col-xs-8" >
+            <div class="player-comment">
+                <div class="container-fluid">
+                    <!--<div class="col-xs-1">
+                        {% if user %}
+                        <img src="{{ user.Domain.Portrait }}">
+                        {% endif %}
+                    </div>-->
+                    <div class="col-xs-12" style="padding: 0">
+                        {% if user %}
+                        <textarea rows="2" id="player-comment" class=" form-control" placeholder="评论..."></textarea>
+                        {% else %}
+                        <h4 class="text-center">
+                            请您先<a onclick="CheckLogin(function(){window.location.reload()});" style="cursor:pointer"><blue>登录</blue></a>，才能评论和回复
+                        </h4>
+                        {% endif%}
+                    </div>
+                    <div class="col-xs-1" style="float: right; margin-top: 5px">
+                        {% if user %}
+                            <button id="btn-comment" class="{% if not user %}disabled{% endif %} btn btn-default2">回复</button>
+                        {% endif %}
+                    </div>
+                </div>
+                <h4 style="margin-left: 1px">全部评论</h4>
+                <hr style="border-color: #ccc">
+                <div id="comment-area" style="margin-bottom: 15px">
+        {% if not comments %}
+            <div class="text-center">
+                <h2 style="color:#ccc;margin:25px auto">暂无评论</h2>
+            </div>
+        {% else %}
+        {% include "index/player_comment.html" %}
+        {% endif %}
+    </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="col-player" style="padding-top: 20px">
+            <h4 style="display:inline-block;margin: 0">同类型推荐</h4>
+            <a style="float:right" href="/channel/{{ object.Category_2 }}">更多</a>
+            <hr>
+            {% for i in more%}
+            <div class="player-more">
+                <div class="pic">
+                    <img src="{{ i.Portrait }}">
+                </div>
+                <div class="intro">
+                    <p><a href="/player/{{ i.ObjectId }}"><strong>{{ i.Object.Name }}</strong></a></p>
+{#                    <p>{{ i.Intro }}</p>#}
+                    <p>来自：<a href="/zone/{{ i.DomainId }}" target="_blank">{{ i.Domain.CompanyName }}</a></p>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/script/player/ckplayer/ckplayer.js"></script>
+<script src="{{ url_for('.static', filename='index/player.js') }}"></script>
+{% endblock %}

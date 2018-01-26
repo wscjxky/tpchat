@@ -1,0 +1,21 @@
+<!--共享用户信息-->
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th class="col-md-8">用户名</th>
+        <th class="col-md-2">删除</th>
+        <th class="col-md-2">修改</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{each users}}
+    {{if $value.operate != "del"}}
+    <tr id="{{$index}}">
+        <td>{{$value.name}}</td>
+        <td><a class="linkCursor share_user_delete" title="删除共享用户"><img src="image/delete.png"/></a></td>
+        <td><a class="linkCursor share_user_modify" title="修改共享用户"><img src="image/modify.png"/></a></td>
+    </tr>
+    {{/if}}
+    {{/each}}
+    </tbody>
+</table>

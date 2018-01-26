@@ -1,0 +1,11 @@
+{{ each }}
+<div>
+    <div style="margin: 0 10px 0 10px">
+        <p style="margin:0 0 0 0">{{$value.Reply}}</p>
+        <div style="text-align: right">
+            <p style="margin:0 0 0 0">--{{$value.CreateTime | ParseTime}}&nbsp&nbsp&nbsp{{$value.Publisher.NickName}}</p>
+        </div>
+    </div>
+</div>
+<hr>
+{{ /each }}

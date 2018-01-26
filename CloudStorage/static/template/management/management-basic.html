@@ -1,0 +1,115 @@
+<div class="sub-nav">
+    <div class="container">
+        <div style="position:absolute;;margin:7px 50px 0 0;padding:0">
+            <h2 style="margin:0;display: inline-block"> 交易平台</h2>
+            <div style="margin:0 150px;display:inline-block">
+                <div class="progress" style="position:absolute;top: 20px;width:300px;background:#fff;box-shadow:0 0;border-radius: 0">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%;">
+                    </div>
+                    <p style="margin:0;position:absolute;">
+                        <center>
+                        容量 <small>({{user.Domain.UsedSize / 1024 / 1024 / 1024| FloatFormat}}/{{(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)/ 1024 / 1024 / 1024| FloatFormat}} GB)</small>
+                        &nbsp;&nbsp;&nbsp;<strong>{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%</strong>
+                        </center>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;right:127px">
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')" style="background:#fff">
+                <img src="image/playerpro.png" class="img-circle" style="height:25px;"/>
+                <p onclick="$().GoToUrl('/requirementPage');" class="tovip"> 寻找需求</p>
+            </div>
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')">
+                <img src="image/safer.png" class="img-circle" style="height:25px;"/>
+                <p onclick="$().GoToUrl('/contractPage');" class="tovip"> 管理合同</p>
+            </div>
+            <div class="tovip-hover"
+                onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff');"
+                onmouseover="$('#opendown').show()"
+                onmouseout="$('#opendown').hide()">
+                <img src="image/cloud.png" class="img-circle" style="height:25px;"/>
+                <p class="tovip" onclick="$().GoToUrl('/storagePage');$('#0').click();"> 媒体库</p>
+                <br>
+                <div id="opendown" style="margin-left:-21px;" hidden>
+                    <div class="dropdown-storage">
+                        <p onclick="$().GoToUrl('/storagePage');$('#1').click()" class="tovip" style="display:block;"> 他人共享</p>
+                        <p onclick="$().GoToUrl('/storagePage');$('#2').click()" class="tovip" style="display:block;"> 我的共享</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--
+<div class="col-md-2 sidebar">
+    <ul id="sidebarElement" class="nav nav-sidebar">
+        <li id="myStorage" class="active">
+            <a href="#/storagePage" type="button">
+                <img id="sidebar_default_active_img" class="img-rounded sidebar_li_image" src="image/cloud.png" style="width:30px; height:30px"/>&nbsp;&nbsp;媒体库
+            </a>
+            <ul  class="nav nav-list menu-second collapse in">
+                <li>
+                    <p>容量 <small>({{user.Domain.UsedSize / 1048576| FloatFormat}}/{{(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)/1048576| FloatFormat}} MB)</small></p>
+                    <div class="progress" style="margin:10px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%;">
+                        </div>
+                        <p style="margin:0;position:absolute;left:40%;"><strong>{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%</strong></p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li style="border-top:solid 1px #aaa">
+            <ul class="nav nav-list menu-second collapse in" >
+                <li><a role="tab" data-toggle="tab" onclick="$('#0').click()" style="color:#404040">媒体库</a></li>
+                <li><a role="tab" data-toggle="tab" onclick="$('#1').click()" style="color:#404040">他人共享</a></li>
+                <li><a role="tab" data-toggle="tab" onclick="$('#2').click()" style="color:#404040">我的共享</a></li>
+            </ul>
+        <li>
+        <li id="requirementMgr">
+            <a href="#requirement" class="collapsed" data-toggle="collapse">
+                <img class="sidebar_li_image img-rounded" src="image/playerpro.png" style="width:30px; height:30px"/>&nbsp;&nbsp;需求/合同
+            </a>
+            <ul id="requirement" class="nav nav-list menu-second collapse in">
+                <li id="requirement_page">
+                    <a type="button" onclick="$().GoToUrl('/requirementPage')" style="cursor: pointer">
+                        <img src="image/browser.png" class="img-circle" style="width:25px; height:25px"/>&nbsp;&nbsp;寻找需求
+                    </a>
+                </li>
+                <li id="contract_page">
+                    <a type="button" onclick="$().GoToUrl('/contractPage')" style="cursor: pointer">
+                        <img src="image/safer.png" class="img-circle" style="width:25px; height:25px"/>&nbsp;&nbsp;管理合同
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+-->
+
+    <div class="updata-alert">
+        {{if user.DomainId==Null}}
+        <div style="margin-bottom:5px;">
+            <h4 style="display: inline-block;"><a href="/session#/UpdataPage">开通家庭组</a></h4>
+            <button type="button" class="close" data-dismiss="alert" style="height:40px;">
+                <span class="glyphicon glyphicon-remove" style="margin-right:10px;line-height:40px;" ></span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        {{ /if }}
+        {{ if user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize) > 0.75}}
+        <div style="margin-bottom:5px;">
+            <h4 style="display: inline-block"><a href="/session#/UpdataPage">增值云空间</a></h4>
+            <button type="button" class="close" data-dismiss="alert" style="height:40px;">
+                <span class="glyphicon glyphicon-remove" style="margin-right:10px;line-height:40px;" ></span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        {{ /if }}
+    </div>
+
+
+    <div class="container"  style="min-height:500px;">
+        <div id="functionalArea" class="functionalArea"></div><!--主功能区-->
+    </div>

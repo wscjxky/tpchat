@@ -1,0 +1,38 @@
+<ol class="breadcrumb">
+    {{each data as level index}}
+        {{if active == level.id}}
+            <li class="active">{{level.name}}</li>
+        {{else if index == 0}}
+            <li><a id="{{level.id}}" class="levelTreeItem linkCursor">{{level.name}}</a></li>
+            {{if dataSize >= 5}}
+                <li class="active">...</li>
+            {{/if}}
+        {{else if (index - dataSize + 3 >= 0)}}
+            <li><a id="{{level.id}}" class="levelTreeItem linkCursor">{{level.name}}</a></li>
+        {{/if}}
+    {{/each}}
+	<div class="navigateMode btn-group" style="float:right; margin-top: -7px"  data-toggle="buttons">
+		<label id="gridMode" class="btn btn-default" title="图标模式">
+			<input type="radio" name="options" id="option_grid" autocomplete="off"><span class="glyphicon glyphicon-th-large"></span>
+		</label> 
+		<label id="listMode" class="btn btn-default" title="列表模式">
+			<input type="radio" name="options" id="option_list" autocomplete="off"><span class="glyphicon glyphicon-th-list"></span>
+		</label> 
+	</div>
+
+    <div class="objectFilter btn-group" style="float:right; margin-top: -7px; margin-right: 10px"  data-toggle="buttons">
+        <label id="noneFilter" class="btn btn-default" title="显示所有">
+			<input type="radio" name="options" id="filter_none" autocomplete="off"><span class="glyphicon glyphicon-font"></span>
+		</label>
+		<label id="videoFilter" class="btn btn-default" title="过滤视频">
+			<input type="radio" name="options" id="filter_video" autocomplete="off"><span class="glyphicon glyphicon-film"></span>
+		</label>
+		<label id="picFilter" class="btn btn-default" title="过滤图片">
+			<input type="radio" name="options" id="filter_pic" autocomplete="off"><span class="glyphicon glyphicon-picture"></span>
+		</label>
+        <label id="docFilter" class="btn btn-default" title="过滤文档">
+			<input type="radio" name="options" id="filter_doc" autocomplete="off"><span class="glyphicon glyphicon-file"></span>
+		</label>
+	</div>
+</ol>
+

@@ -1,0 +1,55 @@
+﻿<div class="col-index" style="padding-bottom: 50px">
+    <span id="close" style="line-height:20px;font-size:50px;cursor:pointer;"><a>&times;</a></span>
+    <button id="confirm_select" class="btn btn-success" style="float: right;">确定</button>
+    <h2>
+        <center>选择制作商</center>
+    </h2>
+    <br>
+    <div class="container-fluid">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <div class="input-group">
+                <input id="searchaw-input" type="text" class="form-control input-lg" placeholder="搜索制作商" value="{{ search }}">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-lg" id="searchaw_btn">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    {% if not domain %}
+        <hr>
+        <center><h2 style="color:#ddd">抱歉，没有找到 “{{ search }}” 相关的结果。</h2></center>
+    {% else %}
+    <ul class="col-index ">
+        <li class=" container-fluid">
+            {% for i in domain %}
+            <div class="col-xs-4 text-center company-list" style="padding:0 30px">
+                <div class="checkbox has-success">
+                    <label>
+                        <input class="producer_checkbox" type="checkbox" value="{{ i.Id }}"
+                            {%if i.Id|string() in sh%}checked="checked"{% endif %}>选择该制作商
+                    </label>
+                </div>
+
+                <div class="col-company text-center" style="margin: 10px 0">
+                    <div class="row" style='padding:10px 15px 5px;background-color:#3a5795;color:#fff;'>
+                        <img src="{{ i.Portrait }}">
+                        <p><a style="font-size:15px;color:#fff"><strong>{{ i.CompanyName }}</strong></a></p>
+                    </div>
+                    <p>
+                    <strong>
+                        成交量 {{ i.Trade }}
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        收藏数 {{ i.Focus }}
+                    </strong>
+                    </p>
+                    <div class="container-fluid company-btn">
+                        <a class="btn btn-default" href="/zone/{{ i.Id }}" target="_blank">查看主页</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </li>
+    </ul>
+    {% endif %}
+</div>

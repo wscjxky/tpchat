@@ -1,0 +1,29 @@
+<!--修改共享用户-->
+<div class="modal-dialog  modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+            <h4 class="modal-title">{{name}}</h4>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li class="object_rightGroup">
+                    <input id="share_user_modify_right_write" type="checkbox" name="right"><span>浏览</span>
+                </li>
+                <li class="object_rightGroup">
+                    <input id="share_user_modify_right_create" type="checkbox" name="right"><span>创建</span>
+                </li>
+                <li class="object_rightGroup">
+                    <input id="share_user_modify_right_delete" type="checkbox" name="right"><span>删除</span>
+                </li>
+                <li class="object_rightGroup">
+                    <input id="share_user_modify_right_download" type="checkbox" name="right"><span>下载</span>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button id="share_user_modify_commit" type="button" class="btn btn-primary">修改</button>
+        </div>
+    </div>
+</div>

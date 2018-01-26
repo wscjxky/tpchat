@@ -1,0 +1,133 @@
+﻿<div class="col-index" style="background:#f2f2f2;box-shadow:0 0 37px #ccc;min-height:545px;">
+    <div class="col-xs-2 user-nav text-center">
+        <h2 style="color:#8AC007;margin:20px auto;">我的设置</h2>
+        <hr style="border-color:#ccc">
+        <div class="row">
+            <img src='{{ Domain.Portrait }}' class="card-img" id="card-img">
+            <h5><strong><black>{{NickName}}</black></strong></h5>
+        </div>
+        <ul class="nav" role="tablist" >
+            <li role="presentation" class="active">
+                <a href="#info" id="Info" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> 个人信息</a>
+            </li>
+            <li role="presentation">
+                <a href="#safe" id="Safe" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-lock"></span> 安全设置</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-10" style="padding:20px">
+        <div class="functionalArea_panel tab-content" >
+            <div role="tabpanel"class="tab-pane active in fade" id="info">
+                <div class="row">
+                    <div class="col-md-12" id="card-content">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="display: inline-block">账号信息</h3>
+                                <span class="modifyinfobutton" id="modifyUserInfo"><span class="glyphicon glyphicon-pencil"></span> 修改</span>
+                                <span class="modifyinfobutton" id="CancelModify" style="display: none;">
+                                    <span class="glyphicon glyphicon-remove"></span> 取消</span>
+                                <span class="modifyinfobutton" id="PostUserInfo" style="display: none;margin:0 20px;">
+                                    <span class="glyphicon glyphicon-floppy-disk"></span> 保存</span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <dl class="dl-horizontal">
+                                            {{ if Domain.Status == 0 }}
+                                            <dt>个人头像</dt>
+                                            <dd>
+                                                <div id="portrait-area">
+                                                </div>
+                                            </dd>
+                                            {{ /if }}
+                                            <dt>昵称</dt>
+                                            <dd class="info-list">{{NickName}}</dd>
+                                            <dd><input class="info-edit" id="NickName-edit" placeholder="您的昵称"></dd>
+                                            <dt>手机号码</dt>
+                                            <dd class="info-list">{{CellPhone}}</dd>
+                                            <dd><input class="info-edit" id="CellPhone-edit" placeholder="请填写真实手机"></dd>
+                                            <dt>真实姓名</dt>
+                                            <dd class="info-list" >{{RealName}}</dd>
+                                            <dd><input class="info-edit" id="RealName-edit"  placeholder="请填写真实姓名"></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel"class="tab-pane fade" id="safe">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">基础资料</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container">
+                            <p>注册邮箱：{{Email}}</p>
+                            <p>手机号码：{{CellPhone}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">安全服务</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container">
+                            <p>安全等级：<strong>{{if Level==1}}<red>很弱</red>{{/if}}{{if Level==2}}<yellow>中等</yellow>{{/if}}{{if Level==3}}<green>较强</green>{{/if}}</strong></p>
+                            <div class="progress col-md-6" style="width:40%;padding-left:0">
+                                {{if Level==1}}
+                                    <div class="progress-bar progress-bar-danger"
+                                {{/if}}
+                                {{if Level==2}}
+                                    <div class="progress-bar progress-bar-warning"
+                                {{/if}}
+                                {{if Level==3}}
+                                    <div class="progress-bar progress-bar-success"
+                                {{/if}}
+                                     role="progressbar"  aria-valuemin="0" aria-valuemax="100"
+                                     style="width:{{if Level==1}}10%{{/if}}{{if Level==2}}50%{{/if}}{{if Level==3}}100%{{/if}}"
+                                    ></div>
+                            </div>
+                            <div class="col-md-6">
+                                {{if Level==1}}您的密码有很大风险，建议 {{/if}}
+                                    <ins><a style="cursor:pointer" onclick="$('#ModifyPwd').slideToggle()">修改密码</a></ins>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" id="ModifyPwd" hidden>
+                            <h4>修改密码</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-7" style="border-right:solid 1px #eee;">
+                                    <div class="col-xs-3" align="right" style="padding:0">
+                                        <div style="margin:17px 0"><label>原密码</label></div>
+                                        <div style="margin:17px 0"><label>新密码</label></div>
+                                        <div style="margin:17px 0"><label>重复密码</label></div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div style="margin:10px 0"><input type="password" class="form-control" id="Password" placeholder="原密码"></div>
+                                        <div style="margin:10px 0"><input type="password" class="form-control" id="NewPassword" placeholder="新密码"></div>
+                                        <div style="margin:10px 0"><input type="password" class="form-control" id="reNewPwd"placeholder="重复新密码"></div>
+                                    </div>
+                                    <div class="col-xs-11 text-right">
+                                        <button class="btn btn-green" id="modifypassword">&nbsp;&nbsp;&nbsp;修改&nbsp;&nbsp;&nbsp;</button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5">
+                                    <p><strong>遇到问题 ？</strong></p>
+                                    <ul>
+                                        <li>密码最好7位以上，包含数字、大写与小写的字母。</li>
+                                        <li>验证身份遇到问题？请发送邮箱名或账号信息至jianpianzi@126.com，客服将尽快联系您。</li>
+                                        <li>我怎么找回我的密码？<a href="/findpwd">找回密码</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

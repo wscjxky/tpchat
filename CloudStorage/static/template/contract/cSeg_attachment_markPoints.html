@@ -1,0 +1,11 @@
+{{ each MarkPoints }}
+    <tr class="markpointItem">
+        <td class="markpointTime">{{ $value.Time }}</td>
+        <td>{{ $value.Content }}</td>
+        {{ if IsService }}
+        <td><a title="删除" class="linkCursor"><span class="glyphicon glyphicon-trash"style="cursor:not-allowed"></span></a></td>
+        {{ else }}
+        <td><a title="删除" class="linkCursor delMarkPoint" value="{{ $value.Time }}"><red><span class="glyphicon glyphicon-trash"></span></red></a></td>
+        {{ /if }}
+    </tr>
+{{ /each }}

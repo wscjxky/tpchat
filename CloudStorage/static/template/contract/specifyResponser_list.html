@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>选择</th>
+        <th>用户名</th>
+        <th>所属家庭组</th>
+    </tr>
+    </thead>
+    <tbody id="searchResult">
+    {{each ContractUserGroup}}
+    {{ if DomainId == $value.DomainId }}
+    <tr>
+        <td class="specifyUser_id" style="display: none">{{$value.UserId}}</td>
+        <td class="specifyUser_check"><input type="radio" {{ if $value.UserId == Segment.ServiceResponser  || $value.UserId == Segment.CustomerResponser }}checked="checked"{{ /if }} name="user"></td>
+        <td>{{$value.User.NickName}}</td>
+        <td>{{$value.User.Domain.Name}}</td>
+    </tr>
+    {{ /if }}
+    {{/each}}
+    </tbody>
+</table>

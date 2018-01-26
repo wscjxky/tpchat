@@ -1,0 +1,71 @@
+{% extends "admin/promote_manage.html" %}
+{% block promoteBody %}
+    <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <div class="col-md-6">
+                <h4>添加客户到首页 <button class="btn btn-default" id="add">添加</button></h4>
+                <hr>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="input_searchUser" placeholder="输入客户注册邮箱">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="searchDomain">查找</button>
+                    </span>
+                </div>
+                <ul class="list-group" style="margin-top: 20px">
+                    {% for value in params.searchUsers %}
+                    <a class="list-group-item addItems" value="{{ value.Id }}">
+                        <strong>{{ value.DomainName }}</strong>  Company:{{ value.CompanyName }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>客户 <button class="btn btn-default" id="del">删除</button></h4>
+                <hr>
+                <ul class="list-group">
+                    {% for value in params.users %}
+                    <a class="list-group-item delItems" value="{{ value.Id }}">
+                        <strong>{{ value.DomainName }}</strong>  Company:{{ value.CompanyName }}
+                    </a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $('.list-group-item').click(function(e){
+            $('.list-group-item').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        });
+        $('#searchDomain').click(function(){
+            window.location.href = '/admin/promote/user?search=' + $('#input_searchUser').val();
+        });
+        $('#add').click(function(){
+            var targetId = $('.addItems.active').attr('value');
+            update('add', targetId);
+        });
+        $('#del').click(function(){
+            var targetId = $('.delItems.active').attr('value');
+            update('del', targetId);
+        });
+        function update(operator, targetId){
+            if (!targetId)
+                return;
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/user",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    operator: operator,
+                    targetId: targetId
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/user';
+                }
+            });
+        }
+    </script>
+{% endblock %}

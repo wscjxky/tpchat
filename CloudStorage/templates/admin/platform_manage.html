@@ -1,0 +1,14 @@
+{% extends "admin/admin_index.html" %}
+{% block body %}
+    <ul class="nav nav-tabs nav-justified">
+        <li role="presentation"><a href="/admin/platform/storage">云空间管理</a></li>
+        <li role="presentation"><a href="/admin/platform/trade">交易管理</a></li>
+        <li role="presentation"><a href="/admin/platform/contract">合同管理</a></li>
+        <li role="presentation"><a href="/admin/platform/apply">转现申请管理</a></li>
+        <li role="presentation"><a href="/admin/platform/leaveMsg">客户留言</a></li>
+    </ul>
+    <div class="container-fluid">
+    {% block platformBody %}
+    {% endblock %}
+    </div>
+{% endblock %}

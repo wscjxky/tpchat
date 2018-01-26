@@ -1,0 +1,30 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-1">注册ID</th>
+        <th class="col-md-2">邮箱</th>
+        <th class="col-md-1">密码</th>
+        <th class="col-md-2">执照</th>
+        <th class="col-md-1">联络人</th>
+        <th class="col-md-1">电话</th>
+        <th class="col-md-1">证件照</th>
+        <th class="col-md-1">头像</th>
+        <th class="col-md-1">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{each userInfos}}
+    <tr class="requirement_item">
+        <td>{{$value.Id}}</td>
+        <td>{{$value.NickName}}</td>
+        <td>{{$value.Password}}</td>
+        <td>{{$value.License}}</td>
+        <td>{{$value.RealName}}</td>
+        <td>{{$value.CellPhone}}</td>
+        <td><a id="">照片</a></td>
+        <td><a id="">照片</a></td>
+        <td><a id="">删除</a></td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

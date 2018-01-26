@@ -1,0 +1,18 @@
+{{ each zone_pic }}
+<div class="col-xs-2" style="padding:5px;position:relative;height:175px;">
+    <div class="wall-a" id="{{$value.Id}}" style='background-image: url("{{$value.Object.File.Path}}")'>
+        <span id="wall_cancel" class="glyphicon glyphicon-minus-sign"
+            style="position:absolute;cursor:pointer;font-size:0px;top:5px;right:5px;color:red">
+        </span>
+        <div class="wall-intro">
+            <h4 class="wall-file">{{$value.Object.Name}}</h4>
+            <p class="wall-author">{{user.NickName}}</p>
+        </div>
+    </div>
+    <div class="PicIntro">
+        <small>简介：<span>{{ $value.Intro }}</span></small>
+        <span class="glyphicon glyphicon-pencil ModifyPicIntro" style="cursor:pointer;float: right;"></span>
+    </div>
+    <input class="PicIntroText form-control" style="display: none">
+</div>
+{{ /each }}

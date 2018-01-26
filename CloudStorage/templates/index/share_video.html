@@ -1,0 +1,55 @@
+{% extends "index/index.html" %}
+{% block body%}
+<div class="container-fluid screen">
+    <div class="container-fluid text-center" style="margin:5px auto">
+        <div id="video_player" style="margin:0 auto;"></div>
+        <input id="video_path" value="{{ object.File.VideoFile}}" hidden>
+        <input id="VideoInfo_obj" value="{{ object.Id }}" hidden>
+        <input id="VideoInfo_domain" value="{{ domain.Id }}" hidden>
+    </div>
+</div>
+{% if not check_share %}
+<div class="container-fluid" style="padding: 20px">
+    <div class="col-md-11 col-xs-10">
+        <div class="container-fluid shareBox" {% if not object.BShare %}hidden{% endif %}>
+            <div class="bdsharebuttonbox">
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+            </div>
+            <script>
+                window._bd_share_config={
+                    "common":{
+                        "bdSnsKey":{},
+                        "bdText":"精彩案例，商影联盟，用心智造！",
+                        "bdMini":"2",
+                        "bdMiniList":false,
+                        "bdPic":"http://jianpianzi.com/image/logo256.png",
+                        "bdStyle":"1",
+                        "bdSize":"24"
+                    },
+                    "share":{},
+                    "image":{
+                        "viewList":["weixin","tsina","qzone","sqq","tqq","renren"],
+                        "viewText":"分享到：",
+                        "viewSize":"16"
+                    },
+                    "selectShare":{
+                        "bdContainerClass":null,
+                        "bdSelectMiniList":["weixin","tsina","qzone","sqq","tqq","renren"]
+                    }
+                };
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+            </script>
+        </div>
+    </div>
+</div>
+{% else %}
+{% endif %}
+<script src="/static/script/player/ckplayer/ckplayer.js"></script>
+<script src="{{ url_for('.static', filename='index/share_video.js') }}"></script>
+{% endblock %}

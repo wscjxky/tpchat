@@ -1,0 +1,302 @@
+{% extends 'mobile/frame.html' %}
+{% block head %}
+    <header style="color:#fff;background: #69360e;">
+        <table style="width: 100%;display:table;">
+            <tr>
+                <td style="width:85%; text-overflow: ellipsis;">
+                    <ol class="breadcrumb" style="padding: 14px 0px 8px 30px;">
+                    {% for level in levels %}
+                        <li><a class="linkCursor levelItem" data-id="{{ level.Id }}">{{level.Name}}</a></li>
+                    {% endfor %}
+                    </ol>
+                </td>
+                <td style="width:15%;">
+                    <div class="dropdown" style="text-align: right; padding: 6px 28px 12px 0px;">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="media_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="media_menu">
+                        <li><a class="media-menu" data-mode="del"><h2>删除文件</h2></a></li>
+                        <li><a class="media-menu" data-mode="share"><h2>文件分享</h2></a></li>
+                        <li><a class="media-menu" data-mode="unregister"><h2>用户注销</h2></a></li>
+                      </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid operator del-operator" hidden>
+    <h1>删除操作中：当前已选择文件<span id="delNum">0</span>个</h1>
+    <div>
+        <button class="btn btn-danger del-operator-confirm">确定</button>
+        <button class="btn btn-warning operator-cancel">取消</button>
+    </div>
+</div>
+<div class="container-fluid operator share-operator" hidden>
+    <h1>请选择分享的文件：<span id="shareName"></span></h1>
+    <div>
+        <button class="btn btn-success share-operator-confirm">确定</button>
+        <button class="btn btn-warning operator-cancel">取消</button>
+    </div>
+</div>
+<div class="container-fluid operator share-to-operator" hidden>
+    <div class="col-xs-4 col-md-4"><h1>分享到：</h1></div>
+    <div class="bdsharebuttonbox col-xs-4 col-md-4">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+    </div>
+    <div class="col-xs-4 col-md-4 share-to-btns">
+        <button class="btn btn-warning operator-cancel">关闭</button>
+    </div>
+</div>
+<div class="container-fluid" style="padding-top: 15px;">
+{% for item in Items %}
+    <div class="col-md-2 col-xs-4 object" data-id="{{ item.Id }}" data-type="{{ item.Type }}"
+         data-path="{{ item.File.Path }}" data-name="{{ item.Name }}" data-srcpath="{{ item.File.VideoFile }}">
+        <div class="object_image" style="
+            {% if item.File.Status == 2 %}
+            background-image: url(/static/image/transcoding.png)">
+            {% elif item.File.Status == 0 %}
+            background-image: url(/static/image/unknown.png)">
+            {% elif item.Type == 0 or item.Type == 1 %}
+            background-image: url({{ item.File.Path }})">
+            {% elif item.Type == 2 %}
+            background-image: url(/static/image/text.png)">
+            {% elif item.Type == None %}
+            background-image: url(/static/image/folder.png)">
+            {% else %}
+            background-image: url(/static/image/unknown.png)">
+            {% endif %}
+            {% if item.BShare %}
+            <div style="position:absolute;width:inherit;" title="已分享">
+                <img src="/static/image/show.jpg" style="position:absolute;margin-top:10px;margin-left: 25px;z-index:1">
+            </div>
+            {% endif %}
+            <img class="operator selector" id="sel_{{ item.Id }}" src="/static/image/right.png" style="width: 50%" hidden>
+        </div>
+        <div class="object_text" style="bottom: 0">
+            <p class="label" title="{{item.Name}}" style="color: #000">{{item.Name}}</p>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+<div class="modal fade" id="imageViewer">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body" style="text-align: center">
+          <img id="imageContainer" src="" style="max-width: 100%">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="pdfViewer">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body" style="text-align: center">
+          <iframe id="pdfPlayer" style="min-width: 100%; height: 1000px"></iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+
+<script type="text/javascript">
+    var mode = 'normal';
+    var dels = [];
+    var shareObjId = null;
+    var curParentId = {{ parentId }};
+
+    $('.object').click(function (e) {
+        if (mode == 'normal')
+            normal_mode_click(e);
+        else if (mode == 'del')
+            del_mode_click(e);
+        else if (mode == 'share')
+            share_mode_click(e);
+    });
+    $('.levelItem').click(function(e){
+        var id = $(e.currentTarget).attr('data-id');
+        window.location.href = "/mobile/media/" + id;
+    });
+    $('.media-menu').click(function(e){
+        var m = $(e.currentTarget).attr('data-mode');
+        if (m == 'new'){
+            var param = {Name: '新建文件夹', DestId: curParentId};
+            $.ajax({
+                type: "POST",
+                url: "/cloud/createDir",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(param),
+                success: function (data) {
+                    if (data.errorCode != null) {
+                        alert('新建目录操作失败, 问题描述:' + data.errorMsg);
+                        return;
+                    }
+                    window.location.reload();
+                },
+                error: function () {
+                    alert("新建目录操作失败，网络异常");
+                }
+            });
+            return;
+        }
+        else if (m == 'del'){
+            dels = [];
+            $('#delNum').text(dels.length);
+            $('.del-operator').show();
+        }
+        else if (m == 'share'){
+            shareObjId = null;
+            $('#shareName').text('');
+            $('.share-operator').show();
+        }
+        else if(m == 'unregister') {
+            if (confirm("确定注销吗？") != true)
+                return;
+
+            $.ajax({
+                type: "POST",
+                url: "/mobile/logout",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({}),
+
+                success: function (data) {
+                        window.location.href = "/mobile/bindWX?path=http://jianpianzi.com/mobile/media";
+                },
+                error: function () {
+                    alert("网络异常");
+                }
+            });
+
+            return;
+        }
+
+        mode = m;
+    });
+    $('.operator-cancel').click(function(e){
+        $('.operator').hide();
+        mode = 'normal';
+    });
+    $('.del-operator-confirm').click(function(e){
+        $('.operator').hide();
+        mode = 'normal';
+        $.ajax({
+            type: "POST",
+            url: "/cloud/delObject",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({Ids: dels}),
+
+            success: function (data) {
+                if (data.failedContent != null) {
+                    alert("删除文件操作失败.问题描述: " + data.failedContent);
+                }
+                window.location.reload();
+            },
+            error: function () {
+                alert("删除文件操作失败，网络异常");
+            }
+        });
+    });
+    $('.share-operator-confirm').click(function(e){
+        $('.share-operator').hide();
+        if (!shareObjId){
+            mode = 'normal';
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "/cloud/modifyShareProperty",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({ObjectId: shareObjId, BShare: true}),
+
+            success: function (data) {
+                if (data.errorCode != null) {
+                    alert("分享文件操作失败.问题描述: " + data.errorMsg);
+                    mode = 'normal';
+                }
+                $('.operator').hide();
+            },
+            error: function () {
+                alert("分享文件操作失败，网络异常");
+            }
+        });
+    });
+    function normal_mode_click(e){
+        var id = $(e.currentTarget).attr('data-id');
+        var type = $(e.currentTarget).attr('data-type');
+        var path = $(e.currentTarget).attr('data-path');
+        var name = $(e.currentTarget).attr('data-name');
+        var srcPath = $(e.currentTarget).attr('data-srcpath');
+        var pp = $('#pdfPlayer');
+        var ic = $('#imageContainer');
+
+        if (type == 'None'){
+            window.location.href = "/mobile/media/" + id;
+        }
+        else if (type == 0){
+            window.location.href = "/mobile/share/" + id;
+        }
+        else if (type == 1){
+            ic.attr("src", path);
+            $('.modal-title').text(name);
+            $('#imageViewer').modal('show');
+        }
+        else if (type == 2){
+            var url = "/static/script/pdf/web/viewer.html?file=" + srcPath;
+            pp.attr("src", url);
+            $('#pdfViewer').modal('show');
+        }
+    }
+    function del_mode_click(e){
+        var id = $(e.currentTarget).attr('data-id');
+        var selector = '#sel_' + id;
+
+        if ($.inArray(id, dels) != -1){
+            $(selector).hide();
+             dels.splice($.inArray(id,dels),1);
+        }
+        else{
+            $(selector).show();
+            dels.push(id);
+        }
+
+        $('#delNum').text(dels.length);
+    }
+    function share_mode_click(e){
+        var id = $(e.currentTarget).attr('data-id');
+        var name = $(e.currentTarget).attr('data-name');
+        var selector = '#sel_' + id;
+
+        $('.selector').hide();
+        $(selector).show();
+        $('#shareName').text(name);
+
+        shareObjId = id;
+    }
+</script>
+{% endblock %}

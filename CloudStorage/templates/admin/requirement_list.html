@@ -1,0 +1,42 @@
+{% extends "admin/admin_index.html" %}
+{% block body %}
+<h2>需求列表</h2>
+<table class="table table-hover table-condensed table-bordered" style="border:solid 1px #aaa;">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>用户</td>
+            <td>制作商</td>
+            <td>标题</td>
+            <td>价格</td>
+            <td>类型</td>
+            <td>详情</td>
+            <td>合同</td>
+            <td>状态</td>
+            <td>创建时间</td>
+            <td>截至时间</td>
+        </tr>
+    </thead>
+    <tbody>
+    {% for value in requirement %}
+        <tr>
+            <td>{{value.Id}}</td>
+            <td>{{value.PublisherId}}</td>
+            <td>{{value.Contract.ServiceUserId}}</td>
+            <td>{{value.Title}}</td>
+            <td>{{value.Amount}}</td>
+            <td>{{value.Type}}</td>
+            <td>{{value.Detail}}</td>
+            <td>{{value.Contract.Id}}</td>
+            {% if value.Status == 1 %}
+                <td><red>未接</red></td>
+            {% else %}
+                <td>已接</td>
+            {% endif %}
+            <td>{{value.CreateTime}}</td>
+            <td>{{value.Deadline}}</td>
+        </tr>
+    {% endfor%}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,33 @@
+﻿<header>
+    <div class="container" style="display:table">
+        <div style="display: inline-block; position: absolute; left: 20px; top: 3px; z-index: 100">
+            <a href="/">
+                <h3 style="margin:0"><img src="/image/logo.png" style="height:40px"/></h3>
+            </a>
+        </div>
+        <div style="float:right">
+            <div class="dropdown" style="cursor: pointer">
+                <a id="top_drop" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="true" class="top-change-moudle dropdown-toggle" title="设置" hidden>
+                    <p class="top_login" id="top_username"></p>&nbsp;
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="top_drop">
+                    <li role="presentation" style="text-align: center;"><a onclick="$().GoToUrl('/UpdataPage');">管理中心</a></li>
+                    <li role="presentation" style="text-align: center;"><a onclick="$().GoToUrl('/UserInfoPage');">我的设置</a></li>
+                    <li role="presentation" style="text-align: center;"><a id="top_collection" href="/collection/{{ userId }}">我的收藏</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" style="text-align: center;"><a id="Logout"> 退 出 </a></li>
+                </ul>
+            </div>
+            <div id="top-right-button" hidden>
+                <a id="top_trade" onclick="$().GoToUrl('/requirementPage');" style="cursor:pointer;" hidden>&nbsp;&nbsp;&nbsp;交易平台&nbsp;&nbsp;&nbsp;</a>
+                <a id="top_requirement" onclick="$().GoToUrl('/requirementPage');" style="cursor:pointer;">&nbsp;&nbsp;&nbsp;需求管理&nbsp;&nbsp;&nbsp;</a>
+                <a id="top_videostore" onclick="$().GoToUrl('/storagePage');" style="cursor:pointer;">&nbsp;&nbsp;&nbsp;视频管理&nbsp;&nbsp;&nbsp;</a>
+                <div>
+                <a id="top_msgcenter"  onclick="$().GoToUrl('/msgCenter');" style="cursor:pointer;" hidden>&nbsp;&nbsp;&nbsp;消息中心&nbsp;&nbsp;&nbsp;</a>
+                    <span class="new-msgTip" style="font-size: 35px; position: absolute; top: -5px; right: 0" hidden><red>&bull;</red></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

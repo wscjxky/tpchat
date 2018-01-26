@@ -1,0 +1,81 @@
+[ 2017-09-17T17:14:11+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=88fc9c3d8bf5f0be06ac03716781ed06ddc6bbf9&timestamp=1505639651&nonce=967619550&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 47 行.
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-09-17T17:14:11+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=25abad2967ac7e134eac23a933bdebf609c912d2&timestamp=1505639651&nonce=1463846059&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-09-17T17:14:48+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=72e49b072c2b82e31941a399d7498768cae76a20&timestamp=1505639688&nonce=738605001&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 43 行.
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 47 行.
+NOTIC: [8] Undefined index: key /mnt/tpchat/Application/Home/Controller/IndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-17T19:07:42+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=29192df6ca40c5d49d52eff4c76469c11ee46116&timestamp=1505646462&nonce=1792814605&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-09-17T22:11:13+08:00 ] 127.0.0.1 /tpchat/index.php/home/access/getredid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-09-17T22:11:59+08:00 ] 127.0.0.1 /tpchat/index.php/home/access/getredid%E3%80%81
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+ERR: 非法操作:getredid、
+
+[ 2017-09-17T22:12:01+08:00 ] 127.0.0.1 /tpchat/index.php/home/access/getredid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001540s ]
+

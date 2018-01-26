@@ -1,0 +1,122 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title">洽谈方案
+                <span style="font-size: 13px">
+                    [来自{{ follower.Follower.Domain.CompanyName }}]
+                </span>
+            </h4>
+        </div>
+        <div class="modal-body" style="min-height: 350px">
+            <ul class="nav nav-tabs" role="tablist">
+                <li id="scheme-tab" class="active"><a role="tab" data-toggle="tab" href="#schemeTab">方案</a></li>
+                <li id="msg-tab"><a role="tab" data-toggle="tab" href="#schemeTalk">讨论区</a></li>
+                <button id="refresh-talk" class="btn btn-success" style="float: right; display:none">刷新</button>
+            </ul>
+            <div class="tab-content col-xs-12" style="padding: 0">
+                <div class="tab-pane fade in active" id="schemeTab" style="overflow-y: auto; overflow-x: hidden; height: 290px">
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>视频类型</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Format}}</div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>时间长度</black></div>
+                        {{ if follower.Long }}
+                        <div class="col-md-10 contract-detail_r">{{ follower.Long }}分钟</div>
+                        {{ else }}
+                        <div class="col-md-10 contract-detail_r">--</div>
+                        {{ /if }}
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>交付时间</black></div>
+                        <div class="col-md-10 contract-detail_r"><red><strong>{{requirement.Deadline | ParseDate}}</strong></red></div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>商家报价</black></div>
+                        <div class="col-md-10 contract-detail_r"><red><strong>{{follower.Amount}}元</strong></red></div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>价格明细</black></div>
+                        <div class="col-md-10 contract-detail_r">
+                            <span>基础价格:{{ follower.BasePrice }}元 | </span>
+                            <span>内容策划:{{ follower.SchemePrice }}元 | </span>
+                            <span>拍摄服务:{{ follower.ShotPrice }}元 | </span>
+                            <span>演员模特:{{ follower.ActorPrice }}元 | </span>
+                            <span>配音配乐:{{ follower.MusicPrice }}元 | </span>
+                            <span>后期制作:{{ follower.AEPrice }}元</span>
+                        </div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>押金比例</black></div>
+                        <div class="col-md-10 contract-detail_r"><red><strong>{{follower.DepositPercent}}%</strong></red></div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>实现方案</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Script | htmlEncode}}</div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>附件</black></div>
+                        <div class="col-md-10 contract-detail_r fattachment"></div>
+                    </div>
+                    <!--<div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>字幕方案</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Subtitle | htmlEncode}}</div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>配音方案</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Voice | htmlEncode}}</div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>背景音方案</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Gbm | htmlEncode}}</div>
+                    </div>
+                    <div class="row contract-detail-item">
+                        <div class="col-md-2 contract-detail" align="center"><black>备注信息</black></div>
+                        <div class="col-md-10 contract-detail_r">{{follower.Remark | htmlEncode}}</div>
+                    </div>-->
+                </div>
+                <div class="tab-pane fade" id="schemeTalk" style="overflow-y: auto; overflow-x: hidden; height: 290px">
+                    <div class="row contract-detail-item">
+                        <br>
+                        <div class="col-md-12 contract-detail_r" id="suggestion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div id="sendMsg-panel" class="container-fluid" style="display: none">
+                <div class="col-xs-11">
+                    <input type="text" class="form-control replyTextArea" placeholder="您可以在此针对方案提建议">
+                </div>
+                <div class="col-xs-1" style="padding-left: 5px">
+                    <button id="sendMsg" class="btn btn-default" value="{{ follower.FollowerProducerId }}">发送</button>
+                </div>
+            </div>
+            <div id="scheme-btns">
+                {{ if follower.Status }}
+                <button id="confirm" class="btn btn-info" value="{{ follower.Id }}">支付押金，启动制作</button>
+                <button id="cancel-confirm" class="btn btn-warning" value="{{ follower.Id }}">继续协商</button>
+                {{ else }}
+                <button id="quit-confirm" class="btn btn-warning" value="{{ follower.Id }}">退出</button>
+                {{ /if }}
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('#scheme-tab').click(function(){
+                $('#sendMsg-panel').css('display', 'none');
+                $('#scheme-btns').show();
+                $('#refresh-talk').hide();
+            });
+            $('#msg-tab').click(function(){
+                $('#sendMsg-panel').css('display', 'block');
+                $('#scheme-btns').hide();
+                $('#refresh-talk').show();
+            });
+        </script>
+    </div>
+</div>

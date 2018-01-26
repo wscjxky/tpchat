@@ -1,0 +1,142 @@
+var swfu;
+var index = 0;
+var count= 0;
+var Uploader = {
+    getFileSize: function (num) {
+        if (isNaN(num)) {
+            return false;
+        }
+        num = parseInt(num);
+        var units = [" B", " KB", " MB", " GB"];
+        for (var i = 0; i < units.length; i += 1) {
+            if (num < 1024) {
+                num = num + "";
+                if (num.indexOf(".") != -1 && num.indexOf(".") != 3) {
+                    num = num.substring(0, 4);
+                } else {
+                    num = num.substring(0, 3);
+                }
+                break;
+            } else {
+                num = num / 1024;
+            }
+        }
+        return num + units[i];
+    },
+
+    updateStatus: function (fileId, html) {
+        //  $("#file_tr_" + fileId).get(0).cells[2].innerHTML = html;
+    },
+
+    updateOpt: function (fileId, html) {
+        //$("#file_tr_" + fileId).get(0).cells[3].innerHTML = html;
+    },
+
+    Handler: {
+        fileQueued: function (file) {
+          //  swfu.cancelUpload();
+            // $("#photo-uploader-files-list").append("<tr id='file_tr_" + file.id + "'><td>" + file.name + "</td><td>" + Uploader.getFileSize(file.size) + "</td><td>绛夊€欎笂浼�</td><td class='opt'><a href='#'>鍒犻櫎</a></td></tr>");
+            if (index == 0) {
+                $("#up_queue").append("<tr  class='up_queue_item one'   id='file_tr_" + file.id + "'><td>" + file.name + "</td><td >" + Uploader.getFileSize(file.size) + "</td><td class='progress' >绛夊€欎笂浼�</td><td class='opt'><a href='#'>鍒犻櫎</a></td></tr>");
+                index = 1;
+            }
+            else if (index == 1) {
+                $("#up_queue").append("<tr  class='up_queue_item two'   id='file_tr_" + file.id + "'><td>" + file.name + "</td><td >" + Uploader.getFileSize(file.size) + "</td><td class='progress'>绛夊€欎笂浼�</td><td class='opt'><a href='#'>鍒犻櫎</a></td></tr>");
+                index = 0;
+            }
+            $("#file_tr_" + file.id + "  a").click(function () {
+                if (($("#file_tr_" + file.id + "  a").text()) == "鍒犻櫎") {
+                    $("#up_queue  #file_tr_" + file.id).remove(); //鍒犻櫎鍏冪礌
+                    swfu.cancelUpload(file.id, null);  //浠庨槦鍒楀垹闄ゆ枃浠�
+                }
+                else {
+                    ;
+                }
+            });
+        },
+
+        uploadComplete: function (file) {
+            ;
+            //閫掑綊瀹炵幇鑷姩鎵归噺涓婁紶
+            this.startUpload();
+
+        },
+
+        uploadStart: function (file) {
+            //寮€濮嬩笂浼犳鏂囦欢
+            Uploader.updateStatus(file.id, "寮€濮嬩笂浼�");
+        },
+
+        uploadProgress: function (file, bytesLoaded, bytesTotal) {
+            var percent = Math.ceil((bytesLoaded / bytesTotal) * 100);
+            $("#file_tr_" + file.id + " td.progress").html(percent + "%");
+
+        },
+
+        uploadSuccess: function (file, serverData) {
+            //  Uploader.updateStatus(file.id, "涓婁紶瀹屾瘯");
+            //   var data = eval("(" + serverData + ")");
+            //   $("#file_tr_" + file.id + " a").attr("href", data.fileUrl).html("鏌ョ湅鏂囦欢");
+            //  $("#file_tr_" + file.id + " a").attr("click", "");
+            alert(serverData);
+
+        },
+
+        fileQueueError: function (file, errorCode, message) {
+
+        }
+    }
+};
+
+$(function(){
+	swfu = new SWFUpload({
+		//debug:true,
+		upload_url : "upload.aspx",
+		flash_url : "swfupload/swfupload.swf",
+		file_size_limit : "500 MB",
+		file_types : "*.*",
+		file_types_description : "All Image Files",
+		file_post_name: "file",
+		use_query_string: true,  //浼犻€掑弬鏁板惁鍒欐棤娉曚娇鐢�
+		post_params: {           //浼犻€掔粰搴旂敤鐨勫弬鏁�
+		    "action": "save",
+            "from":"",//璇锋眰鐨勫簲鐢�
+            "filetype": ""//鏂囦欢灞炴€�
+	    },
+		button_placeholder_id : "spanSWFUploadButton",
+		button_width : 60,
+		button_height : 30,
+		button_text : "<b>Add Files</b>",
+		button_text_left_padding : 3,
+		button_text_top_padding : 2,
+		button_cursor : SWFUpload.CURSOR.HAND,
+
+		//handler
+		file_queued_handler : Uploader.Handler.fileQueued,
+		file_queue_error_handler : Uploader.Handler.fileQueueError,
+		upload_complete_handler : Uploader.Handler.uploadComplete,
+		upload_start_handler : Uploader.Handler.uploadStart,
+		upload_progress_handler : Uploader.Handler.uploadProgress,
+		upload_success_handler : Uploader.Handler.uploadSuccess
+	});
+})
+
+function lock() {
+
+    var m = "mask";
+    var newMask = document.createElement("div"); //鍔ㄦ€佸垱寤篸iv  鍒╃敤document瀵硅薄
+    newMask.id = m; //璁剧疆div鐨刬d灞炴€� 閫氳繃js
+    newMask.style.position = "absolute"; //璁剧疆缁濆瀹氫綅
+    newMask.style.zIndex = "1000"; //璁剧疆z-index
+    _scrollWidth = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth); //瀹藉害瀹屽叏灞忚斀 蹇呴』鐨�
+    _scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); //楂樺害 蹇呴』鐨�
+    newMask.style.width = _scrollWidth + "px"; //鎺╃爜鍥剧墖鐨勫搴�
+    newMask.style.height = _scrollHeight + "px"; //鎺╃爜鍥剧墖鐨勯珮搴�
+    newMask.style.top = "0px"; //椤堕儴
+    newMask.style.left = "0px"; //宸﹁竟
+    newMask.style.background = "#122222"; //灞忚斀棰滆壊蹇呴』璁剧疆鍚﹀垯涓嶇敓鏁�
+    newMask.style.filter = "Alpha(opacity=70)"; //瀹炵幇閫忔槑鐨勫叧閿唬鐮� 璁剧疆閫忔槑搴﹂拡瀵笽E  css鐨� filter灞炴€�
+    newMask.style.opacity = "0.8"; //W3C鏍囧噯閫忔槑
+    document.body.appendChild(newMask);  //澧炲姞灞忚斀鍥惧眰鍒癰ody
+
+}

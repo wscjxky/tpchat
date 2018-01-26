@@ -1,0 +1,79 @@
+﻿<div class="container" style="width: 95%">
+    <div class="page-header" style="margin: 0">
+        <h2>
+            <span id="quitSearch" class="glyphicon glyphicon-circle-arrow-left"></span>
+            搜索制作商
+            <button id="cancel_select" type="button" class="btn btn-warning" style="float: right">取消</button>
+            <button id="confirm_select" type="button" class="btn btn-success" style="float: right">确定</button>
+        </h2>
+    </div>
+    <div class="container-fluid" style="margin-top: 20px">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-search"></span></span>
+                <input id="searchaw-input" type="text" class="form-control" placeholder="搜索制作商" aria-describedby="sizing-addon2">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" id="searchaw_btn" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    {{ if domain.length == 0 }}
+        <hr>
+        <center><h2 style="color:#ddd">抱歉，没有找到 “{{ search }}” 相关的结果。</h2></center>
+    {{ else }}
+    <ul class="list-group searchpage_ul">
+        {{ if domain.length > 0 }}
+        <li class="list-group-item col-md-12">共有<strong><green>{{ domain.length }}</green></strong>条和搜索相关的制作商信息</li>
+        <li class="list-group-item col-md-12" style="padding: 0">
+            {{ each domain }}
+            {{ if $value.Status == 2 }}
+            <div class="col-xs-4 text-center company-list" style="padding:0 30px">
+                <div class="checkbox has-success">
+                    <label>
+                        <input class="producer_checkbox {{"producer_checkbox_" +  $value.Id }}" type="checkbox" value="{{ $value.Id }}">选择该制作商
+                    </label>
+                </div>
+
+                <div class="col-company text-center" style="margin: 10px 0">
+                    <div class="row" style='padding:10px 15px 5px;background-color:#3a5795;color:#fff;'>
+                        <img src="{{ $value.Portrait }}">
+                        <p><a style="font-size:15px;color:#fff"><strong>{{ $value.CompanyName }}</strong></a></p>
+                    </div>
+                    <p>
+                    <strong>
+                        成交量 {{ $value.Trade }}
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        收藏数 {{ $value.Focus }}
+                    </strong>
+                    </p>
+                    <div class="container-fluid company-btn">
+                        <a class="btn btn-default" href="/zone/{{ $value.Id }}" target="_blank">查看主页</a>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-md-4" style="border-right: solid 1px #ddd; text-align: center">
+                <div class="checkbox has-success">
+                    <label>
+                        <input class="producer_checkbox {{"producer_checkbox_" +  $value.Id }}" type="checkbox" value="{{ $value.Id }}">选择该制作商
+                    </label>
+                </div>
+                <hr>
+                <img id="producerLogo" src='{{ $value.Portrait }}' style="margin-top: 20px; height: auto; width: auto; min-height:150px; max-height: 150px; max-width: 100%">
+                <hr style="margin-top: 20px">
+                <dl style="text-align: left">
+                  <dt>制作商</dt>
+                  <dd><a href="{{'/zone/' +  $value.Id }}" target="_Blank">{{ $value.CompanyName }}</a></dd>
+                  <dt>简介</dt>
+                  <dd style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width: 100%" title="{{ $value.Intro }}">{{ $value.Intro }}</dd>
+                </dl>
+            </div>-->
+            {{ /if }}
+            {{ /each }}
+        </li>
+        {{ /if }}
+    </ul>
+    {{ /if }}
+</div>

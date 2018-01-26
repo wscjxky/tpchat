@@ -1,0 +1,70 @@
+{% extends "index/index.html" %}
+{% block body %}
+<div class="container-fluid" style="margin-bottom: 30px">
+    <div class="col-index">
+        <div class="container-fluid">
+            <h2 style="margin:30px 0"><red>找回密码</red></h2>
+        </div>
+        <div class="container-fluid" style="border:solid 1px #aaa;background:#eee;border-radius: 5px">
+            <div class="col-md-7" style="border-right:solid 1px #aaa;padding:20px;">
+                <div class="signup" id="signup">
+                    <h4><strong>通过邮箱找回</strong></h4>
+                    我们发送验证码到您的邮箱，您输入验证码即可找回密码。
+                    <hr>
+                    <form action="FindPwd" method="post">
+                        <div class="row text-right">
+                            <div class="col-xs-3 col-md-4">
+                                <h5>邮箱</h5>
+                            </div>
+                            <div class="col-xs-9 col-md-6">
+                                <input class="form-control" type="text" name="email" placeholder="邮箱">
+                                <div class="col-xs-12">
+                                    <red><h5><strong name="email-error"></strong></h5></red>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-right">
+                            <div class="col-xs-3 col-md-4">
+                                <h5>验证码</h5>
+                            </div>
+                            <div class="col-xs-9 col-md-6">
+                                <div class="col-xs-7" style="padding: 0">
+                                    <input class="form-control" name="FindPwdIdentityCode" placeholder="邮箱验证码">
+                                </div>
+                                <div class="col-xs-5" style="padding-right:0">
+                                    <input id="FindPwdSendIdentityCode" class="btn btn-primary" style="width:100%" value="发送验证码" type="button">
+                                </div>
+                                <red><p id="sendstatus" style="padding-top:40px"></p></red>
+                            </div>
+
+                        </div>
+                        <hr>
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                               {% for message in messages %}
+                                  <h4 class="text-right"><strong><red>{{ message }}</red></strong></h4>
+                               {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                        <div class="row text-left" style="margin:30px 0">
+                            <button class="col-xs-12 col-sm-3 btn btn-green" type="submit" style="float:right">下一步</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 text-center signup" style="margin:20px 0">
+                <h3>尊享服务</h3>
+                <h5>1. 专业团队制作；</h5>
+                <h5>2. 在线项目跟踪；</h5>
+                <h5>3. 随时审查质量；</h5>
+                <h5>4. 云端存储传播；</h5>
+
+                <h3>服务须知</h3>
+                <h5>如您有任何疑问</h5>
+                <h5>请致电：010-85388138/18611828618</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('.static', filename='login/findpwd.js') }}"></script>
+{% endblock %}

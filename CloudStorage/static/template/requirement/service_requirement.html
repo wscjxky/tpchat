@@ -1,0 +1,146 @@
+{{ if filter == 'all' }}
+    <br>
+{{ else }}
+    <div class="container-fluid" id="category-filter" style="text-align: center; margin-bottom: 10px; margin-top: 12px">
+        <div class="container-fluid">
+            <span class="status-item col-xs-2 {{ if filter == 'mine' }}active{{ /if }}" value="mine">全部</span>
+            <span class="status-item col-xs-2 {{ if filter == 'applyed' }}active{{ /if }}" value="applyed">已申请</span>
+            <span class="status-item col-xs-2 {{ if filter == 'working' }}active{{ /if }}" value="working">进行中</span>
+            <span class="status-item col-xs-2 {{ if filter == 'complete' }}active{{ /if }}" value="complete">已完成</span>
+        </div>
+    </div>
+{{ /if }}
+<div class="container-fluid">
+    {{ each requirements }}
+        <div class="view-btn" style="{{ if $index != 0 }}margin-top: 20px{{ /if }}; cursor: pointer" value="{{ $value.Id }}">
+            <div class="container-fluid requirement-block">
+                <div class="col-xs-9" style="border-right: solid 1px #ddd">
+                    <h3 class="requirement-title">
+                        <span>{{$value.Title}}</span>
+                        {{ if $value.Status <= 2 }}
+                        {{ if $value.applyed }}
+                            <a href="javascript:void(0)" class="cancel-apply-btn" {{ if $value.IsApplying }}disabled{{ /if }} style="font-size: 13px;z-index:1000;" value="{{ $value.Id }}">[取消申请]</a>
+                        {{ /if }}
+                        {{ /if }}
+                    </h3>
+                    <hr>
+
+                    <p>提交方：<a href="/zone/{{ $value.Publisher.Domain.Id }}" target="_blank">{{ $value.Publisher.Domain.CompanyName }}</a></p>
+                    <p>提交时间：<span style="color: #398439">{{ $value.CreateTime | ParseDate }}</span>&nbsp;&nbsp;&nbsp;计划完成时间：<span style="color: #da4f49">{{ $value.Deadline | ParseDate }}</span></p>
+
+                    {{ if filter != 'all' }}
+                        <p>进展：
+                            {{ if $value.CurSegment.Identity == 'draft' || $value.CurSegment.Identity == 'publish' || $value.CurSegment.Identity == 'establish' }}
+                                商定合同
+                            {{ else if $value.CurSegment.Identity == 'payDeposit' }}
+                                支付押金
+                            {{ else if $value.CurSegment.Identity == 'review' }}
+                                成片审核
+                            {{ else if $value.CurSegment.Identity == 'payAll' }}
+                                支付尾款
+                            {{ else if $value.CurSegment.Identity == 'retainage' }}
+                                交付
+                            {{ else if $value.CurSegment.Identity == 'finish' }}
+                                完成
+                            {{ /if }}
+                            <span class="glyphicon glyphicon-comment" style="
+                                    margin-left: 20px;
+                                    {{ if $value.Status <= 3 }}
+                                    color: #FFAF09
+                                    {{ else if $value.Status > 3 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " title="商定合同"></span>
+                            <span class="glyphicon glyphicon-arrow-right" style="
+                                    {{ if $value.Status <= 3 }}
+                                    color: #aaa
+                                    {{ else if $value.Status > 3 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    "></span>
+                            <span class="glyphicon glyphicon-shopping-cart" style="
+                                    {{ if $value.Status <= 3 }}
+                                    color: #aaa
+                                    {{ else if $value.Status == 4 }}
+                                    color: #FFAF09
+                                    {{ else if $value.Status > 4 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " title="支付押金"></span>
+                            <span class="glyphicon glyphicon-arrow-right" style="
+                                    {{ if $value.Status <= 4 }}
+                                    color: #aaa
+                                    {{ else if $value.Status > 4 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    "></span>
+                            <span class="glyphicon glyphicon-eye-open" style="
+                                    {{ if $value.Status <= 4 }}
+                                    color: #aaa
+                                    {{ else if $value.Status == 5 }}
+                                    color: #FFAF09
+                                    {{ else if $value.Status > 5 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " title="审核"></span>
+                            <span class="glyphicon glyphicon-arrow-right" style="
+                                    {{ if $value.Status <= 5 }}
+                                    color: #aaa
+                                    {{ else if $value.Status > 5 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    "></span>
+                            <span class="glyphicon glyphicon-credit-card" style="
+                                    {{ if $value.Status <= 5 }}
+                                    color: #aaa
+                                    {{ else if $value.Status == 6 }}
+                                    color: #FFAF09
+                                    {{ else if $value.Status > 6 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " title="支付尾款"></span>
+                            <span class="glyphicon glyphicon-arrow-right" style="
+                                    {{ if $value.Status <= 6 }}
+                                    color: #aaa
+                                    {{ else if $value.Status > 6 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " ></span>
+                            <span class="glyphicon glyphicon-film" style="
+                                    {{ if $value.Status <= 6 }}
+                                    color: #aaa
+                                    {{ else if $value.Status == 7 }}
+                                    color: #FFAF09
+                                    {{ else if $value.Status > 7 }}
+                                    color: #009933
+                                    {{ /if }}
+                                    " title="交付"></span>
+                        </p>
+                    {{ /if }}
+                </div>
+                <div class="col-xs-3" style="text-align: center">
+                    <div style="margin-top: 60px">
+                        {{ if $value.Status <= 2 }}
+                        {{ if $value.ServiceUserId == null }}
+                            <span style="font-weight:lighter; padding: 5px 15px; font-size:20px; color: #000099">未申请</span>
+                        {{ else if $value.ServiceUserId != CurUserId}}
+                            <span style="font-weight:lighter; padding: 5px 15px; font-size:20px; color: #333">已被他人申请</span>
+                        {{ else }}
+                            <span style="font-weight:lighter; padding: 5px 15px; font-size:20px; color: #333">已申请</span>
+                        {{ /if }}
+                        {{ else if $value.CurSegment.Identity == 'finish' }}
+                            <span style="font-weight: lighter;padding: 5px 15px; font-size:20px; color: #3A7734">已完成</span>
+                        {{ else if $value.Status > 2 }}
+                            <span style="font-weight:lighter;padding: 5px 15px; font-size:20px; color: #FF7F09">进行中</span>
+                        {{ /if }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ /each }}
+    {{ if requirements.length == 0 }}
+        <div style="text-align: center">
+            <h3 style="color: #aaa">^-^暂无此类需求</h3>
+        </div>
+    {{ /if }}
+</div>

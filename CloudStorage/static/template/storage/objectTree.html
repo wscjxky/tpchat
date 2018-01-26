@@ -1,0 +1,98 @@
+{{ if search != null}}
+<div style="width:100%;color:#fff;background:#5cb85c;border:solid 1px #eee;text-align:center; margin-bottom: 10px;">
+    <h4>“ {{ search }} ” 搜索结果&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-sm" id="backstorage">返回</button></h4>
+</div>
+{{/if}}
+
+{{if navigateMode == 2}}	
+<table class="table table-striped table-hover objectTable">
+	<thead>
+		<tr>
+			<th class="col-sm-4 fileHeader" style="cursor: pointer">文件<span class="glyphicon glyphicon-chevron-down"></span></th>
+			<th class="col-sm-2 typeHeader" style="cursor: pointer">类型<span class="glyphicon glyphicon-chevron-down"></span></th>
+			<th class="col-sm-3 createTimeHeader" style="cursor: pointer">上传时间<span class="glyphicon glyphicon-chevron-down"></span></th>
+			<th class="col-sm-3">修改时间</th>
+		</tr>
+	</thead>
+	<tbody class="object_list_body">
+{{each Items as Object}}
+{{if Object.ParentId != null}}
+{{ if ( filterMode == "videoFilter" && Object.Type == 0) ||
+      ( filterMode == "picFilter" && Object.Type == 1) ||
+      ( filterMode == "docFilter" && Object.Type == 2) ||
+        filterMode == "noneFilter" }}
+		<tr id="{{Object.Id}}" style="cursor: pointer">
+            <td class="list_object_input" style="display: none">
+			<input type="text">
+			</td>
+			<td class="list_object_text">
+			{{if Object.FileId != null}}
+	        <span class="glyphicon glyphicon-file"></span>
+			{{else}}
+	        <span class="glyphicon glyphicon-folder-open"></span>
+			{{/if}}
+			<span class="text">{{Object.Name}}</span></td>
+			{{if Object.Type == 0}}
+			<td>视频</td>
+			{{else if Object.Type == 1}}
+			<td>图片</td>
+            {{else if Object.Type == 2}}
+			<td>文档</td>
+            {{else}}
+			<td>文件夹</td>
+			{{/if}}
+			<td>{{Object.CreateTime | ParseTime}}</td>
+			<td>{{Object.ModifyTime | ParseTime}}</td>
+		</tr>
+{{ /if }}
+{{/if}}
+{{/each}}
+	</tbody>
+</table>
+{{else}}
+{{each Items as Object}}
+{{if Object.ParentId != null}}
+{{ if ( filterMode == "videoFilter" && Object.Type == 0) ||
+      ( filterMode == "picFilter" && Object.Type == 1) ||
+      ( filterMode == "docFilter" && Object.Type == 2) ||
+        filterMode == "noneFilter" }}
+    <div id="{{Object.Id}}" class="col-md-2 cloud_object" data-toggle="context" style="padding: 0">
+    {{if Object.FileId != null}}
+    <div class="cloud_object_image" style="
+            {{ if Object.File.Status == 1 }}
+            background-image: url({{Object.File.Path}})">
+            {{ else if Object.File.Status == 2 }}
+            background-image: url(image/TransCodingtranscoding.png)">
+            {{ else if Object.File.Status == 0 }}
+            background-image: url(image/unknown.png)">
+            {{ else }}
+            background-image: url({{Object.File.Path}})">
+            {{ /if }}
+        <div style="position:absolute;width:inherit;">
+            <img src="image/share.png" style="position:absolute;margin-top:10px;z-index:1;display:{{Object.Id | is_object_shared}}">
+        </div>
+        {{ if Object.BShare }}
+        <div style="position:absolute;width:inherit;" title="已分享">
+            <img src="image/show.jpg" style="position:absolute;margin-top:10px;margin-left: 25px;z-index:1">
+        </div>
+        {{ /if }}
+    </div>
+    {{else if Object.Id <= -100}}
+    <div class="cloud_object_image" style="background-image: url({{'shareUser' | suffix_image}})">
+    </div>
+    {{else}}
+    <div class="cloud_object_image">
+        <img src="image/share.png" style="position: inherit; float: right; margin-top: 10px; display: {{Object.Id | is_object_shared}}">
+    </div>
+    {{/if}}
+    <div class="cloud_object_text" style="bottom: 0; text-align: center">
+        <p class="label" title="{{Object.Name}}" style="color: #000; font-weight: 100">{{Object.Name}}</p>
+    </div>
+    <div>
+        <input class="cloud_object_edit" type="text" style="width:100%">
+    </div>
+</div>
+{{ /if }}
+{{/if}}
+{{/each}}
+{{/if}}

@@ -1,0 +1,87 @@
+<!--<div>-->
+    <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+        <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+        <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+        <!--</ol>-->
+        <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="carousel-inner" role="listbox" style="height:488px">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="item active">&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<img src="image/bg2.jpg" alt="..." style="width:100%;height:600px;overflow: hidden;">&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<img src="image/bg1.jpg" alt="..." style="width:100%;height:600px;overflow: hidden;">&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<img src="image/bg3.jpg" alt="..." style="width:100%;height:600px;overflow: hidden;">&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash; Controls &ndash;&gt;&ndash;&gt;-->
+        <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="width:70px;background:rgba(0,0,0,0)">-->
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+            <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="width:70px;background:rgba(0,0,0,0)">-->
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+            <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="container" style="height:400px;">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4" style="margin:50px auto;">
+        <div class="login" id="loginPage" style="margin:0 auto;">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="active" id="normal_user_tab">
+                <a class="linkCursor" role="tab" data-toggle="tab" href="#userLogin_panel">个人用户
+                </a>
+            </li>
+            <li>
+                <a class="linkCursor" role="tab" data-toggle="tab" href="#domainUserLogin_panel">共享云用户</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="userLogin_panel">
+                <form id="login_form" class="form-signin" role="form" target="login_https" method="POST">
+                    <input id="normal_userName" type="email" name="username" class="form-control" placeholder="邮箱/用户名">
+                    <input id="normal_userPwd" type="password" name="password" class="form-control" placeholder="密码">
+                    <input id="json_input" name="json" type="hidden" class="form-control">
+                    <a style="float:right;">忘记密码？</a>
+                    <a class="linkCursor">
+                        <button class="login-btn" type="button">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    </a>
+                    <a class="linkCursor">
+                        <button class="signup-btn" type="button">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+                    </a>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="domainUserLogin_panel">
+                <form class="form-signin" role="form">
+                    <input id="domain_name" type="email" class="form-control" placeholder="共享云名">
+                    <input id="domain_userName" type="email" class="form-control" placeholder="域用户名">
+                    <input id="domain_userPwd" type="password" class="form-control" placeholder="密码">
+
+                    <a class="linkCursor">
+                        <button class="login-btn" type="button">云用户登录</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <iframe id="login_https" style="display: none"></iframe>
+
+
+        <script type="text/javascript" src="script/require/require.min.js" data-main="script/main.js"></script>
+    </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>

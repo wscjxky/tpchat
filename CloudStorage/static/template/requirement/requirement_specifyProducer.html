@@ -1,0 +1,12 @@
+{{ each }}
+    <div class="col-company text-center" style="margin: 10px 0">
+        <div class="row" style='padding:10px 15px 5px;background-color:#3a5795;color:#fff;'>
+            <img src="{{ $value.Portrait }}">
+            <p><a style="font-size:15px;color:#fff"><strong>{{ $value.CompanyName }}</strong></a></p>
+        </div>
+        <div class="container-fluid company-btn">
+            <a class="btn btn-default" href="/zone/{{ $value.Id }}" target="_blank">查看主页</a>
+            <a class="btn btn-default deleteProducer" value="{{ $value.Id }}">取消选择</a>
+        </div>
+    </div>
+{{ /each }}

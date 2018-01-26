@@ -1,0 +1,104 @@
+{% extends "mobile/promote.html" %}
+{% block body %}
+    <div class="container" style="padding-top: 350px;">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="active">
+                <a role="tab" data-toggle="tab" href="#domainUserLogin_panel" style="font-size: 32px;">
+                    <span class="glyphicon glyphicon-home">&nbsp;企业账号</span>
+                </a>
+            </li>
+            <li>
+                <a role="tab" data-toggle="tab" href="#userLogin_panel" style="font-size: 32px;">
+                    <span class="glyphicon glyphicon-user">&nbsp;邮箱账号</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content col-xs-12" style="padding: 0;margin-top: 20px">
+            <div class="tab-pane fade" id="userLogin_panel">
+                <div class="container-fluid" style="text-align: center; margin-top: 20px; padding: 0">
+                    <input id="account" type="text" placeholder="账号" class="form-control" style="height: 60px; font-size: 30px;margin-bottom: 20px;">
+                    <input id="pwd" type="password" placeholder="密码" class="form-control" style="height: 60px; font-size: 30px;margin-bottom: 15px;">
+                    <br>
+                    <button id="bind_wx_btn" class="btn btn-default btn-lg" style="font-size: 35px;color: #888;">用户登录</button>
+                </div>
+            </div>
+            <div class="tab-pane active in fade" id="domainUserLogin_panel">
+                <div class="container-fluid" style="text-align: center; margin-top: 20px; padding: 0">
+                    <input id="domain_name" type="text" placeholder="企业名称" class="form-control" style="height: 60px; font-size: 30px;margin-bottom: 20px;">
+                    <input id="domain_user" type="text" placeholder="用户名" class="form-control" style="height: 60px; font-size: 30px;margin-bottom: 20px;">
+                    <input id="domain_pwd" type="password" placeholder="密码" class="form-control" style="height: 60px; font-size: 30px;margin-bottom: 15px;">
+                    <br>
+                    <button id="domain_bind_wx_btn" class="btn btn-default btn-lg" style="font-size: 35px;padding-left: 35px;padding-right: 35px;color: #888;">用户登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block toolbar %}
+{% endblock %}
+{% block script %}
+    <script>
+        var jump = "{{ path }}";
+        $("#bind_wx_btn").click(function(e){
+            var account = $('#account').val();
+            var pwd = $.md5($('#pwd').val());
+            if(!account){
+                alert('请填写用户名');
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/mobile/bindWX",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    Account:account,
+                    Pwd:pwd,
+                }),
+                success:function(data){
+                    if (data['bSuccess'])
+                    {
+                        if (jump != "")
+                            window.location.href = jump;
+                        else
+                            window.location.href = "/mobile/promote";
+                    }
+                    else
+                        alert(data['error']);
+                }
+            });
+        });
+
+        $("#domain_bind_wx_btn").click(function(e){
+            var domain = $('#domain_name').val();
+            var domain_name = $('#domain_user').val();
+            var domain_pwd = $.md5($('#domain_pwd').val());
+            if(!domain || !domain_name){
+                alert('请填写域名，用户名');
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/mobile/bindWX",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    Domain:domain,
+                    Account: domain_name,
+                    Pwd:domain_pwd,
+                }),
+                success:function(data){
+                    if (data['bSuccess'])
+                    {
+                        if (jump != "")
+                            window.location.href = jump;
+                        else
+                            window.location.href = "/mobile/promote";
+                    }
+                    else
+                        alert(data['error']);
+                }
+            });
+        })
+    </script>
+{% endblock %}

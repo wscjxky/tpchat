@@ -1,0 +1,115 @@
+<h3 style="color:#222;margin:10px 0 20px 0" align="center">云空间管理</h3>
+<hr>
+<div class="main" style="padding:20px 40px;">
+    <h4>现有云空间 <small style="float: right">{{user.Domain.UsedSize / 1024 /1024 /1024| FloatFormat}}/{{(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize) / 1024 /1024 /1024| FloatFormat}} GB</small></h4>
+    <div class="progress " style="width:100%;background: #fff;">
+        <div class="progress-bar progress-bar-danger " aria-valuenow="{{user.Domain.UsedSize}}" aria-valuemin="0" aria-valuemax="{{(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)}}" style="width: {{(user.Domain.UsedSize / (user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize))*100}}%;">
+        {{ user.Domain.UsedSize / (user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize) * 100 | FloatFormat}}%
+        </div>
+    </div>
+</div>
+<div class="panel panel-default" style="border-radius:0;margin:10px 0">
+    <div class="panel-body">
+        <div class="page-header" style="margin-top: 10px">
+            <h4>默认云空间
+                <small style="margin-left: 10px">容量：<green>{{ user.Domain.DefaultStorageSize / 1024 /1024 /1024 | FloatFormat }}</green>GB</small>
+                <small style="margin-left: 10px">使用期限：不限制</small>
+            </h4>
+        </div>
+        <div class="page-header" style="margin-top: 10px">
+            <h4>扩展云空间
+                <small style="margin-left: 10px">容量：<green>{{ user.Domain.ExtendStorageSize / 1024 /1024 /1024 | FloatFormat }}</green>GB</small>
+                {{ if user.Domain.ExtendStorageSize }}
+                <small style="margin-left: 10px">使用期限：<red>{{ user.Domain.ESExpireTime | ParseTime }}</red></small>
+                {{ /if }}
+            </h4>
+        </div>
+        <div class="container-fluid" style="text-align: center;margin:10px 0">
+            <div class="col-md-12">
+                <div class="col-md-4" style="text-align: right"><h4>扩充容量</h4></div>
+                <div class="input-group col-md-4">
+                    <input type="text" class="form-control" id="input_extendStorage" placeholder="0-200" aria-describedby="basic-addon2"
+                            onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+                    <span class="input-group-addon" id="basic-addon2"><red>GB</red></span>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-4" style="text-align: right"><h4>购买时长</h4></div>
+                <div class="input-group col-md-4">
+                    <input type="text" class="form-control" id="input_extendTime" placeholder="0-36" aria-describedby="basic-addon2"
+                            onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+                    <span class="input-group-addon" id="basic-addon2" style="padding:0 14px"><red> 月 </red></span>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div class="container-fluid" style="line-height: 40px">
+            <input type="checkbox" id="UseCountOn" style="margin:0 5px 3px 50px">
+            <span style="margin-right:50px">通过平台余额支付</span>
+            <span>可使用余额  :  <strong>{{ user.Domain.Count }}</strong>元</span>
+            <span style="display: inline-block;margin-bottom: -10px">
+                <input type="text" id="UseCount" placeholder="元" class="form-control" style="display:none;width:200px;margin:0 20px"
+                        onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+            </span>
+            <red><span id="PriceSign"></span></red>
+        </div>
+        <hr>
+        <button class="btn btn-lg btn-default disabled" id="ExtendSubmit" style="float: right"><strong>购买</strong></button>
+        <span  style="float: right;margin:0 50px">
+            总价 :<red><h2 id="price" style="display:inline-block;margin:10px">0</h2><span style="font-size: 20px">元</span></red>
+        </span>
+    </div>
+</div>
+
+<div class="panel panel-default" style="border-radius:0;margin:10px 0">
+    <div class="panel-body">
+        <h3 style="color:#222;margin:10px 0">常见问题</h3>
+        <hr>
+            <div class="col-md-4">
+                <h4 style="color:#222">支付失败怎么办？</h4>
+                <p style="color:#666">请确认您的账户是否正确登录支付宝账号，如果是使用平台余额支付方式，请确认您余额充足，如果是其他问题，请联系我们。</p>
+            </div>
+            <div class="col-md-4" >
+                <h4 style="color:#222">我购买套餐成功了，但没有给我加容量怎么办？</h4>
+                <p style="color:#666">您稍等5分钟后，刷新界面，再检查一下容量是否增加。如果仍不能增加成功，请将问题和您的帐号反馈给我们。</p>
+            </div>
+            <div class="col-md-4" >
+                <h4 style="color:#222">我可以使用哪些付款方式？</h4>
+                <p style="color:#666">目前平台只支持支付宝付款，选择好方案后您可以直接点击‘购买’，跳转到相关支付页面完成支付</p>
+                <p style="color:#666">或者您也可以到‘帐户管理’完成平台余额充值，使用余额支付方案。</p>
+            </div>
+    </div>
+</div>
+
+<!--    <div id="extend_main"class="row" style="margin-left: 40px;margin-right: 40px;line-height:100%;">
+        <h4>
+            完成下面任务，你还可以获得<strong>永久免费容量</strong><red>3G</red>
+        </h4>
+        <div style="margin-bottom: 10px;">
+            <strong>1.邀请好友</strong>
+            <p>&nbsp;邀请好友注册，可获得512M的空间奖励，最多可获得<red>1G</red></p>
+            <input class="form-control"  id="invite" value="http://182.92.97.97/" type="text" style="width:300px;display: inline-block;"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href=""><strong>复制邀请链接</strong></a>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <strong>2.上传文件</strong>
+            <p>&nbsp;成功上传第一个文件，奖励<red>512M</red> &nbsp;&nbsp;<a href="#/storagePage">去上传文件</a></p>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <strong>3.体验手机或iPad客户端</strong>
+            <p>&nbsp;体验手机或平板版本，并完成以下任务</p>
+            <p>&nbsp;安装
+                <a href="" >Android</a>版、
+                <a href="" >WinPhone</a>版、
+                <a href="" >iphone</a>版或
+                <a href="" >iPad</a>版任意一款并登录成功，奖励<red>1G</red>
+            </p>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <strong>4.分享文件到微博</strong>
+            <p>&nbsp;在网页版成功分享第一个文件到新浪微博，奖励<red>512M</red>
+            <a class="text-link" href="#/storagePage" target="_blank">去分享文件</a>
+        </div>
+        <h4 style="margin-left: 40px;"><strong><red>或者您也可以直接：</red></strong></h4>
+-->

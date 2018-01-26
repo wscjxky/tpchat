@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name ="viewport" content ="width=device-width, initial-scale=0.4, maximum-scale=0.4, minimum-scale=0.4, user-scalable=no">
+    <title>商影联盟</title>
+    <meta name="keywords" content="商影联盟,jianpianzi,zuopianzi,bianpianzi,剪片子,做片子,编片子,企业视频,视频策划,视频拍摄,视频制作,视频传播">
+    <meta name="baidu-site-verification" content="GZTrAWTsEu" />
+    <link rel="shortcut icon" href='/static/image/logo64.png' type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href='/static/css/mStyle.css'/>
+    <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="/static/script/md5/jQuery.md5.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</head>
+<body>
+    {% block head %}
+    {% endblock %}
+    {% block body %}
+    {% endblock %}
+    {% block toolbar %}
+    <div class="container-fluid toolbar">
+        <div class="col-xs-2 itemContainer">
+            <div id="leaveMsg" class="col-xs-12 item">
+                <a href="tel:18611828618"><span class="glyphicon glyphicon-phone-alt" style="font-size: 64px; top: 10px"></span></a>
+            </div>
+        </div>
+        <div class="col-xs-10 itemContainer">
+            <div class="col-xs-4 item">
+                <a href="/mobile/promote">
+                    <h1>案例推荐</h1>
+                </a>
+            </div>
+            <div class="col-xs-4 item">
+                <a href="/mobile/submit">
+                    <h1>制作管理</h1>
+                </a>
+            </div>
+            <div class="col-xs-4 item">
+                <div class="dropup">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h1>我的空间</h1>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li style="padding-bottom: 10px"><a href="/mobile/media"><h1>我的视频</h1></a></li>
+                        <!--<li style="padding-bottom: 10px"><a href="/mobile/project/mine"><h1>需求管理</h1></a></li>-->
+                        <!--<li style="padding-bottom: 10px"><a href="/mobile/help"><h1>查看帮助</h1></a></li>-->
+                        <li style="padding-bottom: 10px"><a href="/mobile/aboutus"><h1>牵手联盟</h1></a></li>
+                        <!--li><a href="/mobile/logout">注销</a></li-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

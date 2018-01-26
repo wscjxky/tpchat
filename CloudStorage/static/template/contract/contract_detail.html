@@ -1,0 +1,142 @@
+    <nav class="navbar navbar-default" role="navigation" style="">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" style="border-left:solid 7px #428BCA;padding:0">
+                <ul class="nav navbar-nav">
+                    {{ if Procedure == 'active' }}
+                    <li class="active"><a href={{"#baseInfo_" + Id}} role="tab" data-toggle="tab">合同状态</a></li>
+                    <!--
+                    <li class="contractUserGroup"><a class={{"contractUserGroup_" + Id}} href={{"#contractUserGroup_" + Id}} role="tab" data-toggle="tab">合同组</a></li>
+                    <li class='contractAttachment'><a href={{"#addAttachment_" + Id}} role="tab" data-toggle="tab">交换空间</a></li>
+                    <li class="contractReplay"><a class={{"addUser_" + Id}} href={{"#addUser_" + Id}} role="tab" data-toggle="tab">留言板</a></li>
+                    <li class="contractLog"><a href={{"#executeState_" + Id}} role="tab" data-toggle="tab">执行日志</a></li>
+                    <li class="{{'reqBackup_' + Id }}"><a href={{"#reqBackup_" + Id}} role="tab" data-toggle="tab">需求备忘录</a></li>
+                    -->
+                    {{ /if }}
+                    <li class="{{'abortContract_' + Id }}"><a href={{"#abortContract_" + Id}} role="tab" data-toggle="tab">异常处理</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="tab-content tab-content-secondary ">
+        {{ if Procedure == 'active' }}
+        <div class="tab-pane fade in active row" id={{"baseInfo_" + Id}}  style="margin-top:-20px">
+        <div class="container col-xs-8 {{'contractState_' + Id}}" style="padding:10px 0 0 15px;">
+            <div class="container-fluid endContract" hidden>
+                <h3><red>合同已完成。</red></h3>
+                <h4>感谢您使用网上流程完成项目！</h4>
+                <p>您还可以通过平台分享您的视频！</p>
+            </div>
+        </div>
+        <div class="col-xs-4" style="text-align: center; padding: 0">
+            <ul class="nav-cState">
+                <div class="list-group">
+                {{each ContractSegment}}
+                    <div class="{{'cSeg_' + Id}} cSeg row col-xs-12">
+                    <input type="hidden" value="{{$index}}">
+                    {{if $index == ContractSegment.length - 1}}
+                        <div class="col-sm-3">
+                            {{if $value.bFinished}}
+                            <img src="image/cs_f_l.png">
+                            {{else}}
+                            <img src="image/cs_dis_l.png" style="cursor:not-allowed">
+                            {{/if}}
+                        </div>
+                    {{else}}
+                        <div class="col-xs-3">
+                            {{if $index == 0}}
+                                {{if $value.bFinished}}
+                                <img src="image/cs_f_f.png">
+                                {{else if $value.bCur}}
+                                <img class="enterclick" src="image/cs_c_f.png" onload="$('.enterclick').click();">
+                                {{else}}
+                                <img src="image/cs_dis_f.png" style="cursor:not-allowed">
+                                {{/if}}
+                            {{else}}
+                                {{if $value.bFinished}}
+                                <img src="image/cs_f.png">
+                                {{else if $value.bCur}}
+                                <img class="enterclick" src="image/cs_c.png" onload="$('.enterclick').click();">
+                                {{else}}
+                                <img src="image/cs_dis.png" style="cursor:not-allowed">
+                                {{/if}}
+                            {{/if}}
+                        </div>
+                    {{ /if }}
+                        <div class="col-xs-9" style="text-align: left; margin-top: 18px; padding: 0">
+                            <h3 style="margin:0">{{$value.Remark}}</h3>
+                            {{if $value.ConfirmUser!=null}}
+                            <p style="margin:0" class="contractStep-finish">{{$value.ConfirmTime | ParseTime2}}</p>
+                            {{else}}
+                            <p style="margin:0" class="contractStep-deadline">{{$value.Deadline | ParseTime2}}</p>
+                            {{/if}}
+                        </div>
+                        {{ if $value.ReadyApply }}
+                        <button class="btn btn-info apply_cSeg_btn" style="top:20px; right: 10px; position: absolute">申请确认</button>
+                        {{ else if $value.ReadyReject }}
+                        <div class="btn-group" role="group" aria-label="..." style="top:20px; right: 10px; position: absolute">
+                            <button type="button" class="btn btn-success confirm_cSeg_btn">确认</button>
+                            <button type="button" class="btn btn-warning reject_cSeg_btn">驳回</button>
+                        </div>
+                        {{ else if $value.bFinished }}
+                        <button class="btn btn-default" style="top:20px; right: 10px; position: absolute" disabled>已完成</button>
+                        {{ else if !$value.bCur}}
+                        <button class="btn btn-default" style="top:20px; right: 10px; position: absolute" disabled>未启动</button>
+                        {{ else if !$value.bNeedApply }}
+                        {{ else if $value.bCur }}
+                        <button class="btn btn-warning" style="top:20px; right: 10px; position: absolute" disabled>等待确认</button>
+                        {{ /if }}
+                    </div>
+                {{/each}}
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-pane fade" id={{"executeState_" + Id}}>
+    <div class="panel panel-default panel-primary " style="margin:10px auto;width:76%;">
+        <div class="panel-heading">
+            <h3 class="panel-title"><center>执行日志</center></h3>
+        </div>
+        <div class="panel-body"><center>
+
+        </center></div>
+        <table class="table  table-hover">
+            <thead style="background: #eee;">
+                <tr>
+                    <th>#</th>
+                    <th>执行流程</th>
+                    <th>申请备注</th>
+                    <th>申请时间</th>
+                    <th>审核备注</th>
+                    <th>审核时间</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{each ContractSegment}}
+            <tr>
+                {{if $value.Status == 2}}
+                <td>{{ $index+1 }}</td>
+                <td>{{ $value.Remark }}</td>
+                <td>{{ $value.ApplyRemark}}</td>
+                <td>{{ $value.ApplyTime | ParseTime2}}</td>
+                <td>{{ $value.ConfirmRemark }}</td>
+                <td>{{ $value.ConfirmTime | ParseTime2}}</td>
+                {{/if}}
+            </tr>
+            {{ /each }}
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="tab-pane fade row" id={{"addUser_" + Id}}>
+</div>
+<div class="tab-pane fade" id={{"addAttachment_" + Id}} >
+    <div id="exchange_attachment"></div>
+</div>
+<div class="tab-pane fade" id={{"contractUserGroup_" + Id}} style="text-align: center">
+</div>
+<div class="tab-pane fade" id={{"reqBackup_" + Id}} >
+</div>
+    {{ /if }}
+<div class="tab-pane fade {{ if Procedure != 'active' }}in active{{ /if }}" id={{"abortContract_" + Id}} >
+</div>
+</div>

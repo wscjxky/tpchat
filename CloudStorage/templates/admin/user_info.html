@@ -1,0 +1,285 @@
+{% extends "admin/user_manage.html" %}
+{% block userBody %}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>基本信息</h3>
+            <hr>
+            <div class="col-md-6" style="border-right: solid 1px #eee">
+                <dl class="dl-horizontal">
+                    <dt>用户名</dt>
+                    <dd>{{ params.user.DomainName }}</dd>
+                    <dt>真实姓名</dt>
+                    <dd>{{ params.user.RealName }}</dd>
+                    <dt>个人邮箱</dt>
+                    <dd>{{ params.user.Email }}</dd>
+                    <dt>联系电话</dt>
+                    <dd>{{ params.user.CellPhone }}</dd>
+                </dl>
+            </div>
+            <div class="col-md-6">
+                <dl class="dl-horizontal">
+                    <dt>公司名称</dt>
+                    <dd>{{ params.user.Domain.CompanyName }}</dd>
+                    <dt>公司地址</dt>
+                    <dd>{{ params.user.Domain.CompanyAddr }}</dd>
+                    <dt>公司固话</dt>
+                    <dd>{{ params.user.Domain.CompanyPhone }}</dd>
+                    <dt>公司电话</dt>
+                    <dd>{{ params.user.Domain.CompanyCellPhone }}</dd>
+                    <dt>公司传真</dt>
+                    <dd>{{ params.user.Domain.CompanyFax }}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    {#% if params.user.Domain.IsService %#}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>搜索设置
+            {% if params.user.Domain.ShowType == 0 %}
+                <button class="btn btn-success" id="domain-visible">支持搜索</button>
+            {% else %}
+                <button class="btn btn-warning" id="domain-disvisible">不可搜索</button>
+            {% endif %}
+            </h3>
+        </div>
+    </div>
+    {#% endif %#}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>重置密码
+                <button class="btn btn-success" id="domain-resetpwd">重置</button>
+            </h3>
+        </div>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>发送系统消息给该用户</h3>
+            <hr>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="标题" id="msgTitle">
+                <input type="text" class="form-control" placeholder="消息内容" id="msgContent" style="margin-top: 10px">
+            </div>
+            <div class="col-md-4"><button class="btn btn-default" id="sendMsg">发送</button></div>
+        </div>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>合同</h3>
+            <hr>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>合同名称</th>
+                        <th>需求方</th>
+                        <th>制作方</th>
+                        <th>创建时间</th>
+                        <th>交易金额</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for c in params.contract %}
+                    <tr>
+                        <th>{{ c.Id }}</th>
+                        <td>{{ c.Title }}</td>
+                        <td>{{ c.CustomerUser.DomainName }}</td>
+                        <td>{{ c.ServiceUser.DomainName }}</td>
+                        <td>{{ c.CreateTime }}</td>
+                        <td>{{ c.Amount }}</td>
+                        {% if c.Status == 5 %}
+                        <td>完成</td>
+                        {% else %}
+                        <td>进行中</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+        {% if params.contractOrder | length() > 0 %}
+            <h3>合同交易信息</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>#</th>
+                    <th>合同名称</th>
+                    <th>支付类型</th>
+                    <th>支付金额</th>
+                    <th>支付方</th>
+                    <th>接收方</th>
+                    <th>支付状态</th>
+                    <th>创建时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in params.contractOrder %}
+                <tr>
+                    <th scope="row"><a href="/admin/platform/trade/order/{{ v.Order.Id }}">{{ v.Order.Id }}</a></th>
+                    <td>{{ v.Contract.Title }}</td>
+                    <td>{{ v.OrderType }}</td>
+                    <td>{{ v.Order.Amount }}</td>
+                    <td><a href="/admin/user/{{ v.Order.PayUser.Id }}">{{ v.Order.PayUser.Domain.CompanyName }}</a></td>
+                    <td><a href="/admin/user/{{ v.Order.Receiver.Id }}">{{ v.Order.Receiver.Domain.CompanyName }}</a></td>
+                    <td>{{ v.Order.State }}</td>
+                    <td>{{ v.Order.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        {% endif %}
+        {% if params.rechargeOrder | length() > 0 %}
+            <h3>账号充值信息</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>#</th>
+                    <th>支付类型</th>
+                    <th>支付金额</th>
+                    <th>支付方</th>
+                    <th>支付状态</th>
+                    <th>创建时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in params.rechargeOrder %}
+                <tr>
+                    <th scope="row"><a href="/admin/platform/trade/order/{{ v.Order.Id }}">{{ v.Order.Id }}</a></th>
+                    <td>用户账号充值</td>
+                    <td>{{ v.Order.Amount }}</td>
+                    <td><a href="/admin/user/{{ v.Order.PayUser.Id }}">{{ v.Order.PayUser.Domain.CompanyName }}</a></td>
+                    <td>{{ v.Order.State }}</td>
+                    <td>{{ v.Order.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        {% endif %}
+        {% if params.storageOrder | length() > 0 %}
+            <h3>云空间购买信息</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>#</th>
+                    <th>支付类型</th>
+                    <th>支付金额</th>
+                    <th>支付方</th>
+                    <th>续费时长</th>
+                    <th>扩展空间</th>
+                    <th>支付状态</th>
+                    <th>创建时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in params.storageOrder %}
+                <tr>
+                    <th scope="row"><a href="/admin/platform/trade/order/{{ v.Order.Id }}">{{ v.Order.Id }}</a></th>
+                    <td>购买扩展空间</td>
+                    <td>{{ v.Order.Amount }}</td>
+                    <td><a href="/admin/user/{{ v.Order.PayUser.Id }}">{{ v.Order.PayUser.Domain.CompanyName }}</a></td>
+                    <td>{{ v.ExtendTime }}</td>
+                    <td>{{ v.ExtendStorageSize }}</td>
+                    <td>{{ v.Order.State }}</td>
+                    <td>{{ v.Order.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        {% endif %}
+        {% if params.taxOrder | length() > 0 %}
+            <h3>会员会费支付信息</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>#</th>
+                    <th>支付类型</th>
+                    <th>支付金额</th>
+                    <th>支付方</th>
+                    <th>续费前账号有效期</th>
+                    <th>续费后账号有效期</th>
+                    <th>支付状态</th>
+                    <th>创建时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in params.taxOrder %}
+                <tr>
+                    <th scope="row"><a href="/admin/platform/trade/order/{{ v.Order.Id }}">{{ v.Order.Id }}</a></th>
+                    <td>会员年费</td>
+                    <td>{{ v.Order.Amount }}</td>
+                    <td><a href="/admin/user/{{ v.Order.PayUser.Id }}">{{ v.Order.PayUser.Domain.CompanyName }}</a></td>
+                    <td>{{ v.OrgExpireTime }}</td>
+                    <td>{{ v.ExpireTime }}</td>
+                    <td>{{ v.Order.State }}</td>
+                    <td>{{ v.Order.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        {% endif %}
+        </div>
+    </div>
+    <script type="text/javascript">
+    var userId = {{ params.user.Id }};
+    var domainId = {{ params.user.Domain.Id }};
+    $('#sendMsg').click(function(){
+        var title = $('#msgTitle').val();
+        var content = $('#msgContent').val();
+        $.ajax({
+            type: "POST",
+            url: '/admin/sendSysMsgToUser',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({title: title, content: content, userId: userId}),
+            success: function () {
+                alert('发送成功');
+            }
+        });
+    });
+    $('#domain-visible').click(function(){
+        $.ajax({
+            type: "POST",
+            url: '/admin/setDomainVisible',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({DomainId: domainId,  ShowType: 1}),
+            success: function () {
+                window.location.reload();
+            }
+        });
+    });
+    $('#domain-disvisible').click(function(){
+        $.ajax({
+            type: "POST",
+            url: '/admin/setDomainVisible',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({DomainId: domainId,  ShowType: 0}),
+            success: function () {
+                window.location.reload();
+            }
+        });
+    });
+    $('#domain-resetpwd').click(function(){
+        $.ajax({
+            type: "POST",
+            url: '/admin/resetpwd',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({DomainId: domainId, userId: userId}),
+            success: function () {
+                alert('重置密码成功');
+            }
+        });
+    });
+    </script>
+{% endblock %}

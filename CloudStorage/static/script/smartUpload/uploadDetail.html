@@ -1,0 +1,58 @@
+<div class="modal-dialog  modal-md">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+            <h4 class="modal-title">上传任务</h4>
+        </div>
+        <div class="modal-body row">
+        {{each}}
+            <div class="page-header row">
+                <div class="col-sm-9">
+                    <span class="fileTitle">文件: </span>
+                    <span>{{$value.name}}</span>
+                    <br>
+                    <span class="fileTitle">大小: </span>
+                    <span>{{$value.size | ToKB}}</span>
+                    <br>
+                    <span class="fileTitle">状态: </span>
+                    {{if $value.state == 0}}
+                    <span>初始状态</span>
+                    {{else if $value.state == 1}}
+                    <span>正在上传</span>
+                    {{else if $value.state == 2}}
+                    <span>暂停</span>
+                    {{else if $value.state == 3}}
+                    <span>上传成功</span>
+                    {{/if}}
+                    <div class="progress smProgress" id={{$value.fileId
+                    + "_smProgress"}}>
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow={{$value.percent}}
+                         aria-valuemin="0" aria-valuemax="100" style="width: {{$value.percent}}%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <input type="hidden" value="{{$value.id}}"/>
+                {{if $value.state == 1}}
+                <a class="linkCursor smPause">
+                    <div class="pause"></div>
+                </a>
+                {{else}}
+                <a class="linkCursor smPause">
+                    <div class="play"></div>
+                </a>
+                {{/if}}
+                <a class="linkCursor smClose">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="modal-footer">
+        <button id="smStopAll" type="button" class="btn btn-primary">暂停所有</button>
+        <button id="smCancelAll" type="button" class="btn btn-primary">取消所有</button>
+    </div>
+</div>
+</div>

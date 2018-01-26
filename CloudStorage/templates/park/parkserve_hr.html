@@ -1,0 +1,36 @@
+{% extends "park/parkservebase.html" %}
+{% block block_servecontent %}
+    <!--- 人事社保 --->
+    <div id="ser-hr" class="ser-hr">
+    <div class="head-section">
+        <div class="container">
+            <h3><span>人事</span><label>社保.</label></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="{{ url_for('.static', filename='image/park/s5.jpg') }}" alt="...">
+                    <p>社保代缴</p>
+                    <p>单价：<span>29.9元</span></p>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="{{ url_for('.static', filename='image/park/s50.jpg') }}" alt="...">
+                    <p>社保开户</p>
+                    <p>单价：<span>300元</span></p>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="{{ url_for('.static', filename='image/park/s51.jpg') }}" alt="...">
+                    <p>公积金开户</p>
+                    <p>单价：<span>300元</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--- 人事社保 --->
+{% endblock %}

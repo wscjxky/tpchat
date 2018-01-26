@@ -1,0 +1,46 @@
+{% extends "index/index.html" %}
+{% block body %}
+<div class="container-fluid" style="margin-bottom: 50px">
+    <div class="container" >
+        <div class="container-fluid">
+            <h2 style="margin:30px 0">新帐号注册</h2>
+        </div>
+        <div class="container-fluid" style="border:solid 1px #aaa;background:#eee;border-radius: 5px">
+            <div class="col-md-7" style="border-right:solid 1px #aaa;padding:0 20px;">
+                <div class="signup" id="signup">
+                    <h3><strong><red>注册成功</red></strong></h3>
+                    <p>恭喜您成为商影联盟服务的会员！</p>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="row" style="margin:20px 50px;">
+                            <ul>
+                                <li><p>中国优秀视频制作人员组织</p>
+                                <li><p>提供视频策划、拍摄和制作服务</p>
+                                <li><p>全程服务可视化，兼顾质量和效率</p>
+                            </ul>
+                        </div>
+                        <div class="row text-center"style="margin:30px">
+                            <a href="/" class="btn btn-green btn-lg">回到首页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-center signup" style="margin:20px 0">
+                <h3>尊享服务</h3>
+                <h5>1. 专业团队制作；</h5>
+                <h5>2. 在线项目跟踪；</h5>
+                <h5>3. 随时审查质量；</h5>
+                <h5>4. 云端存储传播；</h5>
+
+                <h3>服务须知</h3>
+                <h5>如您有任何疑问</h5>
+                <h5>请致电：010-85388138/18611828618</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('.static', filename='login/register.js') }}"></script>
+<script type="text/javascript">
+    $.cookie('DBToken', '{{ dbtoken }}');
+</script>
+{% endblock %}

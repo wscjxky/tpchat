@@ -1,0 +1,153 @@
+{% extends "admin/user_manage.html" %}
+{% block userBody %}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <div id="user_customer_content"></div>
+        </div>
+        <div class="container" style="text-align: center; margin: 20px">
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1"> 显示所有
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2"> 按年显示
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3"> 按月显示
+            </label>
+        </div>
+        <div class="container" style="margin: 20px" id="dateSelector" hidden>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <label for="year_group" class="input-group-addon">年份</label>
+                    <select class="form-control" id="year_group" name="yeargroup">
+                        {% for value in params.years %}
+                            <option>{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <label for="month_group" class="input-group-addon">月份</label>
+                    <select class="form-control disabled" id="month_group" name="monthgroup">
+                        <option>一月</option>
+                        <option>二月</option>
+                        <option>三月</option>
+                        <option>四月</option>
+                        <option>五月</option>
+                        <option>六月</option>
+                        <option>七月</option>
+                        <option>八月</option>
+                        <option>九月</option>
+                        <option>十月</option>
+                        <option>十一月</option>
+                        <option>十二月</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var monthMap = {'一月': 1,'二月': 2,'三月': 3,'四月': 4,'五月': 5,'六月': 6,'七月': 7,'八月': 8,'九月': 9,
+            '十月': 10,'十一月': 11,'十二月': 12};
+        var categories = [
+                    {% for value in params.timeCategory %}
+                        '{{ value }}',
+                    {% endfor %}
+                ];
+        var customerCount = {{ params.customerCount }};
+        var producerCount = {{ params.producerCount }};
+        var filter = 'all';
+        initCharts();
+        $('#inlineRadio1').attr('checked', 'checked');
+        $('#inlineRadio1').unbind('click').click(function(){
+            $('#dateSelector').hide();
+            window.location.href = '/admin/user';
+        });
+        $('#inlineRadio2').unbind('click').click(function(){
+            filter = 'year';
+            getData();
+            $('#dateSelector').show();
+        });
+        $('#inlineRadio3').unbind('click').click(function(){
+            filter = 'month';
+            getData();
+            $('#dateSelector').show();
+        });
+        $('#year_group').change(function(){
+            getData();
+        });
+        $('#month_group').change(function(){
+            getData();
+        });
+        function getCurYear(){
+            return $('#year_group').val();
+        }
+        function getCurMonth(){
+            return monthMap[$('#month_group').val()];
+        }
+        function getData(){
+            var year = parseInt(getCurYear());
+            var month = getCurMonth();
+            $.ajax({
+                type: "POST",
+                url: "/admin/user",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    filter: filter,
+                    year: year,
+                    month: month
+                }),
+                success: function (response) {
+                    categories = response.timeCategory;
+                    customerCount = response.customerCount;
+                    producerCount = response.producerCount;
+                    initCharts();
+                }
+            });
+        }
+        function initCharts(){
+            $('#user_customer_content').highcharts({
+                title: {
+                    text: '平台用户统计表'
+                },
+                subtitle: {
+                    text: 'customer info of out platform'
+                },
+                xAxis: {
+                    categories: categories
+                },
+                yAxis: {
+                    allowDecimals: false,
+                    title: {
+                        text: '人数'
+                    }
+                },
+                tooltip: {
+                    formatter: function () {
+                        return  this.x + " " + this.series.name + "：" + this.y + '人'
+                    },
+                    valueSuffix: '°C'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '普通用户',
+                    data: customerCount
+                }, {
+                    name: '制作商',
+                    data: producerCount
+                }],
+                credits: { enabled:false }
+            });
+        }
+    </script>
+{% endblock %}

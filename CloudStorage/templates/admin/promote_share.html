@@ -1,0 +1,74 @@
+{% extends "admin/promote_manage.html" %}
+{% block promoteBody %}
+<div class="container-fluid">
+    <div class="page-header">
+        <h3>分享视频权重设置<small>权重越大，视频在首页位置越高</small></h3>
+    </div>
+    {% for value in params.sortByCategory %}
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <h3>频道--{{ value }}</h3>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>公司名称</th>
+                    <th>申请案例</th>
+                    <th class="col-md-1">查看视频</th>
+                    <th class="col-md-2">权重设置</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for item in params.sortByCategory[value] %}
+                <tr>
+                  <td>{{ loop.index }}</td>
+                  <td>{{ item.Domain.CompanyName }}</td>
+                  <td>{{ item.Object.Name }}</td>
+                  <td><button class="btn btn-default checkVideo" value="{{ item.Object.Id }}">查看</button></td>
+                  <td>
+                      <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon1">权重</span>
+                            <input type="text" class="form-control classicalWeight" placeholder="" aria-describedby="sizing-addon1"
+                                    value="{{ item.ClassicalWeight }}"
+                                    onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"
+                                    onblur="this.value=this.value.replace(/(\.\d{1})\d*$/,'\$1')">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default modifyWeight" type="button" value="{{ item.Id }}">修改</button>
+                            </span>
+                      </div>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+    <script type="text/javascript">
+        $('.checkVideo').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            window.open('/player/' + targetId);
+        });
+        $('.modifyWeight').click(function(e){
+            var targetId = $(e.currentTarget).attr('value');
+            var weight = $(e.currentTarget).parent().parent().find(".classicalWeight").val();
+            weight = parseFloat(weight);
+            $.ajax({
+                type: "POST",
+                url: "/admin/promote/classical",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    operator: "modifyWeight",
+                    targetId: targetId,
+                    Weight: weight
+                }),
+                success: function () {
+                    window.location.href = '/admin/promote/share';
+                }
+            });
+        });
+    </script>
+{% endblock %}

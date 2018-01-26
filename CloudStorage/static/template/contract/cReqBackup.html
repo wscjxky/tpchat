@@ -1,0 +1,132 @@
+<div class=" container-fluid">
+    <div class="tab-content tab-content-secondary">
+        <div class="row tab-pane fade in active">
+            <div class="col-xs-8 cReqBackup_content" style="border-right:solid 1px #eee;">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4><strong>需求备忘录</strong></h4><hr>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="image/price.png" class="img-circle" style="width: 50%">
+                                <h4><black>定价</black></h4>
+                                <p>{{ #Amount }}元</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="image/startTime.png" class="img-circle" style="width: 50%">
+                                <h4><black>提交时间</black></h4>
+                                <p>{{CreateTime | ParseTime}}</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="image/endTime.png" class="img-circle" style="width: 50%">
+                                <h4><black>交付时间</black></h4>
+                                <p>{{Deadline | ParseTime}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <h4>需求内容</h4>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>具体描述</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Detail}}</div>
+                        </div>
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>视频类型</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Type}}</div>
+                        </div>
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>视频时长</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Long}}</div>
+                        </div>
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>视频画质</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Format}}</div>
+                        </div>
+                        {{ if Voice!='' }}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>配音要求</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Voice}}</div>
+                        </div>
+                        {{ /if }}
+                        {{ if Subtitle!='' }}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>字幕要求</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Subtitle}}</div>
+                        </div>
+                        {{ /if }}
+                        {{ if Gbm!=''}}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>背景音乐</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Gbm}}</div>
+                        </div>
+                        {{ /if }}
+                        {{ if Place!='' }}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>拍摄要求</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Place}}</div>
+                        </div>
+                        {{ /if }}
+                        {{ if Refer!='' }}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>参考作品</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Refer}}</div>
+                        </div>
+                        {{ /if }}
+                        {{ if Symbol!='' }}
+                        <div class="row contract-detail-item">
+                            <div class="col-xs-4 requirements-detail" align="center"><black>角标要求</black></div>
+                            <div class="col-xs-8 requirements-detail">{{#Symbol}}</div>
+                        </div>
+                        {{ /if }}
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <h4>需求附件</h4>
+                    <hr>
+                </div>
+                <div class="row" style="margin-bottom:20px;">
+                    <div class="container-fluid creq_attachment_viewer" style="display:none"></div>
+                    <div class="container-fluid creq_attachment_content">
+                        {{each RequirementAttachment}}
+                        <div class="col-xs-2 text-center">
+                            {{if $value.Object.Type == 0 || $value.Object.Type == 1}}
+                            <div class="cloud_object_image" style="background-image:url('{{$value.Object.File.Path}}')">
+                            {{else}}
+                            <div class="cloud_object_image" style="background-image:url('image/text.png')">
+                            {{/if}}
+                            </div>
+                            <div class="cloud_object_text attachment_object" value="{{ $value.Id }}">
+                                <p class="label label-info" title="{{$value.Object.Name}}">
+                                    {{$value.Object.Name}}
+                                </p>
+                                <!--
+                                    <small class="attachment_object requirement-object{{$value.Id}}" value="{{ $value.Id }}" title="{{$value.Object.Name}}">
+                                        预览 |
+                                    </small>
+                                -->
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="list-group">
+                    <div class="cSeg list-group-item" id="cReqBackup_detail">
+                        <h4>需求详情</h4>
+                    </div>
+                    <div class="cSeg list-group-item" id="cReqBackup_reply">
+                        <h4>留言板</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

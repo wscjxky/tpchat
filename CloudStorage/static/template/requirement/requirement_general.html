@@ -1,0 +1,129 @@
+{{ if !IsService }}
+<div class="container" style="border:solid 1px #aaa;background:#eee;border-radius: 5px; margin-top: 20px">
+    <div class="col-xs-6" style="border-right:solid 1px #bbb;padding:10px;">
+        <h3 style="margin:10px 0;text-align: center"><strong>我的需求</strong></h3>
+        <div class="row">
+            <div class="col-xs-6 text-right" style="border-right:solid 1px #ccc">
+                <p style="margin: 0">
+                    已保存草稿<span style="color:#8AC007; font-size: 15px"><strong> {{ totalSave }} </strong></span>个<br>
+                    已提交需求<span style="color:#8AC007; font-size: 15px"><strong> {{ totalPublish }} </strong></span>个
+                </p>
+            </div>
+            <div class="col-xs-6">
+                <button class="btn btn-sm btn-info" id="showReq" style="margin: 8px"
+                    {{ if totalSave == 0 && totalPublish == 0 }}
+                        disabled
+                    {{ /if }}>查看
+                </button>
+            </div>
+        </div>
+        <hr style="border-color:#bbb">
+        {{ if logs.length == 0 }}
+        <div style="height: 245px; text-align: center" class="col-md-12">
+            <h3 style="color: #aaaaaa">未有新通知</h3>
+        </div>
+        {{ else }}
+        <div style="overflow: auto; overflow-x: hidden; min-height: 170px; max-height: 250px; margin-bottom: 20px">
+        {{ each logs }}
+            <div class="container-fluid" style="margin-top: 10px">
+                <div class="col-md-12"  value="{{ $value.MsgType }}">
+                    <h4 style="margin-top: 0; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width: 90%">
+                        [{{ $value.Title }}]
+                        <span style="font-size: 10px">{{ $value.CreateTime | ParseTime }} : {{ $value.Msg }}</span>
+                    </h4>
+                    <button class="btn btn-sm btn-info viewSpeReq" style="position: absolute; top: -5px; right: 20px" value="{{ $value.ResourceId }}">查看</button>
+                </div>
+            </div>
+            <hr style="border-color:#ccc">
+        {{ /each }}
+        </div>
+        {{ /if }}
+    </div>
+    <div class="col-xs-6" style="padding:10px">
+        <h3 style="margin:10px auto;text-align: center"><strong>添加需求</strong></h3>
+        <p style="margin:0 0 10px;text-align: center">只需简单1步，<br>即可开启需求新建</p>
+        <hr style="border-color:#bbb;margin-top:11px;">
+        <div class="jumbotron newReqPanel" style="padding:0 60px"></div>
+    </div>
+</div>
+<!--<div class="container-fluid" style="text-align: center; margin-top: 20px">
+    <h2>剪片子的需求</h2>
+    <hr>
+    <p>需求是您联系海量制作商的窗户</p>
+    <p>需求就像一份激情澎湃的宣言，述说着视频的故事</p>
+    <p>一份好的需求可以让制作商更快的理解制作要求</p>
+    <div class="container-fluid" style="text-align: left; height:500px;background-image:url(http://123.57.157.64:8080/tmpfiles/13235248874.jpg)">
+        <div class="col-md-2" style="margin-top: 200px"></div>
+        <div class="col-md-5" style="margin-top: 200px">
+            <h2 style="color: #eee">需求里的视频类型</h2>
+            <p style="color: #eee">明确的视频类型可以让制作商快速的了解您的视频用途，并为此制定合适的方案和脚本，视频类型主要有：婚庆、夏令营、晚会、公司宣传片等</p>
+        </div>
+    </div>
+    <div class="container-fluid" style="text-align: left; height:500px;background-image:url(image/xqx.jpg)">
+        <div class="col-md-2" style="margin-top: 200px"></div>
+        <div class="col-md-5" style="margin-top: 200px">
+            <h2>需求里的视频画质</h2>
+            <p>明确的视频画质可以让制作商清楚他们应该提供的最终视频格式，目前主流视频幅面有：4K(3840×2160)、全高清(1920*1080)、高清(1280*720)、标清(720*576)等</p>
+        </div>
+    </div>
+</div>-->
+{{ else }}
+<div class="container" style="border:solid 1px #aaa;background:#eee;border-radius: 5px; margin-top: 20px">
+    <div class="col-xs-6" style="border-right:solid 1px #bbb;padding:20px;">
+        <h3 style="margin-top: 10px">我申请的需求</h3>
+        <p>
+            已申请需求<span style="color:#8AC007; font-size: 15px"><strong>{{ totalApply }}</strong></span>个
+            <button class="btn btn-sm btn-info showCareReq">查看</button>
+        </p>
+        <hr style="border-color:#bbb">
+        {{ if logs.length == 0 }}
+        <div style="min-height: 300px; text-align: center" class="col-md-12">
+            <h3 style="color: #aaaaaa">未有新通知</h3>
+        </div>
+        {{ else }}
+        <div style="overflow: auto; overflow-x: hidden; min-height: 155px; max-height: 250px; margin-bottom: 20px">
+        {{ each logs }}
+            <div class="container-fluid" style="margin-top: 10px">
+                <div class="col-md-12" value="{{ $value.MsgType }}">
+                    <h4 style="margin-top: 0; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width: 90%">
+                        [{{ $value.Title }}]
+                        <span style="font-size: 10px">{{ $value.CreateTime | ParseTime }} : {{ $value.Msg }}</span>
+                    </h4>
+                    <button class="btn btn-sm btn-info viewSpeReq" style="position: absolute; top: -5px; right: 20px" value="{{ $value.ResourceId }}">查看</button>
+                </div>
+            </div>
+            <hr style="border-color:#ccc">
+        {{ /each }}
+        </div>
+        {{ /if }}
+    </div>
+    <div class="col-xs-6" style="padding:20px">
+        <h3 style="margin-top: 10px">最近提交的用户制作需求</h3>
+        <p>
+            当前提交需求总数<span style="color:#8AC007; font-size: 15px"><strong>{{ totalPublish }}</strong></span>个
+            <button class="btn btn-sm btn-info showAllReq">查看</button>
+        </p>
+        <hr style="border-color:#bbb">
+        {{ if newPublish.length == 0 }}
+        <div style="height: 175px; text-align: center" class="col-md-12">
+            <h3 style="color: #aaaaaa">未有新提交的需求</h3>
+        </div>
+        {{ else }}
+        <div style="overflow: auto; overflow-x: hidden; min-height: 155px; max-height: 250px; margin-bottom: 20px">
+        {{ each newPublish }}
+            <div class="container-fluid" style="margin-top: 10px">
+                <div class="col-md-12">
+                    <h4 style="margin-top: 0; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width: 90%">
+                        [{{ $value.Title }}]
+                        <span style="font-size: 10px">{{ $value.CreateTime | ParseTime }}</span>
+                    </h4>
+                    <button class="btn btn-sm btn-info viewSpeReq" style="position: absolute; top: -5px; right: 20px" value="{{ $value.Id }}">查看</button>
+                </div>
+            </div>
+            <hr style="border-color:#ccc">
+        {{ /each }}
+        </div>
+        {{ /if }}
+    </div>
+</div>
+{{ /if }}

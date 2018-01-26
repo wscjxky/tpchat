@@ -1,0 +1,140 @@
+<div class="row requirement_search_producer">
+</div>
+<div class="requirement_content" style="padding:0 20px">
+    <h3 id="requirement_add_dialog_title" style="display:inline-block;font-weight:bold;"></h3>
+    <h5 style="display: inline-block;">&nbsp;&nbsp;&nbsp;<red>红色字体</red>内容为必填项</h5>
+    <hr style="margin:0 10px 0 0;">
+    <div class="row">
+        <div class="requirement_add_dialog_form col-xs-8">
+            <div class="input-group col-xs-12 " style="margin:10px 0 10px 0">
+                <label for="requirement_title" class="input-group-addon"><red>需求名称</red></label>
+                <input id="requirement_title" name="title" type="text" class="form-control" placeholder="新建需求的名称">
+            </div>
+            <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                <label for="video_category_1" class="input-group-addon"><red>需求类型</red></label>
+                <select class="form-control" id="video_category_1" name="category_1">
+                </select>
+            </div>
+            <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                <label for="video_category_2" class="input-group-addon"><red>类型细分</red></label>
+                <select class="form-control" id="video_category_2" name="category_2">
+                </select>
+            </div>
+            <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                <label for="requirement_long" class="input-group-addon"><red>视频时长</red></label>
+                <input id="requirement_long" name="long" class="form-control" placeholder="请注明时长单位（如：分钟）">
+            </div>
+            <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                <label for="requirement_format" class="input-group-addon"><red>视频画质</red></label>
+                <select class="form-control" id="requirement_format" name="format">
+                    <option></option>
+                    <option>高清</option>
+                    <option>标清</option>
+                    <option>4K</option>
+                    <option>其他，具体需求请写到正文中</option>
+                </select>
+            </div>
+            <div class="input-group col-xs-12" style="margin:10px 0">
+                <label for="requirement_detail" class="input-group-addon"><red>具体描述</red></label>
+                <textarea id="requirement_detail" rows="6" class="form-control" placeholder="具体需求描述" ></textarea>
+            </div>
+            <div class="text-center" style="width:68.3%">
+                <button class="btn btn-sm btn-default" id="btn-requirement-no-necessary" onclick="
+                        $('#requirement-no-necessary').slideDown();
+                        $('#btn-requirement-no-necessary').hide();
+                        $('#btn-requirement-no-necessary-back').show()" style="border: none">
+                    填写其他（可留空） <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-sm btn-default" id="btn-requirement-no-necessary-back" onclick="
+                        $('#requirement-no-necessary').slideUp();
+                        $('#btn-requirement-no-necessary').show();
+                        $('#btn-requirement-no-necessary-back').hide();"
+                        style="display:none;border:none">
+                    收起（保留内容） <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="requirement-no-necessary" hidden>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label class="input-group-addon">字幕要求</label>
+                    <input id="subtitle" name="subtitle" class="form-control" placeholder="需要字幕的视频请填写">
+                </div>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label class="input-group-addon">角标要求</label>
+                    <input id="symbol" name="symbol" class="form-control" placeholder="具体角标要求">
+                </div>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label class="input-group-addon">配音要求 </label>
+                    <input id="voice" name="voice" class="form-control" placeholder="需要配音的视频请填写">
+                </div>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label for="gbm" class="input-group-addon">背景音乐</label>
+                    <input id="gbm" name="gbm" class="form-control" placeholder="背景音乐类型或主题">
+                </div>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label for="place" class="input-group-addon">拍摄要求</label>
+                    <input id="place" name="place" class="form-control" placeholder="拍摄地点要求">
+                </div>
+                <div class="input-group col-xs-12" style="margin:10px 0 10px 0">
+                    <label for="refer" class="input-group-addon">参考作品</label>
+                    <input id="refer" name="refer" class="form-control" placeholder="请给出参考视频的相关链接">
+                </div>
+            </div>
+            <div class="attachmentTable text-center" style="width:68.3%">
+                <hr><center><strong>附件列表</strong></center>
+                <table class="table table-striped table-bordered " style="margin: 10px 0 0" >
+                    <thead>
+                        <tr>
+                            <th class="col-xs-2 text-center">已添加附件</th>
+                            <th class="col-xs-1 text-center">类型</th>
+                            <th class="col-xs-4 text-center">备注</th>
+                            <th class="col-xs-2 text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="re_attachments" class="text-center" style="position: relative">
+                        {{include 'template/requirement/requirement_attachment.html'}}
+                    </tbody>
+                </table>
+                <div class="col-xs-12" id="re_objectTree"></div>
+                <button id="requirement_file_getfile" class="btn btn-sm btn-default" style="margin-top:-2px">
+                    加入附件 <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-4">
+                <h3 style="color:#8AC007">
+                    选择制作商
+                    <button id="selectProducer" class="btn btn-default" type="button"">立即选择</button>
+                </h3>
+                &bull;  <small> 默认投递给所有制作商</small>
+
+            <div id="specifyProducers" class="company-list">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid" style="padding-bottom: 20px;">
+        <div class="col-xs-8">
+            <div class="row">
+                <div style="width:67.5%">
+                    <div class="input-group" style="margin:10px 0" id="deadline">
+                        <label class="input-group-addon"><red> &nbsp;&nbsp;&nbsp;完成日期&nbsp;&nbsp;&nbsp;&nbsp; </red></label>
+                        <input class="form-control deadline" type="text" placeholder="制作完成日期"/>
+                    </div>
+                    <div class="input-group input-group has-success" style="margin:0 0px 10px 0;">
+                        <label for="requirement_amount" class="input-group-addon"><red>制作价格(元)</red></label>
+                        <input id="requirement_amount" name="amount" class="form-control" placeholder="价格/RMB"
+                            onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 text-center" style="margin:12px 0">
+            <p>我已阅读<a>商影联盟客户使用说明</a>,确认并:</p>
+            <button id="requirement_add_commit" class="btn btn-lg btn-success"style="margin:0 5px">保存</button>
+            {{ if Status==0 }}
+            <button id="requirement_add_publish" class="btn btn-lg btn-green"style="margin:0 5px">提交</button>
+            {{ /if }}
+            <button id="requirement_add_cancel" class="btn btn-lg btn-danger"style="margin:0 5px">取消</button>
+        </div>
+    </div>
+</div>

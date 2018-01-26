@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>课程签到</title>
+    <script src="{$Think.const.JS_URL}jquery.js"></script>
+
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css">
+    <script rel="stylesheet" src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+
+
+    <link href="{$Think.const.CSS_URL}vendors.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}weui.min.css">
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}jquery-weui.min.css">
+    <script src="{$Think.const.JS_URL}jquery-weui.js"></script>
+    <script src="{$Think.const.JS_URL}fastclick.js"></script>
+
+
+</head>
+<body>
+
+<div class="weui-cells" style="margin-top: 16%;">
+    <h1 style="padding: 3%; ">课程标题：{$course.title}</h1>
+    <h1 style="padding: 3%; ">子标题：{$course.subtitle}</h1>
+    <h1 style="padding: 3%; ">主讲：{$course.speaker}</h1>
+    <h1 style="padding: 3%; ">地点：{$course.address}</h1>
+    <h1 style="padding: 3%; ">开课时间：{$course.starttime}</h1>
+    <h1 style="padding: 3%; ">联系电话：{$course.phone}</h1>
+
+
+</div>
+<form method="post" action="#" style="margin-top: 30%">
+
+    <p style="text-align: center">{$chatname}学员您好</p>
+    <div class="weui-cells__title">凭证</div>
+    <div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" style="height:10%" type="text" name="evidence" placeholder="请输入凭证">
+            <input style="display: none" value="{$openid}">
+        </div>
+    </div>
+</div>
+<button style="margin-top: 10%" type="submit" class="weui-btn weui-btn_primary">确认</button>
+</form>
+</body>
+</html>

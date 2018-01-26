@@ -1,0 +1,51 @@
+<!--共享组信息-->
+<div class="panel-group" id="accordion">
+    {{each cache.groups}}
+    {{if $value.operate != "del"}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="{{$index}}">
+                <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}_{{$value.groupName}}">
+                    {{$value.groupName}}
+                </a>
+                <a class="linkCursor share_group_delete" title="删除共享组"><img src="image/delete.png"/></a>
+                <a class="linkCursor share_group_modify" title="修改共享组"><img src="image/modify.png"/></a>
+                <a class="linkCursor share_group_add" title="添加用户到组"><img src="image/add.png"/></a>
+            </h4>
+        </div>
+        {{if collapse_in_id == ($index + "_" + $value.groupName)}}
+        <!--suppress XmlDuplicatedId -->
+        <div id="{{$index}}_{{$value.groupName}}" class="panel-collapse collapse in">
+        {{else}}
+        <!--suppress XmlDuplicatedId -->
+        <div id="{{$index}}_{{$value.groupName}}" class="panel-collapse collapse">
+        {{/if}}
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th class="col-md-10">用户名</th>
+                        <th class="col-md-2">删除</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{each $value.users as userInfo n}}
+                    {{if userInfo.operate != "del"}}
+                    <tr>
+                        <td class="share_userList_groupId" style="display: none">{{$index}}</td>
+                        <td class="share_userList_userId" style="display: none">{{userInfo.userId}}</td>
+                        <td>{{userInfo.name}}</td>
+                        <td><a class="linkCursor share_userList_delete" title="删除用户"><img
+                                src="image/delete.png"/></a>
+                        </td>
+                    </tr>
+                    {{/if}}
+                    {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</div>

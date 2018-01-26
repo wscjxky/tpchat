@@ -1,0 +1,31 @@
+{% extends 'mobile/frame.html' %}
+{% block body %}
+    {% for video in videos %}
+    <div class="container-fluid" onclick="window.open('/mobile/share/{{ video.ObjectId }}')">
+        <div class="col-xs-4 group-banner">
+            <div class="video-item" style="background-image: url({{ video.Portrait }})">
+            </div>
+        </div>
+        <div class="col-xs-8">
+            <h1 style="text-overflow:ellipsis; white-space:nowrap; overflow:hidden;">{{ video.Object.Name }}</h1>
+            <h3 style="text-overflow:ellipsis;">{{ video.Object.Tag }}</h3>
+            <h3 class="wxpromotebox">{{ video.Intro }}</h3>
+            <h3><small>{{ video.Object.ModifyTime.strftime('%Y-%m-%d') }}</small></h3>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="container-fluid" style="height: 100px;"></div>
+{% endblock %}
+{% block script %}
+    <script type="text/javascript">
+        var banners = $('.group-banner');
+        var width = 0;
+        for(var i=0;i<banners.length;i++)
+        {
+            if( i == 0)
+                width = banners[0].offsetWidth
+
+            banners[i].style.height=width+'px';
+        }
+    </script>
+{% endblock %}

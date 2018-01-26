@@ -1,0 +1,34 @@
+﻿<div style="text-align: center">
+<nav>
+    <ul class="pagination">
+        {{ if pagination.hasPrev }}
+        <li>
+        {{ else }}
+        <li class="disabled">
+        {{ /if }}
+            <a class="pagination_prev" aria-label="Previous" value="{{ pagination.prevPage }}">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        {{ each pagination.pages }}
+        {{ if pagination.currentPage == $value }}
+        <li class="active">
+        {{ else }}
+        <li>
+        {{ /if }}
+            <a class="pagination_index" value="{{ $value }}">{{ $value }}</a>
+        </li>
+        {{ /each }}
+
+        {{ if pagination.hasNext }}
+        <li>
+        {{ else }}
+        <li class="disabled">
+        {{ /if }}
+            <a class="pagination_next" aria-label="Next"  value="{{ pagination.nextPage }}">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+</div>

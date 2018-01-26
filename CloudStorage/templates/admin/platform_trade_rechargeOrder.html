@@ -1,0 +1,62 @@
+{% extends "admin/platform_manage.html" %}
+{% block platformBody %}
+    <div class="container-fluid" style="text-align: center; margin-top: 20px">
+        <button class="btn btn-default" onclick="window.location.href = '/admin/platform/trade/contractOrder?page=1'">查看合同订单</button>
+        <button class="btn btn-default" onclick="window.location.href = '/admin/platform/trade/rechargeOrder?page=1'">查看充值订单</button>
+        <button class="btn btn-default" onclick="window.location.href = '/admin/platform/trade/taxOrder?page=1'">查看会费订单</button>
+        <button class="btn btn-default" onclick="window.location.href = '/admin/platform/trade/storageOrder?page=1'">查看云空间订单</button>
+    </div>
+    <div class="panel panel-default" style="margin-top: 20px">
+        <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th>#</th>
+                    <th>支付类型</th>
+                    <th>支付金额</th>
+                    <th>支付方</th>
+                    <th>支付状态</th>
+                    <th>创建时间</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for v in params.Items %}
+                <tr>
+                    <th scope="row"><a href="/admin/platform/trade/order/{{ v.Order.Id }}">{{ v.Order.Id }}</a></th>
+                    <td>用户账号充值</td>
+                    <td>{{ v.Order.Amount }}</td>
+                    <td><a href="/admin/user/{{ v.Order.PayUser.Id }}">{{ v.Order.PayUser.Domain.CompanyName }}</a></td>
+                    <td>{{ v.Order.State }}</td>
+                    <td>{{ v.Order.CreateTime }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+            <div class="container-fluid" style="text-align: center;">
+                <nav>
+                  <ul class="pagination">
+                    <li {% if not params.HasPrev %}class="disabled"{% endif %}>
+                      <a href='/admin/platform/trade/rechargeOrder?page={{ params.PrevNum }}' aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                  {% if params.HasPrev %}
+                    <li><a href='/admin/platform/trade/rechargeOrder?page={{ params.PrevNum }}'>{{ params.PrevNum }}</a></li>
+                  {% endif %}
+                    <li class="active"><a href='/admin/platform/trade/rechargeOrder?page={{ params.Page }}'>{{ params.Page }}</a></li>
+                  {% if params.HasNext %}
+                    <li><a href='/admin/platform/trade/rechargeOrder?page={{ params.NextNum }}'>{{ params.NextNum }}</a></li>
+                  {% endif %}
+                    <li {% if not params.HasNext %}class="disabled"{% endif %}>
+                      <a href='/admin/platform/trade/rechargeOrder?page={{ params.NextNum }}' aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+{% endblock %}

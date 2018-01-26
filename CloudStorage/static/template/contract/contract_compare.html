@@ -1,0 +1,175 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+            <h4 class="modal-title">合同对比</h4>
+        </div>
+        <div class="modal-body">
+            <table class="table table-bordered" style="border-collapse:separate">
+                <thead>
+                <tr>
+                    <th class="col-md-1" align="center"></th>
+                    <th>上一版本</th>
+                    <th>当前版本</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="center">合同<br>正文</td>
+                    {{if nc.Detail != oc.Detail}}
+                    <td><red>{{oc.Detail}}</red></td>
+                    <td><red>{{nc.Detail}}</red></td>
+                    {{else}}
+                    <td>{{oc.Detail}}</td>
+                    <td>{{nc.Detail}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">制作<br>方案</td>
+                    {{if nc.Scheme != oc.Scheme}}
+                    <td><red>{{oc.Scheme}}</red></td>
+                    <td><red>{{nc.Scheme}}</red></td>
+                    {{else}}
+                    <td>{{oc.Scheme}}</td>
+                    <td>{{nc.Scheme}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">制作<br>脚本</td>
+                    {{if nc.Script != oc.Script}}
+                    <td><red>{{oc.Script}}</red></td>
+                    <td><red>{{nc.Script}}</red></td>
+                    {{else}}
+                    <td>{{oc.Script}}</td>
+                    <td>{{nc.Script}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">价格</td>
+                    {{if nc.Amount != oc.Amount}}
+                    <td><red>{{oc.Amount}}</red></td>
+                    <td><red>{{nc.Amount}}</red></td>
+                    {{else}}
+                    <td>{{oc.Amount}}</td>
+                    <td>{{nc.Amount}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">押金<br>比例</td>
+                    {{if nc.DepositPercent != oc.DepositPercent}}
+                    <td><red>{{oc.DepositPercent}}</red></td>
+                    <td><red>{{nc.DepositPercent}}</red></td>
+                    {{else}}
+                    <td>{{oc.DepositPercent}}</td>
+                    <td>{{nc.DepositPercent}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">类型</td>
+                    {{if nc.Type != oc.Type}}
+                    <td><red>{{oc.Type}}</red></td>
+                    <td><red>{{nc.Type}}</red></td>
+                    {{else}}
+                    <td>{{oc.Type}}</td>
+                    <td>{{nc.Type}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">时长</td>
+                    {{if nc.Long != oc.Long}}
+                    <td><red>{{oc.Long}}</red></td>
+                    <td><red>{{nc.Long}}</red></td>
+                    {{else}}
+                    <td>{{oc.Long}}</td>
+                    <td>{{nc.Long}}</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td align="center">画质</td>
+                    {{if nc.Format != oc.Format}}
+                    <td><red>{{oc.Format}}</red></td>
+                    <td><red>{{nc.Format}}</red></td>
+                    {{else}}
+                    <td>{{oc.Format}}</td>
+                    <td>{{nc.Format}}</td>
+                    {{/if}}
+                </tr>
+                {{if nc.Voice != ''}}
+                <tr>
+                    <td align="center">配音</td>
+                    {{if nc.Voice != oc.Voice}}
+                    <td><red>{{oc.Voice}}</red></td>
+                    <td><red>{{nc.Voice}}</red></td>
+                    {{else}}
+                    <td>{{oc.Voice}}</td>
+                    <td>{{nc.Voice}}</td>
+                    {{/if}}
+                </tr>
+                {{/if}}
+                {{if nc.Subtitle != ''}}
+                <tr>
+                    <td align="center">字幕</td>
+                    {{if nc.Subtitle != oc.Subtitle}}
+                    <td><red>{{oc.Subtitle}}</red></td>
+                    <td><red>{{nc.Subtitle}}</red></td>
+                    {{else}}
+                    <td>{{oc.Subtitle}}</td>
+                    <td>{{nc.Subtitle}}</td>
+                    {{/if}}
+                </tr>
+                {{/if}}
+                {{if nc.Gbm != ''}}
+                <tr>
+                    <td align="center">音乐</td>
+                    {{if nc.Gbm != oc.Gbm}}
+                    <td><red>{{oc.Gbm}}</red></td>
+                    <td><red>{{nc.Gbm}}</red></td>
+                    {{else}}
+                    <td>{{oc.Gbm}}</td>
+                    <td>{{nc.Gbm}}</td>
+                    {{/if}}
+                </tr>
+                {{ /if }}
+                {{if nc.Place != ''}}
+                <tr>
+                    <td align="center">地点</td>
+                    {{if nc.Place != oc.Place}}
+                    <td><red>{{oc.Place}}</red></td>
+                    <td><red>{{nc.Place}}</red></td>
+                    {{else}}
+                    <td>{{oc.Place}}</td>
+                    <td>{{nc.Place}}</td>
+                    {{/if}}
+                </tr>
+                {{ /if }}
+                {{if nc.Refer != ''}}
+                <tr>
+                    <td align="center">参考</td>
+                    {{if nc.Refer != oc.Refer}}
+                    <td><red>{{oc.Refer}}</red></td>
+                    <td><red>{{nc.Refer}}</red></td>
+                    {{else}}
+                    <td>{{oc.Refer}}</td>
+                    <td>{{nc.Refer}}</td>
+                    {{/if}}
+                </tr>
+                {{ /if }}
+                {{ if nc.Symbol != ''}}
+                <tr>
+                    <td align="center">角标</td>
+                    {{if nc.Symbol != oc.Symbol}}
+                    <td><red>{{oc.Symbol}}</red></td>
+                    <td><red>{{nc.Symbol}}</red></td>
+                    {{else}}
+                    <td>{{oc.Symbol}}</td>
+                    <td>{{nc.Symbol}}</td>
+                    {{/if}}
+                </tr>
+                {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

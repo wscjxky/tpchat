@@ -1,0 +1,127 @@
+<h2 id="contract-title">商定合同
+    {{if cData.activeSeg.Status == 0}}
+    <button class="btn btn-info contractEdit edit_contract_btn" style="float: right">完善细节</button>
+    <button class="btn btn-warning contractEdit cancel_contract_btn" style="float: right">取消合同</button>
+    {{/if}}
+</h2>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span style="font-size: 16px">
+        合同描述
+        </span>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>合同名称</black></div>
+                    <div class="col-md-10 ">{{#cData.Title}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>视频类型</black></div>
+                    <div class="col-md-10 ">{{#cData.Type}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>视频时长</black></div>
+                    <div class="col-md-10 ">{{#cData.Long}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>视频画质</black></div>
+                    <div class="col-md-10 ">{{#cData.Format}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>合同正文</black></div>
+                    <div class="col-md-10 ">{{#cData.Detail | htmlEncode}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>制作方案</black></div>
+                    <div class="col-md-10 ">{{#cData.Scheme | htmlEncode}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>制作脚本</black></div>
+                    <div class="col-md-10 ">{{#cData.Script | htmlEncode}}</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>合同金额</black></div>
+                    <div class="col-md-10 ">{{#cData.Amount}}元</div>
+                </div>
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>押金比例</black></div>
+                    <div class="col-md-10 ">{{#cData.DepositPercent}}%</div>
+                </div>
+                {{ if cData.Subtitle!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>字幕要求</black></div>
+                    <div class="col-md-10 ">{{#cData.Subtitle}}</div>
+                </div>
+                {{ /if }}
+                {{ if cData.Symbol!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>角标要求</black></div>
+                    <div class="col-md-10">{{#cData.Symbol}}</div>
+                </div>
+                {{ /if }}
+                {{ if cData.Voice!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>配音要求</black></div>
+                    <div class="col-md-10">{{#cData.Voice}}</div>
+                </div>
+                {{ /if }}
+                {{ if cData.Gbm!=''}}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>背景音乐</black></div>
+                    <div class="col-md-10">{{#cData.Gbm}}</div>
+                </div>
+                {{ /if }}
+                {{ if cData.Place!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>拍摄要求</black></div>
+                    <div class="col-md-10">{{#cData.Place}}</div>
+                </div>
+                {{ /if }}
+                {{ if cData.Refer!='' }}
+                <div class="row contract-detail-item">
+                    <div class="col-md-2 requirements-detail" align="center"><black>参考作品</black></div>
+                    <div class="col-md-10 "><a href="{{#cData.Refer}}" target="_blank">{{#cData.Refer}}</a></div>
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="attachment_area"></div>
+</div>
+<div class="panel panel-default" style="margin:0 0 10px">
+    <div class="panel-body">
+        <h3>环节疑问</h3>
+        <hr>
+        {{ if !cData.IsService }}
+        <div class="col-md-6">
+            <h4 style="color:#222">商订合同环节</h4>
+            <p style="color:#666">该环节您可以和制作商针对制作合同开展详细讨论，通过完善细节修改合同内容，最终达成共识，完成合同创建</p>
+        </div>
+        <div class="col-md-6">
+            <h4 style="color:#222">合同附件？</h4>
+            <p style="color:#666">如果在本环节里您需要和制作商交换文件，可以使用合同附件。例如您可以提供原素材给对方。注意：附件来自媒体库，请确保文件上传到了媒体库</p>
+        </div>
+        <div class="col-md-6">
+            <h4 style="color:#222">如果我觉得合同没问题了该怎么办？</h4>
+            <p style="color:#666">如果您觉得合同已经商订妥当，请联系制作商，让其进行合同确认申请，右侧环节图将会有确认和驳回按钮，确认将完成合同商订，进入下一环节；驳回将打回制作商的申请行为</p>
+        </div>
+        {{ else }}
+        <div class="col-md-6">
+            <h4 style="color:#222">商订合同环节</h4>
+            <p style="color:#666">该环节您可以和客户针对制作合同开展详细讨论，通过完善细节修改合同内容，最终达成共识，完成合同创建</p>
+        </div>
+        <div class="col-md-6">
+            <h4 style="color:#222">合同附件？</h4>
+            <p style="color:#666">如果在本环节里您需要和客户交换文件，可以使用合同附件。例如您可以提供相关文档或素材给对方。注意：附件来自媒体库，请确保文件上传到了媒体库</p>
+        </div>
+        <div class="col-md-6">
+            <h4 style="color:#222">如果我觉得合同没问题了该怎么办？</h4>
+            <p style="color:#666">如果您觉得合同已经商订妥当，请点击右侧环节图中的申请确认按钮，请客户确认。如果客户驳回该次请求，请查看合同历史记录，找到问题所在并和客户协商解决</p>
+        </div>
+        {{ /if }}
+    </div>
+</div>

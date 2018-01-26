@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="row text-center">
+        <h3>合同组</h3>
+        <p>合同组成员可以参与讨论，查看和设置环节状态。</p>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-xs-6" style="border-right:solid 1px #eee">
+                <h4>环节负责人</h4>
+                <hr>
+                {{ each ContractSegment }}
+                {{ if $index == 0 }}
+                {{ else }}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span>{{ $index + ' 、 ' + $value.Remark }}</span>
+                        <button style="float:right;margin:-5px -10px" class="btn btn-sm btn-info modifyResponser" value="{{ $value.Id }}">变更负责人</button>
+                    </div>
+                    <div class="list-group">
+                    {{ if IsService }}
+                        <li class="list-group-item">
+                            <span>姓名：{{ $value.ServiceResponserName }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>备注：{{ $value.ServiceResponserDes }}</span>
+                        </li>
+                        {{ else }}
+                        <li class="list-group-item">
+                            <span>姓名：{{ $value.CustomerResponserName }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            备注：{{ $value.CustomerResponserDes }}
+                        </li>
+                    {{ /if }}
+                    </div>
+                </div>
+                {{ /if }}
+                {{ /each }}
+            </div>
+            <div class="col-xs-6">
+                <h4>合同组成员
+                    <button  class="btn btn-success addContractUserGroup" style="float:right;margin-top:-10px">添加</button>
+                </h4>
+                <p class="buyDomain" hidden>
+                    <red>您未开通家庭组，无法增加成员,马上开通请点击</red>
+                    <button type="button" class="btn btn-info gotoUserCenter">这里</button>
+                </p>
+                <hr>
+                {{ each ContractUserGroup }}
+                {{ if DomainId == $value.User.DomainId }}
+                <div class="panel panel-default">
+                    <div class="panel-heading" >
+                        <span>{{ $value.User.NickName }}</span>
+                        <div class="btn-group" role="group" style="margin:-5px -10px;float: right" value="{{ $value.UserId }}">
+                            <button class="btn btn-sm btn-info saveContractUser">保存</button>
+                            <button class="btn btn-sm btn-info cancelModifyUser">取消</button>
+                            <button class="btn btn-sm btn-info modifyContractUser">更改备注</button>
+                            <button  class="btn btn-sm btn-warning delContractUser">删除</button>
+                        </div>
+                    </div>
+                    <div class="list-group">
+                        <li class="list-group-item">
+                            <span >备注：
+                                <span class="text_userDes">{{ $value.Description }}</span>
+                                <input type="text" class="input_userDes form-control" placeholder="一般用于用户的职位介绍">
+                            </span>
+                        </li>
+                    </div>
+                </div>
+                {{ /if }}
+                {{ /each }}
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" style="border-radius:0;margin:10px 0">
+        <div class="panel-body">
+            <h3 style="color:#222;margin:10px 0">合同组疑问</h3>
+            <hr>
+            <div class="col-md-4">
+                <h4 style="color:#222">合同组的人数限制</h4>
+                <p style="color:#666">至少包含一个成员，即创建合同者；不设上限</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color:#222">合同组成员的来源</h4>
+                <p style="color:#666">合同组成员来自您的家庭组，如果尚未开通，请到账号中心开通</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color:#222">指定负责人的好处</h4>
+                <p style="color:#666">可以让对方直观的看到当前环节主要沟通对象</p>
+            </div>
+        </div>
+    </div>
+</div>

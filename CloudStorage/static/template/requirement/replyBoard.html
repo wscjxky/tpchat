@@ -1,0 +1,41 @@
+<table class="table" style="margin-top:-25px;">
+    <thead>
+    <tr>
+        <th style="padding:8px 0">
+            <h3>留言板
+                <button style="float:right" class="btn btn-success replyBtn">发送</button>
+                <button style="float:right" class="btn btn-info refreshBtn">刷新</button>
+            </h3>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="padding:8px 0">
+            <textarea class="form-control replyTextArea" placeholder="您可以在此给对方留言"></textarea>
+        </td>
+    </tr>
+    {{each replys as reply}}
+    {{ if ProducerId == $index }}
+    {{ each reply }}
+    <tr>
+        <td>
+            {{if UserId == $value.PublisherId}}
+            <blockquote style="margin-bottom:0px;">
+            {{else}}
+            <blockquote class="blockquote-reverse" style="margin-bottom:0px;">
+            {{/if}}
+                <p>{{$value.Reply}}</p>
+                {{if PublisherId == $value.PublisherId}}
+                <footer>{{$value.Publisher.NickName}}&nbsp&nbsp&nbsp{{$value.CreateTime | ParseTime}}</footer>
+                {{else}}
+                <footer>{{$value.CreateTime | ParseTime}}&nbsp&nbsp&nbsp{{$value.Publisher.NickName}}</footer>
+                {{/if}}
+            </blockquote>
+        </td>
+    </tr>
+    {{ /each }}
+    {{ /if }}
+    {{/each}}
+    </tbody>
+</table>

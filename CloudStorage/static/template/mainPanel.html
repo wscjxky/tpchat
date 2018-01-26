@@ -1,0 +1,84 @@
+<!--<div class="sub-nav">
+    <div class="container">
+        <div style="position:absolute;margin:7px 50px 0 0;padding:0">
+            <h2 style="margin:0;display: inline-block">
+                {{if config.storageModule}}
+                媒体库
+                <p style="font-size:13px;margin:0;padding:0">storage cloud</p>
+                {{ else}}
+                    {{ if !IsService}}
+                    需求/合同
+                    <p style="font-size:13px;margin:0;padding:0">requirement & contract</p>
+                    {{ else }}
+                    提交需求
+                    <p style="font-size:13px;margin:0;padding:0">issue requirement</p>
+                    {{ /if }}
+                {{ /if }}
+            </h2>
+            {{if config.storageModule}}
+            <div style="margin:0 150px;display:inline-block">
+                <div class="progress" style="position:absolute;top: 20px;width:300px;background:#fff;box-shadow:0 0;border-radius: 0">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%;">
+                    </div>
+                    <p style="margin:0;position:absolute;">
+                        <center>
+                        容量 <small>({{user.Domain.UsedSize / 1048576| FloatFormat}}/{{(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)/1048576| FloatFormat}} MB)</small>
+                        &nbsp;&nbsp;&nbsp;<strong>{{user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize)*100 | FloatFormat}}%</strong>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            {{ /if }}
+        </div>
+        <div style="position: absolute;right:127px">
+            {{if config.tradeModule}}
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')" style="background:#fff">
+                <img src="image/playerpro.png" class="img-circle" style="height:25px;"/>
+                <p onclick="$().GoToUrl('/requirementPage');" class="tovip">已提交需求</p>
+            </div>
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')">
+                <img src="image/safer.png" class="img-circle" style="height:25px;"/>
+                <p onclick="$().GoToUrl('/contractPage');" class="tovip"> 管理合同</p>
+            </div>
+            {{else}}
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')" style="background:#fff">
+                <p onclick="$('#0').click()" class="tovip"> 媒体库</p>
+            </div>
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')">
+                <p onclick="$('#1').click()" class="tovip"> 他人共享</p>
+            </div>
+            <div class="tovip-hover" onclick="$('.tovip-hover').css('background','#eee');$(this).css('background','#fff')">
+                <p onclick="$('#2').click()" class="tovip"> 我的共享</p>
+            </div>
+            {{ /if }}
+        </div>
+    </div>
+</div>
+
+{{if config.storageModule}}
+    <div class="updata-alert">
+        {{if user.Domain.Status == 0}}
+        <div style="margin-bottom:5px;">
+            <h4 style="display: inline-block;"><a href="/session#/UpdataPage">开通家庭组</a></h4>
+            <button type="button" class="close" data-dismiss="alert" style="height:40px;">
+                <span class="glyphicon glyphicon-remove" style="margin-right:10px;line-height:40px;" ></span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        {{ /if }}
+        {{ if user.Domain.UsedSize/(user.Domain.DefaultStorageSize + user.Domain.ExtendStorageSize) > 0.75}}
+        <div style="margin-bottom:5px;">
+            <h4 style="display: inline-block"><a href="/session#/UpdataPage">增值云空间</a></h4>
+            <button type="button" class="close" data-dismiss="alert" style="height:40px;">
+                <span class="glyphicon glyphicon-remove" style="margin-right:10px;line-height:40px;" ></span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        {{ /if }}
+    </div>
+{{/if}}
+
+<div class="container">
+    <div id="functionalArea" class="functionalArea" style="min-height:500px;"></div>
+</div>
+-->

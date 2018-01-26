@@ -1,0 +1,20 @@
+<div class="container-fluid">
+{% for i in comments %}
+    <div class="col-comment row" style="margin: 0 10px 10px 10px">
+        <div style="width: 100%;">
+            <div class="col-xs-6" style="float: left;text-align: left">
+                <a href="/zone/{{ i.User.DomainId }}">
+                    <h2>{{ i.User.Domain.CompanyName }}</h2>
+                </a>
+            </div>
+            <div class="col-xs-6" style="float:right;text-align: right">
+                <h2>{{ i.CreateTime.strftime('%Y-%m-%d') }}</h2>
+            </div>
+        </div>
+        <div style="border-bottom:dashed 1px #ccc"></div>
+        <div style="margin-left: 12px">
+            <h2>{{ i.Content }}</h2>
+        </div>
+    </div>
+{% endfor %}
+</div>

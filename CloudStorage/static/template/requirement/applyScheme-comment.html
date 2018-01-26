@@ -1,0 +1,34 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title">洽谈方案</h4>
+        </div>
+        <div class="modal-body" style="min-height: 350px">
+            <ul class="nav nav-tabs" role="tablist">
+                <li id="msg-tab" class="active"><a role="tab" data-toggle="tab" href="#schemeTalk">讨论区</a></li>
+                <button id="refresh-talk" class="btn btn-success" style="float: right">刷新</button>
+            </ul>
+            <div class="tab-content col-xs-12" style="padding: 0">
+                <div class="tab-pane fade in active" id="schemeTalk" style="overflow-y: auto; overflow-x: hidden; height: 290px">
+                    <div class="chat-pannel contract-detail-item">
+                        {{include 'template/requirement/suggest.html'}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div id="sendMsg-panel" class="container-fluid">
+                <div class="col-xs-11">
+                    <input type="text" class="form-control replyTextArea" placeholder="您可以在此针对方案提建议">
+                </div>
+                <div class="col-xs-1" style="padding-left: 5px">
+                    <button id="applyScheme-send" class="btn btn-default">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

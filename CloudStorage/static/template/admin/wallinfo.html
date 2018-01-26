@@ -1,0 +1,33 @@
+<h3>首页布局</h3><hr/>
+<p>首页Banner位置上传</p>
+<form action="upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form>
+<hr>
+<div class="container-fluid">
+{{ each sort }}
+    <div class="col-md-3" style="cursor:pointer;padding:0px;float:right;">
+        {{ if $value.wall.object.Type == 0 }}
+        <img src={{"../../../fileFolders/"+$value.wall.object.File.Path+".jpg"  }} class="admin-wal-index"/>
+        {{ else }}
+        <img src={{"../../../fileFolders/"+$value.wall.object.File.Path  }} class="admin-wal-index"/>
+        {{ /if }}
+        <p style="text-align:center;margin-top:-27px;color:#fff;overflow: hidden;">&nbsp;{{$value.wall.object.Name}}&nbsp;</p>
+    </div>
+{{ /each }}
+</div>
+<h3>所有墙上信息</h3><hr/>
+<div id="allonwall" class="container-fluid">
+{{ each wall }}
+    <div class="col-md-1" style="padding:5px;cursor:pointer;" type="button">
+        <input type="hidden" class="id" value="{{$value.Id}}"/>
+        {{ if $value.object.Type == 0 }}
+        <img src={{"../../../fileFolders/"+$value.object.File.Path+".jpg"}} style="width:100%;background-image:url(../../image/video.png);"/>
+        {{ else }}
+        <img src={{"../../../fileFolders/"+$value.object.File.Path}} style="width:100%;background-image:url(../../image/video.png);"/>
+        {{ /if }}
+        <p style="text-align:center;margin-top:-27px;color:#fff;overflow: hidden;">&nbsp;{{$value.object.File.Name}}&nbsp;</p>
+    </div>
+{{ /each }}
+</div>

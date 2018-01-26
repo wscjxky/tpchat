@@ -1,0 +1,27 @@
+<ul class="dropdown-menu" role="menu">
+    {{ if bCanWrite }}
+    <li><a href="#">重命名</a></li>
+    <li><a href="#">复制</a></li>
+    {{ /if }}
+    {{ if bCanDelete }}
+    <li><a href="#">删除</a></li>
+    {{ /if }}
+    {{if !bShareSpace && bCanShare }}
+    <!--<li class="divider"></li>-->
+    {{if bShare}}
+    <li><a href="#">共享</a></li>
+    <li><a href="#">取消共享</a></li>
+    {{else}}
+    <li><a href="#">共享</a></li>
+    {{/if}}
+    {{/if}}
+    {{if bIsFile}}
+    <!--<li class="divider"></li>-->
+    {{ if bCanDownload }}
+    <li><a href="#">下载</a></li>
+    {{ /if }}
+    {{ if bPublic }}
+    <li><a href="#" id="copyPathMenu">复制分享链接</a></li>
+    {{ /if }}
+    {{/if}}
+</ul>
