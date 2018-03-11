@@ -1,6 +1,0 @@
-[ 2017-09-19T22:31:36+08:00 ] 223.72.89.196 /tpchat/index.php/chat&response_type=code&scope=snsapi_userinfo&state=1&connect_redirect=1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
-ERR: 无法加载模块:Chat&response_type=code&scope=snsapi_userinfo&state=1&connect_redirect=1
-

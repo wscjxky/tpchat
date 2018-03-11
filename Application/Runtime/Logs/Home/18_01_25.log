@@ -1,8 +1,0 @@
-[ 2018-01-25T10:11:30+08:00 ] 123.120.49.80 /tpchat/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.016602s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
-

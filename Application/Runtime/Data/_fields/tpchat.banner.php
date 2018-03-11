@@ -1,1 +1,0 @@
-a:7:{i:0;s:9:"banner_id";i:1;s:3:"url";i:2;s:4:"type";i:3;s:5:"count";i:4;s:5:"image";s:3:"_pk";s:9:"banner_id";s:5:"_type";a:5:{s:9:"banner_id";s:15:"int(2) unsigned";s:3:"url";s:8:"longtext";s:4:"type";s:6:"int(1)";s:5:"count";s:6:"int(2)";s:5:"image";s:12:"varchar(200)";}}
