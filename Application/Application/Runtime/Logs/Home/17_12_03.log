@@ -1,0 +1,28 @@
+[ 2017-12-03T00:01:40+08:00 ] 140.207.54.76 /tpchat/index.php/home/index?signature=dad0c45caf977aaf20a137dfd8e9f2ae9b652a10&timestamp=1512230498&nonce=1986175725&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 68 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2017-12-03T18:38:45+08:00 ] 140.207.54.76 /tpchat/index.php/home/index?signature=4c2aeedd5e01ada53c0e022c321fbeafaa9908bc&timestamp=1512297522&nonce=433697405&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php 第 68 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+

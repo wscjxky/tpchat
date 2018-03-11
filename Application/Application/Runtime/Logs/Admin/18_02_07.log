@@ -1,0 +1,1217 @@
+[ 2018-02-07T14:12:01+08:00 ] 111.197.248.241 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000163s ]
+
+[ 2018-02-07T14:12:07+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0491s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0695s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                            ORDER BY `createtime` DESC
+                             LIMIT 0,20 [ RunTime:0.0016s ]
+SQL: SELECT * FROM `trade`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000133s ]
+
+[ 2018-02-07T14:12:09+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Course/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2018-02-07T14:12:11+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/User/message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2018-02-07T14:12:12+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/b682812e058c4f7cab74d08ab9eabe11.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000120s ]
+
+[ 2018-02-07T14:12:13+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/b682812e058c4f7cab74d08ab9eabe11.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2018-02-07T14:12:14+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0004s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08z0miP9AerKiRV0akkB4EI' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08z0miP9AerKiRV0akkB4EI',`username`='小莹',`chatname`='小莹',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLBAUyiciboWNZofU6c72GnCwuEXzhb3b58UerJ5e1U8WaibRLbW0ZADKBcydqnRHn8YibxfJ47qWTFJYQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-08-25 16:58:31',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.980560',`point_y`='116.355316',`activity_state`='0' WHERE `user_id` = 2 [ RunTime:0.0087s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq06LrSyxPt7SnCuy2k4wWsCQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq06LrSyxPt7SnCuy2k4wWsCQ',`username`='长镜头',`chatname`='长镜头',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmVLeg2sawmGnIxWhfPjuoyrw1gWXobLFaP9DadBA7kTLCLoZA2KX12rTXtHKaMm6YrUrs8kh5G8aLM1MWibCt5wk/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-08-31 14:58:11',`bonus_total`='28',`bonus_current`='2',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 6 [ RunTime:0.0090s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05hDd6bpy1-X4B5ci0vgZEU' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05hDd6bpy1-X4B5ci0vgZEU',`username`='小蜜蜂',`chatname`='小蜜蜂',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM4lfC1Mic0MlhiaQfHLialFljvp6UQicjqAtXLDAQW8FqZED7sO1XTcKib2VibfKsUnKvPFWktria0sRXouClof3516759MVulAau94S0/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-09-03 14:04:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 10 [ RunTime:0.0094s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03KSUOXEFmC6SeJ9HkAM-_U' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03KSUOXEFmC6SeJ9HkAM-_U',`username`='王培',`chatname`='王培',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDUjtmMOos23CK64rSpYSGLuRR6lQToJeKBAj3MfG4fJj07picOPKkLQpdwBOic893Vg93SmA4v6vtw/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-09-04 15:41:11',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 11 [ RunTime:0.0051s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq02PVXJJCNgTAG0ZOrOvbFpk' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq02PVXJJCNgTAG0ZOrOvbFpk',`username`='胖胖',`chatname`='胖胖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJHXLkBuZd9sNEHYhZqTXZBzNiaJmsP7SnfTtJ6fSCWWvrOBZx5e439mhyDBicGOicsvtty0cFqbMEibQ/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-07 08:25:41',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 12 [ RunTime:0.0073s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0735MIgL8i3_L4V1al6-jRI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0735MIgL8i3_L4V1al6-jRI',`username`='奕然',`chatname`='奕然',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/xia7R6kn1kcM9kMF7ywbUxApdmMSUkicgdLuQmFnkqohr7gkIsHoHrGiaWlgw9GmPciaibf6JiaSfFx5c6icejUcZd8xG5aBAHYGV0ib/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-09-09 13:16:18',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 13 [ RunTime:0.0051s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08pKLiTJvtyC0-wE0FKsCdU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08pKLiTJvtyC0-wE0FKsCdU',`username`='张洪',`chatname`='张洪',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/y3j1nEibHvd1lQLmbduBOyRNtPWGWqiafuIliahpkrLcZWISI8oVR01xtgyGAkX8xC1hOXGEJOPicgETAq9uLiaibfOg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-19 06:31:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 16 [ RunTime:0.0100s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0_gqRgP7wh4IgpFJVpx1VHI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0_gqRgP7wh4IgpFJVpx1VHI',`username`='Doris丁丁',`chatname`='Doris丁丁',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK4ib016oDIEJw8aCbfC06Ll7CkTO2CUlz4DibytFTGmax6picnJP8f4ibrkJUicafiaIboXKB7Fp09C03w/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-20 06:49:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 17 [ RunTime:0.0068s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05HCVS2-RZ1ujiPijv9qtC4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05HCVS2-RZ1ujiPijv9qtC4',`username`='QQ琦',`chatname`='QQ琦',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9RA6MG8raC15ACUvqWMgFJLb9R3ynTRI5CbXeU4gtxAmLqmgK1EVCeSaiaf13ywc5wY8wXibHsoTgiaS9DxrcKhkPic/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-10 20:40:21',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 18 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03nJeSERDm80iW8j5U2jlBQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03nJeSERDm80iW8j5U2jlBQ',`username`='晴的成',`chatname`='晴的成',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/wicYz6BCBT7GU4Qwbgk8SFBU2emJ6vRVaxIEwweL0g3tBsdABq4oviaMRK68L2ib0gXqMFeE9NOwrTR4oalzz74MYmjq1BotW0Z/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-13 12:41:09',`bonus_total`='6',`bonus_current`='2',`bonus_cost`='4',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='大兴',`user_level`='0',`point_x`='39.774090',`point_y`='116.310478',`activity_state`='0' WHERE `user_id` = 19 [ RunTime:0.0296s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zE7hR5n9IZwVc3zuDgxAf0' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zE7hR5n9IZwVc3zuDgxAf0',`username`='泺喜机器人草桥店',`chatname`='泺喜机器人草桥店',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/UmvgEOG33BdtFByfdJuBJMYcCq0r1ny9Oaw4kC1eK6ufq5Y64mWwZ9wLSldP9d8H0G25gia7f9vJFGuxjmaKfCNUHhqvPyicJv/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-14 14:29:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 21 [ RunTime:0.0068s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03VPbU5N9uQ2ylUV9-86690' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03VPbU5N9uQ2ylUV9-86690',`username`='娟儿',`chatname`='娟儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZP35jhbOZgYxKVoialp81IwNwT0yDhvO9vVkGFtgkpfT32guUxkJibJG5jKrp2CibfVIicDyk3WqBKtb/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-15 15:55:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 22 [ RunTime:0.0127s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq07Mfzp5wErDEmbMNdh-wuHw' AND b.trade_state='已支付' [ RunTime:0.0006s ]
+SQL: UPDATE `user` SET `openid`='oAdCq07Mfzp5wErDEmbMNdh-wuHw',`username`='一非',`chatname`='一非',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ZAjlYd83jubWSvQMLrs84ZjM2JayKpjjeLxLq1rmJxbf4d5rKhSYITCyBf6zbeLqgECnvFoaamwyClAJVM6ckg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-15 18:07:20',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 23 [ RunTime:0.0066s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01cIfQXygps4FpiZ_y_m_iw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01cIfQXygps4FpiZ_y_m_iw',`username`='鹏辉ོ',`chatname`='鹏辉ོ',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXiaGsZ3wzW5LOLJ3g9MJOjAFh6SNR75w2ktv4sE8chXJf5Pedt3eqqPichPRSJ9ajTvDXdjgYJSsiauGoibyECxXiaN/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-16 09:26:02',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.990429',`point_y`='116.415634',`activity_state`='0' WHERE `user_id` = 24 [ RunTime:0.0095s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03C4yTYL6V2rsupUFsQ7GeQ' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03C4yTYL6V2rsupUFsQ7GeQ',`username`='秀儿',`chatname`='秀儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/uI5pczeERTZkUpLreibR4JpMEVOIcnswCvyztmYyYpZLc4FsjPy6iaX6liaMHRutc0nHicJImqo6bWznDiaibmHhiaw9w/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-16 11:13:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='海淀',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 25 [ RunTime:0.0058s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0xpA4Kl4A8ULWufL7S7U5C4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0xpA4Kl4A8ULWufL7S7U5C4',`username`='杰睿',`chatname`='杰睿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9QxbPKfhf4Z9iaP2xJEgXLTxYgw3KVSIaQFq97PhGwY0aS3M2ve5VvUKWlKk8Urz55CoUJJ9RTv9jheTfbYBjYJZ/0',`agent`='1',`share_count`='0',`gender`='0',`createtime`='2017-10-16 19:45:01',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 26 [ RunTime:0.0076s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0y3y2LgNu2phEYUmmHUQBe4' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0y3y2LgNu2phEYUmmHUQBe4',`username`='文芳',`chatname`='文芳',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ewfogQfIpgc9CdKtHzgKhxL9sM2cdZuY3k7iaXf3pH1EELEcrNljV5QHQc3EKkLeKMf9NVDpmGNyK3Y3Z1Rj9sw/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-18 07:50:03',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Fengtai',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 27 [ RunTime:0.0053s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0189U7kalSrUMe2LgJ9f1N4' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0189U7kalSrUMe2LgJ9f1N4',`username`='索贝♡袁鹏飞',`chatname`='索贝♡袁鹏飞',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDufV2Br92ibeydqRKnBZ2GJiao3emia9xGAP8ib4sl5TlyJCLqV3d3tsBnmYiczpv960w5P0r5bl4ibiaRbicQO3Hj5Vg9fvWNibGagmJY/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-18 09:49:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 28 [ RunTime:0.0087s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zwD8v6-W4XPfbeO-m2RhV8' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zwD8v6-W4XPfbeO-m2RhV8',`username`='渤海',`chatname`='渤海',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZB9sVzlcMp6qf14XsHwuBhIZkHe4EkGA9YPtEIRexzYo9P7bBVj9jYiaxQPHmqQlP8AgkJ5D1Rggg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-20 16:26:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 29 [ RunTime:0.0082s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0wPjnvT2DofxArj8YOLiWLc' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0wPjnvT2DofxArj8YOLiWLc',`username`='北国向暖',`chatname`='北国向暖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZI2kGHKkgdKLicWjHmicYzTEz7SGTCY8DRJyr0QLWhRTwHrYHw2VzRkGPO3UlINuyjKia1xMvX4XyNT/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-10-22 11:25:19',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 30 [ RunTime:0.0092s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0yptBXMfPFBkYT2Cpma8-Mc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0yptBXMfPFBkYT2Cpma8-Mc',`username`='piggy 丹 ^(oo)^',`chatname`='piggy 丹 ^(oo)^',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM5EFCXlribvVaNw2fSKkOFzlVu62Z1FbLibHVTQickSm5UUNC7xaw38DkDksPuic6pB9PBlxTxfcsTzpQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-22 23:23:00',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.920189',`point_y`='116.560371',`activity_state`='0' WHERE `user_id` = 31 [ RunTime:0.0064s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03Y555utvWr_zkNY40LFGNM' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03Y555utvWr_zkNY40LFGNM',`username`='沃德兰学堂 Christine 1891',`chatname`='沃德兰学堂 Christine 1891',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/gdlvpCcuulKhncesmVsNxTALsib3YSPHOrgPQXh2DB6Z8gylsuCsEx6NHRartIhLpc11iciczcg3vibQIOlicCPunl47aThc8M8B5/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-24 14:19:13',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.856033',`point_y`='116.278671',`activity_state`='0' WHERE `user_id` = 32 [ RunTime:0.0081s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08o6LcMET6m0LZTSHQSD7OU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08o6LcMET6m0LZTSHQSD7OU',`username`='柴碧野',`chatname`='柴碧野',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/7FVu8dVYmNqsjLcOyEedZBW5yY26dGVHs1icdc5PVbU0v9GJRH04OP7GGJNIXWMzYyhiakrbb00DHxfZRhNpJqpP3ZRugEoVyr/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-25 12:09:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='39.844650',`point_y`='116.346107',`activity_state`='0' WHERE `user_id` = 33 [ RunTime:0.0075s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01YzcVjLWljmeEBFcDEswEY',`username`='徐开元',`chatname`='徐开元',`phone`='18611828618',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXA8ibsaex58L33ibsibTk5X7pKOSPNr3kTiabLiaibZAicBib7dDHlvDO38CbeLXGTBqOZQB7C0308LRW2J4a1oTxS6Zicl/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:03:39',`bonus_total`='20',`bonus_current`='2',`bonus_cost`='18',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='贵州',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='1' WHERE `user_id` = 39 [ RunTime:0.0084s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq016X8Hgd9iVKRk6Ob-r-sNU' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq016X8Hgd9iVKRk6Ob-r-sNU',`username`='张洪 - 远途文化@视频制作',`chatname`='张洪 - 远途文化@视频制作',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM75nmNNbhYv3RicDLblcE45LIzUSAnvzARWzBGqEgnNibh4fRqGYPrrBaZUNJcY1u0eGoiaIHZ6wXD42A1th7hUGuKcQy0xUFZAsA/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:07:09',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.887077',`point_y`='116.591614',`activity_state`='0' WHERE `user_id` = 40 [ RunTime:0.0048s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq04ghNlSN7DbxnQTnIlK5m7o' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq04ghNlSN7DbxnQTnIlK5m7o',`username`='JOJO',`chatname`='JOJO',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/7KxMrRFUpAGFFxfE9a3tbWZgUibVvEc0Lbf5bGibgUDOLmxXCLdjmwZA2cFkLBDLuOuCia4T1cpmdcBfDd6W4Urlg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-26 11:51:32',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Guangdong',`city`='Zhaoqing',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 41 [ RunTime:0.0100s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq09ArLh_pZjDFp1KkZMfkBTw' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq09ArLh_pZjDFp1KkZMfkBTw',`username`='李清',`chatname`='李清',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLIhGJjdrzovNgUvrjZdibs8ofxE5fmGpqoBUc7Mo5eSso1odiaCiaJiabt8yDibUknUFBLZSbiaSicoO1pg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-27 14:24:33',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Haidian',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 42 [ RunTime:0.0067s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq027xs01dDxx3TpqPeWlIGVA' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq027xs01dDxx3TpqPeWlIGVA',`username`='薇若',`chatname`='薇若',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/yk3Ok9Palo8KVa37VZsKViaia1jH6swichf7uaKTh324LAiaDNVKapicr0Mc6HAGpsuE564uiaQSOicWWYqqsBZhFu0Jg/132',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2018-01-24 22:06:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 43 [ RunTime:0.0064s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0004s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08z0miP9AerKiRV0akkB4EI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08z0miP9AerKiRV0akkB4EI',`username`='小莹',`chatname`='小莹',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLBAUyiciboWNZofU6c72GnCwuEXzhb3b58UerJ5e1U8WaibRLbW0ZADKBcydqnRHn8YibxfJ47qWTFJYQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-08-25 16:58:31',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.980560',`point_y`='116.355316',`activity_state`='0' WHERE `user_id` = 2 [ RunTime:0.0078s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq06LrSyxPt7SnCuy2k4wWsCQ' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq06LrSyxPt7SnCuy2k4wWsCQ',`username`='长镜头',`chatname`='长镜头',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmVLeg2sawmGnIxWhfPjuoyrw1gWXobLFaP9DadBA7kTLCLoZA2KX12rTXtHKaMm6YrUrs8kh5G8aLM1MWibCt5wk/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-08-31 14:58:11',`bonus_total`='28',`bonus_current`='2',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 6 [ RunTime:0.0117s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05hDd6bpy1-X4B5ci0vgZEU' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05hDd6bpy1-X4B5ci0vgZEU',`username`='小蜜蜂',`chatname`='小蜜蜂',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM4lfC1Mic0MlhiaQfHLialFljvp6UQicjqAtXLDAQW8FqZED7sO1XTcKib2VibfKsUnKvPFWktria0sRXouClof3516759MVulAau94S0/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-09-03 14:04:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 10 [ RunTime:0.0064s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03KSUOXEFmC6SeJ9HkAM-_U' AND b.trade_state='已支付' [ RunTime:0.0007s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03KSUOXEFmC6SeJ9HkAM-_U',`username`='王培',`chatname`='王培',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDUjtmMOos23CK64rSpYSGLuRR6lQToJeKBAj3MfG4fJj07picOPKkLQpdwBOic893Vg93SmA4v6vtw/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-09-04 15:41:11',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 11 [ RunTime:0.0086s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq02PVXJJCNgTAG0ZOrOvbFpk' AND b.trade_state='已支付' [ RunTime:0.0006s ]
+SQL: UPDATE `user` SET `openid`='oAdCq02PVXJJCNgTAG0ZOrOvbFpk',`username`='胖胖',`chatname`='胖胖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJHXLkBuZd9sNEHYhZqTXZBzNiaJmsP7SnfTtJ6fSCWWvrOBZx5e439mhyDBicGOicsvtty0cFqbMEibQ/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-07 08:25:41',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 12 [ RunTime:0.0106s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0735MIgL8i3_L4V1al6-jRI' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0735MIgL8i3_L4V1al6-jRI',`username`='奕然',`chatname`='奕然',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/xia7R6kn1kcM9kMF7ywbUxApdmMSUkicgdLuQmFnkqohr7gkIsHoHrGiaWlgw9GmPciaibf6JiaSfFx5c6icejUcZd8xG5aBAHYGV0ib/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-09-09 13:16:18',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 13 [ RunTime:0.0065s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08pKLiTJvtyC0-wE0FKsCdU' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08pKLiTJvtyC0-wE0FKsCdU',`username`='张洪',`chatname`='张洪',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/y3j1nEibHvd1lQLmbduBOyRNtPWGWqiafuIliahpkrLcZWISI8oVR01xtgyGAkX8xC1hOXGEJOPicgETAq9uLiaibfOg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-19 06:31:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 16 [ RunTime:0.0058s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0_gqRgP7wh4IgpFJVpx1VHI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0_gqRgP7wh4IgpFJVpx1VHI',`username`='Doris丁丁',`chatname`='Doris丁丁',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK4ib016oDIEJw8aCbfC06Ll7CkTO2CUlz4DibytFTGmax6picnJP8f4ibrkJUicafiaIboXKB7Fp09C03w/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-20 06:49:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 17 [ RunTime:0.0053s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05HCVS2-RZ1ujiPijv9qtC4' AND b.trade_state='已支付' [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05HCVS2-RZ1ujiPijv9qtC4',`username`='QQ琦',`chatname`='QQ琦',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9RA6MG8raC15ACUvqWMgFJLb9R3ynTRI5CbXeU4gtxAmLqmgK1EVCeSaiaf13ywc5wY8wXibHsoTgiaS9DxrcKhkPic/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-10 20:40:21',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 18 [ RunTime:0.0065s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03nJeSERDm80iW8j5U2jlBQ' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03nJeSERDm80iW8j5U2jlBQ',`username`='晴的成',`chatname`='晴的成',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/wicYz6BCBT7GU4Qwbgk8SFBU2emJ6vRVaxIEwweL0g3tBsdABq4oviaMRK68L2ib0gXqMFeE9NOwrTR4oalzz74MYmjq1BotW0Z/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-13 12:41:09',`bonus_total`='6',`bonus_current`='2',`bonus_cost`='4',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='大兴',`user_level`='0',`point_x`='39.774090',`point_y`='116.310478',`activity_state`='0' WHERE `user_id` = 19 [ RunTime:0.0050s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zE7hR5n9IZwVc3zuDgxAf0' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zE7hR5n9IZwVc3zuDgxAf0',`username`='泺喜机器人草桥店',`chatname`='泺喜机器人草桥店',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/UmvgEOG33BdtFByfdJuBJMYcCq0r1ny9Oaw4kC1eK6ufq5Y64mWwZ9wLSldP9d8H0G25gia7f9vJFGuxjmaKfCNUHhqvPyicJv/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-14 14:29:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 21 [ RunTime:0.0061s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03VPbU5N9uQ2ylUV9-86690' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03VPbU5N9uQ2ylUV9-86690',`username`='娟儿',`chatname`='娟儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZP35jhbOZgYxKVoialp81IwNwT0yDhvO9vVkGFtgkpfT32guUxkJibJG5jKrp2CibfVIicDyk3WqBKtb/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-15 15:55:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 22 [ RunTime:0.0074s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq07Mfzp5wErDEmbMNdh-wuHw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq07Mfzp5wErDEmbMNdh-wuHw',`username`='一非',`chatname`='一非',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ZAjlYd83jubWSvQMLrs84ZjM2JayKpjjeLxLq1rmJxbf4d5rKhSYITCyBf6zbeLqgECnvFoaamwyClAJVM6ckg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-15 18:07:20',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 23 [ RunTime:0.0069s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01cIfQXygps4FpiZ_y_m_iw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01cIfQXygps4FpiZ_y_m_iw',`username`='鹏辉ོ',`chatname`='鹏辉ོ',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXiaGsZ3wzW5LOLJ3g9MJOjAFh6SNR75w2ktv4sE8chXJf5Pedt3eqqPichPRSJ9ajTvDXdjgYJSsiauGoibyECxXiaN/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-16 09:26:02',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.990429',`point_y`='116.415634',`activity_state`='0' WHERE `user_id` = 24 [ RunTime:0.0066s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03C4yTYL6V2rsupUFsQ7GeQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03C4yTYL6V2rsupUFsQ7GeQ',`username`='秀儿',`chatname`='秀儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/uI5pczeERTZkUpLreibR4JpMEVOIcnswCvyztmYyYpZLc4FsjPy6iaX6liaMHRutc0nHicJImqo6bWznDiaibmHhiaw9w/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-16 11:13:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='海淀',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 25 [ RunTime:0.0132s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0xpA4Kl4A8ULWufL7S7U5C4' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0xpA4Kl4A8ULWufL7S7U5C4',`username`='杰睿',`chatname`='杰睿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9QxbPKfhf4Z9iaP2xJEgXLTxYgw3KVSIaQFq97PhGwY0aS3M2ve5VvUKWlKk8Urz55CoUJJ9RTv9jheTfbYBjYJZ/0',`agent`='1',`share_count`='0',`gender`='0',`createtime`='2017-10-16 19:45:01',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 26 [ RunTime:0.0067s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0y3y2LgNu2phEYUmmHUQBe4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0y3y2LgNu2phEYUmmHUQBe4',`username`='文芳',`chatname`='文芳',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ewfogQfIpgc9CdKtHzgKhxL9sM2cdZuY3k7iaXf3pH1EELEcrNljV5QHQc3EKkLeKMf9NVDpmGNyK3Y3Z1Rj9sw/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-18 07:50:03',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Fengtai',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 27 [ RunTime:0.0048s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0189U7kalSrUMe2LgJ9f1N4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0189U7kalSrUMe2LgJ9f1N4',`username`='索贝♡袁鹏飞',`chatname`='索贝♡袁鹏飞',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDufV2Br92ibeydqRKnBZ2GJiao3emia9xGAP8ib4sl5TlyJCLqV3d3tsBnmYiczpv960w5P0r5bl4ibiaRbicQO3Hj5Vg9fvWNibGagmJY/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-18 09:49:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 28 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zwD8v6-W4XPfbeO-m2RhV8' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zwD8v6-W4XPfbeO-m2RhV8',`username`='渤海',`chatname`='渤海',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZB9sVzlcMp6qf14XsHwuBhIZkHe4EkGA9YPtEIRexzYo9P7bBVj9jYiaxQPHmqQlP8AgkJ5D1Rggg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-20 16:26:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 29 [ RunTime:0.0092s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0wPjnvT2DofxArj8YOLiWLc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0wPjnvT2DofxArj8YOLiWLc',`username`='北国向暖',`chatname`='北国向暖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZI2kGHKkgdKLicWjHmicYzTEz7SGTCY8DRJyr0QLWhRTwHrYHw2VzRkGPO3UlINuyjKia1xMvX4XyNT/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-10-22 11:25:19',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 30 [ RunTime:0.0105s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0yptBXMfPFBkYT2Cpma8-Mc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0yptBXMfPFBkYT2Cpma8-Mc',`username`='piggy 丹 ^(oo)^',`chatname`='piggy 丹 ^(oo)^',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM5EFCXlribvVaNw2fSKkOFzlVu62Z1FbLibHVTQickSm5UUNC7xaw38DkDksPuic6pB9PBlxTxfcsTzpQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-22 23:23:00',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.920189',`point_y`='116.560371',`activity_state`='0' WHERE `user_id` = 31 [ RunTime:0.0072s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03Y555utvWr_zkNY40LFGNM' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03Y555utvWr_zkNY40LFGNM',`username`='沃德兰学堂 Christine 1891',`chatname`='沃德兰学堂 Christine 1891',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/gdlvpCcuulKhncesmVsNxTALsib3YSPHOrgPQXh2DB6Z8gylsuCsEx6NHRartIhLpc11iciczcg3vibQIOlicCPunl47aThc8M8B5/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-24 14:19:13',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.856033',`point_y`='116.278671',`activity_state`='0' WHERE `user_id` = 32 [ RunTime:0.0072s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08o6LcMET6m0LZTSHQSD7OU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08o6LcMET6m0LZTSHQSD7OU',`username`='柴碧野',`chatname`='柴碧野',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/7FVu8dVYmNqsjLcOyEedZBW5yY26dGVHs1icdc5PVbU0v9GJRH04OP7GGJNIXWMzYyhiakrbb00DHxfZRhNpJqpP3ZRugEoVyr/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-25 12:09:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='39.844650',`point_y`='116.346107',`activity_state`='0' WHERE `user_id` = 33 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01YzcVjLWljmeEBFcDEswEY',`username`='徐开元',`chatname`='徐开元',`phone`='18611828618',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXA8ibsaex58L33ibsibTk5X7pKOSPNr3kTiabLiaibZAicBib7dDHlvDO38CbeLXGTBqOZQB7C0308LRW2J4a1oTxS6Zicl/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:03:39',`bonus_total`='20',`bonus_current`='2',`bonus_cost`='18',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='贵州',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='1' WHERE `user_id` = 39 [ RunTime:0.0054s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq016X8Hgd9iVKRk6Ob-r-sNU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq016X8Hgd9iVKRk6Ob-r-sNU',`username`='张洪 - 远途文化@视频制作',`chatname`='张洪 - 远途文化@视频制作',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM75nmNNbhYv3RicDLblcE45LIzUSAnvzARWzBGqEgnNibh4fRqGYPrrBaZUNJcY1u0eGoiaIHZ6wXD42A1th7hUGuKcQy0xUFZAsA/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:07:09',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.887077',`point_y`='116.591614',`activity_state`='0' WHERE `user_id` = 40 [ RunTime:0.0119s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq04ghNlSN7DbxnQTnIlK5m7o' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq04ghNlSN7DbxnQTnIlK5m7o',`username`='JOJO',`chatname`='JOJO',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/7KxMrRFUpAGFFxfE9a3tbWZgUibVvEc0Lbf5bGibgUDOLmxXCLdjmwZA2cFkLBDLuOuCia4T1cpmdcBfDd6W4Urlg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-26 11:51:32',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Guangdong',`city`='Zhaoqing',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 41 [ RunTime:0.0072s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq09ArLh_pZjDFp1KkZMfkBTw' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq09ArLh_pZjDFp1KkZMfkBTw',`username`='李清',`chatname`='李清',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLIhGJjdrzovNgUvrjZdibs8ofxE5fmGpqoBUc7Mo5eSso1odiaCiaJiabt8yDibUknUFBLZSbiaSicoO1pg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-27 14:24:33',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Haidian',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 42 [ RunTime:0.0131s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq027xs01dDxx3TpqPeWlIGVA' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq027xs01dDxx3TpqPeWlIGVA',`username`='薇若',`chatname`='薇若',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/yk3Ok9Palo8KVa37VZsKViaia1jH6swichf7uaKTh324LAiaDNVKapicr0Mc6HAGpsuE564uiaQSOicWWYqqsBZhFu0Jg/132',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2018-01-24 22:06:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 43 [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2018-02-07T14:12:14+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Module/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/a8f2d3e57319e1a26aecfa3d8255aac1.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2018-02-07T14:12:16+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Module/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/1af412e940b941975d864036643a8527.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2018-02-07T14:31:34+08:00 ] 111.197.248.241 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000174s ]
+
+[ 2018-02-07T14:31:34+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                            ORDER BY `createtime` DESC
+                             LIMIT 0,20 [ RunTime:0.0013s ]
+SQL: SELECT * FROM `trade`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2018-02-07T14:31:36+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0004s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08z0miP9AerKiRV0akkB4EI' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08z0miP9AerKiRV0akkB4EI',`username`='小莹',`chatname`='小莹',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLBAUyiciboWNZofU6c72GnCwuEXzhb3b58UerJ5e1U8WaibRLbW0ZADKBcydqnRHn8YibxfJ47qWTFJYQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-08-25 16:58:31',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.980560',`point_y`='116.355316',`activity_state`='0' WHERE `user_id` = 2 [ RunTime:0.0123s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq06LrSyxPt7SnCuy2k4wWsCQ' AND b.trade_state='已支付' [ RunTime:0.0007s ]
+SQL: UPDATE `user` SET `openid`='oAdCq06LrSyxPt7SnCuy2k4wWsCQ',`username`='长镜头',`chatname`='长镜头',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmVLeg2sawmGnIxWhfPjuoyrw1gWXobLFaP9DadBA7kTLCLoZA2KX12rTXtHKaMm6YrUrs8kh5G8aLM1MWibCt5wk/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-08-31 14:58:11',`bonus_total`='28',`bonus_current`='2',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 6 [ RunTime:0.0139s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05hDd6bpy1-X4B5ci0vgZEU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05hDd6bpy1-X4B5ci0vgZEU',`username`='小蜜蜂',`chatname`='小蜜蜂',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM4lfC1Mic0MlhiaQfHLialFljvp6UQicjqAtXLDAQW8FqZED7sO1XTcKib2VibfKsUnKvPFWktria0sRXouClof3516759MVulAau94S0/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-09-03 14:04:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 10 [ RunTime:0.0070s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03KSUOXEFmC6SeJ9HkAM-_U' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03KSUOXEFmC6SeJ9HkAM-_U',`username`='王培',`chatname`='王培',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDUjtmMOos23CK64rSpYSGLuRR6lQToJeKBAj3MfG4fJj07picOPKkLQpdwBOic893Vg93SmA4v6vtw/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-09-04 15:41:11',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 11 [ RunTime:0.0059s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq02PVXJJCNgTAG0ZOrOvbFpk' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq02PVXJJCNgTAG0ZOrOvbFpk',`username`='胖胖',`chatname`='胖胖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJHXLkBuZd9sNEHYhZqTXZBzNiaJmsP7SnfTtJ6fSCWWvrOBZx5e439mhyDBicGOicsvtty0cFqbMEibQ/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-07 08:25:41',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 12 [ RunTime:0.0088s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0735MIgL8i3_L4V1al6-jRI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0735MIgL8i3_L4V1al6-jRI',`username`='奕然',`chatname`='奕然',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/xia7R6kn1kcM9kMF7ywbUxApdmMSUkicgdLuQmFnkqohr7gkIsHoHrGiaWlgw9GmPciaibf6JiaSfFx5c6icejUcZd8xG5aBAHYGV0ib/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-09-09 13:16:18',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 13 [ RunTime:0.0113s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08pKLiTJvtyC0-wE0FKsCdU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08pKLiTJvtyC0-wE0FKsCdU',`username`='张洪',`chatname`='张洪',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/y3j1nEibHvd1lQLmbduBOyRNtPWGWqiafuIliahpkrLcZWISI8oVR01xtgyGAkX8xC1hOXGEJOPicgETAq9uLiaibfOg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-19 06:31:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 16 [ RunTime:0.0068s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0_gqRgP7wh4IgpFJVpx1VHI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0_gqRgP7wh4IgpFJVpx1VHI',`username`='Doris丁丁',`chatname`='Doris丁丁',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK4ib016oDIEJw8aCbfC06Ll7CkTO2CUlz4DibytFTGmax6picnJP8f4ibrkJUicafiaIboXKB7Fp09C03w/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-20 06:49:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 17 [ RunTime:0.0060s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05HCVS2-RZ1ujiPijv9qtC4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05HCVS2-RZ1ujiPijv9qtC4',`username`='QQ琦',`chatname`='QQ琦',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9RA6MG8raC15ACUvqWMgFJLb9R3ynTRI5CbXeU4gtxAmLqmgK1EVCeSaiaf13ywc5wY8wXibHsoTgiaS9DxrcKhkPic/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-10 20:40:21',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 18 [ RunTime:0.0111s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03nJeSERDm80iW8j5U2jlBQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03nJeSERDm80iW8j5U2jlBQ',`username`='晴的成',`chatname`='晴的成',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/wicYz6BCBT7GU4Qwbgk8SFBU2emJ6vRVaxIEwweL0g3tBsdABq4oviaMRK68L2ib0gXqMFeE9NOwrTR4oalzz74MYmjq1BotW0Z/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-13 12:41:09',`bonus_total`='6',`bonus_current`='2',`bonus_cost`='4',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='大兴',`user_level`='0',`point_x`='39.774090',`point_y`='116.310478',`activity_state`='0' WHERE `user_id` = 19 [ RunTime:0.0087s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zE7hR5n9IZwVc3zuDgxAf0' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zE7hR5n9IZwVc3zuDgxAf0',`username`='泺喜机器人草桥店',`chatname`='泺喜机器人草桥店',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/UmvgEOG33BdtFByfdJuBJMYcCq0r1ny9Oaw4kC1eK6ufq5Y64mWwZ9wLSldP9d8H0G25gia7f9vJFGuxjmaKfCNUHhqvPyicJv/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-14 14:29:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 21 [ RunTime:0.0070s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03VPbU5N9uQ2ylUV9-86690' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03VPbU5N9uQ2ylUV9-86690',`username`='娟儿',`chatname`='娟儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZP35jhbOZgYxKVoialp81IwNwT0yDhvO9vVkGFtgkpfT32guUxkJibJG5jKrp2CibfVIicDyk3WqBKtb/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-15 15:55:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 22 [ RunTime:0.0120s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq07Mfzp5wErDEmbMNdh-wuHw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq07Mfzp5wErDEmbMNdh-wuHw',`username`='一非',`chatname`='一非',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ZAjlYd83jubWSvQMLrs84ZjM2JayKpjjeLxLq1rmJxbf4d5rKhSYITCyBf6zbeLqgECnvFoaamwyClAJVM6ckg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-15 18:07:20',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 23 [ RunTime:0.0074s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01cIfQXygps4FpiZ_y_m_iw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01cIfQXygps4FpiZ_y_m_iw',`username`='鹏辉ོ',`chatname`='鹏辉ོ',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXiaGsZ3wzW5LOLJ3g9MJOjAFh6SNR75w2ktv4sE8chXJf5Pedt3eqqPichPRSJ9ajTvDXdjgYJSsiauGoibyECxXiaN/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-16 09:26:02',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.990429',`point_y`='116.415634',`activity_state`='0' WHERE `user_id` = 24 [ RunTime:0.0065s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03C4yTYL6V2rsupUFsQ7GeQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03C4yTYL6V2rsupUFsQ7GeQ',`username`='秀儿',`chatname`='秀儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/uI5pczeERTZkUpLreibR4JpMEVOIcnswCvyztmYyYpZLc4FsjPy6iaX6liaMHRutc0nHicJImqo6bWznDiaibmHhiaw9w/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-16 11:13:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='海淀',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 25 [ RunTime:0.0069s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0xpA4Kl4A8ULWufL7S7U5C4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0xpA4Kl4A8ULWufL7S7U5C4',`username`='杰睿',`chatname`='杰睿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9QxbPKfhf4Z9iaP2xJEgXLTxYgw3KVSIaQFq97PhGwY0aS3M2ve5VvUKWlKk8Urz55CoUJJ9RTv9jheTfbYBjYJZ/0',`agent`='1',`share_count`='0',`gender`='0',`createtime`='2017-10-16 19:45:01',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 26 [ RunTime:0.0142s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0y3y2LgNu2phEYUmmHUQBe4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0y3y2LgNu2phEYUmmHUQBe4',`username`='文芳',`chatname`='文芳',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ewfogQfIpgc9CdKtHzgKhxL9sM2cdZuY3k7iaXf3pH1EELEcrNljV5QHQc3EKkLeKMf9NVDpmGNyK3Y3Z1Rj9sw/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-18 07:50:03',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Fengtai',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 27 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0189U7kalSrUMe2LgJ9f1N4' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0189U7kalSrUMe2LgJ9f1N4',`username`='索贝♡袁鹏飞',`chatname`='索贝♡袁鹏飞',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDufV2Br92ibeydqRKnBZ2GJiao3emia9xGAP8ib4sl5TlyJCLqV3d3tsBnmYiczpv960w5P0r5bl4ibiaRbicQO3Hj5Vg9fvWNibGagmJY/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-18 09:49:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 28 [ RunTime:0.0068s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zwD8v6-W4XPfbeO-m2RhV8' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zwD8v6-W4XPfbeO-m2RhV8',`username`='渤海',`chatname`='渤海',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZB9sVzlcMp6qf14XsHwuBhIZkHe4EkGA9YPtEIRexzYo9P7bBVj9jYiaxQPHmqQlP8AgkJ5D1Rggg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-20 16:26:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 29 [ RunTime:0.0053s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0wPjnvT2DofxArj8YOLiWLc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0wPjnvT2DofxArj8YOLiWLc',`username`='北国向暖',`chatname`='北国向暖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZI2kGHKkgdKLicWjHmicYzTEz7SGTCY8DRJyr0QLWhRTwHrYHw2VzRkGPO3UlINuyjKia1xMvX4XyNT/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-10-22 11:25:19',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 30 [ RunTime:0.0095s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0yptBXMfPFBkYT2Cpma8-Mc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0yptBXMfPFBkYT2Cpma8-Mc',`username`='piggy 丹 ^(oo)^',`chatname`='piggy 丹 ^(oo)^',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM5EFCXlribvVaNw2fSKkOFzlVu62Z1FbLibHVTQickSm5UUNC7xaw38DkDksPuic6pB9PBlxTxfcsTzpQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-22 23:23:00',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.920189',`point_y`='116.560371',`activity_state`='0' WHERE `user_id` = 31 [ RunTime:0.0084s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03Y555utvWr_zkNY40LFGNM' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03Y555utvWr_zkNY40LFGNM',`username`='沃德兰学堂 Christine 1891',`chatname`='沃德兰学堂 Christine 1891',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/gdlvpCcuulKhncesmVsNxTALsib3YSPHOrgPQXh2DB6Z8gylsuCsEx6NHRartIhLpc11iciczcg3vibQIOlicCPunl47aThc8M8B5/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-24 14:19:13',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.856033',`point_y`='116.278671',`activity_state`='0' WHERE `user_id` = 32 [ RunTime:0.0056s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08o6LcMET6m0LZTSHQSD7OU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08o6LcMET6m0LZTSHQSD7OU',`username`='柴碧野',`chatname`='柴碧野',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/7FVu8dVYmNqsjLcOyEedZBW5yY26dGVHs1icdc5PVbU0v9GJRH04OP7GGJNIXWMzYyhiakrbb00DHxfZRhNpJqpP3ZRugEoVyr/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-25 12:09:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='39.844650',`point_y`='116.346107',`activity_state`='0' WHERE `user_id` = 33 [ RunTime:0.0052s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01YzcVjLWljmeEBFcDEswEY',`username`='徐开元',`chatname`='徐开元',`phone`='18611828618',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXA8ibsaex58L33ibsibTk5X7pKOSPNr3kTiabLiaibZAicBib7dDHlvDO38CbeLXGTBqOZQB7C0308LRW2J4a1oTxS6Zicl/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:03:39',`bonus_total`='20',`bonus_current`='2',`bonus_cost`='18',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='贵州',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='1' WHERE `user_id` = 39 [ RunTime:0.0061s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq016X8Hgd9iVKRk6Ob-r-sNU' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq016X8Hgd9iVKRk6Ob-r-sNU',`username`='张洪 - 远途文化@视频制作',`chatname`='张洪 - 远途文化@视频制作',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM75nmNNbhYv3RicDLblcE45LIzUSAnvzARWzBGqEgnNibh4fRqGYPrrBaZUNJcY1u0eGoiaIHZ6wXD42A1th7hUGuKcQy0xUFZAsA/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:07:09',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.887077',`point_y`='116.591614',`activity_state`='0' WHERE `user_id` = 40 [ RunTime:0.0099s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq04ghNlSN7DbxnQTnIlK5m7o' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq04ghNlSN7DbxnQTnIlK5m7o',`username`='JOJO',`chatname`='JOJO',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/7KxMrRFUpAGFFxfE9a3tbWZgUibVvEc0Lbf5bGibgUDOLmxXCLdjmwZA2cFkLBDLuOuCia4T1cpmdcBfDd6W4Urlg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-26 11:51:32',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Guangdong',`city`='Zhaoqing',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 41 [ RunTime:0.0058s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq09ArLh_pZjDFp1KkZMfkBTw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq09ArLh_pZjDFp1KkZMfkBTw',`username`='李清',`chatname`='李清',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLIhGJjdrzovNgUvrjZdibs8ofxE5fmGpqoBUc7Mo5eSso1odiaCiaJiabt8yDibUknUFBLZSbiaSicoO1pg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-27 14:24:33',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Haidian',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 42 [ RunTime:0.0055s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq027xs01dDxx3TpqPeWlIGVA' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq027xs01dDxx3TpqPeWlIGVA',`username`='薇若',`chatname`='薇若',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/yk3Ok9Palo8KVa37VZsKViaia1jH6swichf7uaKTh324LAiaDNVKapicr0Mc6HAGpsuE564uiaQSOicWWYqqsBZhFu0Jg/132',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2018-01-24 22:06:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 43 [ RunTime:0.0076s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0003s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08z0miP9AerKiRV0akkB4EI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08z0miP9AerKiRV0akkB4EI',`username`='小莹',`chatname`='小莹',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLBAUyiciboWNZofU6c72GnCwuEXzhb3b58UerJ5e1U8WaibRLbW0ZADKBcydqnRHn8YibxfJ47qWTFJYQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-08-25 16:58:31',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.980560',`point_y`='116.355316',`activity_state`='0' WHERE `user_id` = 2 [ RunTime:0.0058s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq06LrSyxPt7SnCuy2k4wWsCQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq06LrSyxPt7SnCuy2k4wWsCQ',`username`='长镜头',`chatname`='长镜头',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmVLeg2sawmGnIxWhfPjuoyrw1gWXobLFaP9DadBA7kTLCLoZA2KX12rTXtHKaMm6YrUrs8kh5G8aLM1MWibCt5wk/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-08-31 14:58:11',`bonus_total`='28',`bonus_current`='2',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 6 [ RunTime:0.0054s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05hDd6bpy1-X4B5ci0vgZEU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05hDd6bpy1-X4B5ci0vgZEU',`username`='小蜜蜂',`chatname`='小蜜蜂',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM4lfC1Mic0MlhiaQfHLialFljvp6UQicjqAtXLDAQW8FqZED7sO1XTcKib2VibfKsUnKvPFWktria0sRXouClof3516759MVulAau94S0/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-09-03 14:04:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 10 [ RunTime:0.0066s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03KSUOXEFmC6SeJ9HkAM-_U' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03KSUOXEFmC6SeJ9HkAM-_U',`username`='王培',`chatname`='王培',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDUjtmMOos23CK64rSpYSGLuRR6lQToJeKBAj3MfG4fJj07picOPKkLQpdwBOic893Vg93SmA4v6vtw/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-09-04 15:41:11',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 11 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq02PVXJJCNgTAG0ZOrOvbFpk' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq02PVXJJCNgTAG0ZOrOvbFpk',`username`='胖胖',`chatname`='胖胖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJHXLkBuZd9sNEHYhZqTXZBzNiaJmsP7SnfTtJ6fSCWWvrOBZx5e439mhyDBicGOicsvtty0cFqbMEibQ/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-07 08:25:41',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 12 [ RunTime:0.0059s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0735MIgL8i3_L4V1al6-jRI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0735MIgL8i3_L4V1al6-jRI',`username`='奕然',`chatname`='奕然',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/xia7R6kn1kcM9kMF7ywbUxApdmMSUkicgdLuQmFnkqohr7gkIsHoHrGiaWlgw9GmPciaibf6JiaSfFx5c6icejUcZd8xG5aBAHYGV0ib/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-09-09 13:16:18',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 13 [ RunTime:0.0068s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08pKLiTJvtyC0-wE0FKsCdU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08pKLiTJvtyC0-wE0FKsCdU',`username`='张洪',`chatname`='张洪',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/y3j1nEibHvd1lQLmbduBOyRNtPWGWqiafuIliahpkrLcZWISI8oVR01xtgyGAkX8xC1hOXGEJOPicgETAq9uLiaibfOg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-19 06:31:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 16 [ RunTime:0.0060s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0_gqRgP7wh4IgpFJVpx1VHI' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0_gqRgP7wh4IgpFJVpx1VHI',`username`='Doris丁丁',`chatname`='Doris丁丁',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK4ib016oDIEJw8aCbfC06Ll7CkTO2CUlz4DibytFTGmax6picnJP8f4ibrkJUicafiaIboXKB7Fp09C03w/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-09-20 06:49:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 17 [ RunTime:0.0071s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq05HCVS2-RZ1ujiPijv9qtC4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq05HCVS2-RZ1ujiPijv9qtC4',`username`='QQ琦',`chatname`='QQ琦',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9RA6MG8raC15ACUvqWMgFJLb9R3ynTRI5CbXeU4gtxAmLqmgK1EVCeSaiaf13ywc5wY8wXibHsoTgiaS9DxrcKhkPic/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-10 20:40:21',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 18 [ RunTime:0.0060s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03nJeSERDm80iW8j5U2jlBQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03nJeSERDm80iW8j5U2jlBQ',`username`='晴的成',`chatname`='晴的成',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/wicYz6BCBT7GU4Qwbgk8SFBU2emJ6vRVaxIEwweL0g3tBsdABq4oviaMRK68L2ib0gXqMFeE9NOwrTR4oalzz74MYmjq1BotW0Z/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-13 12:41:09',`bonus_total`='6',`bonus_current`='2',`bonus_cost`='4',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='大兴',`user_level`='0',`point_x`='39.774090',`point_y`='116.310478',`activity_state`='0' WHERE `user_id` = 19 [ RunTime:0.0054s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zE7hR5n9IZwVc3zuDgxAf0' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zE7hR5n9IZwVc3zuDgxAf0',`username`='泺喜机器人草桥店',`chatname`='泺喜机器人草桥店',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/UmvgEOG33BdtFByfdJuBJMYcCq0r1ny9Oaw4kC1eK6ufq5Y64mWwZ9wLSldP9d8H0G25gia7f9vJFGuxjmaKfCNUHhqvPyicJv/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-14 14:29:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 21 [ RunTime:0.0062s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03VPbU5N9uQ2ylUV9-86690' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03VPbU5N9uQ2ylUV9-86690',`username`='娟儿',`chatname`='娟儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZP35jhbOZgYxKVoialp81IwNwT0yDhvO9vVkGFtgkpfT32guUxkJibJG5jKrp2CibfVIicDyk3WqBKtb/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-15 15:55:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='丰台',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 22 [ RunTime:0.0070s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq07Mfzp5wErDEmbMNdh-wuHw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq07Mfzp5wErDEmbMNdh-wuHw',`username`='一非',`chatname`='一非',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ZAjlYd83jubWSvQMLrs84ZjM2JayKpjjeLxLq1rmJxbf4d5rKhSYITCyBf6zbeLqgECnvFoaamwyClAJVM6ckg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-15 18:07:20',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 23 [ RunTime:0.0056s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01cIfQXygps4FpiZ_y_m_iw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01cIfQXygps4FpiZ_y_m_iw',`username`='鹏辉ོ',`chatname`='鹏辉ོ',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXiaGsZ3wzW5LOLJ3g9MJOjAFh6SNR75w2ktv4sE8chXJf5Pedt3eqqPichPRSJ9ajTvDXdjgYJSsiauGoibyECxXiaN/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-16 09:26:02',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.990429',`point_y`='116.415634',`activity_state`='0' WHERE `user_id` = 24 [ RunTime:0.0053s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03C4yTYL6V2rsupUFsQ7GeQ' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03C4yTYL6V2rsupUFsQ7GeQ',`username`='秀儿',`chatname`='秀儿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/uI5pczeERTZkUpLreibR4JpMEVOIcnswCvyztmYyYpZLc4FsjPy6iaX6liaMHRutc0nHicJImqo6bWznDiaibmHhiaw9w/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-16 11:13:10',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='海淀',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 25 [ RunTime:0.0054s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0xpA4Kl4A8ULWufL7S7U5C4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0xpA4Kl4A8ULWufL7S7U5C4',`username`='杰睿',`chatname`='杰睿',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/k2icicXmHdf9QxbPKfhf4Z9iaP2xJEgXLTxYgw3KVSIaQFq97PhGwY0aS3M2ve5VvUKWlKk8Urz55CoUJJ9RTv9jheTfbYBjYJZ/0',`agent`='1',`share_count`='0',`gender`='0',`createtime`='2017-10-16 19:45:01',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 26 [ RunTime:0.0073s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0y3y2LgNu2phEYUmmHUQBe4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0y3y2LgNu2phEYUmmHUQBe4',`username`='文芳',`chatname`='文芳',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/ewfogQfIpgc9CdKtHzgKhxL9sM2cdZuY3k7iaXf3pH1EELEcrNljV5QHQc3EKkLeKMf9NVDpmGNyK3Y3Z1Rj9sw/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-18 07:50:03',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Fengtai',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 27 [ RunTime:0.0065s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0189U7kalSrUMe2LgJ9f1N4' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0189U7kalSrUMe2LgJ9f1N4',`username`='索贝♡袁鹏飞',`chatname`='索贝♡袁鹏飞',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/ajNVdqHZLLDufV2Br92ibeydqRKnBZ2GJiao3emia9xGAP8ib4sl5TlyJCLqV3d3tsBnmYiczpv960w5P0r5bl4ibiaRbicQO3Hj5Vg9fvWNibGagmJY/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-18 09:49:14',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 28 [ RunTime:0.0065s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0zwD8v6-W4XPfbeO-m2RhV8' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0zwD8v6-W4XPfbeO-m2RhV8',`username`='渤海',`chatname`='渤海',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZB9sVzlcMp6qf14XsHwuBhIZkHe4EkGA9YPtEIRexzYo9P7bBVj9jYiaxQPHmqQlP8AgkJ5D1Rggg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-20 16:26:23',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.901791',`point_y`='116.312088',`activity_state`='0' WHERE `user_id` = 29 [ RunTime:0.0061s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0wPjnvT2DofxArj8YOLiWLc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0wPjnvT2DofxArj8YOLiWLc',`username`='北国向暖',`chatname`='北国向暖',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXu4aZd06MgZI2kGHKkgdKLicWjHmicYzTEz7SGTCY8DRJyr0QLWhRTwHrYHw2VzRkGPO3UlINuyjKia1xMvX4XyNT/0',`agent`='1',`share_count`='0',`gender`='2',`createtime`='2017-10-22 11:25:19',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 30 [ RunTime:0.0076s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq0yptBXMfPFBkYT2Cpma8-Mc' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq0yptBXMfPFBkYT2Cpma8-Mc',`username`='piggy 丹 ^(oo)^',`chatname`='piggy 丹 ^(oo)^',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM5EFCXlribvVaNw2fSKkOFzlVu62Z1FbLibHVTQickSm5UUNC7xaw38DkDksPuic6pB9PBlxTxfcsTzpQ/0',`agent`='0',`share_count`='0',`gender`='2',`createtime`='2017-10-22 23:23:00',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.920189',`point_y`='116.560371',`activity_state`='0' WHERE `user_id` = 31 [ RunTime:0.0061s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq03Y555utvWr_zkNY40LFGNM' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq03Y555utvWr_zkNY40LFGNM',`username`='沃德兰学堂 Christine 1891',`chatname`='沃德兰学堂 Christine 1891',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/gdlvpCcuulKhncesmVsNxTALsib3YSPHOrgPQXh2DB6Z8gylsuCsEx6NHRartIhLpc11iciczcg3vibQIOlicCPunl47aThc8M8B5/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-10-24 14:19:13',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='39.856033',`point_y`='116.278671',`activity_state`='0' WHERE `user_id` = 32 [ RunTime:0.0057s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq08o6LcMET6m0LZTSHQSD7OU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq08o6LcMET6m0LZTSHQSD7OU',`username`='柴碧野',`chatname`='柴碧野',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/7FVu8dVYmNqsjLcOyEedZBW5yY26dGVHs1icdc5PVbU0v9GJRH04OP7GGJNIXWMzYyhiakrbb00DHxfZRhNpJqpP3ZRugEoVyr/0',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-25 12:09:57',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='',`user_level`='0',`point_x`='39.844650',`point_y`='116.346107',`activity_state`='0' WHERE `user_id` = 33 [ RunTime:0.0105s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' AND b.trade_state='已支付' [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `openid`='oAdCq01YzcVjLWljmeEBFcDEswEY',`username`='徐开元',`chatname`='徐开元',`phone`='18611828618',`profile`='http://wx.qlogo.cn/mmopen/HtCyLWnOYmXA8ibsaex58L33ibsibTk5X7pKOSPNr3kTiabLiaibZAicBib7dDHlvDO38CbeLXGTBqOZQB7C0308LRW2J4a1oTxS6Zicl/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:03:39',`bonus_total`='20',`bonus_current`='2',`bonus_cost`='18',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='贵州',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='1' WHERE `user_id` = 39 [ RunTime:0.0056s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq016X8Hgd9iVKRk6Ob-r-sNU' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq016X8Hgd9iVKRk6Ob-r-sNU',`username`='张洪 - 远途文化@视频制作',`chatname`='张洪 - 远途文化@视频制作',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM75nmNNbhYv3RicDLblcE45LIzUSAnvzARWzBGqEgnNibh4fRqGYPrrBaZUNJcY1u0eGoiaIHZ6wXD42A1th7hUGuKcQy0xUFZAsA/132',`agent`='0',`share_count`='0',`gender`='1',`createtime`='2017-10-28 11:07:09',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='北京',`city`='朝阳',`user_level`='0',`point_x`='39.887077',`point_y`='116.591614',`activity_state`='0' WHERE `user_id` = 40 [ RunTime:0.0062s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq04ghNlSN7DbxnQTnIlK5m7o' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq04ghNlSN7DbxnQTnIlK5m7o',`username`='JOJO',`chatname`='JOJO',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/7KxMrRFUpAGFFxfE9a3tbWZgUibVvEc0Lbf5bGibgUDOLmxXCLdjmwZA2cFkLBDLuOuCia4T1cpmdcBfDd6W4Urlg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-26 11:51:32',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Guangdong',`city`='Zhaoqing',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 41 [ RunTime:0.0048s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq09ArLh_pZjDFp1KkZMfkBTw' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq09ArLh_pZjDFp1KkZMfkBTw',`username`='李清',`chatname`='李清',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLIhGJjdrzovNgUvrjZdibs8ofxE5fmGpqoBUc7Mo5eSso1odiaCiaJiabt8yDibUknUFBLZSbiaSicoO1pg/0',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2017-12-27 14:24:33',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='Beijing',`city`='Haidian',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 42 [ RunTime:0.0052s ]
+SQL: 
+        SELECT*
+        FROM `user` a
+        INNER JOIN `trade` b
+        ON a.openid=b.openid
+        WHERE a.openid='oAdCq027xs01dDxx3TpqPeWlIGVA' AND b.trade_state='已支付' [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `openid`='oAdCq027xs01dDxx3TpqPeWlIGVA',`username`='薇若',`chatname`='薇若',`phone`='',`profile`='http://wx.qlogo.cn/mmopen/vi_32/yk3Ok9Palo8KVa37VZsKViaia1jH6swichf7uaKTh324LAiaDNVKapicr0Mc6HAGpsuE564uiaQSOicWWYqqsBZhFu0Jg/132',`agent`='0',`share_count`='0',`gender`='0',`createtime`='2018-01-24 22:06:35',`bonus_total`='0',`bonus_current`='0',`bonus_cost`='0',`cash_total`='0',`cash_current`='0',`cash_cost`='0',`cash_submit`='0',`signature`='',`province`='',`city`='',`user_level`='0',`point_x`='',`point_y`='',`activity_state`='0' WHERE `user_id` = 43 [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+
+[ 2018-02-07T14:31:36+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Module/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/a8f2d3e57319e1a26aecfa3d8255aac1.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2018-02-07T15:14:24+08:00 ] 111.197.248.241 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2018-02-07T15:14:24+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                            ORDER BY `createtime` DESC
+                             LIMIT 0,20 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `trade`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000119s ]
+
+[ 2018-02-07T15:14:25+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Module/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/a8f2d3e57319e1a26aecfa3d8255aac1.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2018-02-07T15:14:27+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Module/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/1af412e940b941975d864036643a8527.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2018-02-07T15:14:27+08:00 ] 111.197.248.241 /tpchat/index.php/Admin/Video/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `video` ORDER BY createtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined index: admin_name /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 190 行.
+NOTIC: [8] Undefined variable: page /mnt/tpchat/Application/Runtime/Cache/Admin/a1139c397cab62ab83c0f7dbd7530fa9.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <title>实践课堂</title>
+</head>
+
+
+<body ontouchstart>
+<div style="margin-bottom: 20%">
+
+            <div style="padding: 8px"><i style="color: #999;padding: 8px;
+    font-size: 28px;">作品集锦</i>
+
+            </div>
+
+                <div class="weui-panel__bd"  >
+                    <volist name="data" id="v">
+                        <if condition="$v.publish_state eq 1 ">
+                            <a href="{$v.url}" class="weui-media-box weui-media-box_appmsg">
+                                <div class="weui-media-box__hd">
+                                    <img class="weui-media-box__thumb" src="{$v.image}">
+                                </div>
+                                <div class="weui-media-box__bd">
+                                    <h4 class="weui-media-box__title">{$v.title}</h4>
+                                    <p class="weui-media-box__desc">{$v.content}</p>
+
+                                </div>
+                            </a>
+                        </if>
+                    </volist>
+
+                </div>
+
+
+
+</div>
+</body>
+<!-- body 最后 -->
+
+
+
+</html>

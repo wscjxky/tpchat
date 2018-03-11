@@ -1,0 +1,169 @@
+[ 2017-12-19T11:07:40+08:00 ] 218.249.50.168 /tpchat/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-12-19T11:44:35+08:00 ] 140.207.54.76 /tpchat/index.php/home/index?signature=b8a7e5d92be3d8ca72eb26592bf7b42b9b42f0b3&timestamp=1513655073&nonce=1231151992&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006837s ]
+
+[ 2017-12-19T11:44:35+08:00 ] 140.207.54.75 /tpchat/index.php/home/index?signature=5ac6a5026c0011f1c70d81a1b9b574bb63e3a2d0&timestamp=1513655071&nonce=1956947253&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 54 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 66 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 68 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008789s ]
+
+[ 2017-12-19T11:44:41+08:00 ] 123.151.77.91 /tpchat/index.php/home/jspay?trade_id=257trade_id=257&code=001uXkBn1ejLOj0bOhDn18amBn1uXkBT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2] fopen(../logs/2017-12-19.log): failed to open stream: No such file or directory C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\log.php ç¬¬ 16 è¡Œ.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 99 è¡Œ.
+NOTIC: [8] Undefined index: openid C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 116 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-19T11:44:51+08:00 ] 183.61.51.63 /tpchat/index.php/home/jspay?trade_id=257trade_id=257&code=001uXkBn1ejLOj0bOhDn18amBn1uXkBT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2] fopen(../logs/2017-12-19.log): failed to open stream: No such file or directory C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\log.php ç¬¬ 16 è¡Œ.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 99 è¡Œ.
+NOTIC: [8] Undefined index: openid C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 116 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-19T11:45:08+08:00 ] 183.61.51.55 /tpchat/index.php/home/jspay?trade_id=257trade_id=257&code=001uXkBn1ejLOj0bOhDn18amBn1uXkBT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2] fopen(../logs/2017-12-19.log): failed to open stream: No such file or directory C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\log.php ç¬¬ 16 è¡Œ.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 99 è¡Œ.
+NOTIC: [8] Undefined index: openid C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 116 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-19T11:45:10+08:00 ] 183.61.51.55 /tpchat/index.php/home/jspay?trade_id=257trade_id=257&code=001uXkBn1ejLOj0bOhDn18amBn1uXkBT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2] fopen(../logs/2017-12-19.log): failed to open stream: No such file or directory C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\log.php ç¬¬ 16 è¡Œ.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 99 è¡Œ.
+NOTIC: [8] Undefined index: openid C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 116 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-19T11:45:11+08:00 ] 183.61.51.55 /tpchat/index.php/home/jspay?trade_id=257trade_id=257&code=001uXkBn1ejLOj0bOhDn18amBn1uXkBT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [2] fopen(../logs/2017-12-19.log): failed to open stream: No such file or directory C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\log.php ç¬¬ 16 è¡Œ.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 99 è¡Œ.
+NOTIC: [8] Undefined index: openid C:\www\tpchat\ThinkPHP\Library\Vendor\Wechat\WxPayJsApiPay.php ç¬¬ 116 è¡Œ.
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-19T14:29:31+08:00 ] 127.0.0.1 /tpchat/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006837s ]
+
+[ 2017-12-19T14:39:36+08:00 ] 223.72.63.219 /tpchat/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+
+[ 2017-12-19T14:39:39+08:00 ] 223.72.63.219 /tpchat/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-12-19T14:39:42+08:00 ] 223.72.63.219 /tpchat/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-12-19T14:43:44+08:00 ] 140.207.54.76 /tpchat/index.php/home/index?signature=c3f2bca9d02e1abc0552bb8765ac30dae2b23f5f&timestamp=1513665823&nonce=1697015968&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-12-19T14:43:44+08:00 ] 140.207.54.76 /tpchat/index.php/home/index?signature=cdae3cb08072bf0db285c6276f6099e318451728&timestamp=1513665824&nonce=183124018&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 54 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 66 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 68 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-19T14:44:21+08:00 ] 140.207.54.75 /tpchat/index.php/home/index?signature=ee909472c2ab5dcd83bf0cce3fc103fc41851d96&timestamp=1513665860&nonce=1369389710&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 54 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 66 è¡Œ.
+NOTIC: [8] Undefined index: key C:\www\tpchat\Application\Home\Controller\IndexController.class.php ç¬¬ 68 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+

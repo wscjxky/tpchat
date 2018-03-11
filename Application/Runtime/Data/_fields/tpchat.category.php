@@ -1,0 +1,1 @@
+a:7:{i:0;s:11:"caregory_id";i:1;s:13:"category_name";i:2;s:5:"level";i:3;s:8:"parentid";i:4;s:10:"createtime";s:3:"_pk";s:11:"caregory_id";s:5:"_type";a:5:{s:11:"caregory_id";s:16:"int(10) unsigned";s:13:"category_name";s:11:"varchar(20)";s:5:"level";s:6:"int(1)";s:8:"parentid";s:10:"varchar(1)";s:10:"createtime";s:9:"timestamp";}}

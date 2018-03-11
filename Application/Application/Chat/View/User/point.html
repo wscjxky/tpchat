@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ontouchstart>
+<div class="page-title"  >
+    <h2><span>我 的 积 分</span><a  href="javascript:history.go(-1)" style="top: 30%;" class="arrow-left backpage"></a></h2>
+</div>
+<div class="weui-cells" style="margin-top:15%">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>当前可用积分</p>
+        </div>
+        <div class="weui-cell__ft">{$data.bonus_current}</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>已获取的积分总额</p>
+        </div>
+        <div class="weui-cell__ft">{$data.bonus_total}</div>
+    </div><div class="weui-cell">
+    <div class="weui-cell__bd">
+        <p>已消费的积分总额</p>
+    </div>
+    <div class="weui-cell__ft">{$data.bonus_cost}</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<include file="Public/head" />
+
+	<!-- jQuery 2.1.4 -->
+
+</head>
+
+<body>
+
+
+
+       <div class="row">
+		   <div class="col-md-1" style="margin-left: 30px">
+			   <h3>分类列表</h3>
+			   <h5>(共{$count}条记录)</h5>
+		   </div>
+	   </div>
+
+			<div class="box" style="margin-top: 2%">
+				<a href="category_info"><button type="button" class="btn btn-primary">添加分类</button></a>
+
+				<div class="box-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<table id="list-table" class="table table-bordered table-striped dataTable">
+								<thead>
+								<tr role="row">
+									<th>编号</th>
+									<th>分类名称</th>
+
+									<th>创建时间</th>
+
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tbody>
+								<foreach name="data" item="vo" key="k" >
+									<tr role="row" >
+										<td>{$vo.category_id}</td>
+										<td>{$vo.category_name}</td>
+										<td>{$vo.createtime}</td>
+										<td>
+											<a class="btn btn-primary"  href="category_info?id={$vo.category_id}"><i class="fa fa-pencil"></i></a>
+
+											<a class="btn btn-danger" data-id="{$vo.category_id}" data-act="del"  data-url="{:U('Course/categoryHandle')}" onclick="delfunc(this)"><i class="fa fa-trash-o"></i></a>
+										</td>
+
+									</tr>
+								</foreach>
+								</tbody>
+								<tfoot>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 text-left"></div>
+						<div class="col-sm-6 text-right">{$page}</div>
+					</div>
+				</div>
+			</div>
+
+
+</body>
+<script>
+
+</script>
+</html>

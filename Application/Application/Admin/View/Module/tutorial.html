@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <include file="Public/head" />
+
+    <!-- jQuery 2.1.4 -->
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+    <div class="col-md-1" style="margin-left: 30px">
+        <h3>在线教程</h3>
+    </div>
+</div>
+<a href="tutorial_info" style="position:absolute;float: left;margin-top: 60px" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>添加教程</a>
+<div class="box" style="margin-top: 100px">
+    <div class="box-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="list-table" class="table table-bordered table-striped dataTable">
+                    <thead>
+                    <tr role="row">
+                        <th>教程编号</th>
+                        <th>标题</th>
+                        <th>内容</th>
+                        <th>图片</th>
+                        <th>图文链接</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="data" id="vo" key="k" >
+                        <tr role="row" >
+                            <td>{$vo.tutorial_id}</td>
+                            <td>{$vo.title}</td>
+                            <td>{$vo.content}</td>
+                            <td><img style="width: 100px;height:100px;" src="{$Think.const.SHOW_URL}{$vo.image}"/></td>
+                            <td>{$vo.url}</td>
+                            <td>
+                                <a class="btn btn-primary"  href="tutorial_info?id={$vo.tutorial_id}"><i class="fa fa-pencil"></i></a>
+
+                                <a class="btn btn-danger" data-id="{$vo.tutorial_id}" data-act="del"  data-url="{:U('Module/tutorialHandle')}" onclick="delfunc(this)"><i class="fa fa-trash-o"></i></a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-left"></div>
+            <div class="col-sm-6 text-right">{$page}</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

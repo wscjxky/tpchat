@@ -1,0 +1,63 @@
+<html lang="en">
+<title>参选作品</title>
+
+<style>
+    body{
+
+    }
+    .course_title{
+        font-weight: bold;
+        font-size: 16px;
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+        -webkit-line-clamp: 1;
+
+    }
+    .weui-media-box__bd{
+        margin-left: 18px;
+    }
+    .weui-media-box_appmsg{
+        margin-bottom: 24px;
+    }
+    .weui-panel__bd{
+        margin-bottom: 20%;
+    }
+    .weui-media-box__desc{
+        margin-top: 4px;
+    }
+</style>
+
+<body ontouchstart >
+<div class="weui-panel__bd" style=>
+    <div class="weui-panel__hd">参选作品</div>
+
+    <volist name="data" id="v">
+
+            <div  class="weui-media-box weui-media-box_appmsg" style='padding: 5px'>
+                <img style='width: 85px;height: 65px;vertical-align: top;margin-top: 6px'  src="{$Think.const.SHOW_URL}{$v.image}">
+                <div class="weui-media-box__bd">
+                    <a  href='__CONTROLLER__/video?video_id={$v.video_id}' class="course_title">
+                        {$v.video_title}</a>
+                    <p class="weui-media-box__desc"  >
+                        {$v.admin_desc}
+                    </p>
+                    <p class="weui-media-box__desc"  >
+                        {$v.chatname}     {$v.confirm_time}   <span style="float: right">点赞数：{$v.praise_count}</span> </p>
+
+
+                </div>
+            </div>
+    </volist>
+</div>
+</body>
+<!-- body 最后 -->
+
+
+
+</html>

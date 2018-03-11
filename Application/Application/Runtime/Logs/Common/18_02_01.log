@@ -1,0 +1,12 @@
+[ 2018-02-01T13:53:01+08:00 ] 123.120.84.121 /tpchat/index.php/homeaccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.812531s ]
+ERR: 无法加载模块:Homeaccess
+
+[ 2018-02-01T13:57:40+08:00 ] 123.120.84.121 /tpchat/index.php/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Menu
+

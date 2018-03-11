@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="page-title"  style="position: relative"  >
+    <h2>意见<a href="javascript:history.go(-1)" style="top: 30%;" class="arrow-left backpage"></a></h2>
+</div>
+<iframe name="iframe" style="display: none"></iframe>
+<form method="post"   action="" target="iframe" style="">
+        <div style="padding: 5% " class="weui-cell__bd">
+            <textarea style="padding:2.5%; border:solid 1px #EDEDED" class="weui-textarea" placeholder="发表对课程的看法和新课程的设置建议等" rows="10" name="content"></textarea>
+        </div>
+    </div>
+    <input style="display: none" name="openid" value="{$open_id}">
+    <input style="display: none" name="chatname" value="{$chatname}">
+
+    <div class="weui-btn-area" style="margin-top: 20%">
+        <button class="weui-btn weui-btn_primary" type="submit"  >确定</button>
+    </div>
+</form>
+
+<!-- 将form表单提交的窗口指向隐藏的ifrmae,并通过ifrmae提交数据。 -->
+
+</body>
+<script>
+
+
+    $(document).ready(function () {
+        $(".weui-btn.weui-btn_primary").click(function(){
+            $.alert({
+                title: '',
+                text: '提交成功，谢谢您的支持！',
+                onOK: function () {
+                    window.location.href="__CONTROLLER__/advice"
+                }
+            });
+        });
+    });
+</script>
+</html>

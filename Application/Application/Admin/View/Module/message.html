@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row" style="margin-top: 50px;padding:2px ;"  >
+
+    <div class="col-md-8">
+            <label>
+                <select id="selector" name="act" class="form-control">
+                    <option value="user_name">查询用户名</option>
+                    <option value="course_title">查询课程的订购用户</option>
+                    <option value="register_title">查询课程的签到用户</option>
+                </select>
+            </label>
+            <input id="keyword" type="text" size="30"  name="value" class="qsbox" placeholder="搜索用户名...">
+            <input class="btn btn-info" type="button" onclick="Submit()" value="搜索">
+    </div>
+    <table id="table" class="table table-hover table-condensed table-striped table-bordered" style="margin-top: 70px ;margin-left: 30px">
+
+    </table>
+
+
+    <div class="col-md-2">
+        <a href="sendTemple"><button type="button" href="user" class="btn btn-success">群发微信模版</button></a>
+        <a href="sendLog"><button type="button" href="user" class="btn btn-info">群发网站消息</button></a>
+    </div>
+
+</div>
+</body>
+<script>
+    function Submit() {
+        $.ajax({
+            type: 'post',
+            url: "http://www.jianpianzi.com/tpchat/index.php/Admin/User/search",
+            data: {
+                keyword:$("#keyword").val(),
+                act: $("#selector").val()
+            },
+            dataType: 'text',
+            success: function (data) {
+                console.log(data);
+                if (data) {
+                    $("#table").html('');
+                    $("#table").append(data);
+                }
+            }
+        });
+    }
+</script>
+</html>

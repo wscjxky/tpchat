@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <include file="Public/head" />
+
+    <!-- jQuery 2.1.4 -->
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+    <div class="col-md-1" style="margin-left: 30px">
+        <h3>活动推送</h3>
+    </div>
+</div>
+<div class="box" style="margin-top: 100px">
+    <div class="box-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="list-table" class="table table-bordered table-striped dataTable">
+                    <thead>
+                    <tr role="row">
+                        <th>活动编号</th>
+                        <th>标题</th>
+                        <th>内容</th>
+                        <th>图片</th>
+                        <th>活动状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="article" id="vo" key="k" >
+                        <tr role="row" >
+                            <td>{$vo.article_id}</td>
+                            <td>{$vo.title}</td>
+                            <td>{$vo.content}</td>
+                            <td><img style="width: 100px;height:100px;" src="{$Think.const.SHOW_URL}{$vo.image}"/></td>
+                            <td>{$vo.is_activity}</td>
+                            <td>
+                                <a class="btn btn-primary"  href="article_info?id={$vo.article_id}"><i class="fa fa-pencil"></i></a>
+
+                            </td>
+                        </tr>
+                    </volist>
+                    <volist name='course' id='v'>
+                        <tr id="{$v.course_id}">
+                            <td >{$v.course_id}</td>
+                            <td >{$v.title}</td>
+                            <td >{$v.desc}</td>
+                            <td ><img src="{$Think.const.SHOW_URL}{$v.image}" height="60" width="60"/></td>
+                            <td>{$v.is_activity}</td>
+
+                            <td ><div class="btn-group" role="group">
+                                <a class="btn btn-primary" href="__MODULE__/Course/update?i={$v.course_id}">
+                                    <i class="fa fa-pencil"></i>
+                                </a>
+                            </div></td>
+
+                        </tr>
+                    </volist>
+                    <foreach name="video" item="vo" key="k" >
+                        <tr role="row" >
+                            <td>{$vo.video_id}</td>
+                            <td>{$vo.video_title}</td>
+                            <td>{$vo.admin_desc}</td>
+                            <td ><img src="{$Think.const.SHOW_URL}{$vo.image}" height="60" width="60"/></td>
+                            <td>1</td>
+                            <td>
+                                <if condition="$vo.check_status == '正在审核' ">
+
+                                    <else/>
+
+                                    <a class="btn btn-primary" href="__MODULE__/chat/video_info?id={$vo.video_id}"
+                                       class="btn btn-info"><i class="fa fa-pencil"></i></a>
+
+                                </if>
+                            </td>
+
+                        </tr>
+                    </foreach>
+
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-left"></div>
+            <div class="col-sm-6 text-right">{$page}</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

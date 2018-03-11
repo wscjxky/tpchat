@@ -1,0 +1,69 @@
+{__NOLAYOUT__}
+<html lang="en">
+<head>
+    <title>作品集锦</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="{$Think.const.JS_URL}jquery.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css">
+    <script rel="stylesheet" src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+    <link href="{$Think.const.CSS_URL}vendors.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}weui.min.css">
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}jquery-weui.min.css">
+    <script src="{$Think.const.JS_URL}jquery-weui.js"></script>
+    <script src="{$Think.const.JS_URL}fastclick.js"></script>
+    <meta charset="UTF-8">
+    <title>消息</title>
+</head>
+<html lang="en">
+
+
+<body ontouchstart>
+
+
+</div>
+<div style="margin-bottom: 20%">
+    <if condition="$activity neq ''">
+        <div class="weui-panel__bd weui-panel_access"  >
+            <div class="weui-panel__hd">最新活动</div>
+            <volist name="activity" id="v">
+                <if condition="$v.publish_state eq 1 ">
+
+                <a href="__CONTROLLER__/activity?title={$v.title}" class="weui-media-box weui-media-box_appmsg">
+                    <img  src="{$Think.const.SHOW_URL}{$v.activity_image}" style="width: 40px;height: 40px;margin-bottom: 5% ">
+                    <div class="weui-media-box__bd" style="margin-left: 5px">
+                        <p class="weui-media-box__desc" style="font-weight:bold">{$v.title}</p>
+                        <p class="weui-media-box__desc" style="margin-top: 5px ;margin-bottom: 5px">{$v.content}</p>
+                        <p class="weui-media-box__desc">活动时间：{$v.starttime}&nbsp-&nbsp{$v.endtime}</p>
+                    </div>
+                </a>
+                </if>
+            </volist>
+        </div>
+
+    </if>
+    <div class="weui-panel__bd weui-panel_access"  >
+        <if condition="$activity neq ''">
+            <div class="weui-panel__hd">作品集锦</div>
+        </if>
+        <volist name="data" id="v">
+            <if condition="$v.publish_state eq 1 ">
+                <a href="__CONTROLLER__/video?video_id={$v.video_id}" class="weui-media-box weui-media-box_appmsg">
+                    <img  src="{$v.profile}" style="width: 40px;height: 40px; margin-bottom: 60%">
+                    <div class="weui-media-box__bd" style="margin-left: 5px">
+                        <p class="weui-media-box__desc" style="font-weight:bold">{$v.chatname}</p>
+                        <p class="weui-media-box__desc" style="margin-top: 5px ;margin-bottom: 5px">{$v.admin_desc}</p>
+                        <p class="weui-media-box__desc">{$v.content}</p>
+                        <img src="{$Think.const.SHOW_URL}{$v.image}" style="max-width: 200px;max-height: 200px">
+                        <p  style="margin-top: 5px" class="weui-media-box__desc">{$v.createtime}</p>
+                    </div>
+                </a>
+            </if>
+        </volist>
+    </div>
+
+</div>
+</body>
+<!-- body 最后 -->
+
+</html>

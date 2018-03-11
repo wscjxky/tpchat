@@ -1,0 +1,23 @@
+#!/bin/bash
+PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+# define url
+WEB_URL="https://www.jianpianzi.com/cloud/delTrashFile?permissionId=af5d3597ca239f6386f55729ced6efe6"
+
+# check network
+NET_ALIVE=$(ping -c 5 8.8.8.8 |grep 'received'|awk 'BEGIN {FS=","} {print $2}'|awk '{print $1}')
+if [ $NET_ALIVE == 0 ]; then
+    echo "Network is not active,please check your network configuration!"
+    exit 0
+fi
+
+# check url
+  ALIVE=$(curl -m 20 -o $HOME/rlt.html -s -w %{http_code} $WEB_URL | grep "000000")
+  if [ "$ALIVE" == "000000" ]; then
+    echo "can not be open,please check!"
+    echo "failed"
+  else
+    echo "Clear is OK!"
+  fi
+

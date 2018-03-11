@@ -1,0 +1,129 @@
+{
+  "button": [
+    {
+      "name": "筑影学堂",
+      "sub_button": [
+        {
+          "type": "view",
+          "name": "我的校外课",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/chat&response_type=code&&scope=snsapi_userinfo&&state=1#wechat_redirect",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "在线教程",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/Chat/tutorial&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "小主持人FM",
+          "url": "http://www.ximalaya.com/zhubo/93586430/",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "直播课堂",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/Chat/Live&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect",
+          "sub_button": [ ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "活动推送",
+      "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=http://www.jianpianzi.com/tpchat/index.php/Chat/Product&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect",
+      "sub_button": [ ]
+    },
+    {
+      "name": "联系我们",
+      "sub_button": [
+        {
+          "type": "click",
+          "name": "商务合作",
+          "key": "commerce",
+          "sub_button": [ ]
+        },
+        {
+          "type": "click",
+          "name": "在线问答",
+          "key": "chat",
+          "sub_button": [ ]
+        },
+        {
+          "type": "click",
+          "name": "关于我们",
+          "key": "aboutus",
+          "sub_button": [ ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "button": [
+    {
+      "name": "筑影学堂",
+      "sub_button": [
+        {
+          "type": "view",
+          "name": "我的校外课",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/chat&response_type=code&&scope=snsapi_userinfo&&state=1#wechat_redirect",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "在线教程",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/Chat/tutorial&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "小主持人FM",
+          "url": "http://www.ximalaya.com/zhubo/93586430/",
+          "sub_button": [ ]
+        },
+        {
+          "type": "view",
+          "name": "直播课堂",
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/Chat/Live&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect",
+          "sub_button": [ ]
+        }
+      ]
+    },
+    {
+      "type":"miniprogram",
+      "name":"活动推送",
+      "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/chat&response_type=code&&scope=snsapi_userinfo&&state=1#wechat_redirect",
+      "appid":"wx1f852c01239c4651",
+      "pagepath":"pages/index/index"
+    },
+    {
+      "name": "联系我们",
+      "sub_button": [
+        {
+          "type": "click",
+          "name": "商务合作",
+          "key": "commerce",
+          "sub_button": [ ]
+        },
+        {
+          "type": "click",
+          "name": "在线问答",
+          "key": "chat",
+          "sub_button": [ ]
+        },
+        {
+          "type": "click",
+          "name": "关于我们",
+          "key": "aboutus",
+          "sub_button": [ ]
+        }
+      ]
+    }
+  ]
+}

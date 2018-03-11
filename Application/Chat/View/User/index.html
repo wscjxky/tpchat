@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <link href="{$Think.const.CSS_URL}vendors.css" rel="stylesheet" />
+  <link href="{$Think.const.CSS_URL}center.css" rel="stylesheet" />
+
+ </head>
+ <style>
+  h2{
+   margin-top:6px;
+  }
+  .username{
+   margin-top: 10px;
+  }
+ </style>
+ <body ontouchstart >
+<div class="wraper">
+   <div class="user-center">
+    <div class="center-inner">
+     <div class="my-info">
+      <a href="__CONTROLLER__/userinfo">
+       <div class="avatar">
+        <img src="{$data.profile}">
+       </div>
+       <div class="visitor">
+        <p class="username">{$data.username}</p>
+
+       </div> </a>
+     </div>
+     <div class="order-item" style="margin-top: 10px">
+      <div class="module-title">
+       <h2 ><a class="link-area" href="__CONTROLLER__/trade">我的课程
+        <span class="fr gray666">查看全部课程</span><i class="arrow-right"></i></a></h2>
+      </div>
+      <div class="module-title nomar">
+       <h2><a class="link-area" href="__CONTROLLER__/register">我的签到<span class="fr gray666"></span><i class="arrow-right"></i></a></h2>
+      </div>
+     </div>
+
+     <div class="module-title ">
+      <h2 class="service" data-service="true"><a href="__CONTROLLER__/point" class="link-area">我的积分</a><i class="arrow-right"></i></h2>
+     </div>
+     <div class="module-title nomar">
+      <h2 class="service" data-service="true"><a href="__CONTROLLER__/cash" class="link-area">我的提现</a><i class="arrow-right"></i></h2>
+     </div>
+     <div class="module-title">
+      <h2><a class="link-area address" href="__CONTROLLER__/video">我的作品<i class="arrow-right"></i></a></h2>
+
+     </div>
+     <div class="module-title nomar">
+      <h2 class="service" data-service="true"><a href="__CONTROLLER__/advice" class="link-area">我的建议</a><i class="arrow-right"></i></h2>
+
+     </div>
+    </div>
+   </div>
+</div>
+
+<include file="Public/navbar"/>
+
+ </body>
+</html>

@@ -1,0 +1,184 @@
+[ 2018-02-22T07:48:38+08:00 ] 123.120.212.130 /tpchat/index.php/Chat/Product?code=081wWDC90rPycw151SC90lulC90wWDCq&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0543s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` ORDER BY createtime desc  [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `video_activity` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `video_activity` ORDER BY starttime desc  [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: desc /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 53 行.
+NOTIC: [8] Undefined variable: data /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000120s ]
+
+[ 2018-02-22T14:49:17+08:00 ] 123.120.57.167 /tpchat/index.php/Chat/article?code=0018HJMJ0emUp62U2APJ0SFSMJ08HJMh&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2018-02-22T16:26:23+08:00 ] 123.151.76.158 /tpchat/index.php/Chat/Product?code=011X17m90ZbTTv1lNtl90EmOl90X17mo&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course` ORDER BY createtime desc  [ RunTime:0.0173s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `video_activity` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `video_activity` ORDER BY starttime desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: desc /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 53 行.
+NOTIC: [8] Undefined variable: data /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2018-02-22T16:26:23+08:00 ] 123.151.76.158 /tpchat/index.php/Chat/Product?code=001QZ0RW0aHGCV1DSDSW0DNRQW0QZ0RH&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` ORDER BY createtime desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `video_activity` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `video_activity` ORDER BY starttime desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: desc /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 53 行.
+NOTIC: [8] Undefined variable: data /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2018-02-22T16:26:32+08:00 ] 123.151.76.158 /tpchat/index.php/Chat/Product?code=061LbxwW0IxafV1U4avW0WjtwW0LbxwR&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course` ORDER BY createtime desc  [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article` ORDER BY createtime desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `video_activity` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `video_activity` ORDER BY starttime desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: desc /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 53 行.
+NOTIC: [8] Undefined variable: data /mnt/tpchat/Application/Runtime/Cache/Chat/d8284913d94a3ddb4d5d2388b1d03584.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000158s ]
+
+[ 2018-02-22T16:29:47+08:00 ] 123.151.77.121 /tpchat/index.php/chat?code=0018fEA11FsgUN1r4zA11l6uA118fEAd&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2018-02-22T16:29:48+08:00 ] 123.151.77.121 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course` WHERE `publish_state` = 1 AND `big_category` = '专题活动' ORDER BY starttime desc LIMIT 30   [ RunTime:0.0003s ]
+

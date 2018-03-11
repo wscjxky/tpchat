@@ -1,0 +1,124 @@
+<div class="sub-nav">
+    <div class="container">
+        <div style="position:absolute;margin:10px 50px 0 0;padding:0">
+            <h3 style="margin:5px 0">
+                消息中心
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>&bull; 新消息<span class="glyphicon glyphicon-remove-sign del_msg" title="清空"></span></h3>
+    <hr>
+    <ul class="list-group newMsg-list">
+        <!--<li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-blackboard"></span> 推广消息</strong>
+        </li>-->
+        {{ each }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>
+                {{ if $value.ResourceType == 'promote' }}
+                <span class="glyphicon glyphicon-blackboard"></span> {{ $value.Title }}
+                {{ else if $value.ResourceType == 'system' }}
+                <span class="glyphicon glyphicon-cog"></span> {{ $value.Title }}
+                {{ else if $value.ResourceType == 'requirement' || $value.ResourceType == 'contract' }}
+                <span class="glyphicon glyphicon-list-alt"></span> {{ $value.Title }}
+                {{ /if }}
+            </strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-cog"></span> 系统消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'system' }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-list-alt"></span> 需求消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'requirement' }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-lock"></span> 合同消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'contract' && !$value.IsReaded }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+    </ul>
+</div>
+<div class="container">
+    <h3>&bull; 历史消息<span class="glyphicon glyphicon-remove-sign del_msg" title="清空"></span></h3>
+    <hr>
+    <ul class="list-group newMsg-list">
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-blackboard"></span> 推广消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'promote' && $value.IsReaded }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-cog"></span> 系统消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'system' && $value.IsReaded }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-list-alt"></span> 需求消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'requirement' && $value.IsReaded }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+        <li class="list-group-item col-md-12 disabled">
+            <strong><span class="glyphicon glyphicon-lock"></span> 合同消息</strong>
+        </li>
+        {{ each }}
+        {{ if $value.ResourceType == 'contract' && $value.IsReaded }}
+        <a class="list-group-item col-md-12" value="{{ $value.ResourceId }}" name="{{ $value.ResourceType }}">
+            <input type="text" hidden value="{{ $value.Id }}">
+            <strong>{{ $value.Title }}</strong>
+            <p>{{ $value.Msg }}<span style="float: right">{{ $value.CreateTime | ParseTime }}</span></p>
+        </a>
+        {{ /if }}
+        {{ /each }}
+    </ul>
+</div>
+<br>
