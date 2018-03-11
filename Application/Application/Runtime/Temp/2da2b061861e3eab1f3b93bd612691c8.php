@@ -1,3 +1,0 @@
-<?php
-//000000007100s:86:"HoagFKDcsGMVCIY2vOjf9h_1bEctt9GlNAxpcR4TvNZaH_uPPQBbKAhEiBOkc4VhJc7CnJ9qdjHaUs9yOa6JQg";
-?>
