@@ -1218,3 +1218,267 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
 
+[ 2018-08-08T14:55:20+08:00 ] 127.0.0.1 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-08-08T14:55:22+08:00 ] 127.0.0.1 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-08-08T14:55:37+08:00 ] 127.0.0.1 /tpchat/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-08-08T14:55:39+08:00 ] 127.0.0.1 /tpchat/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-08-08T14:55:48+08:00 ] 127.0.0.1 /tpchat/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2018-08-08T14:55:57+08:00 ] 127.0.0.1 /tpchat/index.php/admin/course/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0726s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2018-08-08T14:56:02+08:00 ] 127.0.0.1 /tpchat/index.php/admin/course/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 289 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 290 行.
+NOTIC: [8] Undefined index: big_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 292 行.
+NOTIC: [8] Undefined index: small_category D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 293 行.
+NOTIC: [8] Undefined index: lasttime D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 294 行.
+NOTIC: [8] Undefined index: desc D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 296 行.
+NOTIC: [8] Undefined index: age_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 297 行.
+NOTIC: [8] Undefined index: address D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 299 行.
+NOTIC: [8] Undefined index: speaker D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 304 行.
+NOTIC: [8] Undefined index: people_limit D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 305 行.
+NOTIC: [8] Undefined index: is_activity D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 306 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 309 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 312 行.
+NOTIC: [8] Undefined index: publish_state D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\tpchat\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+

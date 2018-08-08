@@ -129,7 +129,7 @@
     function generateqr(obj) {
             if($(obj).attr('data-type')=='course'){
 
-                $('#qrcode').qrcode("http://www.jianpianzi.com/tpchat/index.php/chat/index/course?courseid="+$(obj).attr('data-id')); //任意字符串
+                $('#qrcode').qrcode("https://www.jianpianzi.com/tpchat/index.php/chat/index/course?courseid="+$(obj).attr('data-id')); //任意字符串
                 layer.open({
                     type: 1,
                     title:'课程码课程编号：',
@@ -145,7 +145,7 @@
                 });
             }
             else{
-                $('#qrcode').qrcode("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=http://www.jianpianzi.com/tpchat/index.php/home/access/checkauth&response_type=code&scope=snsapi_info&state=1#wechat_redirect"); //任意字符串
+                $('#qrcode').qrcode("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdf007a79f182aed&redirect_uri=https://www.jianpianzi.com/tpchat/index.php/home/access/checkauth&response_type=code&scope=snsapi_info&state=1#wechat_redirect"); //任意字符串
                 layer.open({
 
                     type: 1,
@@ -280,6 +280,8 @@
         <th>联系电话</th>
         <th>主讲</th>
         <th>招收人数</th>
+        <th>活动状态</th>
+
         <th>操作</th>
     </tr>
     </thead>
@@ -301,6 +303,8 @@
             <td ><?php echo ($v["phone"]); ?></td>
             <td><?php echo ($v["speaker"]); ?></td>
             <td><?php echo ($v["people_limit"]); ?></td>
+            <td><?php echo ($v["is_activity"]); ?></td>
+
             <td ><div class="btn-group" role="group">
                 <a href="update?i=<?php echo ($v["course_id"]); ?>"><button type="button" href="user" class="btn btn-success">修改</button></a>
 
