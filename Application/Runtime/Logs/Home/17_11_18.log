@@ -1,0 +1,311 @@
+[ 2017-11-18T19:05:51+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=252&code=021Fwqsz1OskUh0yrXrz1LHqsz1Fwqsb&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002116s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 252 LIMIT 1   [ RunTime:0.0005s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:15:58+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=253&code=061aonOo0HqTAs13fRLo01QjOo0aonOS&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 253 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:26:13+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=253&code=061aonOo0HqTAs13fRLo01QjOo0aonOS&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 253 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:27:59+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?code=021hpJBa28eREO0WiFya216QBa2hpJB8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:28:03+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-11-18T19:28:06+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?code=021hpJBa28eREO0WiFya216QBa2hpJB8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:28:09+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-11-18T19:28:11+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?code=021hpJBa28eREO0WiFya216QBa2hpJB8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:28:15+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-11-18T19:28:20+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?code=021hpJBa28eREO0WiFya216QBa2hpJB8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:28:25+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?code=021hpJBa28eREO0WiFya216QBa2hpJB8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:42:34+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:15+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:17+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:23+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:27+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-11-18T19:43:30+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:32+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-11-18T19:43:34+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:53+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:43:58+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:45:01+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T19:45:01+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+
+[ 2017-11-18T20:00:15+08:00 ] 114.245.4.128 /tpchat/index.php/home/jspay?trade_id=255trade_id=255&code=071DkTEX1JnlST0rDzEX1uMMEX1DkTE3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-11-18.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+NOTIC: [8] Undefined index: openid /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 116 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 255 LIMIT 1   [ RunTime:0.0003s ]
+ERR: 参数错误
+

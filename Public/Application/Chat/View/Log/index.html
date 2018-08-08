@@ -1,0 +1,43 @@
+{__NOLAYOUT__}
+<html lang="en">
+<head>
+    <title>消息</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="{$Think.const.JS_URL}jquery.js"></script>
+
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css">
+    <script rel="stylesheet" src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+
+
+    <link href="{$Think.const.CSS_URL}vendors.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}weui.min.css">
+    <link rel="stylesheet" href="{$Think.const.CSS_URL}jquery-weui.min.css">
+    <script src="{$Think.const.JS_URL}jquery-weui.js"></script>
+    <script src="{$Think.const.JS_URL}fastclick.js"></script>
+    <meta charset="UTF-8">
+    <title>消息</title>
+
+</head>
+<body>
+<div class="weui-cells" style="margin-bottom: 150px">
+    <volist name="data" id="v">
+    <a href="{$v.link}" class="weui-cell" style="font-size: 25px">
+        <div class="weui-cell__bd">
+            <p>{$v.content}</p>
+            <p style="font-size: 1px"> {$v.createtime}</p>
+
+        </div>
+        <div class="weui-cell__ft" style="font-size: 6px">
+            <if condition="($v.openid=='')" >  系统消息
+            <else /> 个人消息
+        </if>
+        </div>
+    </a>
+    </volist>
+</div>
+<include file="Public/navbar"/>
+</body>
+</html>

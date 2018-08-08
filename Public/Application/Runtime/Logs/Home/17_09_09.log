@@ -1,0 +1,1872 @@
+[ 2017-09-09T13:14:31+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=401d9c239f23e0c6ae95ad0bcc5f728d1c6414d3&timestamp=1504934070&nonce=844290017&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-09-09T13:16:11+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=01f52c69fb1402d2bf409e2a2238bee1df34fd0a&timestamp=1504934171&nonce=1601695545&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-09-09T13:18:32+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=28db96be0578d92b48c1dc93a2754e15fa41d3ed&timestamp=1504934312&nonce=344093330&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T13:18:46+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=dca015b2cb75d9b4ebb0234f6308c73058bc8618&timestamp=1504934326&nonce=1373547875&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-09-09T13:19:08+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=e434db374f4d532ac24effb7af831d31142629df&timestamp=1504934348&nonce=1469970803&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T13:19:32+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=71325013c593359f8270f1674fc98ccf12b7ab27&timestamp=1504934372&nonce=1369755895&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-09-09T13:20:16+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=5013da43e457a0e243d9185e4a198d193a1d4fe1&timestamp=1504934416&nonce=260519189&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:20:17+08:00 ] 101.226.102.79 /tpchat/index.php/home/access/getredid?code=0214XXtS0IXrka205urS0kr3uS04XXtj&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-09-09T13:21:13+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=44f95c9268bed181052283843859e18a1ce50d38&timestamp=1504934473&nonce=680365529&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:21:37+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=8379927cb5f077c6b1ca5d08f37c234e17c8d4dc&timestamp=1504934497&nonce=1142908496&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-09-09T13:21:43+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=88774d41f369b6355b49063ce83b5138cc812df7&timestamp=1504934503&nonce=2128452769&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-09T13:21:48+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=b7ca2800ce043255b5263208e610f181f3237d80&timestamp=1504934508&nonce=1774446961&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-09-09T13:54:30+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=7f1dbebfbbb62851fe5e1fed3ceccef17af5f8ae&timestamp=1504936470&nonce=1873525973&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-09-09T13:54:34+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=28c33a0a8d6c1ef0aad54a5ce0beb5eada24b8ad&timestamp=1504936474&nonce=2120233615&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-09-09T13:55:15+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=0010248392880e205a2bff04082d19f9cf751fef&timestamp=1504936515&nonce=563043885&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T13:55:30+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=18e1369a456909d98f027825e936c06265d18cfb&timestamp=1504936530&nonce=57000494&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T13:55:31+08:00 ] 223.104.3.202 /tpchat/index.php/home/access/checkauth?code=081siyy61eMHBR1SNXB61Mgyy61siyyQ&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq08z0miP9AerKiRV0akkB4EI' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Home/eb0112a4e2c7a0ff0c9a0ef9e02036fc.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-09T13:55:33+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=a2bb873e407df5cecf3177a0f1903e123025cc7e&timestamp=1504936533&nonce=793337018&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T13:55:34+08:00 ] 223.104.3.202 /tpchat/index.php/home/access/checkauth?code=001FofLG0SfcUg2YUWJG0zR7LG0FofLR&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq08z0miP9AerKiRV0akkB4EI' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Home/eb0112a4e2c7a0ff0c9a0ef9e02036fc.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-09T13:55:37+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=8962e87770a049b216aca2eaf94b45c6aa3aa15c&timestamp=1504936537&nonce=377477944&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:55:38+08:00 ] 223.104.3.202 /tpchat/index.php/home/jspay?code=0616Vwyf1lO53y0chBxf1Honyf16VwyO&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-09T13:55:40+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=67ebe92f4bc672a9ac7277859975f8bdec9a48dd&timestamp=1504936540&nonce=1293687514&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:55:46+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=7b92323c17c2d3421e9916a12fcc7cb4017e5863&timestamp=1504936546&nonce=611465142&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:55:49+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=f386be82f8496f70a4c937f586e7d2355aa2e7aa&timestamp=1504936549&nonce=528100396&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:55:51+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=8c4188da95bfb434eb4c2b3c3ae31fd09f751a34&timestamp=1504936551&nonce=1437345998&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T13:55:52+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=45beb430ec35bd2e49bb302180553ae32c64722e&timestamp=1504936552&nonce=636258096&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000171s ]
+
+[ 2017-09-09T13:55:54+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=ce034b9609af92a60470a7ae4d31bacbaae6ea6b&timestamp=1504936554&nonce=782729591&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-09-09T13:56:13+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=73be3f7a5cf2b58b2785a9ca4970c0217c70fb75&timestamp=1504936573&nonce=2146836700&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-09-09T13:56:13+08:00 ] 223.104.3.202 /tpchat/index.php/home/access/getredid?code=081siKGn0NaUUp1OFwGn0jrTGn0siKGs&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-09-09T13:56:20+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=3c7759264adaab52d11f1508f4d455576a00d36d&timestamp=1504936580&nonce=2081798647&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-09T13:56:21+08:00 ] 223.104.3.202 /tpchat/index.php/home/access/getredid?code=081hJYn31r8caL1hfeq31WLOn31hJYn7&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-09-09T13:56:24+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=ccf88719c583125f464d2ace52e94f2aa66c6320&timestamp=1504936584&nonce=690746795&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-09-09T13:56:31+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=51f051cfb3e0cc943cf9916548dd437509288e28&timestamp=1504936591&nonce=1618223853&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T13:56:34+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=76a64d5737ecfbb92f7321b011f0022e97ef5595&timestamp=1504936594&nonce=1088714181&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-09T13:56:35+08:00 ] 223.104.3.202 /tpchat/index.php/home/jspay?code=011nVQmt1bCs7b02vLkt1osHmt1nVQmh&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-09T13:59:00+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=5bc298340b5325ca75123b37c905b852af05fa39&timestamp=1504936740&nonce=455857871&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-09-09T14:01:34+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=fdde5861b0da3c293f92cc05d79971833a21d8c3&timestamp=1504936894&nonce=1089825494&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T14:01:41+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=a8d3d7aaaa8a0a504b3ecd8aec4a69a455ec5982&timestamp=1504936901&nonce=1793981938&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-09-09T14:07:57+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=8a5d107b79cab1f5024cc8303825064cb9c65804&timestamp=1504937277&nonce=510183977&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-09-09T14:13:43+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=9f4afe510140e6996a0162f604e9189e5b144a59&timestamp=1504937623&nonce=785543613&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T14:27:21+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=d4b0509c7d5a2fb4ea4dc1f5df90895057ec06e9&timestamp=1504938441&nonce=377092201&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T14:27:24+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=effbae225cf99a95afe423c816e298da2fb181b0&timestamp=1504938443&nonce=777338087&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-09-09T14:27:26+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=4f9ad223a275e343e712bb5ba9c8681c10dad360&timestamp=1504938446&nonce=1229529360&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T14:28:07+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=abbb61ad1bf234900f719d096957ba1bea33c9e1&timestamp=1504938487&nonce=39123662&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-09-09T14:28:11+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=5fdbbd2219795d80373aea18fc6270a10525852b&timestamp=1504938491&nonce=1034657872&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T14:28:44+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=2f7a285ededf19b10e2638196decc77566057670&timestamp=1504938524&nonce=163704634&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T14:29:43+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=dd7875a6184c9f45fa2b4fa1d92a0d7e780932a8&timestamp=1504938583&nonce=1310786361&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T14:29:58+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=3535eadb30952fbffd43d95e3d6d528b46576e6b&timestamp=1504938598&nonce=1020905289&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000173s ]
+
+[ 2017-09-09T14:31:16+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=61aafc6808bdca9e80614db7080634847a1217ea&timestamp=1504938676&nonce=203636666&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-09-09T14:31:18+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=4730225ce267bf36db05d9bdb3671916371ee352&timestamp=1504938677&nonce=195086802&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T14:32:07+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=1bfe2745f933f48114b3a9f2e257cb819513db0a&timestamp=1504938727&nonce=214236381&openid=oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-09-09T14:34:42+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=88df884a2eeabc6825c61c968ac407c617b77276&timestamp=1504938881&nonce=29390361&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T14:35:11+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=864c517fb9ad2c54deb54405241b812361d32db2&timestamp=1504938911&nonce=2088812398&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-09-09T15:11:50+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=6e5a812c3f19110c83708d4e8be48643ddf18cff&timestamp=1504941110&nonce=1479546433&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T15:20:49+08:00 ] 140.207.54.80 /tpchat/index.php/home/?signature=b71e775623f40ab2720bee69cc644d89371f2cbd&timestamp=1504941649&nonce=406992594&openid=oAdCq03KSUOXEFmC6SeJ9HkAM-_U
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001663s ]
+
+[ 2017-09-09T15:20:52+08:00 ] 140.207.54.80 /tpchat/index.php/home/?signature=cac08fd6d3e21eb82025947e30a3b7fd9cfccb35&timestamp=1504941652&nonce=612001939&openid=oAdCq03KSUOXEFmC6SeJ9HkAM-_U
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-09-09T15:37:01+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=959c25a51cab474798bff6290b8e7573617a1e6d&timestamp=1504942621&nonce=2135647784&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-09-09T15:57:03+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=edfb9bbd775878667b5a4c8c476e0ea50c3aaef8&timestamp=1504943823&nonce=1925863262&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-09-09T15:57:51+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=79a5cde8e548a366852a8cb52b62b860720cd56e&timestamp=1504943871&nonce=1221416206&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T15:57:55+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=49d10c46a16a0d3ab22958b163e00806f71fc2cb&timestamp=1504943875&nonce=737942676&openid=oAdCq0735MIgL8i3_L4V1al6-jRI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T15:57:59+08:00 ] 101.226.102.79 /tpchat/index.php/home/access/getredid?code=0812v8AL1puLV21KiuDL1N7gAL12v8AN&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-09-09T15:59:08+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=61cc6edbee050db657ff8b179f6403beef751d12&timestamp=1504943948&nonce=1561490433&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T15:59:08+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/checkauth?code=061Hcp8i1N78nz0iie8i1fTC8i1Hcp8q&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Home/eb0112a4e2c7a0ff0c9a0ef9e02036fc.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-09-09T15:59:26+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=da32448e77d9be97e15b7264e519f3ebc765bf88&timestamp=1504943965&nonce=1375896632&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T16:00:46+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=7f3c66c31c13a8d9e0d04462c282f70f8c147f54&timestamp=1504944045&nonce=76683855&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T16:02:24+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=282213498879b34303805b4a9b6cfa10dc5e943f&timestamp=1504944144&nonce=1267275666&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-09-09T16:02:25+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=071xGVnC0JAXNc2SqRjC0hmInC0xGVnC&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-09-09T16:02:34+08:00 ] 117.185.27.113 /tpchat/index.php/home/access/getredid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-09-09T16:02:41+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=4408bd152b989ee7744b194aeb39da93d5b28739&timestamp=1504944161&nonce=19813905&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T16:02:41+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=001N5UJQ1IHUX616I0JQ1tRYJQ1N5UJG&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-09-09T16:02:44+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=099b07fbcf714a26a7acba549d32f9567e8c683c&timestamp=1504944164&nonce=1208507512&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000140s ]
+
+[ 2017-09-09T16:09:00+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=77b9702adb7133de9a4d1fa561e87ad9698dead7&timestamp=1504944540&nonce=1448112121&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-09-09T16:09:05+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=eb441a935f0e1149b8e81f1a293af6fbe1ef6038&timestamp=1504944545&nonce=1659126087&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-09-09T16:10:45+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=1fb4bbfe06822947d88f62da4c601cddeb751a90&timestamp=1504944645&nonce=603286739&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T16:13:34+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:13:35+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=88trade_id=88&code=061Zg6WX1lTNIV0WKbYX13PTVX1Zg6Wn&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 88 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-09T16:13:41+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:13:42+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=89trade_id=89&code=011A3cev0pZZ9d1CMrgv009Udv0A3ceZ&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 89 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-09T16:13:42+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=89trade_id=89&code=011lus6l2KDbIH09eZ4l2qnR6l2lus6Y&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 89 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-09T16:13:55+08:00 ] 117.185.27.115 /tpchat/index.php/home/jspay?trade_id=88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:19:46+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=6fdd19ce23e0d73e1165185b6db98f63474321e1&timestamp=1504945186&nonce=88873350&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-09-09T16:19:48+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=e5913139229678da0a5748c402f4b0541de96faa&timestamp=1504945188&nonce=1910216309&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T16:20:51+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=574fc59f564b56662648cae2367780778ccbb636&timestamp=1504945251&nonce=381617961&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T16:21:21+08:00 ] 101.226.33.221 /tpchat/index.php/home/jspay?trade_id=88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:21:56+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:21:57+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=90trade_id=90&code=001uGUwv1uICqd0cjOyv1yeZwv1uGUw9&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 90 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-09-09T16:21:57+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=90trade_id=90&code=061BIQeS1DJ9ta1dRChS1xH4fS1BIQe7&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 90 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-09T16:22:04+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=91
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:22:05+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=91trade_id=91&code=021ryZmd0tDCCv1rnnnd0xXQmd0ryZmI&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 91 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-09T16:22:06+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?trade_id=91trade_id=91&code=061dlvTH0d1yjk2TPDRH04tnTH0dlvT7&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 91 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-09-09T16:22:08+08:00 ] 117.185.27.115 /tpchat/index.php/home/jspay?trade_id=90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T16:26:16+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=0be889adfa9dd8eb86b6ff2132d009229412286a&timestamp=1504945576&nonce=104506054&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T16:29:42+08:00 ] 101.226.33.225 /tpchat/index.php/home/jspay?trade_id=90trade_id=90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T17:09:51+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=5589b2ae0dad7405b84356c29aad217f66e2f47c&timestamp=1504948190&nonce=1908757957&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T17:09:54+08:00 ] 117.185.27.113 /tpchat/index.php/home/access/checkauth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Home/eb0112a4e2c7a0ff0c9a0ef9e02036fc.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-09T17:23:59+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-09-09T17:24:01+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-09-09T17:24:11+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=ed8effa3b53b300f67b514f021280cde7b8757f1&timestamp=1504949051&nonce=1678764514&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T17:24:12+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=061OLCG30v4kOE1PlRC30enFG30OLCGi&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-09-09T17:27:21+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-09-09T17:34:21+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=16894c2bfe11cefad63b93a0b2952c777c144ce1&timestamp=1504949661&nonce=437242795&openid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-09-09T17:42:15+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=5f659fb05777a8583b813226e65ab2b0eefd9226&timestamp=1504950135&nonce=382768735&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-09-09T17:42:18+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=081NMaIT0yjTNU1Em5KT0OdhIT0NMaIB&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-09-09T17:42:23+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=f31d06cd716094ad0297d7ff897ce66fef2aafb7&timestamp=1504950143&nonce=778525680&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T17:42:24+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=061c0VOe07Gtdy1bUALe0QOXOe0c0VOO&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-09-09T17:42:34+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=c68898b624f06c858d398ba632074e9be35e08f9&timestamp=1504950154&nonce=1930837242&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000156s ]
+
+[ 2017-09-09T17:42:39+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=7913de9c21caf8af56cbd0950b9f394079e585cf&timestamp=1504950159&nonce=398933389&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T17:42:39+08:00 ] 123.151.153.121 /tpchat/index.php/home/jspay?code=011mlb551JhF0O1wRX4515ma551mlb5d&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+NOTIC: [8] Undefined property: JsApiPay::$curl_timeout /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/WxPayJsApiPay.php 第 99 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `trade` WHERE `trade_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-09T17:42:49+08:00 ] 117.185.27.115 /tpchat/index.php/home/jspay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [2] fopen(../logs/2017-09-09.log): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Vendor/Wechat/log.php 第 16 行.
+
+[ 2017-09-09T17:43:13+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-09-09T17:43:15+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-09-09T17:43:23+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=3e4265526f45e1994ad81ad0fea5cc7807ee2e25&timestamp=1504950203&nonce=695948346&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T17:43:23+08:00 ] 123.151.153.121 /tpchat/index.php/home/access/getredid?code=071x6lg62qSHRM0928h62VRog62x6lgc&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-09-09T17:43:31+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=76b1060b4f8dff4ac0319a65e826fbd75f9c0abe&timestamp=1504950211&nonce=13558076&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-09-09T17:43:37+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=0b2357bc2d4b39e126476dcd1a81e0588864245a&timestamp=1504950216&nonce=1627577048&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T17:43:41+08:00 ] 117.185.27.115 /tpchat/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-09T17:43:45+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=026ed659306f91a492cde62aed51ce752f54df66&timestamp=1504950225&nonce=470980364&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T17:43:49+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=1ef916df97ebd4fe5a1e47a1dd3a98e051992748&timestamp=1504950228&nonce=762549846&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-09-09T17:43:52+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=05905e1b1b048b6e3f758aeb52cc0e61d5e1f77c&timestamp=1504950232&nonce=565442953&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-09-09T17:46:29+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=daa04073cebae589aeb1c1873f51027c4674ad79&timestamp=1504950388&nonce=1622809439&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-09-09T17:47:08+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=b554f3fc290c3c666abc8995213c713f1c6038e0&timestamp=1504950428&nonce=700357269&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T17:47:14+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=6dcc0d47f5e7a59520ce5d9c1c19ed64127ea284&timestamp=1504950434&nonce=754753992&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-09-09T17:47:18+08:00 ] 117.185.27.113 /tpchat/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-09T17:47:24+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=603de2cadf725a3f9aadad517d1992d66cdff36a&timestamp=1504950444&nonce=595425061&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-09-09T17:47:30+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=1c5ec0aa3f377ec8c3b8bbc2c797be468363a396&timestamp=1504950450&nonce=1081686766&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-09-09T18:11:24+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载控制器:Material
+
+[ 2017-09-09T18:11:33+08:00 ] 114.240.69.121 /tpchat/index.php/home/Material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+ERR: 无法加载控制器:Material
+
+[ 2017-09-09T18:11:40+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+ERR: 无法加载控制器:Material
+
+[ 2017-09-09T18:11:53+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+ERR: 无法加载控制器:Material
+
+[ 2017-09-09T18:12:00+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-09-09T18:12:26+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-09-09T18:12:29+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-09-09T18:16:53+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000174s ]
+
+[ 2017-09-09T18:21:50+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-09T18:22:13+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: url /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-09-09T18:22:24+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-09-09T18:25:00+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-09-09T18:25:15+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-09-09T18:29:18+08:00 ] 114.240.69.121 /tpchat/index.php/home/material
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 13 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 20 行.
+NOTIC: [2] Invalid argument supplied for foreach() /mnt/tpchat/Application/Home/Controller/MaterialController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-09-09T18:31:46+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=a0c3f21e9a2766f032d5fc94ee3ee305af65ccd6&timestamp=1504953106&nonce=2107881690&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T18:32:06+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=5ed46ea1c2a35ce849b5fb4f7f9bc15a4b43a14d&timestamp=1504953126&nonce=1029191758&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-09T18:33:17+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-09-09T18:34:21+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=2c5b1e5e5cda56febb39e585a57af23fad3bebad&timestamp=1504953261&nonce=1202323451&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T18:34:27+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=fde5086f027764a21877125469e8786b9a8c40cc&timestamp=1504953267&nonce=1940691504&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-09T18:41:05+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=80777d65f2b213b8c1344d8689d54926e6ee75bb&timestamp=1504953665&nonce=911690179&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-09-09T18:41:09+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=b0da825866c9ac293e901b40448d79d218a661d1&timestamp=1504953668&nonce=461463248&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-09-09T18:41:16+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=169b814f61825627064f0de5e95fab6df875a6ba&timestamp=1504953676&nonce=1315041073&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-09-09T18:41:21+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=870cd3c3d9f435b91d9c38c27cc3cd24b8e49b41&timestamp=1504953681&nonce=1581124970&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-09T18:41:32+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-09-09T18:41:33+08:00 ] 114.240.69.121 /tpchat/index.php/home/menu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-09-09T18:41:41+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=f70561a3ac1ccfe1d066c8fff34e7106826f5462&timestamp=1504953701&nonce=95827885&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-09-09T21:36:41+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=3f6f307c1a872c4681b43d03cf4acd23b846b351&timestamp=1504964201&nonce=220062956&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T21:37:13+08:00 ] 140.207.54.76 /tpchat/index.php/home/?signature=77d93e734c2de4a516cd4fdc0fd203f42a96619b&timestamp=1504964233&nonce=865068773&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-09T21:43:43+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=02c7413a724b77b604c5774d571bde3967781c41&timestamp=1504964623&nonce=1817977883&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-09-09T21:44:16+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=3e56f20daeabee86270c4cae17f38edc02416f73&timestamp=1504964655&nonce=23458344&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-09T21:46:02+08:00 ] 140.207.54.75 /tpchat/index.php/home/?signature=9461a13c5d7daf45bb0f4a3f567dd0629467df42&timestamp=1504964762&nonce=972752158&openid=oAdCq01YzcVjLWljmeEBFcDEswEY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+

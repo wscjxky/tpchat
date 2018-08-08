@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+
+</style>
+<body>
+<div class="page-title"  >
+    <h2><span>课程详情</span><a href="javascript:history.go(-1)" style="top: 30%;" class="arrow-left backpage"></a></h2>
+</div>
+
+<div class="weui-cells" style="margin-top: 16%;">
+    <h1 style="padding: 3%; ">课程标题：{$course.title}</h1>
+    <h1 style="padding: 3%; ">子标题：{$course.subtitle}</h1>
+    <h1 style="padding: 3%; ">主讲：{$course.speaker}</h1>
+    <h1 style="padding: 3%; ">地点：{$course.address}</h1>
+    <h1 style="padding: 3%; ">开课时间：{$course.starttime}</h1>
+    <h1 style="padding: 3%; ">联系电话：{$course.phone}</h1>
+
+
+</div>
+
+<div class="weui-cells">
+    <if condition="$data.trade_state eq 已支付 ">
+        <volist name="evidencelist" id="v">
+            <div class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd">
+                    <p>{$v}</p>
+                </div>
+
+            </div>
+        </volist>
+        <div style="text-align:center "class="weui-cell__ft">
+            长按复制凭证码
+        </div>
+        <else />
+            <a class="weui-cell weui-cell_access" href="__APP__/home/jspay?trade_id={$data.trade_id}">
+                <button class="weui-form-preview__btn weui-form-preview__btn_primary" >您还没有支付呢，点击立即支付</button>
+            </a>
+    </if>
+
+
+
+
+</div>
+</body>
+</html>

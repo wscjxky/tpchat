@@ -1,0 +1,1739 @@
+[ 2017-09-10T10:11:03+08:00 ] 123.151.138.100 /tpchat/index.php/chat?code=011VnKyq1EbB2n0mpqvq1kFtyq1VnKyn&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0901s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0655s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.019568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.019695s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-09-10T10:11:06+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T10:11:12+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course` LIMIT 25   [ RunTime:0.0004s ]
+
+[ 2017-09-10T10:11:15+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T10:11:19+08:00 ] 123.151.138.100 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-09-10T10:11:20+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T10:11:22+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 25   [ RunTime:0.0003s ]
+
+[ 2017-09-10T10:11:22+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `log` WHERE ( `openid` = '' OR `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-09-10T10:11:24+08:00 ] 111.30.131.238 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-09-10T15:46:25+08:00 ] 123.151.153.121 /tpchat/index.php/chat?code=011QimrA0UIi9e2VuLpA0Z5hrA0Qimrz&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-09-10T15:46:25+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T15:46:36+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T15:46:53+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-09-10T18:37:37+08:00 ] 117.118.2.141 /tpchat/index.php/chat?code=061e2VGm19ZYIl0LtXIm1SeTGm1e2VGQ&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-09-10T18:38:18+08:00 ] 117.118.2.141 /tpchat/index.php/chat?code=061e2VGm19ZYIl0LtXIm1SeTGm1e2VGQ&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: banner /mnt/tpchat/Application/Runtime/Cache/Chat/c84b2d525e24d16e06aefd7201f1449a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T18:38:20+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T18:38:22+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 25   [ RunTime:0.0003s ]
+
+[ 2017-09-10T18:38:26+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T18:38:27+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `log` WHERE ( `openid` = '' OR `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T18:38:28+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T18:38:36+08:00 ] 117.118.2.141 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: banner /mnt/tpchat/Application/Runtime/Cache/Chat/c84b2d525e24d16e06aefd7201f1449a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-09-10T18:38:36+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T18:38:38+08:00 ] 117.118.2.141 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: banner /mnt/tpchat/Application/Runtime/Cache/Chat/c84b2d525e24d16e06aefd7201f1449a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T18:38:38+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T18:38:42+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T18:38:53+08:00 ] 117.185.27.113 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given /mnt/tpchat/Application/Chat/Controller/LogController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2017-09-10T18:41:49+08:00 ] 123.151.153.121 /tpchat/index.php/chat/user?code=021G67M60zYLKG1vf5M60oyZL60G67Me&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 11 行.
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-09-10T18:41:52+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `log` WHERE ( `openid` = '' OR `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-09-10T18:41:53+08:00 ] 123.151.153.121 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: banner /mnt/tpchat/Application/Runtime/Cache/Chat/c84b2d525e24d16e06aefd7201f1449a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-09-10T18:41:54+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T18:42:41+08:00 ] 117.118.2.141 /tpchat/index.php/chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: banner /mnt/tpchat/Application/Runtime/Cache/Chat/c84b2d525e24d16e06aefd7201f1449a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-09-10T18:42:42+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T18:46:53+08:00 ] 117.118.2.141 /tpchat/index.php/chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T18:46:53+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2017-09-10T18:46:54+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T18:46:55+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given /mnt/tpchat/Application/Chat/Controller/LogController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-09-10T18:46:57+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-09-10T18:48:28+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-09-10T18:49:33+08:00 ] 123.151.153.121 /tpchat/index.php/chat/user?code=061DuwP11G4nIM1R9GR11tLfP11DuwP-&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T18:49:35+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `log` WHERE ( `openid` = '' OR `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /mnt/tpchat/Application/Runtime/Cache/Chat/c5245a165cd888012fb49a33a2971e66.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-09-10T18:49:36+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-09-10T18:49:37+08:00 ] 123.151.153.121 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T18:49:37+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T18:49:38+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-09-10T18:49:39+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T18:49:40+08:00 ] 123.151.153.121 /tpchat/index.php/Chat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-09-10T18:49:40+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T18:53:54+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-09-10T18:55:26+08:00 ] 117.118.2.141 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-09-10T19:02:09+08:00 ] 111.30.132.208 /tpchat/index.php/chat?code=061e6YND0uiqlf2iFtKD089PND0e6YNo&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-09-10T19:07:38+08:00 ] 123.151.153.121 /tpchat/index.php/chat/user?code=061HZ4YF0EI2ei2h9YZF01YUXF0HZ4YI&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T19:07:55+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T19:08:07+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T19:08:14+08:00 ] 111.30.132.208 /tpchat/index.php/chat/user/trade?code=071ScGDD08K54g28ZADD0u9HDD0ScGDt&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+                            
+                            INNER JOIN `course` b
+                            
+                            ON  a.course_id=b.course_id
+                          
+                            WHERE  a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' [ RunTime:0.0241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-09-10T19:08:24+08:00 ] 117.185.27.113 /tpchat/index.php/chat/user/trade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0008s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+                            
+                            INNER JOIN `course` b
+                            
+                            ON  a.course_id=b.course_id
+                          
+                            WHERE  a.openid='' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T19:08:53+08:00 ] 123.151.153.121 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-09-10T19:10:14+08:00 ] 117.118.2.141 /tpchat/index.php/chat/user/trade?code=0012XV4y0Zsoqj1Ij96y0tnM4y02XV43&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0006s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+                            
+                            INNER JOIN `course` b
+                            
+                            ON  a.course_id=b.course_id
+                          
+                            WHERE  a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-10T19:10:28+08:00 ] 117.118.2.141 /tpchat/index.php/chat/user/trade?code=001AwLzL1mpIX21EFczL12jTzL1AwLzt&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0006s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+                            
+                            INNER JOIN `course` b
+                            
+                            ON  a.course_id=b.course_id
+                          
+                            WHERE  a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-09-10T19:13:21+08:00 ] 123.151.153.121 /tpchat/index.php/chat/user/trade?code=061TOvdy0FRkhj1AR6ey0UsAdy0TOvdE&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq01YzcVjLWljmeEBFcDEswEY' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Constant OPEN_ID already defined /mnt/tpchat/Application/Chat/Controller/UserController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0006s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+                            
+                            INNER JOIN `course` b
+                            
+                            ON  a.course_id=b.course_id
+                          
+                            WHERE  a.openid='oAdCq01YzcVjLWljmeEBFcDEswEY' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Chat/1efa3d3aee875cacf4e1049bb43e94ca.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-10T19:20:00+08:00 ] 117.136.38.25 /tpchat/index.php/Chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T19:20:07+08:00 ] 117.136.38.25 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-09-10T19:20:15+08:00 ] 117.136.38.25 /tpchat/index.php/chat?code=061dr6Cy1cgrle07dUAy1RxXBy1dr6CB&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq08z0miP9AerKiRV0akkB4EI' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-09-10T19:20:16+08:00 ] 117.136.38.25 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq08z0miP9AerKiRV0akkB4EI' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T19:20:17+08:00 ] 117.136.38.25 /tpchat/index.php/chat/index/course/courseid/12/aid/oAdCq08z0miP9AerKiRV0akkB4EI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq08z0miP9AerKiRV0akkB4EI' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course` WHERE ( course_id='12' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Chat/View/Index/head.html): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: agentopenid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 27 行.
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T22:15:38+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T22:16:01+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T22:16:07+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-09-10T22:43:55+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-09-10T22:49:03+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-09-10T22:49:19+08:00 ] 123.151.138.100 /tpchat/index.php/chat?code=061brtgh10DNkw02oZfh1zNdgh1brtgL&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-09-10T22:49:20+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T22:49:26+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T22:49:35+08:00 ] 111.30.131.238 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T22:49:40+08:00 ] 111.30.131.238 /tpchat/index.php/chat?code=011zZh2v0WOQVd1txa3v06A52v0zZh2x&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-10T22:49:41+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T22:49:42+08:00 ] 123.151.138.100 /tpchat/index.php/chat/index/course/courseid/12/aid/oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` WHERE ( course_id='12' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Chat/View/Index/head.html): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: agentopenid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 27 行.
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-10T22:49:52+08:00 ] 117.185.27.115 /tpchat/index.php/chat/index/course/courseid/12/aid/oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course` WHERE ( course_id='12' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Chat/View/Index/head.html): failed to open stream: No such file or directory /mnt/tpchat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: agentopenid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 27 行.
+NOTIC: [8] Undefined variable: openid /mnt/tpchat/Application/Runtime/Cache/Chat/364b759fdaa1fcdb48451e9a42928adb.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T22:49:54+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/trade?course_id=12&aid=oAdCq016X8Hgd9iVKRk6Ob-r-sNU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` WHERE `course_id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-09-10T22:49:59+08:00 ] 123.151.138.100 /tpchat/index.php/Chat/Index/trade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq016X8Hgd9iVKRk6Ob-r-sNU' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate /mnt/tpchat/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /mnt/tpchat/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `evidence` [ RunTime:0.0007s ]
+SQL: INSERT INTO `evidence` (`evidence`,`course_id`) VALUES ('1SLd8VMHk07gFea8','0') [ RunTime:0.1763s ]
+SQL: INSERT INTO `evidence` (`evidence`,`course_id`) VALUES ('r8tLJXfhmT9otj6D','0') [ RunTime:0.0095s ]
+SQL: INSERT INTO `evidence` (`evidence`,`course_id`) VALUES ('Q1EdAtxqEsSzfoFa','0') [ RunTime:0.0456s ]
+SQL: INSERT INTO `evidence` (`evidence`,`course_id`) VALUES ('xjxP8wzDHcQRldDP','0') [ RunTime:0.0199s ]
+SQL: INSERT INTO `trade` (`people_count`,`user_discount`,`user_bonus`,`course_title`,`course_price`,`final_price`,`course_id`,`openid`,`cheap_price`,`evidence`) VALUES ('4','0.98','0','测试','120','470','12','oAdCq016X8Hgd9iVKRk6Ob-r-sNU','10','1SLd8VMHk07gFea8,r8tLJXfhmT9otj6D,Q1EdAtxqEsSzfoFa,xjxP8wzDHcQRldDP') [ RunTime:0.0165s ]
+
+[ 2017-09-10T23:26:49+08:00 ] 1.202.115.143 /tpchat/index.php/chat?code=021qThGD1jhmg00nwxGD1oMnGD1qThGt&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq03KSUOXEFmC6SeJ9HkAM-_U' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-09-10T23:26:50+08:00 ] 1.202.115.143 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq03KSUOXEFmC6SeJ9HkAM-_U' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2017-09-10T23:26:52+08:00 ] 1.202.115.143 /tpchat/index.php/Chat/Index/ajaxCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `openid` = 'oAdCq03KSUOXEFmC6SeJ9HkAM-_U' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` LIMIT 25   [ RunTime:0.0003s ]
+

@@ -1,0 +1,341 @@
+[ 2017-09-07T08:10:31+08:00 ] 106.121.74.243 /tpchat/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-09-07T08:10:32+08:00 ] 106.121.74.243 /tpchat/index.php/Admin/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-07T08:10:36+08:00 ] 106.121.74.243 /tpchat/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-07T08:10:37+08:00 ] 106.121.74.243 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                             LIMIT 0,5 [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: count /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 122 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-07T08:10:39+08:00 ] 106.121.74.243 /tpchat/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-07T08:42:29+08:00 ] 117.118.0.106 /tpchat/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-07T08:42:30+08:00 ] 117.118.0.106 /tpchat/index.php/Admin/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-07T08:42:33+08:00 ] 117.118.0.106 /tpchat/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-09-07T08:42:34+08:00 ] 117.118.0.106 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                             LIMIT 0,5 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: count /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 122 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-09-07T21:16:58+08:00 ] 117.118.2.141 /tpchat/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-09-07T21:17:00+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-09-07T21:17:03+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-09-07T21:17:03+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/Trade/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `trade` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trade` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT*
+                            FROM  `trade`  a
+
+                            INNER JOIN `user` b
+
+                            WHERE  a.openid=b.openid
+                             LIMIT 0,5 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: count /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 122 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+NOTIC: [8] Use of undefined constant 已支付 - assumed '已支付' /mnt/tpchat/Application/Runtime/Cache/Admin/81859317836b157d1bd41ebfea9ca286.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-07T21:17:04+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/Course/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-09-07T21:17:05+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/Module/banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-07T21:17:06+08:00 ] 117.118.2.141 /tpchat/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: course_id /mnt/tpchat/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000142s ]
+

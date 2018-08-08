@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row">
+
+    <div class="col-md-1" style="margin-left: 30px">
+        <h3>用户建议</h3>
+        <h5>(共{$count}条记录)</h5>
+    </div>
+
+
+
+
+    <table class="table table-hover table-condensed table-striped table-bordered" style="margin-top: 100px ;margin-left: 30px">
+        <thead>
+
+        <tr>
+            <th>用户id</th>
+            <th>用户微信名</th>
+            <th>用户头像</th>
+            <th>用户建议</th>
+            <th>平台回复</th>
+            <th>回复时间</th>
+
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name='data' id='v'>
+            <tr>
+                <td >{$v.openid}</td>
+                <td >{$v.chatname}</td>
+                <td ><img src="{$v.profile}" height="60" width="60"/></td>
+
+                <td >{$v.content}</td>
+                <td >{$v.reply}</td>
+                <td >{$v.createtime}</td>
+
+                <td >
+                    <div class="btn-group" role="group">
+                    <a href="reply?advice_id={$v.advice_id}"><button type="button"  class="btn btn-success">回复</button></a>
+                </div>
+                </td>
+
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+
+
+    <!--?添加菜单-->
+
+
+    <!--订单-->
+</div>
+</body>
+</html>
